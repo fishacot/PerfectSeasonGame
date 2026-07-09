@@ -1,0 +1,12 @@
+[
+  {"club":"Arsenal","era":"2000s","name":"Thierry Henry","goals":30,"assists":9,"season":"2003-04"},
+  {"club":"Barcelona","era":"2010s","name":"Lionel Messi","goals":50,"assists":16,"season":"2011-12"},
+  {"club":"Liverpool","era":"2010s","name":"Mohamed Salah","goals":32,"assists":10,"season":"2017-18"},
+  {"club":"Real Madrid","era":"2010s","name":"Cristiano Ronaldo","goals":45,"assists":8,"season":"2014-15"},
+  {"club":"Bayern Munich","era":"2010s","name":"Robert Lewandowski","goals":30,"assists":6,"season":"2019-20"},
+  {"club":"Barcelona","era":"2000s","name":"Samuel Eto'o","goals":25,"assists":8,"season":"2005-06"},
+  {"club":"Chelsea","era":"2000s","name":"Didier Drogba","goals":20,"assists":7,"season":"2006-07"},
+  {"club":"Manchester City","era":"2010s","name":"Sergio Aguero","goals":26,"assists":7,"season":"2018-19"},
+  {"club":"Juventus","era":"2010s","name":"Gonzalo Higuain","goals":24,"assists":5,"season":"2016-17"},
+  {"club":"PSG","era":"2020s","name":"Kylian Mbappe","goals":28,"assists":8,"season":"2021-22"}
+]

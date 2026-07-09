@@ -1,0 +1,55 @@
+---
+description: Football = 3 leagues (EPL/La Liga/Serie A) mirroring 38-0.org draft + line-balance sim
+globs:
+  - "**/football/**"
+  - "data/football/**"
+  - "scripts/pipeline/*380*"
+  - "scripts/.380-chunks/**"
+  - "src/lib/config/leagues/football.ts"
+  - "src/lib/config/eras.ts"
+  - "src/lib/simulation/adapters/football.ts"
+alwaysApply: false
+---
+
+# 38-0 parity (футбол) — 3 лиги
+
+**Полный промпт для рабочего агента:** [`scripts/pipeline/38-0-AGENT.md`](../../scripts/pipeline/38-0-AGENT.md)  
+Читай его целиком перед любыми правками футбола.
+
+## Зафиксированная модель
+
+| | |
+|---|---|
+| Лиги | Только `epl`, `laliga`, `seriea` |
+| Драфт | 38-0.org: клуб × декада, 11 слотов |
+| Эры | `2000s`, `2010s`, `2020s` (`requiredEras: 3`) |
+| БД | 38-0.org → `npm run fetch:380-players` → `data/football/all.json` (**223** игрока) |
+| OVR | `compute380Overall` в `scripts/pipeline/380-utils.mjs` |
+| G/A | `derive380DisplayStats` (org не даёт сезон totals) |
+| Sim | GK/DEF/MID/ATT + gates + chemistry → 38 матчей |
+| Убрано | bundesliga, ligue1, 1980s/1990s |
+
+## Клубы (только с данными org)
+
+- **epl:** Arsenal, Chelsea, Liverpool, Manchester City, Manchester United, Tottenham
+- **laliga:** Barcelona, Real Madrid, Atletico Madrid, Sevilla
+- **seriea:** AC Milan, Inter Milan, Juventus, Napoli
+
+## Откуда брать
+
+| Нужно | Источник |
+|-------|----------|
+| Игроки + OVR | `scripts/.380-chunks/03b78z-83yf1m.js` |
+| Клубы лиг | `src/lib/config/leagues/football.ts` |
+| Per-league JSON | `npm run export:380-leagues` → `data/football/leagues/` |
+| App EPL reference | `scripts/.380-chunks/app-sim-*.js`, `44_5ro55mi-yo.js` |
+| How sim works | https://38-0.app/how-it-works |
+| Draft UX | https://www.38-0.org/draft |
+
+## Non-negotiables
+
+1. Не выдумывать статы — только org pipeline.
+2. Не возвращать bundesliga/ligue1 без запроса.
+3. Shortcut → `ponytail:` + ceiling + upgrade.
+4. Не ломать basketball / hockey / 82-0.
+5. Обновлять `38-0-AGENT.md` при смене модели данных.

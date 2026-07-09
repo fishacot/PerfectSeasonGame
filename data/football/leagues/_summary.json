@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-07-08T23:38:05.673Z",
+  "source": "38-0.org via all.json",
+  "model": "3 leagues (epl, laliga, seriea)",
+  "eras": [
+    "2000s",
+    "2010s",
+    "2020s"
+  ],
+  "leagues": {
+    "epl": {
+      "id": "epl",
+      "name": "Premier League",
+      "seasonGames": 38,
+      "clubs": [
+        "Arsenal",
+        "Chelsea",
+        "Liverpool",
+        "Manchester City",
+        "Manchester United",
+        "Tottenham"
+      ],
+      "missingClubs": [],
+      "eras": [
+        "2000s",
+        "2010s",
+        "2020s"
+      ],
+      "players": 89,
+      "pools": 16,
+      "poolSizeMin": 3,
+      "poolSizeMax": 10,
+      "byClub": {
+        "Manchester City": 18,
+        "Liverpool": 16,
+        "Chelsea": 16,
+        "Arsenal": 15,
+        "Manchester United": 15,
+        "Tottenham": 9
+      },
+      "byEra": {
+        "2010s": 33,
+        "2020s": 33,
+        "2000s": 23
+      }
+    },
+    "laliga": {
+      "id": "laliga",
+      "name": "La Liga",
+      "seasonGames": 38,
+      "clubs": [
+        "Barcelona",
+        "Real Madrid",
+        "Atletico Madrid",
+        "Sevilla"
+      ],
+      "missingClubs": [],
+      "eras": [
+        "2000s",
+        "2010s",
+        "2020s"
+      ],
+      "players": 75,
+      "pools": 11,
+      "poolSizeMin": 3,
+      "poolSizeMax": 14,
+      "byClub": {
+        "Barcelona": 26,
+        "Real Madrid": 29,
+        "Atletico Madrid": 14,
+        "Sevilla": 6
+      },
+      "byEra": {
+        "2000s": 20,
+        "2010s": 33,
+        "2020s": 22
+      }
+    },
+    "seriea": {
+      "id": "seriea",
+      "name": "Serie A",
+      "seasonGames": 38,
+      "clubs": [
+        "AC Milan",
+        "Inter Milan",
+        "Juventus",
+        "Napoli"
+      ],
+      "missingClubs": [],
+      "eras": [
+        "2000s",
+        "2010s",
+        "2020s"
+      ],
+      "players": 59,
+      "pools": 11,
+      "poolSizeMin": 2,
+      "poolSizeMax": 11,
+      "byClub": {
+        "AC Milan": 18,
+        "Inter Milan": 19,
+        "Juventus": 13,
+        "Napoli": 9
+      },
+      "byEra": {
+        "2000s": 22,
+        "2010s": 20,
+        "2020s": 17
+      }
+    }
+  }
+}

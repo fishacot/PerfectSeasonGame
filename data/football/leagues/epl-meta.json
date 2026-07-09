@@ -1,0 +1,36 @@
+{
+  "id": "epl",
+  "name": "Premier League",
+  "seasonGames": 38,
+  "clubs": [
+    "Arsenal",
+    "Chelsea",
+    "Liverpool",
+    "Manchester City",
+    "Manchester United",
+    "Tottenham"
+  ],
+  "missingClubs": [],
+  "eras": [
+    "2000s",
+    "2010s",
+    "2020s"
+  ],
+  "players": 89,
+  "pools": 16,
+  "poolSizeMin": 3,
+  "poolSizeMax": 10,
+  "byClub": {
+    "Manchester City": 18,
+    "Liverpool": 16,
+    "Chelsea": 16,
+    "Arsenal": 15,
+    "Manchester United": 15,
+    "Tottenham": 9
+  },
+  "byEra": {
+    "2010s": 33,
+    "2020s": 33,
+    "2000s": 23
+  }
+}

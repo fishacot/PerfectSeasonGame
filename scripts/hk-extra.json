@@ -1,0 +1,54 @@
+{
+  "Sharks": {
+    "1990s": [["Owen Nolan", ["RW"], 88, 32, 28], ["Marco Sturm", ["LW"], 84, 22, 24], ["Marcus Ragnarsson", ["D"], 82, 8, 24], ["Evgeni Nabokov", ["G"], 87, 0, 2, 0.908], ["Vincent Damphousse", ["C"], 85, 24, 36], ["Patrick Marleau", ["LW"], 86, 26, 28]],
+    "2000s": [["Patrick Marleau", ["LW"], 88, 28, 30], ["Joe Thornton", ["C"], 93, 22, 68], ["Dan Boyle", ["D"], 86, 12, 38], ["Evgeni Nabokov", ["G"], 88, 0, 2, 0.912], ["Jonathan Cheechoo", ["RW"], 84, 26, 22], ["Milan Michalek", ["LW"], 83, 22, 24]],
+    "2010s": [["Joe Pavelski", ["C"], 88, 26, 30], ["Brent Burns", ["D"], 89, 14, 38], ["Logan Couture", ["C"], 86, 24, 28], ["Martin Jones", ["G"], 85, 0, 2, 0.905], ["Erik Karlsson", ["D"], 90, 12, 48], ["Timo Meier", ["RW"], 85, 26, 24]],
+    "2020s": [["Timo Meier", ["RW"], 86, 28, 26], ["Logan Couture", ["C"], 84, 20, 26], ["Mario Ferraro", ["D"], 82, 6, 22], ["Kaapo Kahkonen", ["G"], 82, 0, 1, 0.898], ["Alexander Barabanov", ["LW"], 80, 14, 18], ["Matt Nieto", ["LW"], 79, 10, 12]]
+  },
+  "Flames": {
+    "1980s": [["Lanny McDonald", ["RW"], 88, 32, 30], ["Al MacInnis", ["D"], 90, 16, 52], ["Mike Bullard", ["C"], 84, 26, 32], ["Mike Vernon", ["G"], 85, 0, 2, 0.895], ["Gary Suter", ["D"], 86, 12, 38], ["Joe Nieuwendyk", ["C"], 87, 28, 32]],
+    "1990s": [["Theoren Fleury", ["RW"], 88, 30, 36], ["Joe Nieuwendyk", ["C"], 88, 26, 34], ["Al MacInnis", ["D"], 91, 14, 48], ["Mike Vernon", ["G"], 86, 0, 2, 0.902], ["Gary Roberts", ["LW"], 85, 24, 26], ["Chris Osgood", ["G"], 84, 0, 2, 0.898]],
+    "2000s": [["Jarome Iginla", ["RW"], 92, 34, 32], ["Miikka Kiprusoff", ["G"], 89, 0, 2, 0.912], ["Dion Phaneuf", ["D"], 86, 14, 28], ["Olli Jokinen", ["C"], 86, 26, 32], ["Alex Tanguay", ["LW"], 85, 22, 36], ["Craig Conroy", ["C"], 84, 18, 34]],
+    "2010s": [["Johnny Gaudreau", ["LW"], 90, 26, 44], ["Sean Monahan", ["C"], 86, 26, 28], ["Mark Giordano", ["D"], 87, 10, 32], ["Miikka Kiprusoff", ["G"], 86, 0, 2, 0.905], ["Matthew Tkachuk", ["LW"], 86, 24, 30], ["Dougie Hamilton", ["D"], 86, 12, 32]],
+    "2020s": [["Jonathan Huberdeau", ["LW"], 88, 26, 40], ["Matthew Tkachuk", ["LW"], 87, 26, 32], ["Noah Hanifin", ["D"], 84, 8, 28], ["Jacob Markstrom", ["G"], 85, 0, 2, 0.905], ["Nazem Kadri", ["C"], 85, 22, 30], ["Chris Tanev", ["D"], 83, 4, 18]]
+  },
+  "Devils": {
+    "1980s": [["Kirk Muller", ["C"], 84, 22, 32], ["Pat Verbeek", ["RW"], 83, 24, 22], ["Joe Cirella", ["D"], 80, 6, 20], ["Chris Terreri", ["G"], 81, 0, 1, 0.885], ["Aaron Broten", ["C"], 82, 20, 28], ["Patrik Sundstrom", ["RW"], 84, 24, 32]],
+    "1990s": [["Martin Brodeur", ["G"], 93, 0, 3, 0.912], ["Scott Stevens", ["D"], 91, 10, 36], ["Claude Lemieux", ["RW"], 84, 20, 22], ["Bobby Holik", ["C"], 83, 20, 22], ["Patrik Elias", ["LW"], 86, 24, 32], ["Scott Niedermayer", ["D"], 89, 12, 38]],
+    "2000s": [["Martin Brodeur", ["G"], 94, 0, 3, 0.918], ["Scott Niedermayer", ["D"], 90, 12, 40], ["Patrik Elias", ["LW"], 88, 26, 36], ["Brian Gionta", ["RW"], 84, 22, 24], ["Zach Parise", ["LW"], 87, 28, 30], ["Jamie Langenbrunner", ["RW"], 85, 22, 32]],
+    "2010s": [["Taylor Hall", ["LW"], 88, 26, 38], ["Ilya Kovalchuk", ["LW"], 87, 28, 28], ["Adam Henrique", ["C"], 84, 22, 26], ["Cory Schneider", ["G"], 86, 0, 2, 0.912], ["Kyle Palmieri", ["RW"], 84, 24, 22], ["P.K. Subban", ["D"], 86, 10, 32]],
+    "2020s": [["Jack Hughes", ["C"], 88, 28, 38], ["Nico Hischier", ["C"], 86, 24, 32], ["Dougie Hamilton", ["D"], 86, 12, 32], ["Vitek Vanecek", ["G"], 83, 0, 1, 0.902], ["Jesper Bratt", ["LW"], 86, 24, 36], ["Jonas Siegenthaler", ["D"], 82, 4, 18]]
+  },
+  "Islanders": {
+    "1980s": [["Bryan Trottier", ["C"], 92, 28, 48], ["Mike Bossy", ["RW"], 95, 42, 38], ["Denis Potvin", ["D"], 91, 14, 48], ["Billy Smith", ["G"], 88, 0, 2, 0.905], ["Clark Gillies", ["LW"], 87, 26, 32], ["Brent Sutter", ["C"], 84, 22, 30]],
+    "1990s": [["Pierre Turgeon", ["C"], 90, 30, 42], ["Zigmund Palffy", ["RW"], 86, 28, 30], ["Ray Ferraro", ["C"], 84, 24, 28], ["Tommy Salo", ["G"], 84, 0, 2, 0.902], ["Derek King", ["LW"], 82, 22, 26], ["Ken Baumgartner", ["LW"], 78, 8, 10]],
+    "2000s": [["Alexei Yashin", ["C"], 86, 24, 32], ["Mark Parrish", ["RW"], 83, 22, 24], ["Adrian Aucoin", ["D"], 83, 8, 26], ["Rick DiPietro", ["G"], 83, 0, 2, 0.898], ["Jason Blake", ["LW"], 82, 20, 22], ["Mike Comrie", ["C"], 81, 18, 20]],
+    "2010s": [["John Tavares", ["C"], 91, 30, 38], ["Anders Lee", ["LW"], 86, 26, 22], ["Nick Leddy", ["D"], 84, 6, 28], ["Jaroslav Halak", ["G"], 85, 0, 2, 0.908], ["Josh Bailey", ["RW"], 84, 18, 32], ["Brock Nelson", ["C"], 85, 24, 22]],
+    "2020s": [["Mathew Barzal", ["C"], 87, 26, 38], ["Anders Lee", ["LW"], 85, 24, 22], ["Adam Pelech", ["D"], 84, 6, 22], ["Ilya Sorokin", ["G"], 86, 0, 2, 0.912], ["Brock Nelson", ["C"], 84, 24, 22], ["Noah Dobson", ["D"], 84, 10, 28]]
+  },
+  "Senators": {
+    "1990s": [["Daniel Alfredsson", ["RW"], 88, 26, 36], ["Alexei Yashin", ["C"], 87, 28, 36], ["Radek Bonk", ["C"], 83, 22, 28], ["Damian Rhodes", ["G"], 84, 0, 2, 0.902], ["Marian Hossa", ["RW"], 86, 26, 30], ["Wade Redden", ["D"], 84, 8, 26]],
+    "2000s": [["Daniel Alfredsson", ["RW"], 90, 28, 38], ["Dany Heatley", ["LW"], 91, 34, 36], ["Jason Spezza", ["C"], 89, 26, 48], ["Ray Emery", ["G"], 85, 0, 2, 0.905], ["Marian Hossa", ["RW"], 88, 28, 32], ["Chris Phillips", ["D"], 83, 6, 20]],
+    "2010s": [["Erik Karlsson", ["D"], 93, 14, 52], ["Mark Stone", ["RW"], 88, 26, 36], ["Kyle Turris", ["C"], 84, 22, 30], ["Craig Anderson", ["G"], 85, 0, 2, 0.908], ["Mike Hoffman", ["LW"], 85, 24, 28], ["Brady Tkachuk", ["LW"], 84, 22, 24]],
+    "2020s": [["Brady Tkachuk", ["LW"], 86, 26, 28], ["Tim Stutzle", ["C"], 85, 24, 36], ["Thomas Chabot", ["D"], 85, 10, 32], ["Anton Forsberg", ["G"], 83, 0, 1, 0.902], ["Claude Giroux", ["C"], 86, 20, 40], ["Jake Sanderson", ["D"], 84, 8, 26]]
+  },
+  "Wild": {
+    "2000s": [["Marian Gaborik", ["RW"], 88, 30, 26], ["Pavol Demitra", ["C"], 87, 24, 38], ["Brent Burns", ["D"], 84, 10, 28], ["Niklas Backstrom", ["G"], 86, 0, 2, 0.908], ["Brian Rolston", ["LW"], 84, 22, 26], ["Mikko Koivu", ["C"], 85, 20, 34]],
+    "2010s": [["Zach Parise", ["LW"], 88, 26, 28], ["Mikko Koivu", ["C"], 86, 20, 34], ["Ryan Suter", ["D"], 87, 6, 32], ["Devan Dubnyk", ["G"], 85, 0, 2, 0.908], ["Jason Zucker", ["LW"], 83, 20, 22], ["Eric Staal", ["C"], 85, 24, 28]],
+    "2020s": [["Kirill Kaprizov", ["LW"], 90, 30, 36], ["Matt Boldy", ["LW"], 86, 26, 28], ["Jared Spurgeon", ["D"], 84, 8, 24], ["Marc-Andre Fleury", ["G"], 86, 0, 2, 0.908], ["Joel Eriksson Ek", ["C"], 85, 24, 26], ["Jonas Brodin", ["D"], 84, 4, 22]]
+  },
+  "Blues": {
+    "1970s": [["Garry Unger", ["C"], 86, 28, 28], ["Brian Sutter", ["LW"], 85, 26, 26], ["Rob Ramage", ["D"], 84, 10, 28], ["Glenn Resch", ["G"], 84, 0, 2, 0.895], ["Bernie Federko", ["C"], 88, 24, 52], ["Mike Liut", ["G"], 83, 0, 2, 0.892]],
+    "1980s": [["Bernie Federko", ["C"], 89, 22, 48], ["Brian Sutter", ["LW"], 86, 24, 24], ["Rob Ramage", ["D"], 85, 8, 30], ["Mike Liut", ["G"], 84, 0, 2, 0.898], ["Doug Gilmour", ["C"], 86, 22, 44], ["Brett Hull", ["RW"], 90, 36, 28]],
+    "1990s": [["Brett Hull", ["RW"], 92, 38, 30], ["Adam Oates", ["C"], 90, 18, 56], ["Al MacInnis", ["D"], 91, 14, 48], ["Grant Fuhr", ["G"], 86, 0, 2, 0.898], ["Pierre Turgeon", ["C"], 89, 28, 40], ["Chris Pronger", ["D"], 88, 12, 32]],
+    "2000s": [["Keith Tkachuk", ["LW"], 87, 26, 24], ["Brad Boyes", ["RW"], 84, 22, 28], ["Eric Brewer", ["D"], 83, 6, 22], ["Manny Legace", ["G"], 84, 0, 2, 0.902], ["Paul Kariya", ["LW"], 86, 24, 32], ["Andy McDonald", ["C"], 83, 20, 28]],
+    "2010s": [["Vladimir Tarasenko", ["RW"], 89, 30, 28], ["Ryan O'Reilly", ["C"], 88, 24, 36], ["Alex Pietrangelo", ["D"], 88, 10, 36], ["Jake Allen", ["G"], 84, 0, 2, 0.902], ["Jaden Schwartz", ["LW"], 85, 22, 28], ["Colton Parayko", ["D"], 84, 8, 22]],
+    "2020s": [["Robert Thomas", ["C"], 85, 22, 32], ["Jordan Kyrou", ["RW"], 86, 26, 28], ["Justin Faulk", ["D"], 83, 8, 24], ["Jordan Binnington", ["G"], 85, 0, 2, 0.905], ["Pavel Buchnevich", ["LW"], 85, 24, 30], ["Torey Krug", ["D"], 84, 8, 28]]
+  },
+  "Panthers": {
+    "1990s": [["Scott Mellanby", ["RW"], 82, 20, 22], ["Ray Sheppard", ["RW"], 83, 24, 20], ["Ed Jovanovski", ["D"], 84, 8, 24], ["John Vanbiesbrouck", ["G"], 86, 0, 2, 0.905], ["Rob Niedermayer", ["C"], 81, 16, 20], ["Robert Svehla", ["D"], 82, 8, 22]],
+    "2000s": [["Olli Jokinen", ["C"], 87, 28, 32], ["Jay Bouwmeester", ["D"], 85, 8, 26], ["Tomas Vokoun", ["G"], 86, 0, 2, 0.908], ["Stephen Weiss", ["C"], 84, 20, 28], ["Nathan Horton", ["RW"], 84, 24, 22], ["David Booth", ["LW"], 83, 20, 22]],
+    "2010s": [["Aleksander Barkov", ["C"], 91, 26, 42], ["Jonathan Huberdeau", ["LW"], 88, 26, 40], ["Aaron Ekblad", ["D"], 87, 10, 28], ["Roberto Luongo", ["G"], 87, 0, 2, 0.912], ["Evgenii Dadonov", ["RW"], 84, 22, 26], ["Keith Yandle", ["D"], 85, 8, 36]],
+    "2020s": [["Aleksander Barkov", ["C"], 90, 24, 40], ["Matthew Tkachuk", ["LW"], 88, 28, 34], ["Gustav Forsling", ["D"], 84, 6, 22], ["Sergei Bobrovsky", ["G"], 87, 0, 2, 0.908], ["Sam Reinhart", ["RW"], 88, 30, 32], ["Carter Verhaeghe", ["C"], 85, 24, 28]]
+  }
+}

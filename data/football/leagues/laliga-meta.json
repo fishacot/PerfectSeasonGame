@@ -1,0 +1,32 @@
+{
+  "id": "laliga",
+  "name": "La Liga",
+  "seasonGames": 38,
+  "clubs": [
+    "Barcelona",
+    "Real Madrid",
+    "Atletico Madrid",
+    "Sevilla"
+  ],
+  "missingClubs": [],
+  "eras": [
+    "2000s",
+    "2010s",
+    "2020s"
+  ],
+  "players": 75,
+  "pools": 11,
+  "poolSizeMin": 3,
+  "poolSizeMax": 14,
+  "byClub": {
+    "Barcelona": 26,
+    "Real Madrid": 29,
+    "Atletico Madrid": 14,
+    "Sevilla": 6
+  },
+  "byEra": {
+    "2000s": 20,
+    "2010s": 33,
+    "2020s": 22
+  }
+}

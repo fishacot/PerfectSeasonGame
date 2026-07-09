@@ -1,0 +1,13 @@
+{
+  "leagues": [
+    "epl",
+    "laliga",
+    "seriea"
+  ],
+  "eras": [
+    "2000s",
+    "2010s",
+    "2020s"
+  ],
+  "note": "Bundesliga/Ligue1 removed — 3 popular leagues only"
+}

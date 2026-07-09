@@ -1,0 +1,116 @@
+{
+  "76ers": {
+    "byBbrYear": [
+      { "until": 1963, "abbr": "SYR" },
+      { "until": 9999, "abbr": "PHI" }
+    ]
+  },
+  "Bucks": { "default": "MIL", "firstSeasonStart": 1968 },
+  "Bulls": { "default": "CHI", "firstSeasonStart": 1966 },
+  "Cavaliers": { "default": "CLE", "firstSeasonStart": 1970 },
+  "Celtics": { "default": "BOS" },
+  "Clippers": {
+    "byBbrYear": [
+      { "until": 1978, "abbr": "BUF" },
+      { "until": 1984, "abbr": "SDC" },
+      { "until": 9999, "abbr": "LAC" }
+    ],
+    "firstSeasonStart": 1970
+  },
+  "Grizzlies": {
+    "byBbrYear": [
+      { "until": 2001, "abbr": "VAN" },
+      { "until": 9999, "abbr": "MEM" }
+    ],
+    "firstSeasonStart": 1995
+  },
+  "Hawks": {
+    "byBbrYear": [
+      { "until": 1968, "abbr": "STL" },
+      { "until": 9999, "abbr": "ATL" }
+    ]
+  },
+  "Heat": { "default": "MIA", "firstSeasonStart": 1988 },
+  "Hornets": {
+    "byBbrYear": [
+      { "until": 2002, "abbr": "CHH" },
+      { "fromBbrYear": 2005, "until": 2014, "abbr": "CHA" },
+      { "fromBbrYear": 2014, "until": 9999, "abbr": "CHO" }
+    ],
+    "firstSeasonStart": 1988
+  },
+  "Jazz": {
+    "byBbrYear": [
+      { "until": 1979, "abbr": "NOJ" },
+      { "until": 9999, "abbr": "UTA" }
+    ],
+    "firstSeasonStart": 1974
+  },
+  "Kings": {
+    "byBbrYear": [
+      { "until": 1972, "abbr": "CIN" },
+      { "until": 1975, "abbr": "KCO" },
+      { "until": 1985, "abbr": "KCK" },
+      { "until": 9999, "abbr": "SAC" }
+    ]
+  },
+  "Knicks": { "default": "NYK" },
+  "Lakers": {
+    "byBbrYear": [
+      { "until": 1960, "abbr": "MNL" },
+      { "until": 9999, "abbr": "LAL" }
+    ]
+  },
+  "Magic": { "default": "ORL", "firstSeasonStart": 1989 },
+  "Mavericks": { "default": "DAL", "firstSeasonStart": 1980 },
+  "Nets": {
+    "byBbrYear": [
+      { "until": 1977, "abbr": "NYN" },
+      { "until": 2012, "abbr": "NJN" },
+      { "until": 9999, "abbr": "BRK" }
+    ],
+    "firstSeasonStart": 1976
+  },
+  "Nuggets": { "default": "DEN", "firstSeasonStart": 1976 },
+  "Pacers": { "default": "IND", "firstSeasonStart": 1976 },
+  "Pelicans": {
+    "byBbrYear": [
+      { "until": 2005, "abbr": "NOH" },
+      { "until": 2007, "abbr": "NOK" },
+      { "until": 2013, "abbr": "NOH" },
+      { "until": 9999, "abbr": "NOP" }
+    ],
+    "firstSeasonStart": 2002
+  },
+  "Pistons": { "default": "DET" },
+  "Raptors": { "default": "TOR", "firstSeasonStart": 1995 },
+  "Rockets": {
+    "byBbrYear": [
+      { "until": 1971, "abbr": "SDR" },
+      { "until": 9999, "abbr": "HOU" }
+    ]
+  },
+  "Spurs": { "default": "SAS", "firstSeasonStart": 1976 },
+  "Suns": { "default": "PHO", "firstSeasonStart": 1968 },
+  "Thunder": {
+    "byBbrYear": [
+      { "until": 2008, "abbr": "SEA" },
+      { "until": 9999, "abbr": "OKC" }
+    ],
+    "firstSeasonStart": 1967
+  },
+  "Timberwolves": { "default": "MIN", "firstSeasonStart": 1989 },
+  "Trail Blazers": { "default": "POR", "firstSeasonStart": 1970 },
+  "Warriors": {
+    "byBbrYear": [
+      { "until": 1971, "abbr": "SFW" },
+      { "until": 9999, "abbr": "GSW" }
+    ]
+  },
+  "Wizards": {
+    "byBbrYear": [
+      { "until": 1997, "abbr": "WSB" },
+      { "until": 9999, "abbr": "WAS" }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Perfect Season Hub",
+  "short_name": "PerfectSeason",
+  "description": "Draft legends. Chase the perfect season.",
+  "start_url": "/en",
+  "display": "standalone",
+  "background_color": "#0B0F14",
+  "theme_color": "#00C853",
+  "icons": [
+    {
+      "src": "/decor/basketball.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

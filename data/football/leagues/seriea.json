@@ -1,0 +1,910 @@
+[
+  {
+    "id": "mil-00-1",
+    "name": "Maldini",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 91
+  },
+  {
+    "id": "mil-00-2",
+    "name": "Nesta",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 89
+  },
+  {
+    "id": "mil-00-3",
+    "name": "Kaka",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "CAM",
+      "ST",
+      "AM"
+    ],
+    "stats": {
+      "goals": 11,
+      "assists": 14
+    },
+    "rating": 91
+  },
+  {
+    "id": "mil-00-4",
+    "name": "Shevchenko",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 5
+    },
+    "rating": 88
+  },
+  {
+    "id": "mil-00-5",
+    "name": "Seedorf",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 14
+    },
+    "rating": 86
+  },
+  {
+    "id": "mil-00-6",
+    "name": "Pirlo",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 15
+    },
+    "rating": 92
+  },
+  {
+    "id": "mil-00-7",
+    "name": "Thiago Silva",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 86
+  },
+  {
+    "id": "mil-00-8",
+    "name": "Gattuso",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 7,
+      "assists": 13
+    },
+    "rating": 85
+  },
+  {
+    "id": "mil-00-9",
+    "name": "Dida",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 83
+  },
+  {
+    "id": "mil-00-10",
+    "name": "Cafu",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "RB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 84
+  },
+  {
+    "id": "mil-10-1",
+    "name": "Ibrahimovic",
+    "club": "AC Milan",
+    "era": "2010s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 27,
+      "assists": 5
+    },
+    "rating": 92
+  },
+  {
+    "id": "mil-10-2",
+    "name": "Bonucci",
+    "club": "AC Milan",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 85
+  },
+  {
+    "id": "mil-20-1",
+    "name": "Leao",
+    "club": "AC Milan",
+    "era": "2020s",
+    "positions": [
+      "LW",
+      "ST",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 87
+  },
+  {
+    "id": "mil-20-2",
+    "name": "Theo Hernandez",
+    "club": "AC Milan",
+    "era": "2020s",
+    "positions": [
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 82
+  },
+  {
+    "id": "mil-20-3",
+    "name": "Donnarumma",
+    "club": "AC Milan",
+    "era": "2020s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 81
+  },
+  {
+    "id": "int-00-1",
+    "name": "Zanetti",
+    "club": "Inter Milan",
+    "era": "2000s",
+    "positions": [
+      "RB",
+      "LB",
+      "CM",
+      "DF",
+      "MF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 85
+  },
+  {
+    "id": "int-00-2",
+    "name": "Adriano",
+    "club": "Inter Milan",
+    "era": "2000s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 86
+  },
+  {
+    "id": "int-00-3",
+    "name": "Cannavaro",
+    "club": "Inter Milan",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 87
+  },
+  {
+    "id": "int-00-4",
+    "name": "Ibrahimovic",
+    "club": "Inter Milan",
+    "era": "2000s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 5
+    },
+    "rating": 89
+  },
+  {
+    "id": "int-10-1",
+    "name": "Sneijder",
+    "club": "Inter Milan",
+    "era": "2010s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 90
+  },
+  {
+    "id": "int-10-2",
+    "name": "Maicon",
+    "club": "Inter Milan",
+    "era": "2010s",
+    "positions": [
+      "RB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 84
+  },
+  {
+    "id": "int-10-3",
+    "name": "Milito",
+    "club": "Inter Milan",
+    "era": "2010s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 87
+  },
+  {
+    "id": "int-10-4",
+    "name": "Samuel",
+    "club": "Inter Milan",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 85
+  },
+  {
+    "id": "int-20-1",
+    "name": "Lautaro",
+    "club": "Inter Milan",
+    "era": "2020s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 87
+  },
+  {
+    "id": "int-20-2",
+    "name": "Bastoni",
+    "club": "Inter Milan",
+    "era": "2020s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 85
+  },
+  {
+    "id": "int-20-3",
+    "name": "Barella",
+    "club": "Inter Milan",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 14
+    },
+    "rating": 86
+  },
+  {
+    "id": "int-20-4",
+    "name": "Lukaku",
+    "club": "Inter Milan",
+    "era": "2020s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 86
+  },
+  {
+    "id": "juv-00-1",
+    "name": "Buffon",
+    "club": "Juventus",
+    "era": "2000s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 14
+    },
+    "rating": 90
+  },
+  {
+    "id": "juv-00-2",
+    "name": "Nedved",
+    "club": "Juventus",
+    "era": "2000s",
+    "positions": [
+      "CAM",
+      "LW",
+      "CM",
+      "AM",
+      "FW",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 88
+  },
+  {
+    "id": "juv-00-3",
+    "name": "Cannavaro",
+    "club": "Juventus",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 88
+  },
+  {
+    "id": "juv-10-1",
+    "name": "Pirlo",
+    "club": "Juventus",
+    "era": "2010s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 15
+    },
+    "rating": 92
+  },
+  {
+    "id": "juv-10-2",
+    "name": "Chiellini",
+    "club": "Juventus",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 88
+  },
+  {
+    "id": "juv-10-3",
+    "name": "Vidal",
+    "club": "Juventus",
+    "era": "2010s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 14
+    },
+    "rating": 86
+  },
+  {
+    "id": "juv-10-4",
+    "name": "Tevez",
+    "club": "Juventus",
+    "era": "2010s",
+    "positions": [
+      "ST",
+      "CAM",
+      "AM"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 6
+    },
+    "rating": 87
+  },
+  {
+    "id": "juv-10-6",
+    "name": "Ronaldo",
+    "club": "Juventus",
+    "era": "2010s",
+    "positions": [
+      "ST",
+      "LW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 5
+    },
+    "rating": 89
+  },
+  {
+    "id": "juv-20-1",
+    "name": "Vlahovic",
+    "club": "Juventus",
+    "era": "2020s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 84
+  },
+  {
+    "id": "juv-20-2",
+    "name": "Chiesa",
+    "club": "Juventus",
+    "era": "2020s",
+    "positions": [
+      "RW",
+      "LW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 24,
+      "assists": 5
+    },
+    "rating": 84
+  },
+  {
+    "id": "juv-20-3",
+    "name": "Bremer",
+    "club": "Juventus",
+    "era": "2020s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 84
+  },
+  {
+    "id": "juv-20-4",
+    "name": "Ronaldo",
+    "club": "Juventus",
+    "era": "2020s",
+    "positions": [
+      "ST",
+      "LW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 87
+  },
+  {
+    "id": "int-10-5",
+    "name": "Eto'o",
+    "club": "Inter Milan",
+    "era": "2010s",
+    "positions": [
+      "ST",
+      "LW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 87
+  },
+  {
+    "id": "juv-10-5",
+    "name": "Buffon",
+    "club": "Juventus",
+    "era": "2010s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 88
+  },
+  {
+    "id": "mil-20-4",
+    "name": "Ibrahimovic",
+    "club": "AC Milan",
+    "era": "2020s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 86
+  },
+  {
+    "id": "int-00-5",
+    "name": "Julio Cesar",
+    "club": "Inter Milan",
+    "era": "2000s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 81
+  },
+  {
+    "id": "int-10-6",
+    "name": "Julio Cesar",
+    "club": "Inter Milan",
+    "era": "2010s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 12
+    },
+    "rating": 79
+  },
+  {
+    "id": "int-00-6",
+    "name": "Lucio",
+    "club": "Inter Milan",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 86
+  },
+  {
+    "id": "int-10-7",
+    "name": "Lucio",
+    "club": "Inter Milan",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 84
+  },
+  {
+    "id": "int-00-7",
+    "name": "Walter Samuel",
+    "club": "Inter Milan",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 85
+  },
+  {
+    "id": "int-00-8",
+    "name": "Maicon",
+    "club": "Inter Milan",
+    "era": "2000s",
+    "positions": [
+      "RB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 82
+  },
+  {
+    "id": "mil-00-11",
+    "name": "Jaap Stam",
+    "club": "AC Milan",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 87
+  },
+  {
+    "id": "mil-20-5",
+    "name": "Maignan",
+    "club": "AC Milan",
+    "era": "2020s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 83
+  },
+  {
+    "id": "nap-10-1",
+    "name": "Higuain",
+    "club": "Napoli",
+    "era": "2010s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 86
+  },
+  {
+    "id": "nap-10-2",
+    "name": "Hamsik",
+    "club": "Napoli",
+    "era": "2010s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 87
+  },
+  {
+    "id": "nap-10-3",
+    "name": "Koulibaly",
+    "club": "Napoli",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 87
+  },
+  {
+    "id": "nap-10-4",
+    "name": "Insigne",
+    "club": "Napoli",
+    "era": "2010s",
+    "positions": [
+      "LW",
+      "CAM",
+      "AM",
+      "FW"
+    ],
+    "stats": {
+      "goals": 24,
+      "assists": 6
+    },
+    "rating": 84
+  },
+  {
+    "id": "nap-10-5",
+    "name": "Mertens",
+    "club": "Napoli",
+    "era": "2010s",
+    "positions": [
+      "ST",
+      "CAM",
+      "AM"
+    ],
+    "stats": {
+      "goals": 24,
+      "assists": 6
+    },
+    "rating": 84
+  },
+  {
+    "id": "nap-20-1",
+    "name": "Osimhen",
+    "club": "Napoli",
+    "era": "2020s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 85
+  },
+  {
+    "id": "nap-20-2",
+    "name": "Kvaratskhelia",
+    "club": "Napoli",
+    "era": "2020s",
+    "positions": [
+      "LW",
+      "CAM",
+      "AM",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 6
+    },
+    "rating": 86
+  },
+  {
+    "id": "nap-20-3",
+    "name": "Di Lorenzo",
+    "club": "Napoli",
+    "era": "2020s",
+    "positions": [
+      "RB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 4
+    },
+    "rating": 82
+  },
+  {
+    "id": "nap-20-4",
+    "name": "Lobotka",
+    "club": "Napoli",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 8,
+      "assists": 13
+    },
+    "rating": 85
+  }
+]

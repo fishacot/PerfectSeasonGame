@@ -1,0 +1,23 @@
+{
+  "league": "bundesliga",
+  "source": "38-0.org",
+  "model": "UCL club × decade",
+  "eras": [
+    "2000s",
+    "2010s",
+    "2020s"
+  ],
+  "clubsConfigured": 3,
+  "clubsWithData": [
+    "Bayern Munich",
+    "Borussia Dortmund",
+    "Bayer Leverkusen"
+  ],
+  "clubsMissingOn38_0": [],
+  "players": 36,
+  "pools": 7,
+  "minPool": 3,
+  "maxPool": 7,
+  "clubs": 3,
+  "note": "Full org club coverage for configured list"
+}

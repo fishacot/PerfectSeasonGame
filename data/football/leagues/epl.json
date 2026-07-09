@@ -1,0 +1,1404 @@
+[
+  {
+    "id": "mc-10-1",
+    "name": "Aguero",
+    "club": "Manchester City",
+    "era": "2010s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 5
+    },
+    "rating": 88
+  },
+  {
+    "id": "mc-10-2",
+    "name": "Kompany",
+    "club": "Manchester City",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 87
+  },
+  {
+    "id": "mc-10-3",
+    "name": "Silva",
+    "club": "Manchester City",
+    "era": "2010s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 92
+  },
+  {
+    "id": "mc-10-4",
+    "name": "Walker",
+    "club": "Manchester City",
+    "era": "2010s",
+    "positions": [
+      "RB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 85
+  },
+  {
+    "id": "mc-10-5",
+    "name": "Fernandinho",
+    "club": "Manchester City",
+    "era": "2010s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 7,
+      "assists": 14
+    },
+    "rating": 88
+  },
+  {
+    "id": "mc-20-1",
+    "name": "Haaland",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 27,
+      "assists": 5
+    },
+    "rating": 89
+  },
+  {
+    "id": "mc-20-2",
+    "name": "De Bruyne",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 11,
+      "assists": 14
+    },
+    "rating": 94
+  },
+  {
+    "id": "mc-20-3",
+    "name": "Rodri",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 14
+    },
+    "rating": 91
+  },
+  {
+    "id": "mc-20-4",
+    "name": "Dias",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 88
+  },
+  {
+    "id": "mc-20-5",
+    "name": "Ederson",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 86
+  },
+  {
+    "id": "liv-00-1",
+    "name": "Gerrard",
+    "club": "Liverpool",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 90
+  },
+  {
+    "id": "liv-00-2",
+    "name": "Carragher",
+    "club": "Liverpool",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "RB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 86
+  },
+  {
+    "id": "liv-00-3",
+    "name": "Alonso",
+    "club": "Liverpool",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 14
+    },
+    "rating": 89
+  },
+  {
+    "id": "liv-10-1",
+    "name": "Suarez",
+    "club": "Liverpool",
+    "era": "2010s",
+    "positions": [
+      "ST",
+      "RW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 5
+    },
+    "rating": 90
+  },
+  {
+    "id": "liv-10-2",
+    "name": "Van Dijk",
+    "club": "Liverpool",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 91
+  },
+  {
+    "id": "liv-10-3",
+    "name": "Salah",
+    "club": "Liverpool",
+    "era": "2010s",
+    "positions": [
+      "RW",
+      "ST",
+      "FW"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 5
+    },
+    "rating": 89
+  },
+  {
+    "id": "liv-10-4",
+    "name": "Firmino",
+    "club": "Liverpool",
+    "era": "2010s",
+    "positions": [
+      "ST",
+      "CAM",
+      "AM"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 6
+    },
+    "rating": 87
+  },
+  {
+    "id": "liv-20-1",
+    "name": "Alexander-Arnold",
+    "club": "Liverpool",
+    "era": "2020s",
+    "positions": [
+      "RB",
+      "CM",
+      "DF",
+      "MF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 82
+  },
+  {
+    "id": "liv-20-2",
+    "name": "Alisson",
+    "club": "Liverpool",
+    "era": "2020s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 86
+  },
+  {
+    "id": "liv-20-3",
+    "name": "Mac Allister",
+    "club": "Liverpool",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 13
+    },
+    "rating": 85
+  },
+  {
+    "id": "liv-20-4",
+    "name": "Robertson",
+    "club": "Liverpool",
+    "era": "2020s",
+    "positions": [
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 83
+  },
+  {
+    "id": "che-00-1",
+    "name": "Lampard",
+    "club": "Chelsea",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 90
+  },
+  {
+    "id": "che-00-2",
+    "name": "Terry",
+    "club": "Chelsea",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 88
+  },
+  {
+    "id": "che-00-3",
+    "name": "Drogba",
+    "club": "Chelsea",
+    "era": "2000s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 5
+    },
+    "rating": 88
+  },
+  {
+    "id": "che-00-4",
+    "name": "Cech",
+    "club": "Chelsea",
+    "era": "2000s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 86
+  },
+  {
+    "id": "che-00-5",
+    "name": "Ashley Cole",
+    "club": "Chelsea",
+    "era": "2000s",
+    "positions": [
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 5
+    },
+    "rating": 87
+  },
+  {
+    "id": "che-10-1",
+    "name": "Hazard",
+    "club": "Chelsea",
+    "era": "2010s",
+    "positions": [
+      "LW",
+      "CAM",
+      "AM",
+      "FW"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 6
+    },
+    "rating": 90
+  },
+  {
+    "id": "che-10-2",
+    "name": "Kante",
+    "club": "Chelsea",
+    "era": "2010s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 7,
+      "assists": 14
+    },
+    "rating": 89
+  },
+  {
+    "id": "che-10-3",
+    "name": "Courtois",
+    "club": "Chelsea",
+    "era": "2010s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 84
+  },
+  {
+    "id": "che-10-4",
+    "name": "Azpilicueta",
+    "club": "Chelsea",
+    "era": "2010s",
+    "positions": [
+      "RB",
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 84
+  },
+  {
+    "id": "che-20-1",
+    "name": "Mount",
+    "club": "Chelsea",
+    "era": "2020s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 13
+    },
+    "rating": 86
+  },
+  {
+    "id": "che-20-2",
+    "name": "James",
+    "club": "Chelsea",
+    "era": "2020s",
+    "positions": [
+      "RB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 84
+  },
+  {
+    "id": "ars-00-1",
+    "name": "Henry",
+    "club": "Arsenal",
+    "era": "2000s",
+    "positions": [
+      "ST",
+      "LW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 27,
+      "assists": 6
+    },
+    "rating": 92
+  },
+  {
+    "id": "ars-00-2",
+    "name": "Vieira",
+    "club": "Arsenal",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 14
+    },
+    "rating": 89
+  },
+  {
+    "id": "ars-00-3",
+    "name": "Campbell",
+    "club": "Arsenal",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 87
+  },
+  {
+    "id": "ars-00-4",
+    "name": "Ashley Cole",
+    "club": "Arsenal",
+    "era": "2000s",
+    "positions": [
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 5
+    },
+    "rating": 86
+  },
+  {
+    "id": "ars-00-5",
+    "name": "Fabregas",
+    "club": "Arsenal",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 87
+  },
+  {
+    "id": "ars-10-1",
+    "name": "Ozil",
+    "club": "Arsenal",
+    "era": "2010s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 91
+  },
+  {
+    "id": "ars-10-2",
+    "name": "Koscielny",
+    "club": "Arsenal",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 84
+  },
+  {
+    "id": "ars-10-3",
+    "name": "Sanchez",
+    "club": "Arsenal",
+    "era": "2010s",
+    "positions": [
+      "LW",
+      "ST",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 6
+    },
+    "rating": 87
+  },
+  {
+    "id": "ars-20-1",
+    "name": "Saka",
+    "club": "Arsenal",
+    "era": "2020s",
+    "positions": [
+      "RW",
+      "LW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 6
+    },
+    "rating": 86
+  },
+  {
+    "id": "ars-20-2",
+    "name": "Rice",
+    "club": "Arsenal",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 8,
+      "assists": 14
+    },
+    "rating": 90
+  },
+  {
+    "id": "ars-20-3",
+    "name": "Raya",
+    "club": "Arsenal",
+    "era": "2020s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 14
+    },
+    "rating": 89
+  },
+  {
+    "id": "ars-20-4",
+    "name": "Gabriel",
+    "club": "Arsenal",
+    "era": "2020s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 87
+  },
+  {
+    "id": "ars-20-5",
+    "name": "Saliba",
+    "club": "Arsenal",
+    "era": "2020s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 90
+  },
+  {
+    "id": "ars-20-6",
+    "name": "Gyokeres",
+    "club": "Arsenal",
+    "era": "2020s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 24,
+      "assists": 5
+    },
+    "rating": 82
+  },
+  {
+    "id": "mu-00-1",
+    "name": "Ronaldo",
+    "club": "Manchester United",
+    "era": "2000s",
+    "positions": [
+      "RW",
+      "ST",
+      "FW"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 5
+    },
+    "rating": 91
+  },
+  {
+    "id": "mu-00-2",
+    "name": "Scholes",
+    "club": "Manchester United",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 90
+  },
+  {
+    "id": "mu-00-3",
+    "name": "Vidic",
+    "club": "Manchester United",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 3
+    },
+    "rating": 88
+  },
+  {
+    "id": "mu-00-4",
+    "name": "Ferdinand",
+    "club": "Manchester United",
+    "era": "2000s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 89
+  },
+  {
+    "id": "mu-00-5",
+    "name": "Van der Sar",
+    "club": "Manchester United",
+    "era": "2000s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 86
+  },
+  {
+    "id": "mu-10-1",
+    "name": "Rooney",
+    "club": "Manchester United",
+    "era": "2010s",
+    "positions": [
+      "ST",
+      "CAM",
+      "AM"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 6
+    },
+    "rating": 88
+  },
+  {
+    "id": "mu-10-2",
+    "name": "De Gea",
+    "club": "Manchester United",
+    "era": "2010s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 13
+    },
+    "rating": 83
+  },
+  {
+    "id": "mu-10-3",
+    "name": "Evra",
+    "club": "Manchester United",
+    "era": "2010s",
+    "positions": [
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 84
+  },
+  {
+    "id": "mu-20-1",
+    "name": "Bruno Fernandes",
+    "club": "Manchester United",
+    "era": "2020s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 11,
+      "assists": 14
+    },
+    "rating": 90
+  },
+  {
+    "id": "mu-20-2",
+    "name": "Rashford",
+    "club": "Manchester United",
+    "era": "2020s",
+    "positions": [
+      "LW",
+      "ST",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 85
+  },
+  {
+    "id": "mu-20-3",
+    "name": "Casemiro",
+    "club": "Manchester United",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 7,
+      "assists": 14
+    },
+    "rating": 89
+  },
+  {
+    "id": "mu-20-4",
+    "name": "Ronaldo",
+    "club": "Manchester United",
+    "era": "2020s",
+    "positions": [
+      "ST",
+      "LW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 88
+  },
+  {
+    "id": "mu-10-4",
+    "name": "Ibrahimovic",
+    "club": "Manchester United",
+    "era": "2010s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 88
+  },
+  {
+    "id": "mc-10-6",
+    "name": "Yaya Toure",
+    "club": "Manchester City",
+    "era": "2010s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 88
+  },
+  {
+    "id": "mc-10-7",
+    "name": "Bernardo Silva",
+    "club": "Manchester City",
+    "era": "2010s",
+    "positions": [
+      "CAM",
+      "CM",
+      "RW",
+      "AM",
+      "FW",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 91
+  },
+  {
+    "id": "mc-20-6",
+    "name": "Bernardo Silva",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "CAM",
+      "CM",
+      "RW",
+      "AM",
+      "FW",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 93
+  },
+  {
+    "id": "liv-10-5",
+    "name": "Mane",
+    "club": "Liverpool",
+    "era": "2010s",
+    "positions": [
+      "LW",
+      "ST",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 88
+  },
+  {
+    "id": "liv-20-5",
+    "name": "Mane",
+    "club": "Liverpool",
+    "era": "2020s",
+    "positions": [
+      "LW",
+      "ST",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 87
+  },
+  {
+    "id": "che-00-6",
+    "name": "Makelele",
+    "club": "Chelsea",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 6,
+      "assists": 14
+    },
+    "rating": 89
+  },
+  {
+    "id": "che-10-5",
+    "name": "Fabregas",
+    "club": "Chelsea",
+    "era": "2010s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 87
+  },
+  {
+    "id": "liv-00-4",
+    "name": "Torres",
+    "club": "Liverpool",
+    "era": "2000s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 86
+  },
+  {
+    "id": "che-00-7",
+    "name": "Ballack",
+    "club": "Chelsea",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 88
+  },
+  {
+    "id": "ars-10-4",
+    "name": "Fabregas",
+    "club": "Arsenal",
+    "era": "2010s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 86
+  },
+  {
+    "id": "mu-00-6",
+    "name": "Rooney",
+    "club": "Manchester United",
+    "era": "2000s",
+    "positions": [
+      "ST",
+      "CAM",
+      "AM"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 6
+    },
+    "rating": 88
+  },
+  {
+    "id": "mc-10-8",
+    "name": "Gundogan",
+    "club": "Manchester City",
+    "era": "2010s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 14
+    },
+    "rating": 86
+  },
+  {
+    "id": "mc-20-7",
+    "name": "Walker",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "RB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 4
+    },
+    "rating": 86
+  },
+  {
+    "id": "mc-20-8",
+    "name": "Stones",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 86
+  },
+  {
+    "id": "mc-20-9",
+    "name": "Cancelo",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "RB",
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 83
+  },
+  {
+    "id": "mc-20-10",
+    "name": "Gundogan",
+    "club": "Manchester City",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 88
+  },
+  {
+    "id": "liv-20-6",
+    "name": "Thiago",
+    "club": "Liverpool",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "CAM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 9,
+      "assists": 14
+    },
+    "rating": 88
+  },
+  {
+    "id": "che-00-8",
+    "name": "Essien",
+    "club": "Chelsea",
+    "era": "2000s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 8,
+      "assists": 13
+    },
+    "rating": 87
+  },
+  {
+    "id": "che-20-3",
+    "name": "Caicedo",
+    "club": "Chelsea",
+    "era": "2020s",
+    "positions": [
+      "CM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 7,
+      "assists": 13
+    },
+    "rating": 83
+  },
+  {
+    "id": "liv-10-6",
+    "name": "Robertson",
+    "club": "Liverpool",
+    "era": "2010s",
+    "positions": [
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 5
+    },
+    "rating": 83
+  },
+  {
+    "id": "mu-20-5",
+    "name": "Martinez",
+    "club": "Manchester United",
+    "era": "2020s",
+    "positions": [
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 3,
+      "assists": 4
+    },
+    "rating": 81
+  },
+  {
+    "id": "tot-10-1",
+    "name": "Kane",
+    "club": "Tottenham",
+    "era": "2010s",
+    "positions": [
+      "ST"
+    ],
+    "stats": {
+      "goals": 26,
+      "assists": 6
+    },
+    "rating": 87
+  },
+  {
+    "id": "tot-10-2",
+    "name": "Son",
+    "club": "Tottenham",
+    "era": "2010s",
+    "positions": [
+      "LW",
+      "ST",
+      "RW",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 86
+  },
+  {
+    "id": "tot-10-3",
+    "name": "Eriksen",
+    "club": "Tottenham",
+    "era": "2010s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 14
+    },
+    "rating": 88
+  },
+  {
+    "id": "tot-10-4",
+    "name": "Lloris",
+    "club": "Tottenham",
+    "era": "2010s",
+    "positions": [
+      "GK"
+    ],
+    "stats": {
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 12
+    },
+    "rating": 81
+  },
+  {
+    "id": "tot-10-5",
+    "name": "Vertonghen",
+    "club": "Tottenham",
+    "era": "2010s",
+    "positions": [
+      "CB",
+      "LB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 84
+  },
+  {
+    "id": "tot-10-6",
+    "name": "Alli",
+    "club": "Tottenham",
+    "era": "2010s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 13
+    },
+    "rating": 84
+  },
+  {
+    "id": "tot-20-1",
+    "name": "Son",
+    "club": "Tottenham",
+    "era": "2020s",
+    "positions": [
+      "LW",
+      "ST",
+      "FW"
+    ],
+    "stats": {
+      "goals": 25,
+      "assists": 5
+    },
+    "rating": 86
+  },
+  {
+    "id": "tot-20-2",
+    "name": "Romero",
+    "club": "Tottenham",
+    "era": "2020s",
+    "positions": [
+      "CB",
+      "DF"
+    ],
+    "stats": {
+      "goals": 2,
+      "assists": 4
+    },
+    "rating": 85
+  },
+  {
+    "id": "tot-20-3",
+    "name": "Maddison",
+    "club": "Tottenham",
+    "era": "2020s",
+    "positions": [
+      "CAM",
+      "CM",
+      "AM",
+      "MF"
+    ],
+    "stats": {
+      "goals": 10,
+      "assists": 13
+    },
+    "rating": 87
+  }
+]

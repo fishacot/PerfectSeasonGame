@@ -1,0 +1,7936 @@
+{
+  "meta": {
+    "description": "NBA player database from 82-0-challenge.com",
+    "stats": [
+      "ppg",
+      "rpg",
+      "apg",
+      "spg",
+      "bpg"
+    ],
+    "sourceNote": "Extracted from 82-0 webpack module 7977 (pts/reb/ast/stl/blk)",
+    "sourceUrl": "https://www.82-0-challenge.com/_next/static/chunks/scripts/.820-chunks/9696-6c54a9d9869e047c.js",
+    "generatedAt": "2026-07-07T15:35:26.022Z",
+    "players": 420,
+    "pools": 70,
+    "clubs": 24,
+    "eras": [
+      "1960s",
+      "1970s",
+      "1980s",
+      "1990s",
+      "2000s",
+      "2010s",
+      "2020s"
+    ],
+    "byEra": {
+      "1960s": 60,
+      "1970s": 60,
+      "1980s": 60,
+      "1990s": 60,
+      "2000s": 60,
+      "2010s": 60,
+      "2020s": 60
+    },
+    "byClub": {
+      "Celtics": 36,
+      "Lakers": 36,
+      "76ers": 24,
+      "Knicks": 18,
+      "Warriors": 24,
+      "Hawks": 12,
+      "Kings": 6,
+      "Pistons": 18,
+      "Wizards": 12,
+      "Bulls": 18,
+      "Bucks": 24,
+      "Trail Blazers": 18,
+      "Suns": 24,
+      "Thunder": 24,
+      "Rockets": 18,
+      "Jazz": 12,
+      "Mavericks": 18,
+      "Magic": 6,
+      "Spurs": 18,
+      "Heat": 18,
+      "Cavaliers": 12,
+      "Timberwolves": 12,
+      "Raptors": 6,
+      "Nuggets": 6
+    },
+    "poolSizeMin": 6,
+    "poolSizeMax": 6
+  },
+  "players": [
+    {
+      "id": "bill-russell-bos-1960s",
+      "name": "Bill Russell",
+      "club": "Celtics",
+      "era": "1960s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 15.1,
+        "rpg": 22.5,
+        "apg": 4.3,
+        "spg": 1,
+        "bpg": 3.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "john-havlicek-bos-1960s",
+      "name": "John Havlicek",
+      "club": "Celtics",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 18.6,
+        "rpg": 6.3,
+        "apg": 4.1,
+        "spg": 1.4,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "sam-jones-bos-1960s",
+      "name": "Sam Jones",
+      "club": "Celtics",
+      "era": "1960s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 18.9,
+        "rpg": 4.9,
+        "apg": 2.8,
+        "spg": 1.3,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bob-cousy-bos-1960s",
+      "name": "Bob Cousy",
+      "club": "Celtics",
+      "era": "1960s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 4.5,
+        "apg": 7.8,
+        "spg": 1.4,
+        "bpg": 0.1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tom-heinsohn-bos-1960s",
+      "name": "Tom Heinsohn",
+      "club": "Celtics",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 8.5,
+        "apg": 2.1,
+        "spg": 0.7,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "k-c-jones-bos-1960s",
+      "name": "K.C. Jones",
+      "club": "Celtics",
+      "era": "1960s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 7.4,
+        "rpg": 3.5,
+        "apg": 4.3,
+        "spg": 1.5,
+        "bpg": 0.2
+      },
+      "rating": 77,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jerry-west-lal-1960s",
+      "name": "Jerry West",
+      "club": "Lakers",
+      "era": "1960s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 28.5,
+        "rpg": 5.8,
+        "apg": 6.5,
+        "spg": 1.6,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "elgin-baylor-lal-1960s",
+      "name": "Elgin Baylor",
+      "club": "Lakers",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 28.7,
+        "rpg": 13,
+        "apg": 4.2,
+        "spg": 1.2,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wilt-chamberlain-lal-1960s",
+      "name": "Wilt Chamberlain",
+      "club": "Lakers",
+      "era": "1960s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 24.3,
+        "rpg": 21.1,
+        "apg": 4.5,
+        "spg": 1,
+        "bpg": 3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "gail-goodrich-lal-1960s",
+      "name": "Gail Goodrich",
+      "club": "Lakers",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 3,
+        "apg": 3.6,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rudy-larusso-lal-1960s",
+      "name": "Rudy LaRusso",
+      "club": "Lakers",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15.6,
+        "rpg": 9,
+        "apg": 1.9,
+        "spg": 0.7,
+        "bpg": 0.5
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "mel-counts-lal-1960s",
+      "name": "Mel Counts",
+      "club": "Lakers",
+      "era": "1960s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 9.1,
+        "rpg": 7,
+        "apg": 1.5,
+        "spg": 0.5,
+        "bpg": 1
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wilt-chamberlain-phi-1960s",
+      "name": "Wilt Chamberlain",
+      "club": "76ers",
+      "era": "1960s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 33.5,
+        "rpg": 24,
+        "apg": 5,
+        "spg": 1,
+        "bpg": 3.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "hal-greer-phi-1960s",
+      "name": "Hal Greer",
+      "club": "76ers",
+      "era": "1960s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 20.5,
+        "rpg": 5.2,
+        "apg": 4.4,
+        "spg": 1.4,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "billy-cunningham-phi-1960s",
+      "name": "Billy Cunningham",
+      "club": "76ers",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 9.8,
+        "apg": 3.4,
+        "spg": 1.2,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "chet-walker-phi-1960s",
+      "name": "Chet Walker",
+      "club": "76ers",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 7.7,
+        "apg": 1.9,
+        "spg": 0.9,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "luke-jackson-phi-1960s",
+      "name": "Luke Jackson",
+      "club": "76ers",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 11.5,
+        "rpg": 10.5,
+        "apg": 2,
+        "spg": 0.6,
+        "bpg": 0.7
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wali-jones-phi-1960s",
+      "name": "Wali Jones",
+      "club": "76ers",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 3,
+        "apg": 3.5,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "willis-reed-nyk-1960s",
+      "name": "Willis Reed",
+      "club": "Knicks",
+      "era": "1960s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 19.6,
+        "rpg": 13.5,
+        "apg": 1.9,
+        "spg": 0.9,
+        "bpg": 1.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "walt-frazier-nyk-1960s",
+      "name": "Walt Frazier",
+      "club": "Knicks",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 6,
+        "apg": 7,
+        "spg": 2,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dick-barnett-nyk-1960s",
+      "name": "Dick Barnett",
+      "club": "Knicks",
+      "era": "1960s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 3,
+        "apg": 3,
+        "spg": 1.2,
+        "bpg": 0.2
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dave-debusschere-nyk-1960s",
+      "name": "Dave DeBusschere",
+      "club": "Knicks",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 11,
+        "apg": 2.8,
+        "spg": 1.1,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bill-bradley-nyk-1960s",
+      "name": "Bill Bradley",
+      "club": "Knicks",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 3.5,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "cazzie-russell-nyk-1960s",
+      "name": "Cazzie Russell",
+      "club": "Knicks",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 4,
+        "apg": 2.2,
+        "spg": 0.9,
+        "bpg": 0.2
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wilt-chamberlain-gsw-1960s",
+      "name": "Wilt Chamberlain",
+      "club": "Warriors",
+      "era": "1960s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 41.5,
+        "rpg": 24.5,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 3.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "nate-thurmond-gsw-1960s",
+      "name": "Nate Thurmond",
+      "club": "Warriors",
+      "era": "1960s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 17,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 2.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rick-barry-gsw-1960s",
+      "name": "Rick Barry",
+      "club": "Warriors",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 29,
+        "rpg": 8.5,
+        "apg": 3.5,
+        "spg": 1.5,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tom-meschery-gsw-1960s",
+      "name": "Tom Meschery",
+      "club": "Warriors",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 9,
+        "apg": 1.8,
+        "spg": 0.7,
+        "bpg": 0.5
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "guy-rodgers-gsw-1960s",
+      "name": "Guy Rodgers",
+      "club": "Warriors",
+      "era": "1960s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 4,
+        "apg": 9,
+        "spg": 1.5,
+        "bpg": 0.1
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "paul-neumann-gsw-1960s",
+      "name": "Paul Neumann",
+      "club": "Warriors",
+      "era": "1960s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 3,
+        "apg": 3.5,
+        "spg": 1.1,
+        "bpg": 0.2
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bob-pettit-atl-1960s",
+      "name": "Bob Pettit",
+      "club": "Hawks",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 26.5,
+        "rpg": 15.5,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lenny-wilkens-atl-1960s",
+      "name": "Lenny Wilkens",
+      "club": "Hawks",
+      "era": "1960s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 4.5,
+        "apg": 6,
+        "spg": 1.6,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "cliff-hagan-atl-1960s",
+      "name": "Cliff Hagan",
+      "club": "Hawks",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 6.5,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "zelmo-beaty-atl-1960s",
+      "name": "Zelmo Beaty",
+      "club": "Hawks",
+      "era": "1960s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 11.5,
+        "apg": 1.8,
+        "spg": 0.8,
+        "bpg": 1.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lou-hudson-atl-1960s",
+      "name": "Lou Hudson",
+      "club": "Hawks",
+      "era": "1960s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 21,
+        "rpg": 5,
+        "apg": 2.8,
+        "spg": 1.3,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "richie-guerin-atl-1960s",
+      "name": "Richie Guerin",
+      "club": "Hawks",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 3.5,
+        "apg": 4.5,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "oscar-robertson-sac-1960s",
+      "name": "Oscar Robertson",
+      "club": "Kings",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 29.3,
+        "rpg": 8.5,
+        "apg": 10.3,
+        "spg": 1.8,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jerry-lucas-sac-1960s",
+      "name": "Jerry Lucas",
+      "club": "Kings",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 18,
+        "apg": 3,
+        "spg": 0.9,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wayne-embry-sac-1960s",
+      "name": "Wayne Embry",
+      "club": "Kings",
+      "era": "1960s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 11,
+        "apg": 2,
+        "spg": 0.7,
+        "bpg": 1
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jack-twyman-sac-1960s",
+      "name": "Jack Twyman",
+      "club": "Kings",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 6,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "adrian-smith-sac-1960s",
+      "name": "Adrian Smith",
+      "club": "Kings",
+      "era": "1960s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 3,
+        "apg": 3,
+        "spg": 1.2,
+        "bpg": 0.2
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "happy-hairston-sac-1960s",
+      "name": "Happy Hairston",
+      "club": "Kings",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 9.5,
+        "apg": 1.5,
+        "spg": 0.8,
+        "bpg": 0.6
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dave-bing-det-1960s",
+      "name": "Dave Bing",
+      "club": "Pistons",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 23,
+        "rpg": 4.5,
+        "apg": 6.5,
+        "spg": 1.6,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bailey-howell-det-1960s",
+      "name": "Bailey Howell",
+      "club": "Pistons",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 20.5,
+        "rpg": 11,
+        "apg": 2,
+        "spg": 1,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "gene-shue-det-1960s",
+      "name": "Gene Shue",
+      "club": "Pistons",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 4.5,
+        "apg": 4.5,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "eddie-miles-det-1960s",
+      "name": "Eddie Miles",
+      "club": "Pistons",
+      "era": "1960s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 3.5,
+        "apg": 2.5,
+        "spg": 1.2,
+        "bpg": 0.2
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "happy-hairston-det-1960s",
+      "name": "Happy Hairston",
+      "club": "Pistons",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 10,
+        "apg": 1.7,
+        "spg": 0.8,
+        "bpg": 0.6
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "ray-scott-det-1960s",
+      "name": "Ray Scott",
+      "club": "Pistons",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 11,
+        "apg": 2,
+        "spg": 0.8,
+        "bpg": 0.9
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "earl-monroe-was-1960s",
+      "name": "Earl Monroe",
+      "club": "Wizards",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 23,
+        "rpg": 4,
+        "apg": 4.5,
+        "spg": 1.5,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wes-unseld-was-1960s",
+      "name": "Wes Unseld",
+      "club": "Wizards",
+      "era": "1960s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 17.5,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 1.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "gus-johnson-was-1960s",
+      "name": "Gus Johnson",
+      "club": "Wizards",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 12.5,
+        "apg": 2.8,
+        "spg": 1.2,
+        "bpg": 1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-loughery-was-1960s",
+      "name": "Kevin Loughery",
+      "club": "Wizards",
+      "era": "1960s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 2.8,
+        "apg": 3,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jack-marin-was-1960s",
+      "name": "Jack Marin",
+      "club": "Wizards",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 5.5,
+        "apg": 2,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "walt-bellamy-was-1960s",
+      "name": "Walt Bellamy",
+      "club": "Wizards",
+      "era": "1960s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 25,
+        "rpg": 15.5,
+        "apg": 2.5,
+        "spg": 0.8,
+        "bpg": 1.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jerry-sloan-chi-1960s",
+      "name": "Jerry Sloan",
+      "club": "Bulls",
+      "era": "1960s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 8,
+        "apg": 2.8,
+        "spg": 2,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bob-boozer-chi-1960s",
+      "name": "Bob Boozer",
+      "club": "Bulls",
+      "era": "1960s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 9,
+        "apg": 1.8,
+        "spg": 0.8,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "guy-rodgers-chi-1960s",
+      "name": "Guy Rodgers",
+      "club": "Bulls",
+      "era": "1960s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 4,
+        "apg": 10,
+        "spg": 1.6,
+        "bpg": 0.1
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "chet-walker-chi-1960s",
+      "name": "Chet Walker",
+      "club": "Bulls",
+      "era": "1960s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 7,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "clem-haskins-chi-1960s",
+      "name": "Clem Haskins",
+      "club": "Bulls",
+      "era": "1960s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 4,
+        "apg": 4,
+        "spg": 1.4,
+        "bpg": 0.2
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tom-boerwinkle-chi-1960s",
+      "name": "Tom Boerwinkle",
+      "club": "Bulls",
+      "era": "1960s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 11,
+        "apg": 2.5,
+        "spg": 0.6,
+        "bpg": 1
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kareem-abdul-jabbar-mil-1970s",
+      "name": "Kareem Abdul-Jabbar",
+      "club": "Bucks",
+      "era": "1970s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 30.4,
+        "rpg": 15.3,
+        "apg": 4.3,
+        "spg": 1.2,
+        "bpg": 3.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "oscar-robertson-mil-1970s",
+      "name": "Oscar Robertson",
+      "club": "Bucks",
+      "era": "1970s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17.4,
+        "rpg": 5.5,
+        "apg": 7.5,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bob-dandridge-mil-1970s",
+      "name": "Bob Dandridge",
+      "club": "Bucks",
+      "era": "1970s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 18.9,
+        "rpg": 7,
+        "apg": 3.4,
+        "spg": 1.3,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jon-mcglocklin-mil-1970s",
+      "name": "Jon McGlocklin",
+      "club": "Bucks",
+      "era": "1970s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13.6,
+        "rpg": 2.6,
+        "apg": 3.3,
+        "spg": 0.8,
+        "bpg": 0.1
+      },
+      "rating": 88,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lucius-allen-mil-1970s",
+      "name": "Lucius Allen",
+      "club": "Bucks",
+      "era": "1970s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 14.7,
+        "rpg": 3.6,
+        "apg": 4.5,
+        "spg": 1.6,
+        "bpg": 0.3
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "brian-winters-mil-1970s",
+      "name": "Brian Winters",
+      "club": "Bucks",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17.3,
+        "rpg": 3,
+        "apg": 4.6,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kareem-abdul-jabbar-lal-1970s",
+      "name": "Kareem Abdul-Jabbar",
+      "club": "Lakers",
+      "era": "1970s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 27.7,
+        "rpg": 13.3,
+        "apg": 4.5,
+        "spg": 1,
+        "bpg": 3.9
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jerry-west-lal-1970s",
+      "name": "Jerry West",
+      "club": "Lakers",
+      "era": "1970s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 24.8,
+        "rpg": 4.2,
+        "apg": 7.8,
+        "spg": 2.6,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "gail-goodrich-lal-1970s",
+      "name": "Gail Goodrich",
+      "club": "Lakers",
+      "era": "1970s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 23.5,
+        "rpg": 3.2,
+        "apg": 4.9,
+        "spg": 1.5,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wilt-chamberlain-lal-1970s",
+      "name": "Wilt Chamberlain",
+      "club": "Lakers",
+      "era": "1970s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 13.1,
+        "rpg": 18.4,
+        "apg": 3.9,
+        "spg": 0.8,
+        "bpg": 2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jamaal-wilkes-lal-1970s",
+      "name": "Jamaal Wilkes",
+      "club": "Lakers",
+      "era": "1970s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 18.2,
+        "rpg": 7,
+        "apg": 2.7,
+        "spg": 1.6,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "happy-hairston-lal-1970s",
+      "name": "Happy Hairston",
+      "club": "Lakers",
+      "era": "1970s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 13.1,
+        "rpg": 11,
+        "apg": 1.9,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "john-havlicek-bos-1970s",
+      "name": "John Havlicek",
+      "club": "Celtics",
+      "era": "1970s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 22.4,
+        "rpg": 7,
+        "apg": 6.2,
+        "spg": 1.4,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dave-cowens-bos-1970s",
+      "name": "Dave Cowens",
+      "club": "Celtics",
+      "era": "1970s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 14.6,
+        "apg": 4,
+        "spg": 1.2,
+        "bpg": 1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jo-jo-white-bos-1970s",
+      "name": "Jo Jo White",
+      "club": "Celtics",
+      "era": "1970s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 19.1,
+        "rpg": 4.2,
+        "apg": 5.5,
+        "spg": 1.4,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "paul-silas-bos-1970s",
+      "name": "Paul Silas",
+      "club": "Celtics",
+      "era": "1970s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 11.5,
+        "rpg": 12.2,
+        "apg": 2.9,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "don-nelson-bos-1970s",
+      "name": "Don Nelson",
+      "club": "Celtics",
+      "era": "1970s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 5,
+        "apg": 1.8,
+        "spg": 0.6,
+        "bpg": 0.2
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "charlie-scott-bos-1970s",
+      "name": "Charlie Scott",
+      "club": "Celtics",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17.6,
+        "rpg": 3.4,
+        "apg": 4.6,
+        "spg": 1.6,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "walt-frazier-nyk-1970s",
+      "name": "Walt Frazier",
+      "club": "Knicks",
+      "era": "1970s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 20.7,
+        "rpg": 6.2,
+        "apg": 6.4,
+        "spg": 2,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "willis-reed-nyk-1970s",
+      "name": "Willis Reed",
+      "club": "Knicks",
+      "era": "1970s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 12,
+        "apg": 2.2,
+        "spg": 0.7,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "earl-monroe-nyk-1970s",
+      "name": "Earl Monroe",
+      "club": "Knicks",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 3,
+        "apg": 4,
+        "spg": 1.1,
+        "bpg": 0.1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bill-bradley-nyk-1970s",
+      "name": "Bill Bradley",
+      "club": "Knicks",
+      "era": "1970s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13.8,
+        "rpg": 3.4,
+        "apg": 4,
+        "spg": 0.8,
+        "bpg": 0.1
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dave-debusschere-nyk-1970s",
+      "name": "Dave DeBusschere",
+      "club": "Knicks",
+      "era": "1970s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 10.5,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dick-barnett-nyk-1970s",
+      "name": "Dick Barnett",
+      "club": "Knicks",
+      "era": "1970s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 2.4,
+        "apg": 3,
+        "spg": 0.7,
+        "bpg": 0.1
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rick-barry-gsw-1970s",
+      "name": "Rick Barry",
+      "club": "Warriors",
+      "era": "1970s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 25,
+        "rpg": 6.5,
+        "apg": 5.2,
+        "spg": 2.4,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "nate-thurmond-gsw-1970s",
+      "name": "Nate Thurmond",
+      "club": "Warriors",
+      "era": "1970s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 15.5,
+        "apg": 3.5,
+        "spg": 0.9,
+        "bpg": 2.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jeff-mullins-gsw-1970s",
+      "name": "Jeff Mullins",
+      "club": "Warriors",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 4,
+        "apg": 4,
+        "spg": 1.2,
+        "bpg": 0.2
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "clifford-ray-gsw-1970s",
+      "name": "Clifford Ray",
+      "club": "Warriors",
+      "era": "1970s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 8.5,
+        "rpg": 9.5,
+        "apg": 2.2,
+        "spg": 1,
+        "bpg": 1.4
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "phil-smith-gsw-1970s",
+      "name": "Phil Smith",
+      "club": "Warriors",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 3.6,
+        "apg": 4.4,
+        "spg": 1.8,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "butch-beard-gsw-1970s",
+      "name": "Butch Beard",
+      "club": "Warriors",
+      "era": "1970s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 10.5,
+        "rpg": 3.5,
+        "apg": 4.5,
+        "spg": 1.5,
+        "bpg": 0.2
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "julius-erving-phi-1970s",
+      "name": "Julius Erving",
+      "club": "76ers",
+      "era": "1970s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 24.5,
+        "rpg": 7.5,
+        "apg": 4,
+        "spg": 2,
+        "bpg": 1.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "george-mcginnis-phi-1970s",
+      "name": "George McGinnis",
+      "club": "76ers",
+      "era": "1970s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 10,
+        "apg": 4.2,
+        "spg": 2,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "doug-collins-phi-1970s",
+      "name": "Doug Collins",
+      "club": "76ers",
+      "era": "1970s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 3.4,
+        "apg": 3.6,
+        "spg": 1.4,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "world-b-free-phi-1970s",
+      "name": "World B. Free",
+      "club": "76ers",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 2.5,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "darryl-dawkins-phi-1970s",
+      "name": "Darryl Dawkins",
+      "club": "76ers",
+      "era": "1970s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 7,
+        "apg": 1.3,
+        "spg": 0.6,
+        "bpg": 1.4
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "caldwell-jones-phi-1970s",
+      "name": "Caldwell Jones",
+      "club": "76ers",
+      "era": "1970s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 8.5,
+        "apg": 1.8,
+        "spg": 0.7,
+        "bpg": 2.4
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bill-walton-por-1970s",
+      "name": "Bill Walton",
+      "club": "Trail Blazers",
+      "era": "1970s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 17.1,
+        "rpg": 13.5,
+        "apg": 4.4,
+        "spg": 1,
+        "bpg": 3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "maurice-lucas-por-1970s",
+      "name": "Maurice Lucas",
+      "club": "Trail Blazers",
+      "era": "1970s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 9.5,
+        "apg": 2.8,
+        "spg": 1,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lionel-hollins-por-1970s",
+      "name": "Lionel Hollins",
+      "club": "Trail Blazers",
+      "era": "1970s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 3,
+        "apg": 4.5,
+        "spg": 2,
+        "bpg": 0.3
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bob-gross-por-1970s",
+      "name": "Bob Gross",
+      "club": "Trail Blazers",
+      "era": "1970s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 4.5,
+        "apg": 3,
+        "spg": 1.4,
+        "bpg": 0.6
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dave-twardzik-por-1970s",
+      "name": "Dave Twardzik",
+      "club": "Trail Blazers",
+      "era": "1970s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 10,
+        "rpg": 2.3,
+        "apg": 3.5,
+        "spg": 1.3,
+        "bpg": 0.1
+      },
+      "rating": 81,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "sidney-wicks-por-1970s",
+      "name": "Sidney Wicks",
+      "club": "Trail Blazers",
+      "era": "1970s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 22.3,
+        "rpg": 10.3,
+        "apg": 4,
+        "spg": 1,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "paul-westphal-phx-1970s",
+      "name": "Paul Westphal",
+      "club": "Suns",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 21,
+        "rpg": 2.5,
+        "apg": 5.5,
+        "spg": 2,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "alvan-adams-phx-1970s",
+      "name": "Alvan Adams",
+      "club": "Suns",
+      "era": "1970s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 9,
+        "apg": 4.5,
+        "spg": 1.6,
+        "bpg": 1.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "walter-davis-phx-1970s",
+      "name": "Walter Davis",
+      "club": "Suns",
+      "era": "1970s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 22,
+        "rpg": 5.5,
+        "apg": 4,
+        "spg": 1.7,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dick-van-arsdale-phx-1970s",
+      "name": "Dick Van Arsdale",
+      "club": "Suns",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 3.5,
+        "apg": 3.5,
+        "spg": 1.2,
+        "bpg": 0.2
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "gar-heard-phx-1970s",
+      "name": "Gar Heard",
+      "club": "Suns",
+      "era": "1970s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 11.5,
+        "rpg": 8.5,
+        "apg": 2,
+        "spg": 1.3,
+        "bpg": 1.5
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "don-buse-phx-1970s",
+      "name": "Don Buse",
+      "club": "Suns",
+      "era": "1970s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 3,
+        "apg": 5.5,
+        "spg": 2.5,
+        "bpg": 0.2
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wes-unseld-was-1970s",
+      "name": "Wes Unseld",
+      "club": "Wizards",
+      "era": "1970s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 13,
+        "apg": 4,
+        "spg": 1,
+        "bpg": 0.7
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "elvin-hayes-was-1970s",
+      "name": "Elvin Hayes",
+      "club": "Wizards",
+      "era": "1970s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 21,
+        "rpg": 12.5,
+        "apg": 2,
+        "spg": 1,
+        "bpg": 2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "phil-chenier-was-1970s",
+      "name": "Phil Chenier",
+      "club": "Wizards",
+      "era": "1970s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 3.5,
+        "apg": 3,
+        "spg": 1.5,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bob-dandridge-was-1970s",
+      "name": "Bob Dandridge",
+      "club": "Wizards",
+      "era": "1970s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 6,
+        "apg": 4.5,
+        "spg": 1.4,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-grevey-was-1970s",
+      "name": "Kevin Grevey",
+      "club": "Wizards",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 3,
+        "apg": 2,
+        "spg": 0.7,
+        "bpg": 0.2
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tom-henderson-was-1970s",
+      "name": "Tom Henderson",
+      "club": "Wizards",
+      "era": "1970s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 3,
+        "apg": 5,
+        "spg": 1.5,
+        "bpg": 0.1
+      },
+      "rating": 81,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "gus-williams-okc-1970s",
+      "name": "Gus Williams",
+      "club": "Thunder",
+      "era": "1970s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 3.5,
+        "apg": 4.5,
+        "spg": 2.2,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dennis-johnson-okc-1970s",
+      "name": "Dennis Johnson",
+      "club": "Thunder",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 4,
+        "apg": 3.5,
+        "spg": 1.5,
+        "bpg": 1
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jack-sikma-okc-1970s",
+      "name": "Jack Sikma",
+      "club": "Thunder",
+      "era": "1970s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 10.5,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 1
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "fred-brown-okc-1970s",
+      "name": "Fred Brown",
+      "club": "Thunder",
+      "era": "1970s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 2.5,
+        "apg": 3.5,
+        "spg": 1.6,
+        "bpg": 0.2
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lonnie-shelton-okc-1970s",
+      "name": "Lonnie Shelton",
+      "club": "Thunder",
+      "era": "1970s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 7,
+        "apg": 2,
+        "spg": 1,
+        "bpg": 1
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "john-johnson-okc-1970s",
+      "name": "John Johnson",
+      "club": "Thunder",
+      "era": "1970s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 5,
+        "apg": 4,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "magic-johnson-lal-1980s",
+      "name": "Magic Johnson",
+      "club": "Lakers",
+      "era": "1980s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 19.8,
+        "rpg": 7.3,
+        "apg": 11,
+        "spg": 1.9,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kareem-abdul-jabbar-lal-1980s",
+      "name": "Kareem Abdul-Jabbar",
+      "club": "Lakers",
+      "era": "1980s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 21.5,
+        "rpg": 7.2,
+        "apg": 3.2,
+        "spg": 0.8,
+        "bpg": 2.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "james-worthy-lal-1980s",
+      "name": "James Worthy",
+      "club": "Lakers",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 5.8,
+        "apg": 2.8,
+        "spg": 1.2,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "byron-scott-lal-1980s",
+      "name": "Byron Scott",
+      "club": "Lakers",
+      "era": "1980s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 3.2,
+        "apg": 3,
+        "spg": 1.5,
+        "bpg": 0.3
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "michael-cooper-lal-1980s",
+      "name": "Michael Cooper",
+      "club": "Lakers",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 3.2,
+        "apg": 4.2,
+        "spg": 1.4,
+        "bpg": 0.6
+      },
+      "rating": 81,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "a-c-green-lal-1980s",
+      "name": "A.C. Green",
+      "club": "Lakers",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 7.5,
+        "apg": 1.2,
+        "spg": 0.9,
+        "bpg": 0.6
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "larry-bird-bos-1980s",
+      "name": "Larry Bird",
+      "club": "Celtics",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 25,
+        "rpg": 10,
+        "apg": 6.3,
+        "spg": 1.7,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-mchale-bos-1980s",
+      "name": "Kevin McHale",
+      "club": "Celtics",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 7.5,
+        "apg": 1.8,
+        "spg": 0.4,
+        "bpg": 1.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "robert-parish-bos-1980s",
+      "name": "Robert Parish",
+      "club": "Celtics",
+      "era": "1980s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 10,
+        "apg": 1.6,
+        "spg": 0.8,
+        "bpg": 1.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dennis-johnson-bos-1980s",
+      "name": "Dennis Johnson",
+      "club": "Celtics",
+      "era": "1980s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 3.5,
+        "apg": 6.5,
+        "spg": 1.2,
+        "bpg": 0.4
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "danny-ainge-bos-1980s",
+      "name": "Danny Ainge",
+      "club": "Celtics",
+      "era": "1980s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 3,
+        "apg": 4.5,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "cedric-maxwell-bos-1980s",
+      "name": "Cedric Maxwell",
+      "club": "Celtics",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 6,
+        "apg": 2.5,
+        "spg": 0.9,
+        "bpg": 0.5
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "julius-erving-phi-1980s",
+      "name": "Julius Erving",
+      "club": "76ers",
+      "era": "1980s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 22,
+        "rpg": 6.5,
+        "apg": 3.8,
+        "spg": 1.7,
+        "bpg": 1.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "moses-malone-phi-1980s",
+      "name": "Moses Malone",
+      "club": "76ers",
+      "era": "1980s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 23,
+        "rpg": 13,
+        "apg": 1.4,
+        "spg": 0.9,
+        "bpg": 1.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "charles-barkley-phi-1980s",
+      "name": "Charles Barkley",
+      "club": "76ers",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 21,
+        "rpg": 11,
+        "apg": 3.5,
+        "spg": 1.6,
+        "bpg": 0.9
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "maurice-cheeks-phi-1980s",
+      "name": "Maurice Cheeks",
+      "club": "76ers",
+      "era": "1980s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 2.8,
+        "apg": 7,
+        "spg": 2.3,
+        "bpg": 0.4
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "andrew-toney-phi-1980s",
+      "name": "Andrew Toney",
+      "club": "76ers",
+      "era": "1980s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 2.5,
+        "apg": 4.5,
+        "spg": 1.2,
+        "bpg": 0.2
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bobby-jones-phi-1980s",
+      "name": "Bobby Jones",
+      "club": "76ers",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 4.8,
+        "apg": 2.5,
+        "spg": 1.3,
+        "bpg": 1.2
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "isiah-thomas-det-1980s",
+      "name": "Isiah Thomas",
+      "club": "Pistons",
+      "era": "1980s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 20.5,
+        "rpg": 3.8,
+        "apg": 9.5,
+        "spg": 2,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "joe-dumars-det-1980s",
+      "name": "Joe Dumars",
+      "club": "Pistons",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 2.5,
+        "apg": 5,
+        "spg": 1,
+        "bpg": 0.1
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bill-laimbeer-det-1980s",
+      "name": "Bill Laimbeer",
+      "club": "Pistons",
+      "era": "1980s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 10.5,
+        "apg": 2.5,
+        "spg": 0.7,
+        "bpg": 0.8
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dennis-rodman-det-1980s",
+      "name": "Dennis Rodman",
+      "club": "Pistons",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 9,
+        "apg": 1.5,
+        "spg": 0.8,
+        "bpg": 0.7
+      },
+      "rating": 82,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "vinnie-johnson-det-1980s",
+      "name": "Vinnie Johnson",
+      "club": "Pistons",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 3,
+        "apg": 3.5,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "adrian-dantley-det-1980s",
+      "name": "Adrian Dantley",
+      "club": "Pistons",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 4.5,
+        "apg": 3,
+        "spg": 0.8,
+        "bpg": 0.1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "michael-jordan-chi-1980s",
+      "name": "Michael Jordan",
+      "club": "Bulls",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 32.5,
+        "rpg": 6,
+        "apg": 5.5,
+        "spg": 2.8,
+        "bpg": 1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "scottie-pippen-chi-1980s",
+      "name": "Scottie Pippen",
+      "club": "Bulls",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 5,
+        "apg": 3.5,
+        "spg": 1.7,
+        "bpg": 0.8
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "horace-grant-chi-1980s",
+      "name": "Horace Grant",
+      "club": "Bulls",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 7.5,
+        "apg": 1.8,
+        "spg": 1,
+        "bpg": 1
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "charles-oakley-chi-1980s",
+      "name": "Charles Oakley",
+      "club": "Bulls",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 11.5,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "john-paxson-chi-1980s",
+      "name": "John Paxson",
+      "club": "Bulls",
+      "era": "1980s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 1.8,
+        "apg": 4,
+        "spg": 0.9,
+        "bpg": 0.1
+      },
+      "rating": 78,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "orlando-woolridge-chi-1980s",
+      "name": "Orlando Woolridge",
+      "club": "Bulls",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 5,
+        "apg": 2.5,
+        "spg": 0.8,
+        "bpg": 1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dominique-wilkins-atl-1980s",
+      "name": "Dominique Wilkins",
+      "club": "Hawks",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 27,
+        "rpg": 6.5,
+        "apg": 2.8,
+        "spg": 1.5,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "doc-rivers-atl-1980s",
+      "name": "Doc Rivers",
+      "club": "Hawks",
+      "era": "1980s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 3.5,
+        "apg": 7,
+        "spg": 2,
+        "bpg": 0.4
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-willis-atl-1980s",
+      "name": "Kevin Willis",
+      "club": "Hawks",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 9,
+        "apg": 1.2,
+        "spg": 0.7,
+        "bpg": 0.7
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tree-rollins-atl-1980s",
+      "name": "Tree Rollins",
+      "club": "Hawks",
+      "era": "1980s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 7,
+        "rpg": 7,
+        "apg": 0.8,
+        "spg": 0.6,
+        "bpg": 2.8
+      },
+      "rating": 78,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "randy-wittman-atl-1980s",
+      "name": "Randy Wittman",
+      "club": "Hawks",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 10.5,
+        "rpg": 2,
+        "apg": 3,
+        "spg": 0.7,
+        "bpg": 0.1
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "cliff-levingston-atl-1980s",
+      "name": "Cliff Levingston",
+      "club": "Hawks",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 8.5,
+        "rpg": 6,
+        "apg": 1.5,
+        "spg": 0.9,
+        "bpg": 1
+      },
+      "rating": 79,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "sidney-moncrief-mil-1980s",
+      "name": "Sidney Moncrief",
+      "club": "Bucks",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 5.5,
+        "apg": 4.5,
+        "spg": 1.4,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "terry-cummings-mil-1980s",
+      "name": "Terry Cummings",
+      "club": "Bucks",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 21,
+        "rpg": 8.5,
+        "apg": 2.5,
+        "spg": 1.3,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "marques-johnson-mil-1980s",
+      "name": "Marques Johnson",
+      "club": "Bucks",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 7,
+        "apg": 4,
+        "spg": 1.4,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "paul-pressey-mil-1980s",
+      "name": "Paul Pressey",
+      "club": "Bucks",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 4.5,
+        "apg": 6.5,
+        "spg": 1.8,
+        "bpg": 0.7
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jack-sikma-mil-1980s",
+      "name": "Jack Sikma",
+      "club": "Bucks",
+      "era": "1980s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 9,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 0.9
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "ricky-pierce-mil-1980s",
+      "name": "Ricky Pierce",
+      "club": "Bucks",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 2.5,
+        "apg": 2,
+        "spg": 0.8,
+        "bpg": 0.2
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "hakeem-olajuwon-hou-1980s",
+      "name": "Hakeem Olajuwon",
+      "club": "Rockets",
+      "era": "1980s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 23,
+        "rpg": 12,
+        "apg": 2,
+        "spg": 2,
+        "bpg": 3.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "ralph-sampson-hou-1980s",
+      "name": "Ralph Sampson",
+      "club": "Rockets",
+      "era": "1980s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 10.5,
+        "apg": 2.5,
+        "spg": 0.9,
+        "bpg": 1.9
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rodney-mccray-hou-1980s",
+      "name": "Rodney McCray",
+      "club": "Rockets",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 7,
+        "apg": 3.5,
+        "spg": 1,
+        "bpg": 0.8
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lewis-lloyd-hou-1980s",
+      "name": "Lewis Lloyd",
+      "club": "Rockets",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 4,
+        "apg": 3.5,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "robert-reid-hou-1980s",
+      "name": "Robert Reid",
+      "club": "Rockets",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 4.5,
+        "apg": 3,
+        "spg": 1.2,
+        "bpg": 0.4
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "allen-leavell-hou-1980s",
+      "name": "Allen Leavell",
+      "club": "Rockets",
+      "era": "1980s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 10,
+        "rpg": 2.2,
+        "apg": 6,
+        "spg": 1.6,
+        "bpg": 0.1
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "john-stockton-uta-1980s",
+      "name": "John Stockton",
+      "club": "Jazz",
+      "era": "1980s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 2.8,
+        "apg": 11,
+        "spg": 2.5,
+        "bpg": 0.2
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "karl-malone-uta-1980s",
+      "name": "Karl Malone",
+      "club": "Jazz",
+      "era": "1980s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 24,
+        "rpg": 10.5,
+        "apg": 2.5,
+        "spg": 1.3,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "mark-eaton-uta-1980s",
+      "name": "Mark Eaton",
+      "club": "Jazz",
+      "era": "1980s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 6,
+        "rpg": 9,
+        "apg": 1,
+        "spg": 0.5,
+        "bpg": 4.5
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "darrell-griffith-uta-1980s",
+      "name": "Darrell Griffith",
+      "club": "Jazz",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 3,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "thurl-bailey-uta-1980s",
+      "name": "Thurl Bailey",
+      "club": "Jazz",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 6,
+        "apg": 1.5,
+        "spg": 0.6,
+        "bpg": 1.5
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "adrian-dantley-uta-1980s",
+      "name": "Adrian Dantley",
+      "club": "Jazz",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 29,
+        "rpg": 5.5,
+        "apg": 3.5,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "mark-aguirre-dal-1980s",
+      "name": "Mark Aguirre",
+      "club": "Mavericks",
+      "era": "1980s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 24.5,
+        "rpg": 5.5,
+        "apg": 3.5,
+        "spg": 0.9,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rolando-blackman-dal-1980s",
+      "name": "Rolando Blackman",
+      "club": "Mavericks",
+      "era": "1980s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 3.5,
+        "apg": 3.5,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "derek-harper-dal-1980s",
+      "name": "Derek Harper",
+      "club": "Mavericks",
+      "era": "1980s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 2.8,
+        "apg": 6.5,
+        "spg": 2,
+        "bpg": 0.3
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "brad-davis-dal-1980s",
+      "name": "Brad Davis",
+      "club": "Mavericks",
+      "era": "1980s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 10,
+        "rpg": 2.2,
+        "apg": 6,
+        "spg": 1.1,
+        "bpg": 0.1
+      },
+      "rating": 83,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "sam-perkins-dal-1980s",
+      "name": "Sam Perkins",
+      "club": "Mavericks",
+      "era": "1980s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 8,
+        "apg": 2,
+        "spg": 1,
+        "bpg": 1
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "james-donaldson-dal-1980s",
+      "name": "James Donaldson",
+      "club": "Mavericks",
+      "era": "1980s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 9.5,
+        "apg": 1.2,
+        "spg": 0.4,
+        "bpg": 1.5
+      },
+      "rating": 83,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "michael-jordan-chi-1990s",
+      "name": "Michael Jordan",
+      "club": "Bulls",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 30.1,
+        "rpg": 6.2,
+        "apg": 5.3,
+        "spg": 2.5,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "scottie-pippen-chi-1990s",
+      "name": "Scottie Pippen",
+      "club": "Bulls",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 18.6,
+        "rpg": 6.8,
+        "apg": 5.4,
+        "spg": 2.1,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dennis-rodman-chi-1990s",
+      "name": "Dennis Rodman",
+      "club": "Bulls",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 5.2,
+        "rpg": 15.3,
+        "apg": 2.9,
+        "spg": 0.6,
+        "bpg": 0.4
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "horace-grant-chi-1990s",
+      "name": "Horace Grant",
+      "club": "Bulls",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 13.2,
+        "rpg": 9,
+        "apg": 2.5,
+        "spg": 1.2,
+        "bpg": 1.1
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "toni-kukoc-chi-1990s",
+      "name": "Toni Kukoc",
+      "club": "Bulls",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 13.1,
+        "rpg": 4.4,
+        "apg": 4.2,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "steve-kerr-chi-1990s",
+      "name": "Steve Kerr",
+      "club": "Bulls",
+      "era": "1990s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 8.4,
+        "rpg": 1.5,
+        "apg": 2.7,
+        "spg": 0.8,
+        "bpg": 0.1
+      },
+      "rating": 75,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "hakeem-olajuwon-hou-1990s",
+      "name": "Hakeem Olajuwon",
+      "club": "Rockets",
+      "era": "1990s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 24.5,
+        "rpg": 11.2,
+        "apg": 3.3,
+        "spg": 1.7,
+        "bpg": 3.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "clyde-drexler-hou-1990s",
+      "name": "Clyde Drexler",
+      "club": "Rockets",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 6,
+        "apg": 5.5,
+        "spg": 1.8,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "robert-horry-hou-1990s",
+      "name": "Robert Horry",
+      "club": "Rockets",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 10.2,
+        "rpg": 5.5,
+        "apg": 3,
+        "spg": 1.5,
+        "bpg": 1
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kenny-smith-hou-1990s",
+      "name": "Kenny Smith",
+      "club": "Rockets",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 2.2,
+        "apg": 5.5,
+        "spg": 1,
+        "bpg": 0.1
+      },
+      "rating": 88,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "vernon-maxwell-hou-1990s",
+      "name": "Vernon Maxwell",
+      "club": "Rockets",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 2.8,
+        "apg": 4.3,
+        "spg": 1.5,
+        "bpg": 0.2
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "otis-thorpe-hou-1990s",
+      "name": "Otis Thorpe",
+      "club": "Rockets",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 9.5,
+        "apg": 2.3,
+        "spg": 1,
+        "bpg": 0.5
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "john-stockton-uta-1990s",
+      "name": "John Stockton",
+      "club": "Jazz",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 2.8,
+        "apg": 11.5,
+        "spg": 2.4,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "karl-malone-uta-1990s",
+      "name": "Karl Malone",
+      "club": "Jazz",
+      "era": "1990s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 26.5,
+        "rpg": 10.3,
+        "apg": 3.5,
+        "spg": 1.4,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jeff-hornacek-uta-1990s",
+      "name": "Jeff Hornacek",
+      "club": "Jazz",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 2.8,
+        "apg": 4.5,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bryon-russell-uta-1990s",
+      "name": "Bryon Russell",
+      "club": "Jazz",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 4,
+        "apg": 1.7,
+        "spg": 1.3,
+        "bpg": 0.4
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "greg-ostertag-uta-1990s",
+      "name": "Greg Ostertag",
+      "club": "Jazz",
+      "era": "1990s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 5.5,
+        "rpg": 7,
+        "apg": 0.7,
+        "spg": 0.4,
+        "bpg": 2
+      },
+      "rating": 73,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "antoine-carr-uta-1990s",
+      "name": "Antoine Carr",
+      "club": "Jazz",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 8.5,
+        "rpg": 3.3,
+        "apg": 0.9,
+        "spg": 0.5,
+        "bpg": 0.8
+      },
+      "rating": 75,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "patrick-ewing-nyk-1990s",
+      "name": "Patrick Ewing",
+      "club": "Knicks",
+      "era": "1990s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 23,
+        "rpg": 10.5,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 2.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "john-starks-nyk-1990s",
+      "name": "John Starks",
+      "club": "Knicks",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 2.8,
+        "apg": 3.8,
+        "spg": 1.5,
+        "bpg": 0.2
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "charles-oakley-nyk-1990s",
+      "name": "Charles Oakley",
+      "club": "Knicks",
+      "era": "1990s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 10,
+        "apg": 2.5,
+        "spg": 1.4,
+        "bpg": 0.4
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "allan-houston-nyk-1990s",
+      "name": "Allan Houston",
+      "club": "Knicks",
+      "era": "1990s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 2.7,
+        "apg": 2.6,
+        "spg": 0.8,
+        "bpg": 0.2
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "larry-johnson-nyk-1990s",
+      "name": "Larry Johnson",
+      "club": "Knicks",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 6.5,
+        "apg": 3,
+        "spg": 0.9,
+        "bpg": 0.3
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "derek-harper-nyk-1990s",
+      "name": "Derek Harper",
+      "club": "Knicks",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 2.5,
+        "apg": 5.5,
+        "spg": 1.5,
+        "bpg": 0.2
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "shaquille-oneal-orl-1990s",
+      "name": "Shaquille O'Neal",
+      "club": "Magic",
+      "era": "1990s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 27.2,
+        "rpg": 12.5,
+        "apg": 2.8,
+        "spg": 0.9,
+        "bpg": 2.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "penny-hardaway-orl-1990s",
+      "name": "Penny Hardaway",
+      "club": "Magic",
+      "era": "1990s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 4.5,
+        "apg": 6.3,
+        "spg": 2,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "nick-anderson-orl-1990s",
+      "name": "Nick Anderson",
+      "club": "Magic",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 5,
+        "apg": 3.2,
+        "spg": 1.6,
+        "bpg": 0.5
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "horace-grant-orl-1990s",
+      "name": "Horace Grant",
+      "club": "Magic",
+      "era": "1990s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 8.5,
+        "apg": 2.8,
+        "spg": 1.1,
+        "bpg": 1
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dennis-scott-orl-1990s",
+      "name": "Dennis Scott",
+      "club": "Magic",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 3,
+        "apg": 2.3,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "darrell-armstrong-orl-1990s",
+      "name": "Darrell Armstrong",
+      "club": "Magic",
+      "era": "1990s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 10.5,
+        "rpg": 3,
+        "apg": 4.5,
+        "spg": 1.8,
+        "bpg": 0.2
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "david-robinson-sas-1990s",
+      "name": "David Robinson",
+      "club": "Spurs",
+      "era": "1990s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 24.5,
+        "rpg": 11.5,
+        "apg": 3,
+        "spg": 1.5,
+        "bpg": 3.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tim-duncan-sas-1990s",
+      "name": "Tim Duncan",
+      "club": "Spurs",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 21.5,
+        "rpg": 11.5,
+        "apg": 2.6,
+        "spg": 0.7,
+        "bpg": 2.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "sean-elliott-sas-1990s",
+      "name": "Sean Elliott",
+      "club": "Spurs",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 4.5,
+        "apg": 2.8,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "avery-johnson-sas-1990s",
+      "name": "Avery Johnson",
+      "club": "Spurs",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 2.3,
+        "apg": 7.5,
+        "spg": 1.2,
+        "bpg": 0.1
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "mario-elie-sas-1990s",
+      "name": "Mario Elie",
+      "club": "Spurs",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 3.2,
+        "apg": 2.8,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 79,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "vinny-del-negro-sas-1990s",
+      "name": "Vinny Del Negro",
+      "club": "Spurs",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 2.7,
+        "apg": 3.6,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "gary-payton-okc-1990s",
+      "name": "Gary Payton",
+      "club": "Thunder",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 4,
+        "apg": 7.5,
+        "spg": 2.3,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "shawn-kemp-okc-1990s",
+      "name": "Shawn Kemp",
+      "club": "Thunder",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 10.5,
+        "apg": 2,
+        "spg": 1.2,
+        "bpg": 1.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "detlef-schrempf-okc-1990s",
+      "name": "Detlef Schrempf",
+      "club": "Thunder",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 6.5,
+        "apg": 4,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "hersey-hawkins-okc-1990s",
+      "name": "Hersey Hawkins",
+      "club": "Thunder",
+      "era": "1990s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 3.5,
+        "apg": 2.7,
+        "spg": 1.7,
+        "bpg": 0.3
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "sam-perkins-okc-1990s",
+      "name": "Sam Perkins",
+      "club": "Thunder",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 11.5,
+        "rpg": 5,
+        "apg": 1.5,
+        "spg": 0.9,
+        "bpg": 0.7
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "nate-mcmillan-okc-1990s",
+      "name": "Nate McMillan",
+      "club": "Thunder",
+      "era": "1990s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 6.5,
+        "rpg": 4,
+        "apg": 5.5,
+        "spg": 2,
+        "bpg": 0.4
+      },
+      "rating": 79,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "charles-barkley-phx-1990s",
+      "name": "Charles Barkley",
+      "club": "Suns",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 23.5,
+        "rpg": 11.5,
+        "apg": 4.5,
+        "spg": 1.5,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-johnson-phx-1990s",
+      "name": "Kevin Johnson",
+      "club": "Suns",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 3.3,
+        "apg": 9.5,
+        "spg": 1.5,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dan-majerle-phx-1990s",
+      "name": "Dan Majerle",
+      "club": "Suns",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 4.5,
+        "apg": 3.5,
+        "spg": 1.6,
+        "bpg": 0.4
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jason-kidd-phx-1990s",
+      "name": "Jason Kidd",
+      "club": "Suns",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 6,
+        "apg": 9.5,
+        "spg": 2,
+        "bpg": 0.3
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "cedric-ceballos-phx-1990s",
+      "name": "Cedric Ceballos",
+      "club": "Suns",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 6.5,
+        "apg": 1.5,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tom-chambers-phx-1990s",
+      "name": "Tom Chambers",
+      "club": "Suns",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 6.5,
+        "apg": 2.3,
+        "spg": 1,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "clyde-drexler-por-1990s",
+      "name": "Clyde Drexler",
+      "club": "Trail Blazers",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 22.5,
+        "rpg": 6.5,
+        "apg": 5.8,
+        "spg": 2,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "terry-porter-por-1990s",
+      "name": "Terry Porter",
+      "club": "Trail Blazers",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 3.3,
+        "apg": 7.5,
+        "spg": 1.6,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "clifford-robinson-por-1990s",
+      "name": "Clifford Robinson",
+      "club": "Trail Blazers",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 5,
+        "apg": 2.3,
+        "spg": 1.2,
+        "bpg": 1.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jerome-kersey-por-1990s",
+      "name": "Jerome Kersey",
+      "club": "Trail Blazers",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 7,
+        "apg": 2.5,
+        "spg": 1.5,
+        "bpg": 0.8
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "buck-williams-por-1990s",
+      "name": "Buck Williams",
+      "club": "Trail Blazers",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 10,
+        "rpg": 9.5,
+        "apg": 1.3,
+        "spg": 0.8,
+        "bpg": 0.7
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rasheed-wallace-por-1990s",
+      "name": "Rasheed Wallace",
+      "club": "Trail Blazers",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 6.5,
+        "apg": 1.7,
+        "spg": 0.9,
+        "bpg": 1.2
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "shaquille-oneal-lal-1990s",
+      "name": "Shaquille O'Neal",
+      "club": "Lakers",
+      "era": "1990s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 27.5,
+        "rpg": 11.5,
+        "apg": 3,
+        "spg": 0.6,
+        "bpg": 2.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kobe-bryant-lal-1990s",
+      "name": "Kobe Bryant",
+      "club": "Lakers",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 4,
+        "apg": 3.5,
+        "spg": 1.3,
+        "bpg": 0.7
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "eddie-jones-lal-1990s",
+      "name": "Eddie Jones",
+      "club": "Lakers",
+      "era": "1990s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 4,
+        "apg": 3.3,
+        "spg": 2,
+        "bpg": 0.6
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "nick-van-exel-lal-1990s",
+      "name": "Nick Van Exel",
+      "club": "Lakers",
+      "era": "1990s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 3,
+        "apg": 7.5,
+        "spg": 1.2,
+        "bpg": 0.2
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "glen-rice-lal-1990s",
+      "name": "Glen Rice",
+      "club": "Lakers",
+      "era": "1990s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 4,
+        "apg": 2,
+        "spg": 0.9,
+        "bpg": 0.2
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "robert-horry-lal-1990s",
+      "name": "Robert Horry",
+      "club": "Lakers",
+      "era": "1990s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 7.5,
+        "rpg": 5.5,
+        "apg": 2.5,
+        "spg": 1.2,
+        "bpg": 1
+      },
+      "rating": 78,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kobe-bryant-lal-2000s",
+      "name": "Kobe Bryant",
+      "club": "Lakers",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 28,
+        "rpg": 5.6,
+        "apg": 5,
+        "spg": 1.6,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "shaquille-oneal-lal-2000s",
+      "name": "Shaquille O'Neal",
+      "club": "Lakers",
+      "era": "2000s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 27,
+        "rpg": 11.5,
+        "apg": 3.2,
+        "spg": 0.5,
+        "bpg": 2.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "pau-gasol-lal-2000s",
+      "name": "Pau Gasol",
+      "club": "Lakers",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 9.8,
+        "apg": 3.3,
+        "spg": 0.6,
+        "bpg": 1.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "derek-fisher-lal-2000s",
+      "name": "Derek Fisher",
+      "club": "Lakers",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 10,
+        "rpg": 2.5,
+        "apg": 3.3,
+        "spg": 1.1,
+        "bpg": 0.1
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lamar-odom-lal-2000s",
+      "name": "Lamar Odom",
+      "club": "Lakers",
+      "era": "2000s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 9,
+        "apg": 3.6,
+        "spg": 1,
+        "bpg": 0.9
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "robert-horry-lal-2000s",
+      "name": "Robert Horry",
+      "club": "Lakers",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 6,
+        "rpg": 4.8,
+        "apg": 2,
+        "spg": 1,
+        "bpg": 0.8
+      },
+      "rating": 73,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tim-duncan-sas-2000s",
+      "name": "Tim Duncan",
+      "club": "Spurs",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 21,
+        "rpg": 11.5,
+        "apg": 3.2,
+        "spg": 0.7,
+        "bpg": 2.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "manu-ginobili-sas-2000s",
+      "name": "Manu Ginobili",
+      "club": "Spurs",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 4,
+        "apg": 3.8,
+        "spg": 1.5,
+        "bpg": 0.3
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tony-parker-sas-2000s",
+      "name": "Tony Parker",
+      "club": "Spurs",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 3.2,
+        "apg": 5.8,
+        "spg": 1,
+        "bpg": 0.1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "david-robinson-sas-2000s",
+      "name": "David Robinson",
+      "club": "Spurs",
+      "era": "2000s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 7.8,
+        "apg": 1.8,
+        "spg": 0.9,
+        "bpg": 1.9
+      },
+      "rating": 88,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bruce-bowen-sas-2000s",
+      "name": "Bruce Bowen",
+      "club": "Spurs",
+      "era": "2000s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 6.5,
+        "rpg": 2.9,
+        "apg": 1.6,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 71,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "robert-horry-sas-2000s",
+      "name": "Robert Horry",
+      "club": "Spurs",
+      "era": "2000s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 5,
+        "rpg": 4.3,
+        "apg": 1.6,
+        "spg": 0.8,
+        "bpg": 0.7
+      },
+      "rating": 69,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "chauncey-billups-det-2000s",
+      "name": "Chauncey Billups",
+      "club": "Pistons",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 3,
+        "apg": 6,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "richard-hamilton-det-2000s",
+      "name": "Richard Hamilton",
+      "club": "Pistons",
+      "era": "2000s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 3.5,
+        "apg": 4,
+        "spg": 0.9,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "ben-wallace-det-2000s",
+      "name": "Ben Wallace",
+      "club": "Pistons",
+      "era": "2000s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 7,
+        "rpg": 11.5,
+        "apg": 1.6,
+        "spg": 1.4,
+        "bpg": 2.4
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rasheed-wallace-det-2000s",
+      "name": "Rasheed Wallace",
+      "club": "Pistons",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 6.8,
+        "apg": 1.8,
+        "spg": 1,
+        "bpg": 1.4
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tayshaun-prince-det-2000s",
+      "name": "Tayshaun Prince",
+      "club": "Pistons",
+      "era": "2000s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 4.8,
+        "apg": 2.7,
+        "spg": 0.8,
+        "bpg": 0.7
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "corliss-williamson-det-2000s",
+      "name": "Corliss Williamson",
+      "club": "Pistons",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 3.6,
+        "apg": 1,
+        "spg": 0.5,
+        "bpg": 0.2
+      },
+      "rating": 77,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dwyane-wade-mia-2000s",
+      "name": "Dwyane Wade",
+      "club": "Heat",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 25,
+        "rpg": 5,
+        "apg": 6.5,
+        "spg": 1.8,
+        "bpg": 1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "shaquille-oneal-mia-2000s",
+      "name": "Shaquille O'Neal",
+      "club": "Heat",
+      "era": "2000s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 9.2,
+        "apg": 2.5,
+        "spg": 0.4,
+        "bpg": 1.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "udonis-haslem-mia-2000s",
+      "name": "Udonis Haslem",
+      "club": "Heat",
+      "era": "2000s",
+      "positions": [
+        "PF"
+      ],
+      "stats": {
+        "ppg": 10.5,
+        "rpg": 8,
+        "apg": 1,
+        "spg": 0.5,
+        "bpg": 0.3
+      },
+      "rating": 83,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "alonzo-mourning-mia-2000s",
+      "name": "Alonzo Mourning",
+      "club": "Heat",
+      "era": "2000s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 8.5,
+        "rpg": 5,
+        "apg": 0.5,
+        "spg": 0.4,
+        "bpg": 1.8
+      },
+      "rating": 77,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jason-williams-mia-2000s",
+      "name": "Jason Williams",
+      "club": "Heat",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 2.6,
+        "apg": 5.5,
+        "spg": 1,
+        "bpg": 0.1
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "antoine-walker-mia-2000s",
+      "name": "Antoine Walker",
+      "club": "Heat",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 5.5,
+        "apg": 3,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 88,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "steve-nash-phx-2000s",
+      "name": "Steve Nash",
+      "club": "Suns",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 3.5,
+        "apg": 11,
+        "spg": 0.8,
+        "bpg": 0.1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "amare-stoudemire-phx-2000s",
+      "name": "Amar'e Stoudemire",
+      "club": "Suns",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 22,
+        "rpg": 9,
+        "apg": 1.5,
+        "spg": 0.9,
+        "bpg": 1.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "shawn-marion-phx-2000s",
+      "name": "Shawn Marion",
+      "club": "Suns",
+      "era": "2000s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 10,
+        "apg": 2,
+        "spg": 1.9,
+        "bpg": 1.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "joe-johnson-phx-2000s",
+      "name": "Joe Johnson",
+      "club": "Suns",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 4.5,
+        "apg": 4,
+        "spg": 1.1,
+        "bpg": 0.4
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "raja-bell-phx-2000s",
+      "name": "Raja Bell",
+      "club": "Suns",
+      "era": "2000s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 3.2,
+        "apg": 2.3,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 88,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "leandro-barbosa-phx-2000s",
+      "name": "Leandro Barbosa",
+      "club": "Suns",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 2.5,
+        "apg": 2.8,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dirk-nowitzki-dal-2000s",
+      "name": "Dirk Nowitzki",
+      "club": "Mavericks",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 25,
+        "rpg": 9,
+        "apg": 2.8,
+        "spg": 0.9,
+        "bpg": 0.9
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "steve-nash-dal-2000s",
+      "name": "Steve Nash",
+      "club": "Mavericks",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 3,
+        "apg": 8.5,
+        "spg": 0.9,
+        "bpg": 0.1
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "michael-finley-dal-2000s",
+      "name": "Michael Finley",
+      "club": "Mavericks",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 5.5,
+        "apg": 3.5,
+        "spg": 1.2,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "josh-howard-dal-2000s",
+      "name": "Josh Howard",
+      "club": "Mavericks",
+      "era": "2000s",
+      "positions": [
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 6.5,
+        "apg": 1.8,
+        "spg": 1.3,
+        "bpg": 0.7
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jason-terry-dal-2000s",
+      "name": "Jason Terry",
+      "club": "Mavericks",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 2.5,
+        "apg": 4.5,
+        "spg": 1.3,
+        "bpg": 0.2
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jason-kidd-dal-2000s",
+      "name": "Jason Kidd",
+      "club": "Mavericks",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 6.5,
+        "apg": 9,
+        "spg": 1.8,
+        "bpg": 0.3
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "paul-pierce-bos-2000s",
+      "name": "Paul Pierce",
+      "club": "Celtics",
+      "era": "2000s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 23,
+        "rpg": 6.2,
+        "apg": 4,
+        "spg": 1.4,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-garnett-bos-2000s",
+      "name": "Kevin Garnett",
+      "club": "Celtics",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 9,
+        "apg": 3.2,
+        "spg": 1.2,
+        "bpg": 1.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "ray-allen-bos-2000s",
+      "name": "Ray Allen",
+      "club": "Celtics",
+      "era": "2000s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 3.6,
+        "apg": 3,
+        "spg": 0.9,
+        "bpg": 0.2
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rajon-rondo-bos-2000s",
+      "name": "Rajon Rondo",
+      "club": "Celtics",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 4.5,
+        "apg": 7,
+        "spg": 1.8,
+        "bpg": 0.1
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kendrick-perkins-bos-2000s",
+      "name": "Kendrick Perkins",
+      "club": "Celtics",
+      "era": "2000s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 7,
+        "rpg": 6,
+        "apg": 1,
+        "spg": 0.4,
+        "bpg": 1.5
+      },
+      "rating": 75,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "antoine-walker-bos-2000s",
+      "name": "Antoine Walker",
+      "club": "Celtics",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 8,
+        "apg": 4,
+        "spg": 1.5,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lebron-james-cle-2000s",
+      "name": "LeBron James",
+      "club": "Cavaliers",
+      "era": "2000s",
+      "positions": [
+        "SF",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 27.5,
+        "rpg": 7,
+        "apg": 7,
+        "spg": 1.7,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "zydrunas-ilgauskas-cle-2000s",
+      "name": "Zydrunas Ilgauskas",
+      "club": "Cavaliers",
+      "era": "2000s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 8,
+        "apg": 1.5,
+        "spg": 0.5,
+        "bpg": 1.8
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "mo-williams-cle-2000s",
+      "name": "Mo Williams",
+      "club": "Cavaliers",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 3,
+        "apg": 4.5,
+        "spg": 1,
+        "bpg": 0.1
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "larry-hughes-cle-2000s",
+      "name": "Larry Hughes",
+      "club": "Cavaliers",
+      "era": "2000s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 4,
+        "apg": 3.5,
+        "spg": 1.6,
+        "bpg": 0.4
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "anderson-varejao-cle-2000s",
+      "name": "Anderson Varejao",
+      "club": "Cavaliers",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 7.5,
+        "rpg": 6.5,
+        "apg": 1,
+        "spg": 0.9,
+        "bpg": 0.7
+      },
+      "rating": 76,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "drew-gooden-cle-2000s",
+      "name": "Drew Gooden",
+      "club": "Cavaliers",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 8,
+        "apg": 1.2,
+        "spg": 0.7,
+        "bpg": 0.7
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-garnett-min-2000s",
+      "name": "Kevin Garnett",
+      "club": "Timberwolves",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 22,
+        "rpg": 12.5,
+        "apg": 5,
+        "spg": 1.4,
+        "bpg": 1.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "sam-cassell-min-2000s",
+      "name": "Sam Cassell",
+      "club": "Timberwolves",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 3.3,
+        "apg": 7,
+        "spg": 1.3,
+        "bpg": 0.1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "latrell-sprewell-min-2000s",
+      "name": "Latrell Sprewell",
+      "club": "Timberwolves",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 4,
+        "apg": 3.5,
+        "spg": 1.3,
+        "bpg": 0.3
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wally-szczerbiak-min-2000s",
+      "name": "Wally Szczerbiak",
+      "club": "Timberwolves",
+      "era": "2000s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 4.5,
+        "apg": 2.5,
+        "spg": 0.8,
+        "bpg": 0.2
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "troy-hudson-min-2000s",
+      "name": "Troy Hudson",
+      "club": "Timberwolves",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 10,
+        "rpg": 2.3,
+        "apg": 4,
+        "spg": 0.7,
+        "bpg": 0.1
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "al-jefferson-min-2000s",
+      "name": "Al Jefferson",
+      "club": "Timberwolves",
+      "era": "2000s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 9,
+        "apg": 1.5,
+        "spg": 0.6,
+        "bpg": 1.5
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "allen-iverson-phi-2000s",
+      "name": "Allen Iverson",
+      "club": "76ers",
+      "era": "2000s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 28,
+        "rpg": 3.8,
+        "apg": 6,
+        "spg": 2.3,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "andre-iguodala-phi-2000s",
+      "name": "Andre Iguodala",
+      "club": "76ers",
+      "era": "2000s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 5.5,
+        "apg": 4.5,
+        "spg": 1.7,
+        "bpg": 0.5
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "aaron-mckie-phi-2000s",
+      "name": "Aaron McKie",
+      "club": "76ers",
+      "era": "2000s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 4,
+        "apg": 4.5,
+        "spg": 1.5,
+        "bpg": 0.3
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dikembe-mutombo-phi-2000s",
+      "name": "Dikembe Mutombo",
+      "club": "76ers",
+      "era": "2000s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 12,
+        "apg": 1,
+        "spg": 0.3,
+        "bpg": 2.8
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "andre-miller-phi-2000s",
+      "name": "Andre Miller",
+      "club": "76ers",
+      "era": "2000s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 4.5,
+        "apg": 7.5,
+        "spg": 1.4,
+        "bpg": 0.2
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "samuel-dalembert-phi-2000s",
+      "name": "Samuel Dalembert",
+      "club": "76ers",
+      "era": "2000s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 8,
+        "rpg": 8.5,
+        "apg": 0.5,
+        "spg": 0.6,
+        "bpg": 2
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "stephen-curry-gsw-2010s",
+      "name": "Stephen Curry",
+      "club": "Warriors",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 23.5,
+        "rpg": 4.4,
+        "apg": 6.6,
+        "spg": 1.7,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "klay-thompson-gsw-2010s",
+      "name": "Klay Thompson",
+      "club": "Warriors",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 19.5,
+        "rpg": 3.5,
+        "apg": 2.3,
+        "spg": 1,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "draymond-green-gsw-2010s",
+      "name": "Draymond Green",
+      "club": "Warriors",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 7.5,
+        "apg": 5.5,
+        "spg": 1.4,
+        "bpg": 1
+      },
+      "rating": 88,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-durant-gsw-2010s",
+      "name": "Kevin Durant",
+      "club": "Warriors",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 26,
+        "rpg": 7,
+        "apg": 5.5,
+        "spg": 0.7,
+        "bpg": 1.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "andre-iguodala-gsw-2010s",
+      "name": "Andre Iguodala",
+      "club": "Warriors",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 7.5,
+        "rpg": 4,
+        "apg": 3.4,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 76,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "david-lee-gsw-2010s",
+      "name": "David Lee",
+      "club": "Warriors",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 9.5,
+        "apg": 3,
+        "spg": 0.8,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lebron-james-mia-2010s",
+      "name": "LeBron James",
+      "club": "Heat",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 26.9,
+        "rpg": 7.6,
+        "apg": 6.7,
+        "spg": 1.7,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dwyane-wade-mia-2010s",
+      "name": "Dwyane Wade",
+      "club": "Heat",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 22,
+        "rpg": 4.7,
+        "apg": 5,
+        "spg": 1.7,
+        "bpg": 0.9
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "chris-bosh-mia-2010s",
+      "name": "Chris Bosh",
+      "club": "Heat",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 7.3,
+        "apg": 1.8,
+        "spg": 0.8,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "ray-allen-mia-2010s",
+      "name": "Ray Allen",
+      "club": "Heat",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 10.5,
+        "rpg": 2.7,
+        "apg": 1.7,
+        "spg": 0.8,
+        "bpg": 0.2
+      },
+      "rating": 79,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "mario-chalmers-mia-2010s",
+      "name": "Mario Chalmers",
+      "club": "Heat",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 2.7,
+        "apg": 3.5,
+        "spg": 1.5,
+        "bpg": 0.2
+      },
+      "rating": 79,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "udonis-haslem-mia-2010s",
+      "name": "Udonis Haslem",
+      "club": "Heat",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 5.5,
+        "rpg": 5.5,
+        "apg": 0.7,
+        "spg": 0.5,
+        "bpg": 0.3
+      },
+      "rating": 69,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lebron-james-cle-2010s",
+      "name": "LeBron James",
+      "club": "Cavaliers",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 26,
+        "rpg": 8,
+        "apg": 8,
+        "spg": 1.4,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kyrie-irving-cle-2010s",
+      "name": "Kyrie Irving",
+      "club": "Cavaliers",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 21.6,
+        "rpg": 3.4,
+        "apg": 5.5,
+        "spg": 1.4,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-love-cle-2010s",
+      "name": "Kevin Love",
+      "club": "Cavaliers",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 10,
+        "apg": 2.4,
+        "spg": 0.7,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tristan-thompson-cle-2010s",
+      "name": "Tristan Thompson",
+      "club": "Cavaliers",
+      "era": "2010s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 8.5,
+        "apg": 0.8,
+        "spg": 0.5,
+        "bpg": 0.8
+      },
+      "rating": 81,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jr-smith-cle-2010s",
+      "name": "J.R. Smith",
+      "club": "Cavaliers",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 3,
+        "apg": 2,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "matthew-dellavedova-cle-2010s",
+      "name": "Matthew Dellavedova",
+      "club": "Cavaliers",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 5.5,
+        "rpg": 2,
+        "apg": 3.5,
+        "spg": 0.7,
+        "bpg": 0.1
+      },
+      "rating": 69,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tim-duncan-sas-2010s",
+      "name": "Tim Duncan",
+      "club": "Spurs",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 9.5,
+        "apg": 2.7,
+        "spg": 0.7,
+        "bpg": 1.8
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tony-parker-sas-2010s",
+      "name": "Tony Parker",
+      "club": "Spurs",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 2.5,
+        "apg": 6,
+        "spg": 0.8,
+        "bpg": 0.1
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "manu-ginobili-sas-2010s",
+      "name": "Manu Ginobili",
+      "club": "Spurs",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 3.5,
+        "apg": 4.5,
+        "spg": 1.3,
+        "bpg": 0.3
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kawhi-leonard-sas-2010s",
+      "name": "Kawhi Leonard",
+      "club": "Spurs",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 6,
+        "apg": 2.3,
+        "spg": 1.9,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "danny-green-sas-2010s",
+      "name": "Danny Green",
+      "club": "Spurs",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 3.5,
+        "apg": 1.7,
+        "spg": 1.1,
+        "bpg": 0.8
+      },
+      "rating": 78,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lamarcus-aldridge-sas-2010s",
+      "name": "LaMarcus Aldridge",
+      "club": "Spurs",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 8.5,
+        "apg": 2,
+        "spg": 0.6,
+        "bpg": 1.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-durant-okc-2010s",
+      "name": "Kevin Durant",
+      "club": "Thunder",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 28,
+        "rpg": 7.3,
+        "apg": 4,
+        "spg": 1.3,
+        "bpg": 1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "russell-westbrook-okc-2010s",
+      "name": "Russell Westbrook",
+      "club": "Thunder",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 24.5,
+        "rpg": 7,
+        "apg": 8.5,
+        "spg": 1.9,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "james-harden-okc-2010s",
+      "name": "James Harden",
+      "club": "Thunder",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 3.5,
+        "apg": 3.5,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "serge-ibaka-okc-2010s",
+      "name": "Serge Ibaka",
+      "club": "Thunder",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 7.5,
+        "apg": 0.6,
+        "spg": 0.5,
+        "bpg": 2.5
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "paul-george-okc-2010s",
+      "name": "Paul George",
+      "club": "Thunder",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 24,
+        "rpg": 7.5,
+        "apg": 4,
+        "spg": 2,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "steven-adams-okc-2010s",
+      "name": "Steven Adams",
+      "club": "Thunder",
+      "era": "2010s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 8.5,
+        "apg": 1.3,
+        "spg": 1,
+        "bpg": 1
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "james-harden-hou-2010s",
+      "name": "James Harden",
+      "club": "Rockets",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 29,
+        "rpg": 5.5,
+        "apg": 7.5,
+        "spg": 1.7,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "chris-paul-hou-2010s",
+      "name": "Chris Paul",
+      "club": "Rockets",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 5,
+        "apg": 8,
+        "spg": 1.9,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dwight-howard-hou-2010s",
+      "name": "Dwight Howard",
+      "club": "Rockets",
+      "era": "2010s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 12,
+        "apg": 1.4,
+        "spg": 0.8,
+        "bpg": 1.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "clint-capela-hou-2010s",
+      "name": "Clint Capela",
+      "club": "Rockets",
+      "era": "2010s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 11,
+        "apg": 1.2,
+        "spg": 0.8,
+        "bpg": 1.7
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "trevor-ariza-hou-2010s",
+      "name": "Trevor Ariza",
+      "club": "Rockets",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 11.5,
+        "rpg": 5,
+        "apg": 2.3,
+        "spg": 1.6,
+        "bpg": 0.3
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "eric-gordon-hou-2010s",
+      "name": "Eric Gordon",
+      "club": "Rockets",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 16,
+        "rpg": 2.4,
+        "apg": 2.5,
+        "spg": 0.6,
+        "bpg": 0.3
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kawhi-leonard-tor-2010s",
+      "name": "Kawhi Leonard",
+      "club": "Raptors",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 26.6,
+        "rpg": 7.3,
+        "apg": 3.3,
+        "spg": 1.8,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kyle-lowry-tor-2010s",
+      "name": "Kyle Lowry",
+      "club": "Raptors",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 4.5,
+        "apg": 7,
+        "spg": 1.5,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "demar-derozan-tor-2010s",
+      "name": "DeMar DeRozan",
+      "club": "Raptors",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 20.5,
+        "rpg": 4.2,
+        "apg": 3.5,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "pascal-siakam-tor-2010s",
+      "name": "Pascal Siakam",
+      "club": "Raptors",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 6,
+        "apg": 2.5,
+        "spg": 0.9,
+        "bpg": 0.7
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "serge-ibaka-tor-2010s",
+      "name": "Serge Ibaka",
+      "club": "Raptors",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 7,
+        "apg": 1.2,
+        "spg": 0.4,
+        "bpg": 1.4
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "fred-vanvleet-tor-2010s",
+      "name": "Fred VanVleet",
+      "club": "Raptors",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 9,
+        "rpg": 2.7,
+        "apg": 3.5,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 79,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jayson-tatum-bos-2010s",
+      "name": "Jayson Tatum",
+      "club": "Celtics",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 6,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kyrie-irving-bos-2010s",
+      "name": "Kyrie Irving",
+      "club": "Celtics",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 24,
+        "rpg": 4.5,
+        "apg": 6.5,
+        "spg": 1.4,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "isaiah-thomas-bos-2010s",
+      "name": "Isaiah Thomas",
+      "club": "Celtics",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 24.5,
+        "rpg": 2.7,
+        "apg": 6,
+        "spg": 1,
+        "bpg": 0.1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jaylen-brown-bos-2010s",
+      "name": "Jaylen Brown",
+      "club": "Celtics",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 4.5,
+        "apg": 1.6,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "al-horford-bos-2010s",
+      "name": "Al Horford",
+      "club": "Celtics",
+      "era": "2010s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 7,
+        "apg": 4.5,
+        "spg": 0.8,
+        "bpg": 1.2
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "marcus-smart-bos-2010s",
+      "name": "Marcus Smart",
+      "club": "Celtics",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 3.5,
+        "apg": 4.5,
+        "spg": 1.6,
+        "bpg": 0.4
+      },
+      "rating": 83,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "giannis-antetokounmpo-mil-2010s",
+      "name": "Giannis Antetokounmpo",
+      "club": "Bucks",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 20.5,
+        "rpg": 8.5,
+        "apg": 4.5,
+        "spg": 1.2,
+        "bpg": 1.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "khris-middleton-mil-2010s",
+      "name": "Khris Middleton",
+      "club": "Bucks",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 4.8,
+        "apg": 3.5,
+        "spg": 1.4,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "eric-bledsoe-mil-2010s",
+      "name": "Eric Bledsoe",
+      "club": "Bucks",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 4.5,
+        "apg": 5.5,
+        "spg": 1.6,
+        "bpg": 0.5
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "brook-lopez-mil-2010s",
+      "name": "Brook Lopez",
+      "club": "Bucks",
+      "era": "2010s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 4.9,
+        "apg": 1.2,
+        "spg": 0.5,
+        "bpg": 2.2
+      },
+      "rating": 88,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jabari-parker-mil-2010s",
+      "name": "Jabari Parker",
+      "club": "Bucks",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 5.5,
+        "apg": 2,
+        "spg": 0.9,
+        "bpg": 0.4
+      },
+      "rating": 93,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "malcolm-brogdon-mil-2010s",
+      "name": "Malcolm Brogdon",
+      "club": "Bucks",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 11.5,
+        "rpg": 3.5,
+        "apg": 3.5,
+        "spg": 0.9,
+        "bpg": 0.2
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "damian-lillard-por-2010s",
+      "name": "Damian Lillard",
+      "club": "Trail Blazers",
+      "era": "2010s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 24,
+        "rpg": 4.2,
+        "apg": 6.5,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "cj-mccollum-por-2010s",
+      "name": "CJ McCollum",
+      "club": "Trail Blazers",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 3.8,
+        "apg": 3.2,
+        "spg": 0.9,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lamarcus-aldridge-por-2010s",
+      "name": "LaMarcus Aldridge",
+      "club": "Trail Blazers",
+      "era": "2010s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 21.5,
+        "rpg": 9,
+        "apg": 2.2,
+        "spg": 0.8,
+        "bpg": 1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "nicolas-batum-por-2010s",
+      "name": "Nicolas Batum",
+      "club": "Trail Blazers",
+      "era": "2010s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 5,
+        "apg": 3.5,
+        "spg": 1,
+        "bpg": 0.7
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jusuf-nurkic-por-2010s",
+      "name": "Jusuf Nurkic",
+      "club": "Trail Blazers",
+      "era": "2010s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 9.5,
+        "apg": 2.5,
+        "spg": 1,
+        "bpg": 1.4
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "wesley-matthews-por-2010s",
+      "name": "Wesley Matthews",
+      "club": "Trail Blazers",
+      "era": "2010s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 3,
+        "apg": 2.2,
+        "spg": 1.2,
+        "bpg": 0.3
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "nikola-jokic-den-2020s",
+      "name": "Nikola Jokić",
+      "club": "Nuggets",
+      "era": "2020s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 26.5,
+        "rpg": 12.3,
+        "apg": 9,
+        "spg": 1.3,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jamal-murray-den-2020s",
+      "name": "Jamal Murray",
+      "club": "Nuggets",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 4.2,
+        "apg": 6.3,
+        "spg": 1.1,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "aaron-gordon-den-2020s",
+      "name": "Aaron Gordon",
+      "club": "Nuggets",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 6.2,
+        "apg": 3.2,
+        "spg": 0.8,
+        "bpg": 0.7
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "michael-porter-jr-den-2020s",
+      "name": "Michael Porter Jr.",
+      "club": "Nuggets",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 6.5,
+        "apg": 1.6,
+        "spg": 0.7,
+        "bpg": 0.6
+      },
+      "rating": 94,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kentavious-caldwell-pope-den-2020s",
+      "name": "Kentavious Caldwell-Pope",
+      "club": "Nuggets",
+      "era": "2020s",
+      "positions": [
+        "SG"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 2.6,
+        "apg": 2.4,
+        "spg": 1.4,
+        "bpg": 0.3
+      },
+      "rating": 82,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jerami-grant-den-2020s",
+      "name": "Jerami Grant",
+      "club": "Nuggets",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 3.5,
+        "apg": 1.2,
+        "spg": 0.7,
+        "bpg": 0.8
+      },
+      "rating": 83,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "giannis-antetokounmpo-mil-2020s",
+      "name": "Giannis Antetokounmpo",
+      "club": "Bucks",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "C",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 29.5,
+        "rpg": 11.5,
+        "apg": 6,
+        "spg": 1.1,
+        "bpg": 1.1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "khris-middleton-mil-2020s",
+      "name": "Khris Middleton",
+      "club": "Bucks",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 5.2,
+        "apg": 5,
+        "spg": 1.1,
+        "bpg": 0.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jrue-holiday-mil-2020s",
+      "name": "Jrue Holiday",
+      "club": "Bucks",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 4.8,
+        "apg": 6.5,
+        "spg": 1.6,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "brook-lopez-mil-2020s",
+      "name": "Brook Lopez",
+      "club": "Bucks",
+      "era": "2020s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 5.2,
+        "apg": 1.4,
+        "spg": 0.5,
+        "bpg": 2.2
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "damian-lillard-mil-2020s",
+      "name": "Damian Lillard",
+      "club": "Bucks",
+      "era": "2020s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 24.5,
+        "rpg": 4.4,
+        "apg": 7,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bobby-portis-mil-2020s",
+      "name": "Bobby Portis",
+      "club": "Bucks",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 8.5,
+        "apg": 1.4,
+        "spg": 0.6,
+        "bpg": 0.4
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jayson-tatum-bos-2020s",
+      "name": "Jayson Tatum",
+      "club": "Celtics",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 27,
+        "rpg": 8.2,
+        "apg": 4.6,
+        "spg": 1,
+        "bpg": 0.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jaylen-brown-bos-2020s",
+      "name": "Jaylen Brown",
+      "club": "Celtics",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 23.5,
+        "rpg": 6,
+        "apg": 3.5,
+        "spg": 1.1,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jrue-holiday-bos-2020s",
+      "name": "Jrue Holiday",
+      "club": "Celtics",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 5.4,
+        "apg": 4.8,
+        "spg": 0.9,
+        "bpg": 0.5
+      },
+      "rating": 90,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "derrick-white-bos-2020s",
+      "name": "Derrick White",
+      "club": "Celtics",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 4.2,
+        "apg": 5,
+        "spg": 1,
+        "bpg": 1
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kristaps-porzingis-bos-2020s",
+      "name": "Kristaps Porziņģis",
+      "club": "Celtics",
+      "era": "2020s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 7,
+        "apg": 2,
+        "spg": 0.7,
+        "bpg": 1.9
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "al-horford-bos-2020s",
+      "name": "Al Horford",
+      "club": "Celtics",
+      "era": "2020s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 9.5,
+        "rpg": 6.5,
+        "apg": 3,
+        "spg": 0.7,
+        "bpg": 1
+      },
+      "rating": 83,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "stephen-curry-gsw-2020s",
+      "name": "Stephen Curry",
+      "club": "Warriors",
+      "era": "2020s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 27.5,
+        "rpg": 5,
+        "apg": 6.2,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "klay-thompson-gsw-2020s",
+      "name": "Klay Thompson",
+      "club": "Warriors",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 18.5,
+        "rpg": 3.8,
+        "apg": 2.3,
+        "spg": 0.7,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "draymond-green-gsw-2020s",
+      "name": "Draymond Green",
+      "club": "Warriors",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 8,
+        "rpg": 7,
+        "apg": 6.8,
+        "spg": 1.2,
+        "bpg": 0.9
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "andrew-wiggins-gsw-2020s",
+      "name": "Andrew Wiggins",
+      "club": "Warriors",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 4.8,
+        "apg": 2.2,
+        "spg": 1,
+        "bpg": 0.8
+      },
+      "rating": 97,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jordan-poole-gsw-2020s",
+      "name": "Jordan Poole",
+      "club": "Warriors",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 3.2,
+        "apg": 4,
+        "spg": 0.8,
+        "bpg": 0.3
+      },
+      "rating": 98,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jonathan-kuminga-gsw-2020s",
+      "name": "Jonathan Kuminga",
+      "club": "Warriors",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 4.5,
+        "apg": 2,
+        "spg": 0.7,
+        "bpg": 0.5
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "devin-booker-phx-2020s",
+      "name": "Devin Booker",
+      "club": "Suns",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 26.5,
+        "rpg": 4.5,
+        "apg": 6.5,
+        "spg": 0.9,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kevin-durant-phx-2020s",
+      "name": "Kevin Durant",
+      "club": "Suns",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 27,
+        "rpg": 6.6,
+        "apg": 5,
+        "spg": 0.8,
+        "bpg": 1.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "chris-paul-phx-2020s",
+      "name": "Chris Paul",
+      "club": "Suns",
+      "era": "2020s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15,
+        "rpg": 4.4,
+        "apg": 9,
+        "spg": 1.5,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "deandre-ayton-phx-2020s",
+      "name": "Deandre Ayton",
+      "club": "Suns",
+      "era": "2020s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 10.5,
+        "apg": 1.7,
+        "spg": 0.7,
+        "bpg": 0.9
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "mikal-bridges-phx-2020s",
+      "name": "Mikal Bridges",
+      "club": "Suns",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 4,
+        "apg": 2.3,
+        "spg": 1.3,
+        "bpg": 0.7
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bradley-beal-phx-2020s",
+      "name": "Bradley Beal",
+      "club": "Suns",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 17.5,
+        "rpg": 4.2,
+        "apg": 4.5,
+        "spg": 1,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "lebron-james-lal-2020s",
+      "name": "LeBron James",
+      "club": "Lakers",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "PG",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 26.5,
+        "rpg": 7.8,
+        "apg": 8,
+        "spg": 1.2,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "anthony-davis-lal-2020s",
+      "name": "Anthony Davis",
+      "club": "Lakers",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "stats": {
+        "ppg": 25.5,
+        "rpg": 11,
+        "apg": 3,
+        "spg": 1.2,
+        "bpg": 2.2
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "austin-reaves-lal-2020s",
+      "name": "Austin Reaves",
+      "club": "Lakers",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 15.5,
+        "rpg": 4.2,
+        "apg": 5,
+        "spg": 0.8,
+        "bpg": 0.3
+      },
+      "rating": 95,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dangelo-russell-lal-2020s",
+      "name": "D'Angelo Russell",
+      "club": "Lakers",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 17,
+        "rpg": 3,
+        "apg": 6,
+        "spg": 1,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rui-hachimura-lal-2020s",
+      "name": "Rui Hachimura",
+      "club": "Lakers",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 4.5,
+        "apg": 1.3,
+        "spg": 0.5,
+        "bpg": 0.4
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dwight-howard-lal-2020s",
+      "name": "Dwight Howard",
+      "club": "Lakers",
+      "era": "2020s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 7,
+        "rpg": 7,
+        "apg": 0.8,
+        "spg": 0.5,
+        "bpg": 1.1
+      },
+      "rating": 75,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "luka-doncic-dal-2020s",
+      "name": "Luka Dončić",
+      "club": "Mavericks",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 29.5,
+        "rpg": 8.5,
+        "apg": 8.5,
+        "spg": 1.2,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kyrie-irving-dal-2020s",
+      "name": "Kyrie Irving",
+      "club": "Mavericks",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 24.5,
+        "rpg": 4.8,
+        "apg": 5.2,
+        "spg": 1.3,
+        "bpg": 0.5
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kristaps-porzingis-dal-2020s",
+      "name": "Kristaps Porziņģis",
+      "club": "Mavericks",
+      "era": "2020s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 8.5,
+        "apg": 1.8,
+        "spg": 0.7,
+        "bpg": 1.7
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tim-hardaway-jr-dal-2020s",
+      "name": "Tim Hardaway Jr.",
+      "club": "Mavericks",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 14.5,
+        "rpg": 3.2,
+        "apg": 1.8,
+        "spg": 0.7,
+        "bpg": 0.3
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "dereck-lively-ii-dal-2020s",
+      "name": "Dereck Lively II",
+      "club": "Mavericks",
+      "era": "2020s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 8.5,
+        "rpg": 7,
+        "apg": 1.5,
+        "spg": 0.6,
+        "bpg": 1.4
+      },
+      "rating": 80,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "pj-washington-dal-2020s",
+      "name": "P.J. Washington",
+      "club": "Mavericks",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 13,
+        "rpg": 6,
+        "apg": 2.2,
+        "spg": 0.9,
+        "bpg": 0.7
+      },
+      "rating": 89,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "shai-gilgeous-alexander-okc-2020s",
+      "name": "Shai Gilgeous-Alexander",
+      "club": "Thunder",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 28,
+        "rpg": 5,
+        "apg": 6,
+        "spg": 1.8,
+        "bpg": 0.9
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jalen-williams-okc-2020s",
+      "name": "Jalen Williams",
+      "club": "Thunder",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 18,
+        "rpg": 4.5,
+        "apg": 4.5,
+        "spg": 1.4,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "chet-holmgren-okc-2020s",
+      "name": "Chet Holmgren",
+      "club": "Thunder",
+      "era": "2020s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 16.5,
+        "rpg": 8,
+        "apg": 2.3,
+        "spg": 0.7,
+        "bpg": 2.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "luguentz-dort-okc-2020s",
+      "name": "Luguentz Dort",
+      "club": "Thunder",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 3.8,
+        "apg": 1.8,
+        "spg": 1,
+        "bpg": 0.5
+      },
+      "rating": 85,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "josh-giddey-okc-2020s",
+      "name": "Josh Giddey",
+      "club": "Thunder",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 7.5,
+        "apg": 6,
+        "spg": 0.9,
+        "bpg": 0.5
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "isaiah-hartenstein-okc-2020s",
+      "name": "Isaiah Hartenstein",
+      "club": "Thunder",
+      "era": "2020s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 11,
+        "rpg": 11,
+        "apg": 3.5,
+        "spg": 1.1,
+        "bpg": 1.1
+      },
+      "rating": 92,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jimmy-butler-mia-2020s",
+      "name": "Jimmy Butler",
+      "club": "Heat",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "SG",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 21.5,
+        "rpg": 6,
+        "apg": 5.5,
+        "spg": 1.7,
+        "bpg": 0.4
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "bam-adebayo-mia-2020s",
+      "name": "Bam Adebayo",
+      "club": "Heat",
+      "era": "2020s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 19,
+        "rpg": 10,
+        "apg": 3.8,
+        "spg": 1.2,
+        "bpg": 0.8
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "tyler-herro-mia-2020s",
+      "name": "Tyler Herro",
+      "club": "Heat",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "stats": {
+        "ppg": 20,
+        "rpg": 5,
+        "apg": 4,
+        "spg": 0.8,
+        "bpg": 0.3
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "duncan-robinson-mia-2020s",
+      "name": "Duncan Robinson",
+      "club": "Heat",
+      "era": "2020s",
+      "positions": [
+        "SF",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 2.8,
+        "apg": 2,
+        "spg": 0.5,
+        "bpg": 0.2
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "kyle-lowry-mia-2020s",
+      "name": "Kyle Lowry",
+      "club": "Heat",
+      "era": "2020s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 12,
+        "rpg": 4,
+        "apg": 5,
+        "spg": 1,
+        "bpg": 0.3
+      },
+      "rating": 88,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "goran-dragic-mia-2020s",
+      "name": "Goran Dragić",
+      "club": "Heat",
+      "era": "2020s",
+      "positions": [
+        "PG",
+        "SG"
+      ],
+      "stats": {
+        "ppg": 14,
+        "rpg": 3.2,
+        "apg": 4.8,
+        "spg": 0.9,
+        "bpg": 0.2
+      },
+      "rating": 91,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "anthony-edwards-min-2020s",
+      "name": "Anthony Edwards",
+      "club": "Timberwolves",
+      "era": "2020s",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 25,
+        "rpg": 5.5,
+        "apg": 4.5,
+        "spg": 1.3,
+        "bpg": 0.6
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "rudy-gobert-min-2020s",
+      "name": "Rudy Gobert",
+      "club": "Timberwolves",
+      "era": "2020s",
+      "positions": [
+        "C"
+      ],
+      "stats": {
+        "ppg": 13.5,
+        "rpg": 12,
+        "apg": 1.3,
+        "spg": 0.7,
+        "bpg": 2
+      },
+      "rating": 96,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "karl-anthony-towns-min-2020s",
+      "name": "Karl-Anthony Towns",
+      "club": "Timberwolves",
+      "era": "2020s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 23,
+        "rpg": 9.5,
+        "apg": 4,
+        "spg": 0.8,
+        "bpg": 1
+      },
+      "rating": 99,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "mike-conley-min-2020s",
+      "name": "Mike Conley",
+      "club": "Timberwolves",
+      "era": "2020s",
+      "positions": [
+        "PG"
+      ],
+      "stats": {
+        "ppg": 11.5,
+        "rpg": 2.8,
+        "apg": 5.8,
+        "spg": 1,
+        "bpg": 0.2
+      },
+      "rating": 86,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "jaden-mcdaniels-min-2020s",
+      "name": "Jaden McDaniels",
+      "club": "Timberwolves",
+      "era": "2020s",
+      "positions": [
+        "PF",
+        "SF"
+      ],
+      "stats": {
+        "ppg": 11.5,
+        "rpg": 3.8,
+        "apg": 1.5,
+        "spg": 1,
+        "bpg": 0.8
+      },
+      "rating": 84,
+      "source": "82-0-challenge.com"
+    },
+    {
+      "id": "naz-reid-min-2020s",
+      "name": "Naz Reid",
+      "club": "Timberwolves",
+      "era": "2020s",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "stats": {
+        "ppg": 12.5,
+        "rpg": 5.5,
+        "apg": 1.8,
+        "spg": 0.7,
+        "bpg": 0.9
+      },
+      "rating": 87,
+      "source": "82-0-challenge.com"
+    }
+  ]
+}

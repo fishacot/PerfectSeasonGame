@@ -1,0 +1,80 @@
+{
+  "Leeds United": {
+    "1990s": [["Lucas Radebe", ["CB", "DF"], 86, 2, 1], ["Gary Speed", ["CM", "MF"], 86, 8, 6], ["Tony Yeboah", ["ST", "FW"], 85, 16, 4], ["Nigel Martyn", ["GK"], 85, 0, 0, 13], ["Lee Bowyer", ["CM", "MF"], 83, 6, 5], ["Harry Kewell", ["LW", "FW"], 86, 10, 8]],
+    "2000s": [["Mark Viduka", ["ST", "FW"], 86, 18, 5], ["Harry Kewell", ["LW", "FW"], 85, 10, 8], ["Jonathan Woodgate", ["CB", "DF"], 84, 2, 1], ["Paul Robinson", ["GK"], 85, 0, 0, 14], ["Alan Smith", ["ST", "FW"], 83, 10, 4], ["Olivier Dacourt", ["CM", "MF"], 84, 5, 5]],
+    "2010s": [["Pablo Hernandez", ["CM", "MF"], 82, 5, 6], ["Kemar Roofe", ["ST", "FW"], 81, 12, 3], ["Liam Cooper", ["CB", "DF"], 80, 2, 1], ["Illan Meslier", ["GK"], 80, 0, 0, 10], ["Patrick Bamford", ["ST", "FW"], 83, 14, 3], ["Raphinha", ["RW", "FW"], 84, 10, 6]],
+    "2020s": [["Patrick Bamford", ["ST", "FW"], 84, 14, 4], ["Raphinha", ["RW", "FW"], 86, 12, 8], ["Kalvin Phillips", ["CM", "MF"], 85, 3, 5], ["Illan Meslier", ["GK"], 83, 0, 0, 11], ["Rodrigo", ["ST", "FW"], 83, 12, 3], ["Pascal Struijk", ["CB", "DF"], 82, 2, 1]]
+  },
+  "Everton": {
+    "1990s": [["Duncan Ferguson", ["ST", "FW"], 84, 14, 3], ["Neville Southall", ["GK"], 88, 0, 0, 15], ["Tony Hibbert", ["RB", "DF"], 82, 1, 3], ["Nick Barmby", ["CM", "MF"], 83, 8, 6], ["Gary Speed", ["CM", "MF"], 85, 6, 5], ["Daniel Amokachi", ["ST", "FW"], 82, 10, 4]],
+    "2000s": [["Tim Cahill", ["CM", "MF"], 86, 10, 4], ["Mikel Arteta", ["CM", "MF"], 85, 6, 8], ["Phil Neville", ["RB", "DF"], 84, 2, 4], ["Tim Howard", ["GK"], 86, 0, 0, 14], ["James Beattie", ["ST", "FW"], 83, 12, 3], ["Andy Johnson", ["ST", "FW"], 84, 14, 3]],
+    "2010s": [["Romelu Lukaku", ["ST", "FW"], 88, 20, 5], ["Leighton Baines", ["LB", "DF"], 86, 3, 8], ["Tim Howard", ["GK"], 85, 0, 0, 13], ["Ross Barkley", ["CM", "MF"], 85, 8, 8], ["Phil Jagielka", ["CB", "DF"], 84, 3, 1], ["Gylfi Sigurdsson", ["CM", "MF"], 84, 8, 8]],
+    "2020s": [["Dominic Calvert-Lewin", ["ST", "FW"], 84, 14, 3], ["Jordan Pickford", ["GK"], 85, 0, 0, 12], ["James Tarkowski", ["CB", "DF"], 84, 2, 1], ["Abdoulaye Doucoure", ["CM", "MF"], 83, 5, 4], ["Anthony Gordon", ["LW", "FW"], 83, 8, 5], ["Amadou Onana", ["CM", "MF"], 83, 4, 4]]
+  },
+  "West Ham": {
+    "1990s": [["Paolo Di Canio", ["ST", "FW"], 86, 14, 8], ["Trevor Sinclair", ["RW", "FW"], 84, 10, 6], ["Julian Dicks", ["LB", "DF"], 82, 4, 3], ["Shaka Hislop", ["GK"], 83, 0, 0, 12], ["Frank Lampard", ["CM", "MF"], 84, 8, 6], ["Joe Cole", ["LW", "FW"], 85, 8, 8]],
+    "2000s": [["Carlos Tevez", ["ST", "FW"], 87, 16, 5], ["Mark Noble", ["CM", "MF"], 83, 5, 5], ["Matthew Upson", ["CB", "DF"], 82, 2, 1], ["Robert Green", ["GK"], 84, 0, 0, 12], ["Craig Bellamy", ["ST", "FW"], 84, 12, 4], ["Scott Parker", ["CM", "MF"], 85, 4, 5]],
+    "2010s": [["Dimitri Payet", ["CM", "MF"], 87, 10, 12], ["Mark Noble", ["CM", "MF"], 83, 4, 5], ["Adrian", ["GK"], 83, 0, 0, 11], ["Andy Carroll", ["ST", "FW"], 83, 12, 3], ["Cheikhou Kouyate", ["CM", "MF"], 83, 5, 3], ["Michail Antonio", ["RW", "FW"], 84, 10, 6]],
+    "2020s": [["Jarrod Bowen", ["RW", "FW"], 85, 14, 6], ["Declan Rice", ["CM", "MF"], 88, 4, 4], ["Lukasz Fabianski", ["GK"], 83, 0, 0, 11], ["Michail Antonio", ["ST", "FW"], 83, 12, 4], ["Lucas Paqueta", ["CM", "MF"], 85, 6, 8], ["Kurt Zouma", ["CB", "DF"], 84, 2, 1]]
+  },
+  "Brighton": {
+    "1990s": [["Kerry Mayo", ["CB", "DF"], 78, 1, 1], ["Mark Walton", ["GK"], 77, 0, 0, 9], ["Darren Freeman", ["ST", "FW"], 77, 8, 2], ["Ian Chapman", ["CM", "MF"], 76, 4, 3], ["John Robinson", ["CM", "MF"], 77, 5, 4], ["Andy McLaren", ["ST", "FW"], 76, 7, 2]],
+    "2000s": [["Bobby Zamora", ["ST", "FW"], 82, 12, 4], ["Matthew Upson", ["CB", "DF"], 81, 2, 1], ["Paul Robinson", ["GK"], 80, 0, 0, 10], ["Leonardo Ulloa", ["ST", "FW"], 80, 10, 3], ["Bruno", ["CB", "DF"], 81, 2, 1], ["Beram Kayal", ["CM", "MF"], 79, 4, 4]],
+    "2010s": [["Glenn Murray", ["ST", "FW"], 83, 14, 3], ["Lewis Dunk", ["CB", "DF"], 84, 3, 1], ["Mat Ryan", ["GK"], 84, 0, 0, 12], ["Pascal Gross", ["CM", "MF"], 83, 6, 8], ["Shane Duffy", ["CB", "DF"], 82, 2, 1], ["Jose Izquierdo", ["LW", "FW"], 81, 8, 4]],
+    "2020s": [["Moisés Caicedo", ["CM", "MF"], 86, 4, 4], ["Kaoru Mitoma", ["LW", "FW"], 85, 10, 6], ["Robert Sanchez", ["GK"], 84, 0, 0, 12], ["Alexis Mac Allister", ["CM", "MF"], 86, 8, 8], ["Lewis Dunk", ["CB", "DF"], 85, 2, 1], ["Evan Ferguson", ["ST", "FW"], 83, 12, 3]]
+  },
+  "Wolves": {
+    "1990s": [["Steve Bull", ["ST", "FW"], 84, 16, 4], ["Derek Parkin", ["CB", "DF"], 80, 2, 1], ["Mike Marsh", ["CM", "MF"], 79, 5, 4], ["Andy Thompson", ["GK"], 78, 0, 0, 9], ["Don Goodman", ["ST", "FW"], 81, 12, 3], ["Kevin Muscat", ["RB", "DF"], 79, 2, 3]],
+    "2000s": [["Matt Murray", ["GK"], 81, 0, 0, 11], ["Joleon Lescott", ["CB", "DF"], 83, 3, 1], ["Carl Fletcher", ["CM", "MF"], 80, 4, 4], ["Kenny Miller", ["ST", "FW"], 81, 10, 3], ["Michael Kightly", ["LW", "FW"], 80, 8, 5], ["Stephen Ward", ["LB", "DF"], 80, 3, 4]],
+    "2010s": [["Raul Jimenez", ["ST", "FW"], 86, 18, 5], ["Ruben Neves", ["CM", "MF"], 85, 6, 6], ["Rui Patricio", ["GK"], 85, 0, 0, 13], ["Willy Boly", ["CB", "DF"], 83, 2, 1], ["Diogo Jota", ["LW", "FW"], 84, 12, 5], ["Joao Moutinho", ["CM", "MF"], 84, 4, 8]],
+    "2020s": [["Matheus Cunha", ["ST", "FW"], 85, 14, 5], ["Ruben Neves", ["CM", "MF"], 84, 5, 6], ["Jose Sa", ["GK"], 84, 0, 0, 12], ["Max Kilman", ["CB", "DF"], 83, 2, 1], ["Pedro Neto", ["RW", "FW"], 84, 8, 8], ["Hwang Hee-chan", ["LW", "FW"], 83, 10, 4]]
+  },
+  "Crystal Palace": {
+    "1990s": [["Chris Coleman", ["CB", "DF"], 80, 2, 1], ["Nigel Martyn", ["GK"], 84, 0, 0, 12], ["Chris Armstrong", ["ST", "FW"], 81, 12, 3], ["Gareth Southgate", ["CB", "DF"], 82, 1, 1], ["Attilio Lombardo", ["RW", "FW"], 83, 8, 8], ["Tomas Brolin", ["ST", "FW"], 84, 12, 5]],
+    "2000s": [["Andrew Johnson", ["ST", "FW"], 83, 14, 3], ["Shaun Derry", ["CM", "MF"], 80, 4, 4], ["Gabor Kiraly", ["GK"], 81, 0, 0, 10], ["Clinton Morrison", ["ST", "FW"], 81, 12, 3], ["Danny Butterfield", ["RB", "DF"], 79, 2, 3], ["Mark Hudson", ["CB", "DF"], 80, 2, 1]],
+    "2010s": [["Wilfried Zaha", ["RW", "FW"], 86, 12, 8], ["Christian Benteke", ["ST", "FW"], 84, 14, 3], ["Wayne Hennessey", ["GK"], 82, 0, 0, 11], ["James McArthur", ["CM", "MF"], 82, 5, 4], ["Joel Ward", ["RB", "DF"], 81, 2, 3], ["Yohan Cabaye", ["CM", "MF"], 84, 5, 6]],
+    "2020s": [["Wilfried Zaha", ["RW", "FW"], 85, 10, 6], ["Eberechi Eze", ["CM", "MF"], 85, 8, 8], ["Vicente Guaita", ["GK"], 83, 0, 0, 11], ["Marc Guehi", ["CB", "DF"], 84, 2, 1], ["Michael Olise", ["RW", "FW"], 84, 8, 8], ["Jean-Philippe Mateta", ["ST", "FW"], 83, 12, 3]]
+  },
+  "Fulham": {
+    "1990s": [["Chris Coleman", ["CB", "DF"], 79, 2, 1], ["Maik Taylor", ["GK"], 80, 0, 0, 10], ["Geoff Horsfield", ["ST", "FW"], 80, 10, 3], ["Lee Clark", ["CM", "MF"], 79, 4, 4], ["Barry Hayles", ["ST", "FW"], 80, 11, 3], ["Steve Finnan", ["RB", "DF"], 80, 2, 4]],
+    "2000s": [["Brian McBride", ["ST", "FW"], 83, 12, 4], ["Clint Dempsey", ["CM", "MF"], 84, 8, 6], ["Mark Schwarzer", ["GK"], 84, 0, 0, 12], ["Bobby Zamora", ["ST", "FW"], 83, 12, 4], ["Danny Murphy", ["CM", "MF"], 83, 5, 6], ["Brede Hangeland", ["CB", "DF"], 83, 2, 1]],
+    "2010s": [["Aleksandar Mitrovic", ["ST", "FW"], 85, 18, 4], ["Tom Cairney", ["CM", "MF"], 83, 5, 8], ["Marcus Bettinelli", ["GK"], 82, 0, 0, 10], ["Ryan Sessegnon", ["LB", "DF"], 82, 3, 5], ["Ivan Cavaleiro", ["LW", "FW"], 82, 8, 5], ["Tim Ream", ["CB", "DF"], 81, 2, 1]],
+    "2020s": [["Aleksandar Mitrovic", ["ST", "FW"], 84, 16, 3], ["Joao Palhinha", ["CM", "MF"], 85, 4, 3], ["Bernd Leno", ["GK"], 84, 0, 0, 12], ["Antonee Robinson", ["LB", "DF"], 83, 2, 6], ["Andreas Pereira", ["CM", "MF"], 83, 6, 6], ["Tim Ream", ["CB", "DF"], 81, 2, 1]]
+  },
+  "Bournemouth": {
+    "1990s": [["Steve Fletcher", ["ST", "FW"], 78, 8, 2], ["James Hayter", ["ST", "FW"], 77, 7, 2], ["Ian Cox", ["CB", "DF"], 76, 1, 1], ["Neil Moss", ["GK"], 76, 0, 0, 8], ["Jamie Redknapp", ["CM", "MF"], 80, 4, 5], ["Efan Ekoku", ["ST", "FW"], 79, 10, 3]],
+    "2000s": [["Steve Fletcher", ["ST", "FW"], 77, 6, 2], ["Darren Anderton", ["CM", "MF"], 80, 4, 5], ["Neil Moss", ["GK"], 75, 0, 0, 8], ["James Hayter", ["ST", "FW"], 76, 6, 2], ["Shaun Bartlett", ["ST", "FW"], 78, 8, 2], ["Carl Fletcher", ["CM", "MF"], 77, 3, 3]],
+    "2010s": [["Callum Wilson", ["ST", "FW"], 84, 14, 3], ["Ryan Fraser", ["LW", "FW"], 83, 6, 8], ["Asmir Begovic", ["GK"], 83, 0, 0, 11], ["Nathan Ake", ["CB", "DF"], 84, 3, 1], ["Josh King", ["ST", "FW"], 82, 10, 4], ["Harry Arter", ["CM", "MF"], 81, 3, 4]],
+    "2020s": [["Dominic Solanke", ["ST", "FW"], 84, 16, 4], ["Philip Billing", ["CM", "MF"], 83, 6, 4], ["Neto", ["GK"], 83, 0, 0, 11], ["Lloyd Kelly", ["CB", "DF"], 82, 2, 1], ["Antoine Semenyo", ["RW", "FW"], 83, 10, 5], ["Marcus Tavernier", ["LW", "FW"], 82, 8, 5]]
+  },
+  "Nottingham Forest": {
+    "1990s": [["Roy Keane", ["CM", "MF"], 88, 6, 5], ["Des Walker", ["CB", "DF"], 85, 2, 1], ["Mark Crossley", ["GK"], 83, 0, 0, 12], ["Teddy Sheringham", ["ST", "FW"], 86, 14, 6], ["Stuart Pearce", ["LB", "DF"], 86, 4, 4], ["Nigel Clough", ["CM", "MF"], 84, 8, 6]],
+    "2000s": [["Robert Earnshaw", ["ST", "FW"], 82, 12, 3], ["Michael Dawson", ["CB", "DF"], 82, 2, 1], ["Paul Smith", ["GK"], 80, 0, 0, 10], ["David Johnson", ["ST", "FW"], 80, 10, 3], ["Andy Reid", ["CM", "MF"], 81, 5, 5], ["Gareth Taylor", ["ST", "FW"], 79, 8, 2]],
+    "2010s": [["Lewis Grabban", ["ST", "FW"], 81, 12, 3], ["Joe Worrall", ["CB", "DF"], 80, 2, 1], ["Costel Pantilimon", ["GK"], 80, 0, 0, 10], ["Matty Cash", ["RB", "DF"], 81, 3, 4], ["Joe Lolley", ["RW", "FW"], 80, 8, 5], ["Tobias Figueiredo", ["CB", "DF"], 79, 1, 1]],
+    "2020s": [["Brennan Johnson", ["RW", "FW"], 84, 10, 6], ["Morgan Gibbs-White", ["CM", "MF"], 85, 8, 8], ["Dean Henderson", ["GK"], 83, 0, 0, 11], ["Taiwo Awoniyi", ["ST", "FW"], 83, 12, 3], ["Neco Williams", ["RB", "DF"], 82, 3, 5], ["Murillo", ["CB", "DF"], 83, 2, 1]]
+  },
+  "Leicester City": {
+    "1990s": [["Gary Lineker", ["ST", "FW"], 88, 18, 4], ["Steve Walsh", ["CB", "DF"], 81, 2, 1], ["Kevin Pressman", ["GK"], 80, 0, 0, 10], ["Muzzy Izzet", ["CM", "MF"], 82, 6, 6], ["Emile Heskey", ["ST", "FW"], 83, 12, 4], ["Tony Cottee", ["ST", "FW"], 82, 12, 3]],
+    "2000s": [["Muzzy Izzet", ["CM", "MF"], 81, 5, 5], ["Mladen Kristijanovic", ["GK"], 79, 0, 0, 9], ["Paul Dickov", ["ST", "FW"], 80, 10, 3], ["Matt Elliott", ["CB", "DF"], 79, 2, 1], ["Gerry Taggart", ["CB", "DF"], 80, 2, 1], ["Brian Deane", ["ST", "FW"], 80, 10, 3]],
+    "2010s": [["Jamie Vardy", ["ST", "FW"], 88, 22, 5], ["Riyad Mahrez", ["RW", "FW"], 88, 14, 10], ["Kasper Schmeichel", ["GK"], 87, 0, 0, 14], ["Wes Morgan", ["CB", "DF"], 83, 2, 1], ["N'Golo Kante", ["CM", "MF"], 88, 2, 3], ["Harry Maguire", ["CB", "DF"], 84, 3, 1]],
+    "2020s": [["Jamie Vardy", ["ST", "FW"], 84, 14, 4], ["James Maddison", ["CM", "MF"], 86, 10, 10], ["Kasper Schmeichel", ["GK"], 84, 0, 0, 12], ["Youri Tielemans", ["CM", "MF"], 85, 6, 8], ["Harvey Barnes", ["LW", "FW"], 84, 10, 5], ["Wesley Fofana", ["CB", "DF"], 84, 2, 1]]
+  },
+  "Southampton": {
+    "1990s": [["Matt Le Tissier", ["CM", "MF"], 88, 12, 10], ["Alan Shearer", ["ST", "FW"], 90, 22, 4], ["Tim Flowers", ["GK"], 83, 0, 0, 12], ["Graeme Le Saux", ["LB", "DF"], 84, 2, 6], ["Rod Wallace", ["ST", "FW"], 82, 10, 4], ["Neil Ruddock", ["CB", "DF"], 81, 3, 1]],
+    "2000s": [["James Beattie", ["ST", "FW"], 83, 12, 3], ["Antti Niemi", ["GK"], 82, 0, 0, 11], ["Marian Pahars", ["ST", "FW"], 82, 10, 4], ["Kenny Cunningham", ["RB", "DF"], 82, 2, 4], ["Kevin Phillips", ["ST", "FW"], 84, 14, 3], ["Anders Svensson", ["CM", "MF"], 81, 4, 5]],
+    "2010s": [["Sadio Mane", ["LW", "FW"], 87, 14, 8], ["Virgil van Dijk", ["CB", "DF"], 88, 3, 1], ["Fraser Forster", ["GK"], 84, 0, 0, 12], ["Dusan Tadic", ["RW", "FW"], 85, 10, 10], ["Morgan Schneiderlin", ["CM", "MF"], 84, 4, 4], ["Graziano Pelle", ["ST", "FW"], 83, 12, 4]],
+    "2020s": [["James Ward-Prowse", ["CM", "MF"], 85, 6, 8], ["Che Adams", ["ST", "FW"], 83, 12, 3], ["Gavin Bazunu", ["GK"], 82, 0, 0, 10], ["Kyle Walker-Peters", ["RB", "DF"], 83, 2, 5], ["Adam Armstrong", ["ST", "FW"], 82, 10, 3], ["Jan Bednarek", ["CB", "DF"], 82, 2, 1]]
+  },
+  "Ipswich Town": {
+    "1990s": [["John Wark", ["CM", "MF"], 82, 8, 5], ["Craig Forrest", ["GK"], 81, 0, 0, 10], ["Chris Kiwomya", ["ST", "FW"], 80, 10, 3], ["Simon Milton", ["CM", "MF"], 79, 4, 4], ["Frank Yallop", ["CB", "DF"], 79, 2, 1], ["Emanuel Villa", ["ST", "FW"], 78, 8, 2]],
+    "2000s": [["Marcus Stewart", ["ST", "FW"], 82, 12, 3], ["Matt Holland", ["CM", "MF"], 81, 5, 5], ["Shane Supple", ["GK"], 78, 0, 0, 8], ["Shefki Kuqi", ["ST", "FW"], 80, 10, 3], ["Richard Naylor", ["CB", "DF"], 79, 2, 1], ["Jim Magilton", ["CM", "MF"], 80, 5, 5]],
+    "2010s": [["Daryl Murphy", ["ST", "FW"], 80, 10, 3], ["Adam Webster", ["CB", "DF"], 80, 2, 1], ["Dean Gerken", ["GK"], 78, 0, 0, 8], ["David McGoldrick", ["ST", "FW"], 81, 10, 4], ["Cole Skuse", ["CM", "MF"], 79, 3, 3], ["Luke Chambers", ["CB", "DF"], 78, 2, 1]],
+    "2020s": [["Conor Chaplin", ["ST", "FW"], 82, 12, 4], ["Sammie Szmodics", ["CM", "MF"], 81, 8, 5], ["Vaclav Hladky", ["GK"], 79, 0, 0, 9], ["Wes Burns", ["RW", "FW"], 80, 8, 5], ["Leif Davis", ["LB", "DF"], 81, 3, 6], ["Harry Clarke", ["CB", "DF"], 80, 2, 1]]
+  },
+  "Sunderland": {
+    "1990s": [["Kevin Phillips", ["ST", "FW"], 86, 20, 4], ["Niall Quinn", ["ST", "FW"], 84, 14, 5], ["Lionel Perez", ["GK"], 80, 0, 0, 10], ["Michael Gray", ["LB", "DF"], 81, 3, 5], ["Claudio Reyna", ["CM", "MF"], 83, 5, 6], ["Stefan Schwarz", ["CM", "MF"], 82, 6, 6]],
+    "2000s": [["Darren Bent", ["ST", "FW"], 84, 14, 3], ["Craig Gordon", ["GK"], 84, 0, 0, 12], ["Kenwyne Jones", ["ST", "FW"], 82, 10, 3], ["Lee Cattermole", ["CM", "MF"], 81, 3, 3], ["John O'Shea", ["CB", "DF"], 82, 2, 2], ["Jordan Henderson", ["CM", "MF"], 82, 4, 4]],
+    "2010s": [["Jermain Defoe", ["ST", "FW"], 84, 14, 3], ["Jordan Pickford", ["GK"], 83, 0, 0, 11], ["Steven Fletcher", ["ST", "FW"], 81, 10, 3], ["Yann M'Vila", ["CM", "MF"], 82, 4, 4], ["John O'Shea", ["CB", "DF"], 81, 2, 1], ["Fabio Borini", ["ST", "FW"], 81, 10, 3]],
+    "2020s": [["Patrick Roberts", ["RW", "FW"], 81, 8, 5], ["Dan Neil", ["CM", "MF"], 80, 4, 4], ["Anthony Patterson", ["GK"], 79, 0, 0, 9], ["Jack Clarke", ["LW", "FW"], 80, 8, 4], ["Luke O'Nien", ["CB", "DF"], 79, 2, 1], ["Wilson Isidor", ["ST", "FW"], 80, 10, 3]]
+  }
+}

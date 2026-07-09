@@ -1,0 +1,875 @@
+import type { ClubEraPool, Seed } from "./types";
+
+const f = (
+  name: string,
+  positions: string[],
+  rating: number,
+  goals: number,
+  assists: number,
+  cleanSheets = 0,
+): Seed => ({
+  name,
+  positions,
+  rating,
+  stats: positions.includes("GK")
+    ? { goals: 0, assists: 0, cleanSheets }
+    : { goals, assists },
+});
+
+export const FOOTBALL_POOL: ClubEraPool = {
+  Arsenal: {
+    "1990s": [
+      f("Thierry Henry", ["ST", "FW"], 93, 30, 9),
+      f("Dennis Bergkamp", ["ST", "FW"], 91, 16, 11),
+      f("Patrick Vieira", ["CM", "MF"], 90, 8, 6),
+      f("Tony Adams", ["CB", "DF"], 88, 3, 1),
+    ],
+    "2000s": [
+      f("Cesc Fabregas", ["CM", "MF"], 89, 7, 17),
+      f("Robin van Persie", ["ST", "FW"], 88, 22, 5),
+      f("Thierry Henry", ["ST", "FW"], 92, 27, 12),
+      f("Ashley Cole", ["LB", "DF"], 86, 2, 6),
+    ],
+    "2010s": [
+      f("Mesut Ozil", ["CM", "MF"], 88, 6, 19),
+      f("Alexis Sanchez", ["LW", "FW"], 87, 20, 9),
+      f("Pierre-Emerick Aubameyang", ["ST", "FW"], 88, 22, 5),
+      f("Laurent Koscielny", ["CB", "DF"], 85, 4, 1),
+    ],
+    "2020s": [
+      f("Bukayo Saka", ["RW", "FW"], 86, 14, 11),
+      f("Martin Odegaard", ["CM", "MF"], 87, 10, 9),
+      f("Gabriel Jesus", ["ST", "FW"], 84, 12, 6),
+      f("William Saliba", ["CB", "DF"], 86, 2, 1),
+    ],
+  },
+  "Manchester United": {
+    "1990s": [
+      f("Ryan Giggs", ["LW", "FW"], 90, 12, 14),
+      f("Roy Keane", ["CM", "MF"], 89, 6, 5),
+      f("Eric Cantona", ["ST", "FW"], 91, 18, 8),
+      f("Peter Schmeichel", ["GK"], 92, 0, 0, 18),
+    ],
+    "2000s": [
+      f("Cristiano Ronaldo", ["RW", "FW"], 94, 31, 7),
+      f("Wayne Rooney", ["ST", "FW"], 91, 27, 10),
+      f("Paul Scholes", ["CM", "MF"], 90, 14, 12),
+      f("Rio Ferdinand", ["CB", "DF"], 89, 3, 2),
+    ],
+    "2010s": [
+      f("David de Gea", ["GK"], 90, 0, 0, 18),
+      f("Bruno Fernandes", ["CM", "MF"], 88, 18, 12),
+      f("Wayne Rooney", ["ST", "FW"], 87, 15, 8),
+      f("Robin van Persie", ["ST", "FW"], 88, 26, 4),
+    ],
+    "2020s": [
+      f("Marcus Rashford", ["LW", "FW"], 85, 17, 5),
+      f("Bruno Fernandes", ["CM", "MF"], 89, 15, 14),
+      f("Casemiro", ["CM", "MF"], 86, 4, 3),
+      f("Rasmus Hojlund", ["ST", "FW"], 82, 12, 3),
+    ],
+  },
+  Liverpool: {
+    "1990s": [
+      f("Steven Gerrard", ["CM", "MF"], 90, 12, 8),
+      f("Michael Owen", ["ST", "FW"], 88, 22, 4),
+      f("Robbie Fowler", ["ST", "FW"], 87, 18, 5),
+      f("Jamie Carragher", ["CB", "DF"], 86, 2, 2),
+    ],
+    "2000s": [
+      f("Fernando Torres", ["ST", "FW"], 89, 24, 5),
+      f("Xabi Alonso", ["CM", "MF"], 87, 5, 8),
+      f("Steven Gerrard", ["CM", "MF"], 91, 14, 10),
+      f("Luis Garcia", ["LW", "FW"], 84, 10, 7),
+    ],
+    "2010s": [
+      f("Mohamed Salah", ["RW", "FW"], 91, 32, 10),
+      f("Virgil van Dijk", ["CB", "DF"], 92, 4, 2),
+      f("Sadio Mane", ["LW", "FW"], 89, 22, 8),
+      f("Roberto Firmino", ["ST", "FW"], 87, 15, 9),
+    ],
+    "2020s": [
+      f("Mohamed Salah", ["RW", "FW"], 92, 28, 12),
+      f("Virgil van Dijk", ["CB", "DF"], 90, 3, 2),
+      f("Darwin Nunez", ["ST", "FW"], 84, 18, 6),
+      f("Alisson Becker", ["GK"], 89, 0, 0, 16),
+    ],
+  },
+  "Manchester City": {
+    "1990s": [
+      f("Shaun Wright-Phillips", ["RW", "FW"], 82, 10, 6),
+      f("Uwe Rosler", ["ST", "FW"], 80, 14, 4),
+      f("Georgi Kinkladze", ["CM", "MF"], 83, 8, 6),
+      f("Tony Coton", ["GK"], 81, 0, 0, 12),
+    ],
+    "2000s": [
+      f("Vincent Kompany", ["CB", "DF"], 88, 5, 1),
+      f("Yaya Toure", ["CM", "MF"], 90, 16, 9),
+      f("Sergio Aguero", ["ST", "FW"], 91, 23, 6),
+      f("David Silva", ["CM", "MF"], 91, 10, 14),
+    ],
+    "2010s": [
+      f("Sergio Aguero", ["ST", "FW"], 92, 26, 6),
+      f("Kevin De Bruyne", ["CM", "MF"], 93, 11, 18),
+      f("David Silva", ["CM", "MF"], 90, 8, 12),
+      f("Ederson", ["GK"], 88, 0, 0, 17),
+    ],
+    "2020s": [
+      f("Erling Haaland", ["ST", "FW"], 94, 36, 5),
+      f("Phil Foden", ["CM", "MF"], 87, 15, 8),
+      f("Kevin De Bruyne", ["CM", "MF"], 92, 10, 16),
+      f("Rodri", ["CM", "MF"], 90, 6, 7),
+    ],
+  },
+  Chelsea: {
+    "1990s": [
+      f("Gianfranco Zola", ["ST", "FW"], 88, 16, 10),
+      f("Gus Poyet", ["CM", "MF"], 84, 12, 8),
+      f("Tore Andre Flo", ["ST", "FW"], 82, 14, 3),
+      f("Ed de Goey", ["GK"], 83, 0, 0, 13),
+    ],
+    "2000s": [
+      f("Frank Lampard", ["CM", "MF"], 91, 22, 9),
+      f("Didier Drogba", ["ST", "FW"], 90, 29, 6),
+      f("John Terry", ["CB", "DF"], 89, 6, 2),
+      f("Petr Cech", ["GK"], 91, 0, 0, 20),
+    ],
+    "2010s": [
+      f("Eden Hazard", ["LW", "FW"], 91, 16, 12),
+      f("N'Golo Kante", ["CM", "MF"], 89, 2, 3),
+      f("Diego Costa", ["ST", "FW"], 87, 20, 5),
+      f("Cesar Azpilicueta", ["CB", "DF"], 86, 3, 4),
+    ],
+    "2020s": [
+      f("Cole Palmer", ["CM", "MF"], 86, 22, 11),
+      f("Enzo Fernandez", ["CM", "MF"], 85, 6, 8),
+      f("Moises Caicedo", ["CM", "MF"], 84, 3, 4),
+      f("Nicolas Jackson", ["ST", "FW"], 82, 14, 4),
+    ],
+  },
+  Tottenham: {
+    "1990s": [
+      f("Teddy Sheringham", ["ST", "FW"], 86, 18, 8),
+      f("Darren Anderton", ["CM", "MF"], 84, 8, 10),
+      f("Gary Mabbutt", ["CB", "DF"], 82, 4, 2),
+      f("Ian Walker", ["GK"], 81, 0, 0, 11),
+    ],
+    "2000s": [
+      f("Gareth Bale", ["LW", "FW"], 88, 14, 8),
+      f("Luka Modric", ["CM", "MF"], 89, 6, 10),
+      f("Robbie Keane", ["ST", "FW"], 86, 18, 6),
+      f("Ledley King", ["CB", "DF"], 85, 3, 1),
+    ],
+    "2010s": [
+      f("Harry Kane", ["ST", "FW"], 91, 30, 7),
+      f("Christian Eriksen", ["CM", "MF"], 88, 12, 14),
+      f("Son Heung-min", ["LW", "FW"], 89, 20, 9),
+      f("Hugo Lloris", ["GK"], 87, 0, 0, 15),
+    ],
+    "2020s": [
+      f("Harry Kane", ["ST", "FW"], 90, 26, 5),
+      f("Son Heung-min", ["LW", "FW"], 88, 18, 8),
+      f("James Maddison", ["CM", "MF"], 86, 8, 12),
+      f("Cristian Romero", ["CB", "DF"], 85, 3, 1),
+    ],
+  },
+  Newcastle: {
+    "1990s": [
+      f("Alan Shearer", ["ST", "FW"], 92, 25, 4),
+      f("Peter Beardsley", ["ST", "FW"], 86, 14, 8),
+      f("David Ginola", ["LW", "FW"], 87, 10, 12),
+      f("Shay Given", ["GK"], 85, 0, 0, 14),
+    ],
+    "2000s": [
+      f("Alan Shearer", ["ST", "FW"], 90, 22, 3),
+      f("Laurent Robert", ["LW", "FW"], 84, 10, 8),
+      f("Gary Speed", ["CM", "MF"], 85, 6, 5),
+      f("Shay Given", ["GK"], 86, 0, 0, 15),
+    ],
+    "2010s": [
+      f("Yohan Cabaye", ["CM", "MF"], 84, 6, 8),
+      f("Papiss Cisse", ["ST", "FW"], 83, 16, 3),
+      f("Fabricio Coloccini", ["CB", "DF"], 84, 2, 1),
+      f("Tim Krul", ["GK"], 82, 0, 0, 12),
+    ],
+    "2020s": [
+      f("Alexander Isak", ["ST", "FW"], 87, 22, 5),
+      f("Bruno Guimaraes", ["CM", "MF"], 88, 6, 8),
+      f("Anthony Gordon", ["LW", "FW"], 84, 12, 6),
+      f("Nick Pope", ["GK"], 85, 0, 0, 14),
+    ],
+  },
+  "Aston Villa": {
+    "1990s": [
+      f("Dwight Yorke", ["ST", "FW"], 87, 18, 8),
+      f("Paul McGrath", ["CB", "DF"], 86, 1, 2),
+      f("Dean Saunders", ["ST", "FW"], 84, 16, 4),
+      f("Mark Bosnich", ["GK"], 83, 0, 0, 12),
+    ],
+    "2000s": [
+      f("Gareth Barry", ["CM", "MF"], 85, 6, 7),
+      f("Juan Pablo Angel", ["ST", "FW"], 83, 14, 5),
+      f("Olof Mellberg", ["CB", "DF"], 84, 4, 2),
+      f("Brad Friedel", ["GK"], 84, 0, 0, 13),
+    ],
+    "2010s": [
+      f("Christian Benteke", ["ST", "FW"], 85, 18, 4),
+      f("Fabian Delph", ["CM", "MF"], 83, 4, 5),
+      f("Ashley Young", ["LW", "FW"], 84, 6, 8),
+      f("Brad Guzan", ["GK"], 82, 0, 0, 11),
+    ],
+    "2020s": [
+      f("Ollie Watkins", ["ST", "FW"], 86, 20, 6),
+      f("Douglas Luiz", ["CM", "MF"], 85, 5, 5),
+      f("John McGinn", ["CM", "MF"], 84, 8, 6),
+      f("Emiliano Martinez", ["GK"], 88, 0, 0, 15),
+    ],
+  },
+  Barcelona: {
+    "1980s": [
+      f("Diego Maradona", ["ST", "FW"], 95, 22, 12),
+      f("Bernd Schuster", ["CM", "MF"], 88, 10, 14),
+      f("Gary Lineker", ["ST", "FW"], 87, 20, 5),
+      f("Andoni Zubizarreta", ["GK"], 86, 0, 0, 14),
+    ],
+    "1990s": [
+      f("Romario", ["ST", "FW"], 92, 28, 8),
+      f("Hristo Stoichkov", ["ST", "FW"], 90, 20, 10),
+      f("Pep Guardiola", ["CM", "MF"], 86, 4, 8),
+      f("Ronald Koeman", ["CB", "DF"], 88, 8, 4),
+    ],
+    "2000s": [
+      f("Ronaldinho", ["LW", "FW"], 94, 20, 14),
+      f("Samuel Eto'o", ["ST", "FW"], 91, 25, 8),
+      f("Xavi", ["CM", "MF"], 92, 8, 16),
+      f("Carles Puyol", ["CB", "DF"], 89, 3, 2),
+    ],
+    "2010s": [
+      f("Lionel Messi", ["RW", "FW"], 98, 35, 12),
+      f("Andres Iniesta", ["CM", "MF"], 93, 10, 14),
+      f("Luis Suarez", ["ST", "FW"], 92, 28, 14),
+      f("Gerard Pique", ["CB", "DF"], 89, 4, 2),
+    ],
+    "2020s": [
+      f("Robert Lewandowski", ["ST", "FW"], 91, 28, 6),
+      f("Pedri", ["CM", "MF"], 88, 8, 10),
+      f("Frenkie de Jong", ["CM", "MF"], 87, 4, 8),
+      f("Marc-Andre ter Stegen", ["GK"], 88, 0, 0, 15),
+    ],
+  },
+  "Real Madrid": {
+    "1980s": [
+      f("Emilio Butragueno", ["ST", "FW"], 90, 22, 8),
+      f("Michel", ["CM", "MF"], 88, 14, 12),
+      f("Hugo Sanchez", ["ST", "FW"], 91, 28, 6),
+      f("Francisco Buyo", ["GK"], 85, 0, 0, 14),
+    ],
+    "1990s": [
+      f("Raul", ["ST", "FW"], 91, 22, 8),
+      f("Fernando Redondo", ["CM", "MF"], 89, 6, 10),
+      f("Roberto Carlos", ["LB", "DF"], 90, 6, 12),
+      f("Iker Casillas", ["GK"], 88, 0, 0, 16),
+    ],
+    "2000s": [
+      f("Raul", ["ST", "FW"], 90, 20, 7),
+      f("Zinedine Zidane", ["CM", "MF"], 94, 10, 14),
+      f("Cristiano Ronaldo", ["RW", "FW"], 96, 33, 8),
+      f("Sergio Ramos", ["CB", "DF"], 90, 6, 4),
+    ],
+    "2010s": [
+      f("Cristiano Ronaldo", ["RW", "FW"], 97, 35, 9),
+      f("Karim Benzema", ["ST", "FW"], 92, 24, 8),
+      f("Luka Modric", ["CM", "MF"], 93, 8, 12),
+      f("Sergio Ramos", ["CB", "DF"], 91, 7, 4),
+    ],
+    "2020s": [
+      f("Karim Benzema", ["ST", "FW"], 91, 26, 6),
+      f("Vinicius Jr.", ["LW", "FW"], 90, 18, 12),
+      f("Jude Bellingham", ["CM", "MF"], 89, 14, 8),
+      f("Thibaut Courtois", ["GK"], 90, 0, 0, 17),
+    ],
+  },
+  "Atletico Madrid": {
+    "1980s": [
+      f("Hugo Sanchez", ["ST", "FW"], 88, 20, 6),
+      f("Luis Aragones", ["CM", "MF"], 84, 12, 8),
+      f("Milinko Pantic", ["CM", "MF"], 83, 8, 6),
+      f("Abel Resino", ["GK"], 82, 0, 0, 13),
+    ],
+    "1990s": [
+      f("Christian Vieri", ["ST", "FW"], 88, 22, 4),
+      f("Kiko", ["RW", "FW"], 85, 12, 8),
+      f("Diego Simeone", ["CM", "MF"], 87, 6, 5),
+      f("Molina", ["GK"], 83, 0, 0, 12),
+    ],
+    "2000s": [
+      f("Fernando Torres", ["ST", "FW"], 90, 22, 6),
+      f("Sergio Aguero", ["ST", "FW"], 88, 20, 5),
+      f("Diego Forlan", ["ST", "FW"], 89, 24, 6),
+      f("Diego Simeone", ["CM", "MF"], 86, 4, 4),
+    ],
+    "2010s": [
+      f("Diego Costa", ["ST", "FW"], 89, 22, 6),
+      f("Antoine Griezmann", ["ST", "FW"], 91, 22, 8),
+      f("Koke", ["CM", "MF"], 88, 6, 10),
+      f("Jan Oblak", ["GK"], 90, 0, 0, 18),
+    ],
+    "2020s": [
+      f("Antoine Griezmann", ["ST", "FW"], 89, 18, 8),
+      f("Joao Felix", ["ST", "FW"], 86, 14, 6),
+      f("Koke", ["CM", "MF"], 86, 4, 8),
+      f("Jan Oblak", ["GK"], 89, 0, 0, 16),
+    ],
+  },
+  Sevilla: {
+    "1980s": [
+      f("Juan Arza", ["ST", "FW"], 82, 14, 5),
+      f("Biri Biri", ["RW", "FW"], 80, 10, 6),
+      f("Diego Rodriguez", ["CM", "MF"], 79, 6, 6),
+      f("Paco Buyo", ["GK"], 84, 0, 0, 13),
+    ],
+    "1990s": [
+      f("Diego Maradona", ["ST", "FW"], 90, 18, 10),
+      f("Davor Suker", ["ST", "FW"], 87, 20, 6),
+      f("Diego Simeone", ["CM", "MF"], 86, 6, 5),
+      f("Jose Antonio Camacho", ["CB", "DF"], 82, 2, 2),
+      f("Andoni Zubizarreta", ["GK"], 85, 0, 0, 14),
+    ],
+    "2000s": [
+      f("Frederic Kanoute", ["ST", "FW"], 86, 18, 6),
+      f("Luis Fabiano", ["ST", "FW"], 87, 22, 5),
+      f("Jesus Navas", ["RW", "FW"], 85, 6, 14),
+      f("Andres Palop", ["GK"], 83, 0, 0, 12),
+    ],
+    "2010s": [
+      f("Ivan Rakitic", ["CM", "MF"], 88, 10, 12),
+      f("Kevin Gameiro", ["ST", "FW"], 86, 18, 5),
+      f("Jesus Navas", ["RW", "FW"], 84, 5, 12),
+      f("Beto", ["GK"], 84, 0, 0, 13),
+    ],
+    "2020s": [
+      f("Youssef En-Nesyri", ["ST", "FW"], 84, 16, 3),
+      f("Ivan Rakitic", ["CM", "MF"], 85, 6, 8),
+      f("Jesus Navas", ["RW", "FW"], 83, 4, 10),
+      f("Bono", ["GK"], 85, 0, 0, 14),
+    ],
+  },
+  Valencia: {
+    "1980s": [
+      f("Mario Kempes", ["ST", "FW"], 90, 22, 8),
+      f("Fernando", ["CM", "MF"], 84, 8, 10),
+      f("Sanchez Flores", ["CB", "DF"], 82, 3, 2),
+      f("Sempere", ["GK"], 81, 0, 0, 11),
+    ],
+    "1990s": [
+      f("Claudio Lopez", ["ST", "FW"], 86, 18, 6),
+      f("Gaizka Mendieta", ["CM", "MF"], 88, 10, 12),
+      f("Amedeo Carboni", ["LB", "DF"], 83, 2, 5),
+      f("Santiago Canizares", ["GK"], 87, 0, 0, 15),
+    ],
+    "2000s": [
+      f("David Villa", ["ST", "FW"], 90, 24, 6),
+      f("David Silva", ["CM", "MF"], 88, 10, 12),
+      f("Joaquin", ["RW", "FW"], 85, 8, 12),
+      f("Santiago Canizares", ["GK"], 86, 0, 0, 14),
+    ],
+    "2010s": [
+      f("Roberto Soldado", ["ST", "FW"], 85, 18, 4),
+      f("Paco Alcacer", ["ST", "FW"], 84, 14, 5),
+      f("Dani Parejo", ["CM", "MF"], 86, 8, 10),
+      f("Diego Alves", ["GK"], 85, 0, 0, 13),
+    ],
+    "2020s": [
+      f("Jose Luis Gaya", ["LB", "DF"], 84, 3, 6),
+      f("Carlos Soler", ["CM", "MF"], 85, 8, 6),
+      f("Hugo Duro", ["ST", "FW"], 82, 12, 3),
+      f("Giorgi Mamardashvili", ["GK"], 84, 0, 0, 12),
+    ],
+  },
+  Villarreal: {
+    "1980s": [
+      f("Sebastiao Lazaroni", ["ST", "FW"], 78, 10, 4),
+      f("Fernando", ["CM", "MF"], 80, 6, 5),
+      f("Pina", ["CB", "DF"], 79, 2, 1),
+      f("Reina Sr.", ["GK"], 78, 0, 0, 10),
+    ],
+    "1990s": [
+      f("Victor", ["ST", "FW"], 82, 14, 4),
+      f("Guilherme", ["CM", "MF"], 81, 6, 5),
+      f("Javi Gracia", ["CM", "MF"], 80, 4, 6),
+      f("Barbosa", ["GK"], 79, 0, 0, 10),
+    ],
+    "2000s": [
+      f("Diego Forlan", ["ST", "FW"], 88, 22, 6),
+      f("Giuseppe Rossi", ["ST", "FW"], 85, 16, 4),
+      f("Santi Cazorla", ["CM", "MF"], 86, 8, 10),
+      f("Diego Lopez", ["GK"], 84, 0, 0, 13),
+    ],
+    "2010s": [
+      f("Gerard Moreno", ["ST", "FW"], 86, 18, 6),
+      f("Santi Cazorla", ["CM", "MF"], 85, 8, 10),
+      f("Bruno Soriano", ["CM", "MF"], 83, 4, 6),
+      f("Sergio Asenjo", ["GK"], 84, 0, 0, 12),
+    ],
+    "2020s": [
+      f("Gerard Moreno", ["ST", "FW"], 85, 16, 5),
+      f("Dani Parejo", ["CM", "MF"], 86, 6, 10),
+      f("Yeremy Pino", ["RW", "FW"], 83, 10, 6),
+      f("Gerónimo Rulli", ["GK"], 85, 0, 0, 13),
+    ],
+  },
+  "AC Milan": {
+    "1980s": [
+      f("Marco van Basten", ["ST", "FW"], 94, 26, 8),
+      f("Ruud Gullit", ["CM", "MF"], 92, 16, 12),
+      f("Franco Baresi", ["CB", "DF"], 93, 3, 4),
+      f("Giovanni Galli", ["GK"], 85, 0, 0, 15),
+    ],
+    "1990s": [
+      f("Marco van Basten", ["ST", "FW"], 93, 22, 8),
+      f("George Weah", ["ST", "FW"], 91, 20, 8),
+      f("Paolo Maldini", ["CB", "DF"], 94, 2, 4),
+      f("Sebastiano Rossi", ["GK"], 86, 0, 0, 16),
+    ],
+    "2000s": [
+      f("Andriy Shevchenko", ["ST", "FW"], 92, 26, 6),
+      f("Kaka", ["CM", "MF"], 93, 18, 12),
+      f("Paolo Maldini", ["CB", "DF"], 92, 2, 3),
+      f("Dida", ["GK"], 88, 0, 0, 15),
+    ],
+    "2010s": [
+      f("Zlatan Ibrahimovic", ["ST", "FW"], 90, 22, 8),
+      f("Robinho", ["LW", "FW"], 86, 12, 8),
+      f("Gianluigi Donnarumma", ["GK"], 88, 0, 0, 14),
+      f("Alessio Romagnoli", ["CB", "DF"], 85, 2, 1),
+    ],
+    "2020s": [
+      f("Olivier Giroud", ["ST", "FW"], 86, 16, 5),
+      f("Rafael Leao", ["LW", "FW"], 88, 14, 10),
+      f("Theo Hernandez", ["LB", "DF"], 87, 5, 8),
+      f("Mike Maignan", ["GK"], 89, 0, 0, 16),
+    ],
+  },
+  "Inter Milan": {
+    "1980s": [
+      f("Lothar Matthaus", ["CM", "MF"], 91, 12, 10),
+      f("Andreas Brehme", ["LB", "DF"], 89, 8, 10),
+      f("Giuseppe Bergomi", ["CB", "DF"], 88, 4, 3),
+      f("Walter Zenga", ["GK"], 87, 0, 0, 14),
+    ],
+    "1990s": [
+      f("Ronaldo", ["ST", "FW"], 95, 28, 6),
+      f("Roberto Baggio", ["ST", "FW"], 92, 18, 10),
+      f("Javier Zanetti", ["RB", "DF"], 90, 4, 8),
+      f("Walter Zenga", ["GK"], 86, 0, 0, 13),
+    ],
+    "2000s": [
+      f("Ronaldo", ["ST", "FW"], 93, 24, 5),
+      f("Adriano", ["ST", "FW"], 90, 22, 6),
+      f("Javier Zanetti", ["RB", "DF"], 89, 3, 7),
+      f("Julio Cesar", ["GK"], 88, 0, 0, 15),
+    ],
+    "2010s": [
+      f("Mauro Icardi", ["ST", "FW"], 88, 22, 4),
+      f("Samir Handanovic", ["GK"], 89, 0, 0, 16),
+      f("Ivan Perisic", ["LW", "FW"], 87, 10, 10),
+      f("Milan Skriniar", ["CB", "DF"], 87, 3, 1),
+    ],
+    "2020s": [
+      f("Lautaro Martinez", ["ST", "FW"], 90, 24, 6),
+      f("Nicolo Barella", ["CM", "MF"], 88, 8, 10),
+      f("Marcus Thuram", ["ST", "FW"], 86, 16, 8),
+      f("Yann Sommer", ["GK"], 87, 0, 0, 14),
+    ],
+  },
+  Juventus: {
+    "1980s": [
+      f("Michel Platini", ["CM", "MF"], 94, 18, 12),
+      f("Paolo Rossi", ["ST", "FW"], 91, 20, 6),
+      f("Gaetano Scirea", ["CB", "DF"], 92, 3, 4),
+      f("Stefano Tacconi", ["GK"], 86, 0, 0, 15),
+    ],
+    "1990s": [
+      f("Roberto Baggio", ["ST", "FW"], 93, 20, 10),
+      f("Alessandro Del Piero", ["ST", "FW"], 92, 22, 10),
+      f("Gianluca Vialli", ["ST", "FW"], 88, 16, 6),
+      f("Angelo Peruzzi", ["GK"], 87, 0, 0, 14),
+    ],
+    "2000s": [
+      f("Alessandro Del Piero", ["ST", "FW"], 91, 20, 10),
+      f("David Trezeguet", ["ST", "FW"], 89, 22, 4),
+      f("Pavel Nedved", ["CM", "MF"], 91, 10, 12),
+      f("Gianluigi Buffon", ["GK"], 93, 0, 0, 18),
+    ],
+    "2010s": [
+      f("Gianluigi Buffon", ["GK"], 92, 0, 0, 17),
+      f("Paulo Dybala", ["ST", "FW"], 89, 18, 8),
+      f("Gonzalo Higuain", ["ST", "FW"], 88, 22, 5),
+      f("Leonardo Bonucci", ["CB", "DF"], 88, 3, 2),
+    ],
+    "2020s": [
+      f("Dusan Vlahovic", ["ST", "FW"], 87, 20, 4),
+      f("Federico Chiesa", ["RW", "FW"], 86, 12, 6),
+      f("Paulo Dybala", ["ST", "FW"], 87, 14, 8),
+      f("Wojciech Szczesny", ["GK"], 86, 0, 0, 14),
+    ],
+  },
+  Napoli: {
+    "1980s": [
+      f("Diego Maradona", ["ST", "FW"], 97, 22, 14),
+      f("Careca", ["ST", "FW"], 90, 20, 8),
+      f("Ciro Ferrara", ["CB", "DF"], 86, 3, 2),
+      f("Giuseppe Bruscolotti", ["GK"], 83, 0, 0, 12),
+    ],
+    "1990s": [
+      f("Gianfranco Zola", ["ST", "FW"], 88, 16, 10),
+      f("Fabio Pecchia", ["CM", "MF"], 82, 6, 8),
+      f("Ciro Ferrara", ["CB", "DF"], 85, 2, 2),
+      f("Francesco Toldo", ["GK"], 84, 0, 0, 12),
+    ],
+    "2000s": [
+      f("Edinson Cavani", ["ST", "FW"], 88, 22, 4),
+      f("Ezequiel Lavezzi", ["LW", "FW"], 86, 12, 10),
+      f("Marek Hamsik", ["CM", "MF"], 88, 10, 10),
+      f("Morgan De Sanctis", ["GK"], 84, 0, 0, 12),
+    ],
+    "2010s": [
+      f("Edinson Cavani", ["ST", "FW"], 89, 24, 5),
+      f("Marek Hamsik", ["CM", "MF"], 89, 12, 10),
+      f("Lorenzo Insigne", ["LW", "FW"], 87, 14, 10),
+      f("Pepe Reina", ["GK"], 86, 0, 0, 14),
+    ],
+    "2020s": [
+      f("Victor Osimhen", ["ST", "FW"], 90, 24, 4),
+      f("Khvicha Kvaratskhelia", ["LW", "FW"], 88, 14, 12),
+      f("Stanislav Lobotka", ["CM", "MF"], 85, 3, 6),
+      f("Alex Meret", ["GK"], 84, 0, 0, 13),
+    ],
+  },
+  Roma: {
+    "1980s": [
+      f("Roberto Pruzzo", ["ST", "FW"], 88, 20, 6),
+      f("Bruno Conti", ["RW", "FW"], 87, 10, 12),
+      f("Falcao", ["CM", "MF"], 89, 12, 10),
+      f("Stefano Negrin", ["GK"], 82, 0, 0, 11),
+    ],
+    "1990s": [
+      f("Gabriel Batistuta", ["ST", "FW"], 91, 24, 4),
+      f("Francesco Totti", ["ST", "FW"], 90, 16, 12),
+      f("Vincenzo Montella", ["ST", "FW"], 86, 18, 5),
+      f("Francesco Toldo", ["GK"], 85, 0, 0, 13),
+    ],
+    "2000s": [
+      f("Francesco Totti", ["ST", "FW"], 91, 18, 12),
+      f("Daniele De Rossi", ["CM", "MF"], 88, 8, 8),
+      f("Mirko Vucinic", ["ST", "FW"], 85, 14, 6),
+      f("Doni", ["GK"], 83, 0, 0, 12),
+    ],
+    "2010s": [
+      f("Francesco Totti", ["ST", "FW"], 86, 12, 8),
+      f("Edin Dzeko", ["ST", "FW"], 87, 20, 5),
+      f("Daniele De Rossi", ["CM", "MF"], 86, 6, 6),
+      f("Alisson Becker", ["GK"], 87, 0, 0, 14),
+    ],
+    "2020s": [
+      f("Paulo Dybala", ["ST", "FW"], 88, 16, 10),
+      f("Lorenzo Pellegrini", ["CM", "MF"], 86, 8, 10),
+      f("Tammy Abraham", ["ST", "FW"], 84, 14, 4),
+      f("Rui Patricio", ["GK"], 84, 0, 0, 12),
+    ],
+  },
+  Lazio: {
+    "1980s": [
+      f("Giuseppe Favalli", ["LB", "DF"], 82, 3, 5),
+      f("Paulo Futre", ["ST", "FW"], 86, 16, 8),
+      f("Claudio Gentile", ["CB", "DF"], 84, 2, 2),
+      f("Walter Zenga", ["GK"], 84, 0, 0, 12),
+    ],
+    "1990s": [
+      f("Pavel Nedved", ["CM", "MF"], 90, 12, 10),
+      f("Juan Sebastian Veron", ["CM", "MF"], 89, 8, 12),
+      f("Christian Vieri", ["ST", "FW"], 90, 24, 4),
+      f("Gianluca Pagliuca", ["GK"], 86, 0, 0, 14),
+    ],
+    "2000s": [
+      f("Hernan Crespo", ["ST", "FW"], 89, 22, 5),
+      f("Claudio Lopez", ["ST", "FW"], 86, 16, 6),
+      f("Juan Sebastian Veron", ["CM", "MF"], 88, 6, 10),
+      f("Angelo Peruzzi", ["GK"], 87, 0, 0, 14),
+    ],
+    "2010s": [
+      f("Ciro Immobile", ["ST", "FW"], 89, 26, 6),
+      f("Sergej Milinkovic-Savic", ["CM", "MF"], 88, 10, 10),
+      f("Felipe Anderson", ["RW", "FW"], 85, 8, 10),
+      f("Federico Marchetti", ["GK"], 84, 0, 0, 12),
+    ],
+    "2020s": [
+      f("Ciro Immobile", ["ST", "FW"], 87, 22, 5),
+      f("Sergej Milinkovic-Savic", ["CM", "MF"], 87, 8, 10),
+      f("Luis Alberto", ["CM", "MF"], 86, 8, 12),
+      f("Ivan Provedel", ["GK"], 84, 0, 0, 13),
+    ],
+  },
+  "Bayern Munich": {
+    "1990s": [
+      f("Lothar Matthaus", ["CM", "MF"], 92, 10, 10),
+      f("Jurgen Klinsmann", ["ST", "FW"], 90, 20, 6),
+      f("Stefan Effenberg", ["CM", "MF"], 88, 8, 10),
+      f("Oliver Kahn", ["GK"], 91, 0, 0, 17),
+    ],
+    "2000s": [
+      f("Miroslav Klose", ["ST", "FW"], 89, 22, 5),
+      f("Franck Ribery", ["LW", "FW"], 90, 12, 14),
+      f("Philipp Lahm", ["RB", "DF"], 89, 3, 8),
+      f("Oliver Kahn", ["GK"], 92, 0, 0, 18),
+    ],
+    "2010s": [
+      f("Robert Lewandowski", ["ST", "FW"], 93, 30, 6),
+      f("Thomas Muller", ["ST", "FW"], 90, 18, 12),
+      f("Arjen Robben", ["RW", "FW"], 91, 16, 10),
+      f("Manuel Neuer", ["GK"], 93, 0, 0, 18),
+    ],
+    "2020s": [
+      f("Robert Lewandowski", ["ST", "FW"], 92, 28, 5),
+      f("Thomas Muller", ["ST", "FW"], 88, 12, 14),
+      f("Jamal Musiala", ["CM", "MF"], 88, 12, 8),
+      f("Manuel Neuer", ["GK"], 90, 0, 0, 16),
+    ],
+  },
+  "Borussia Dortmund": {
+    "1990s": [
+      f("Andreas Moller", ["CM", "MF"], 88, 10, 12),
+      f("Karl-Heinz Riedle", ["ST", "FW"], 86, 16, 5),
+      f("Matthias Sammer", ["CB", "DF"], 90, 6, 6),
+      f("Stefan Klos", ["GK"], 84, 0, 0, 13),
+    ],
+    "2000s": [
+      f("Mats Hummels", ["CB", "DF"], 88, 4, 2),
+      f("Shinji Kagawa", ["CM", "MF"], 86, 10, 10),
+      f("Robert Lewandowski", ["ST", "FW"], 88, 22, 5),
+      f("Roman Weidenfeller", ["GK"], 85, 0, 0, 13),
+    ],
+    "2010s": [
+      f("Robert Lewandowski", ["ST", "FW"], 92, 28, 6),
+      f("Marco Reus", ["LW", "FW"], 89, 16, 12),
+      f("Pierre-Emerick Aubameyang", ["ST", "FW"], 90, 25, 6),
+      f("Mats Hummels", ["CB", "DF"], 88, 4, 2),
+    ],
+    "2020s": [
+      f("Erling Haaland", ["ST", "FW"], 93, 30, 5),
+      f("Marco Reus", ["LW", "FW"], 86, 12, 10),
+      f("Jude Bellingham", ["CM", "MF"], 88, 10, 8),
+      f("Gregor Kobel", ["GK"], 86, 0, 0, 14),
+    ],
+  },
+  "RB Leipzig": {
+    "1990s": [
+      f("Dirk Schuster", ["CM", "MF"], 80, 6, 6),
+      f("Jörg Pfahl", ["ST", "FW"], 79, 12, 3),
+      f("Uwe Zötzsche", ["CB", "DF"], 78, 2, 1),
+      f("René Müller", ["GK"], 79, 0, 0, 10),
+    ],
+    "2000s": [
+      f("Robert Mayer", ["ST", "FW"], 78, 10, 3),
+      f("Benjamin Köhler", ["CM", "MF"], 79, 5, 5),
+      f("Cesar M'Boma", ["ST", "FW"], 80, 12, 4),
+      f("René Adler", ["GK"], 80, 0, 0, 11),
+    ],
+    "2010s": [
+      f("Timo Werner", ["ST", "FW"], 86, 20, 6),
+      f("Emil Forsberg", ["LW", "FW"], 85, 10, 12),
+      f("Dayot Upamecano", ["CB", "DF"], 84, 2, 1),
+      f("Peter Gulacsi", ["GK"], 85, 0, 0, 13),
+    ],
+    "2020s": [
+      f("Christopher Nkunku", ["ST", "FW"], 88, 22, 8),
+      f("Dani Olmo", ["CM", "MF"], 86, 10, 10),
+      f("Dominik Szoboszlai", ["CM", "MF"], 85, 8, 10),
+      f("Peter Gulacsi", ["GK"], 84, 0, 0, 12),
+    ],
+  },
+  "Bayer Leverkusen": {
+    "1990s": [
+      f("Bernd Schuster", ["CM", "MF"], 88, 8, 12),
+      f("Paulo Sergio", ["ST", "FW"], 85, 16, 6),
+      f("Zlatko Junuzovic", ["CM", "MF"], 80, 6, 6),
+      f("Hans-Jorg Butt", ["GK"], 83, 0, 0, 12),
+    ],
+    "2000s": [
+      f("Michael Ballack", ["CM", "MF"], 90, 14, 8),
+      f("Dimitar Berbatov", ["ST", "FW"], 88, 18, 6),
+      f("Arturo Vidal", ["CM", "MF"], 87, 8, 6),
+      f("Hans-Jorg Butt", ["GK"], 84, 0, 0, 13),
+    ],
+    "2010s": [
+      f("Arturo Vidal", ["CM", "MF"], 88, 8, 8),
+      f("Kevin Volland", ["ST", "FW"], 84, 14, 5),
+      f("Kai Havertz", ["CM", "MF"], 86, 12, 8),
+      f("Bernd Leno", ["GK"], 86, 0, 0, 14),
+    ],
+    "2020s": [
+      f("Florian Wirtz", ["CM", "MF"], 88, 12, 12),
+      f("Victor Boniface", ["ST", "FW"], 85, 18, 4),
+      f("Jeremie Frimpong", ["RB", "DF"], 85, 4, 8),
+      f("Lukas Hradecky", ["GK"], 84, 0, 0, 12),
+    ],
+  },
+  Wolfsburg: {
+    "1990s": [
+      f("Claudio Reyna", ["CM", "MF"], 82, 6, 8),
+      f("Jonathan Akpoborie", ["ST", "FW"], 80, 12, 3),
+      f("Markus Feldhoff", ["ST", "FW"], 79, 10, 4),
+      f("Kirschbaum", ["GK"], 78, 0, 0, 10),
+    ],
+    "2000s": [
+      f("Grafite", ["ST", "FW"], 86, 22, 6),
+      f("Edin Dzeko", ["ST", "FW"], 87, 20, 5),
+      f("Diego", ["CM", "MF"], 85, 10, 10),
+      f("Benaglio", ["GK"], 83, 0, 0, 12),
+    ],
+    "2010s": [
+      f("Edin Dzeko", ["ST", "FW"], 86, 18, 5),
+      f("Kevin De Bruyne", ["CM", "MF"], 88, 10, 14),
+      f("Diego Benaglio", ["GK"], 84, 0, 0, 12),
+      f("Naldo", ["CB", "DF"], 85, 4, 2),
+    ],
+    "2020s": [
+      f("Wout Weghorst", ["ST", "FW"], 84, 16, 4),
+      f("Maximilian Arnold", ["CM", "MF"], 83, 5, 8),
+      f("Ridle Baku", ["RB", "DF"], 82, 4, 6),
+      f("Koen Casteels", ["GK"], 85, 0, 0, 13),
+    ],
+  },
+  PSG: {
+    "1990s": [
+      f("David Ginola", ["LW", "FW"], 88, 12, 12),
+      f("George Weah", ["ST", "FW"], 90, 20, 8),
+      f("Rai", ["CM", "MF"], 87, 10, 12),
+      f("Bernard Lama", ["GK"], 84, 0, 0, 13),
+    ],
+    "2000s": [
+      f("Ronaldinho", ["LW", "FW"], 92, 16, 14),
+      f("Pauleta", ["ST", "FW"], 88, 22, 4),
+      f("Jay-Jay Okocha", ["CM", "MF"], 86, 8, 10),
+      f("Bernard Lama", ["GK"], 83, 0, 0, 12),
+    ],
+    "2010s": [
+      f("Zlatan Ibrahimovic", ["ST", "FW"], 93, 28, 8),
+      f("Edinson Cavani", ["ST", "FW"], 90, 24, 5),
+      f("Angel Di Maria", ["RW", "FW"], 90, 14, 14),
+      f("Thiago Silva", ["CB", "DF"], 91, 2, 2),
+    ],
+    "2020s": [
+      f("Kylian Mbappe", ["ST", "FW"], 94, 28, 8),
+      f("Neymar", ["LW", "FW"], 92, 18, 14),
+      f("Lionel Messi", ["RW", "FW"], 93, 20, 14),
+      f("Marquinhos", ["CB", "DF"], 89, 3, 2),
+    ],
+  },
+  Marseille: {
+    "1990s": [
+      f("Jean-Pierre Papin", ["ST", "FW"], 90, 22, 5),
+      f("Chris Waddle", ["LW", "FW"], 87, 10, 12),
+      f("Didier Deschamps", ["CM", "MF"], 86, 4, 6),
+      f("Fabien Barthez", ["GK"], 88, 0, 0, 15),
+    ],
+    "2000s": [
+      f("Didier Drogba", ["ST", "FW"], 90, 24, 6),
+      f("Mamadou Niang", ["ST", "FW"], 85, 16, 5),
+      f("Samir Nasri", ["CM", "MF"], 86, 8, 10),
+      f("Steve Mandanda", ["GK"], 86, 0, 0, 14),
+    ],
+    "2010s": [
+      f("Dimitri Payet", ["CM", "MF"], 88, 10, 14),
+      f("Andre-Pierre Gignac", ["ST", "FW"], 86, 18, 5),
+      f("Loic Remy", ["ST", "FW"], 84, 14, 4),
+      f("Steve Mandanda", ["GK"], 87, 0, 0, 15),
+    ],
+    "2020s": [
+      f("Dimitri Payet", ["CM", "MF"], 85, 8, 12),
+      f("Alexis Sanchez", ["ST", "FW"], 84, 12, 6),
+      f("Matt O'Riley", ["CM", "MF"], 82, 6, 6),
+      f("Pau Lopez", ["GK"], 83, 0, 0, 12),
+    ],
+  },
+  Lyon: {
+    "1990s": [
+      f("Ludovic Giuly", ["RW", "FW"], 84, 12, 8),
+      f("Pierre Laigle", ["ST", "FW"], 82, 14, 4),
+      f("Serge Blanc", ["CB", "DF"], 81, 3, 2),
+      f("Gregory Coupet", ["GK"], 84, 0, 0, 13),
+    ],
+    "2000s": [
+      f("Juninho", ["CM", "MF"], 90, 14, 12),
+      f("Karim Benzema", ["ST", "FW"], 88, 18, 6),
+      f("Michael Essien", ["CM", "MF"], 87, 6, 5),
+      f("Gregory Coupet", ["GK"], 86, 0, 0, 14),
+    ],
+    "2010s": [
+      f("Alexandre Lacazette", ["ST", "FW"], 88, 22, 5),
+      f("Nabil Fekir", ["CM", "MF"], 87, 12, 10),
+      f("Memphis Depay", ["LW", "FW"], 86, 14, 8),
+      f("Anthony Lopes", ["GK"], 85, 0, 0, 13),
+    ],
+    "2020s": [
+      f("Alexandre Lacazette", ["ST", "FW"], 86, 20, 5),
+      f("Corentin Tolisso", ["CM", "MF"], 84, 6, 6),
+      f("Jefferson Montero", ["LW", "FW"], 82, 8, 6),
+      f("Anthony Lopes", ["GK"], 84, 0, 0, 12),
+    ],
+  },
+  Monaco: {
+    "1990s": [
+      f("Youri Djorkaeff", ["ST", "FW"], 87, 16, 8),
+      f("Lilian Thuram", ["CB", "DF"], 89, 2, 3),
+      f("Emmanuel Petit", ["CM", "MF"], 86, 6, 6),
+      f("Fabien Barthez", ["GK"], 86, 0, 0, 14),
+    ],
+    "2000s": [
+      f("Fernando Morientes", ["ST", "FW"], 87, 18, 5),
+      f("Ludovic Giuly", ["RW", "FW"], 85, 10, 10),
+      f("Jerome Rothen", ["LW", "FW"], 84, 8, 12),
+      f("Flavio Roma", ["GK"], 82, 0, 0, 11),
+    ],
+    "2010s": [
+      f("Radamel Falcao", ["ST", "FW"], 89, 24, 4),
+      f("James Rodriguez", ["CM", "MF"], 88, 12, 12),
+      f("Kylian Mbappe", ["ST", "FW"], 88, 18, 6),
+      f("Danijel Subasic", ["GK"], 85, 0, 0, 13),
+    ],
+    "2020s": [
+      f("Wissam Ben Yedder", ["ST", "FW"], 85, 18, 5),
+      f("Aurelien Tchouameni", ["CM", "MF"], 86, 4, 4),
+      f("Takumi Minamino", ["LW", "FW"], 82, 8, 6),
+      f("Alexander Nubel", ["GK"], 83, 0, 0, 12),
+    ],
+  },
+  Lille: {
+    "1990s": [
+      f("David Regis", ["LB", "DF"], 80, 2, 4),
+      f("Stephane Paille", ["ST", "FW"], 81, 12, 4),
+      f("Cyprien", ["CM", "MF"], 79, 5, 5),
+      f("Sylva", ["GK"], 78, 0, 0, 10),
+    ],
+    "2000s": [
+      f("Peter Odemwingie", ["ST", "FW"], 82, 12, 4),
+      f("Aurelien Chedjou", ["CB", "DF"], 83, 3, 1),
+      f("Eden Hazard", ["LW", "FW"], 84, 10, 8),
+      f("Landreau", ["GK"], 82, 0, 0, 11),
+    ],
+    "2010s": [
+      f("Eden Hazard", ["LW", "FW"], 90, 16, 12),
+      f("Riyad Mahrez", ["RW", "FW"], 86, 12, 10),
+      f("Victor Osimhen", ["ST", "FW"], 84, 14, 3),
+      f("Mike Maignan", ["GK"], 85, 0, 0, 13),
+    ],
+    "2020s": [
+      f("Jonathan David", ["ST", "FW"], 86, 18, 5),
+      f("Edon Zhegrova", ["RW", "FW"], 83, 8, 8),
+      f("Angel Gomes", ["CM", "MF"], 82, 6, 6),
+      f("Berke Ozer", ["GK"], 81, 0, 0, 11),
+    ],
+  },
+};
+
+export const FOOTBALL_CLUBS = Object.keys(FOOTBALL_POOL);

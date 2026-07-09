@@ -1,0 +1,154 @@
+﻿total combos: 153
+Bucks|1960s: oscar robertson; kareem abdul-jabbar; bob dandridge; jon mcglocklin
+Bucks|1970s: kareem abdul-jabbar; bob dandridge; brian winters; marques johnson
+Bucks|1980s: sidney moncrief; marques johnson; terry cummings; ricky pierce
+Bucks|1990s: glenn robinson; ray allen; sam cassell; vin baker
+Bucks|2000s: michael redd; andrew bogut; mo williams; charlie villanueva
+Bucks|2010s: giannis antetokounmpo; khris middleton; eric bledsoe; brook lopez; jrue holiday
+Bucks|2020s: giannis antetokounmpo; damian lillard; khris middleton; brook lopez
+Bulls|1960s: jerry sloan; bob love; chet walker; norm van lier
+Bulls|1970s: bob love; norm van lier; artis gilmore; reggie theus
+Bulls|1980s: michael jordan; scottie pippen; horace grant; john paxson; orlando woolridge; quintin dailey
+Bulls|1990s: michael jordan; scottie pippen; dennis rodman; toni kukoc; horace grant; john paxson
+Bulls|2000s: derrick rose; luol deng; ben gordon; joakim noah; kirk hinrich
+Bulls|2010s: jimmy butler; derrick rose; pau gasol; joakim noah
+Bulls|2020s: zach lavine; demar derozan; nikola vucevic; lonzo ball
+Cavaliers|1990s: mark price; brad daugherty; larry nance; terrell brandon; zydrunas ilgauskas; chris mills
+Cavaliers|2000s: lebron james; zydrunas ilgauskas; mo williams; antawn jamison; anderson varejao; daniel gibson
+Cavaliers|2010s: lebron james; kyrie irving; kevin love; tristan thompson; jr smith; george hill
+Cavaliers|2020s: donovan mitchell; darius garland; jarrett allen; evan mobley; caris levert; max strus
+Celtics|1960s: bill russell; john havlicek; sam jones; bob cousy; tom heinsohn
+Celtics|1970s: dave cowens; john havlicek; jo jo white; paul silas
+Celtics|1980s: larry bird; kevin mchale; robert parish; dennis johnson
+Celtics|1990s: reggie lewis; dee brown; antoine walker; paul pierce
+Celtics|2000s: paul pierce; kevin garnett; ray allen; rajon rondo; kendrick perkins
+Celtics|2010s: isaiah thomas; jayson tatum; jaylen brown; al horford; kyrie irving
+Celtics|2020s: jayson tatum; jaylen brown; jrue holiday; kristaps porzingis; derrick white
+Clippers|1960s: bob mcadoo; randy smith; dick garrett; garfield heard
+Clippers|1970s: bob mcadoo; randy smith; world b. free; bill walton
+Clippers|1980s: world b. free; norm nixon; marques johnson; michael cage; danny manning; ron harper
+Clippers|1990s: danny manning; ron harper; elton brand; lamar odom
+Clippers|2000s: elton brand; chris kaman; corey maggette; baron davis; cuttino mobley
+Clippers|2010s: blake griffin; chris paul; deandre jordan; kawhi leonard; lou williams; montrezl harrell
+Clippers|2020s: kawhi leonard; paul george; james harden; russell westbrook; norman powell; ivica zubac
+Grizzlies|2000s: pau gasol; mike miller; jason williams; shane battier; lorenzen wright; stromile swift
+Grizzlies|2010s: marc gasol; zach randolph; mike conley; rudy gay; tony allen; ja morant
+Grizzlies|2020s: ja morant; jaren jackson jr.; desmond bane; marcus smart; steven adams; luke kennard
+Hawks|1990s: dominique wilkins; mookie blaylock; dikembe mutombo; steve smith; christian laettner; alan henderson
+Hawks|2000s: joe johnson; al horford; josh smith; marvin williams; mike bibby; zaza pachulia
+Hawks|2010s: al horford; paul millsap; jeff teague; kyle korver; trae young; john collins
+Hawks|2020s: trae young; dejounte murray; clint capela; bogdan bogdanovic; de'andre hunter; onyeka okongwu
+Heat|1980s: rony seikaly; glen rice; kevin edwards; grant long
+Heat|1990s: alonzo mourning; tim hardaway; glen rice; dan majerle
+Heat|2000s: dwyane wade; shaquille o'neal; udonis haslem; gary payton; eddie jones
+Heat|2010s: lebron james; dwyane wade; chris bosh; goran dragic
+Heat|2020s: jimmy butler; bam adebayo; tyler herro; kyle lowry
+Hornets|1990s: larry johnson; alonzo mourning; glen rice; muggsy bogues; eddie jones; vlade divac
+Hornets|2000s: baron davis; gerald wallace; emeka okafor; jason richardson; david west; chris paul
+Hornets|2010s: kemba walker; gerald henderson; al jefferson; nicolas batum; lamelo ball; terry rozier
+Hornets|2020s: lamelo ball; brandon miller; miles bridges; mark williams; terry rozier; p.j. washington
+Jazz|1990s: karl malone; john stockton; jeff hornacek; mark eaton; bryon russell; greg ostertag
+Jazz|2000s: karl malone; deron williams; carlos boozer; mehmet okur; andrei kirilenko; paul millsap
+Jazz|2010s: donovan mitchell; rudy gobert; gordon hayward; mike conley; derrick favors; joe ingles
+Jazz|2020s: lauri markkanen; jordan clarkson; collin sexton; walker kessler; keyonte george; john collins
+Kings|1990s: chris webber; mitch richmond; vlade divac; peja stojakovic; jason williams; bobby hurley; clyde drexler; terry porter; arvydas sabonis; rasheed wallace; cliff robinson; rod strickland
+Kings|2000s: peja stojakovic; chris webber; brad miller; mike bibby; ron artest; kevin martin; brandon roy; lamarcus aldridge; damian lillard; greg oden; nicolas batum; andre miller
+Kings|2010s: demarcus cousins; de'aaron fox; rudy gay; tyreke evans; buddy hield; willie cauley-stein; damian lillard; cj mccollum; lamarcus aldridge; jusuf nurkic; nicolas batum; evan turner
+Kings|2020s: de'aaron fox; domantas sabonis; keegan murray; malik monk; harrison barnes; kevin huerter; damian lillard; anfernee simons; jerami grant; deandre ayton; scoot henderson; shaedon sharpe
+Knicks|1960s: walt frazier; willis reed; dave debusschere; dick barnett
+Knicks|1970s: walt frazier; willis reed; earl monroe; bill bradley
+Knicks|1980s: bernard king; patrick ewing; mark jackson; gerald wilkins
+Knicks|1990s: patrick ewing; john starks; charles oakley; allan houston; larry johnson
+Knicks|2000s: amar'e stoudemire; carmelo anthony; chauncey billups; tyson chandler; j.r. smith
+Knicks|2010s: carmelo anthony; kristaps porzingis; julius randle; jalen brunson
+Knicks|2020s: jalen brunson; julius randle; rj barrett; mitchell robinson; og anunoby
+Lakers|1960s: jerry west; elgin baylor; wilt chamberlain; gail goodrich; rudy larusso; happy hairston
+Lakers|1970s: kareem abdul-jabbar; jerry west; jamaal wilkes; norm nixon; jim mcmillian; michael cooper
+Lakers|1980s: magic johnson; kareem abdul-jabbar; james worthy; byron scott; a.c. green; bob mcadoo
+Lakers|1990s: shaquille o'neal; kobe bryant; vlade divac; nick van exel; eddie jones; robert horry
+Lakers|2000s: kobe bryant; shaquille o'neal; pau gasol; lamar odom; derek fisher; andrew bynum
+Lakers|2010s: lebron james; anthony davis; pau gasol; kobe bryant; kyle kuzma; lonzo ball
+Lakers|2020s: lebron james; anthony davis; austin reaves; d'angelo russell; rui hachimura
+Magic|1990s: shaquille o'neal; penny hardaway; horace grant; nick anderson; dennis scott; brian shaw
+Magic|2000s: tracy mcgrady; dwight howard; jameer nelson; hedo turkoglu; rashard lewis; grant hill
+Magic|2010s: dwight howard; nikola vucevic; evan fournier; aaron gordon; victor oladipo; tobias harris
+Magic|2020s: paolo banchero; franz wagner; jalen suggs; wendell carter jr.; markelle fultz; cole anthony
+Mavericks|1980s: mark aguirre; rolando blackman; derek harper; sam perkins
+Mavericks|1990s: jason kidd; jamal mashburn; jim jackson; michael finley
+Mavericks|2000s: dirk nowitzki; steve nash; michael finley; josh howard; jason terry
+Mavericks|2010s: dirk nowitzki; luka doncic; jason terry; chandler parsons; kristaps porzingis; jalen brunson
+Mavericks|2020s: luka doncic; kyrie irving; kristaps porzingis; tim hardaway jr.; daniel gafford
+Nets|1970s: julius erving; billy paultz; brian taylor; john williamson
+Nets|1980s: buck williams; otis birdsong; albert king; mike gminski; drazen petrovic
+Nets|1990s: drazen petrovic; kenny anderson; derrick coleman; jayson williams
+Nets|2000s: jason kidd; vince carter; richard jefferson; kenyon martin
+Nets|2010s: brook lopez; deron williams; joe johnson; paul pierce
+Nets|2020s: kevin durant; kyrie irving; james harden; mikal bridges; cam thomas
+Nuggets|1970s: david thompson; dan issel; bobby jones; fat lever
+Nuggets|1980s: alex english; fat lever; dan issel; kiki vandeweghe
+Nuggets|1990s: dikembe mutombo; mahmoud abdul-rauf; laphonso ellis; bryant stith
+Nuggets|2000s: carmelo anthony; allen iverson; marcus camby; j.r. smith
+Nuggets|2010s: nikola jokic; jamal murray; gary harris; paul millsap
+Nuggets|2020s: nikola jokic; jamal murray; michael porter jr.; aaron gordon
+Pacers|1990s: reggie miller; rik smits; detlef schrempf; mark jackson; dale davis; antonio davis
+Pacers|2000s: reggie miller; jermaine o'neal; ron artest; stephen jackson; jamaal tinsley; danny granger
+Pacers|2010s: paul george; victor oladipo; myles turner; lance stephenson; roy hibbert; george hill
+Pacers|2020s: tyrese haliburton; pascal siakam; myles turner; bennedict mathurin; aaron nesmith; obi toppin
+Pelicans|2000s: chris paul; david west; peja stojakovic; tyson chandler; baron davis; jamal mashburn
+Pelicans|2010s: anthony davis; chris paul; jrue holiday; brandon ingram; demarcus cousins
+Pelicans|2020s: zion williamson; brandon ingram; cj mccollum; jonas valanciunas; herbert jones; trey murphy iii
+Pistons|1980s: isiah thomas; joe dumars; adrian dantley; bill laimbeer; dennis rodman; vinnie johnson
+Pistons|1990s: grant hill; joe dumars; jerry stackhouse; ben wallace; chauncey billups; rasheed wallace
+Pistons|2000s: chauncey billups; richard hamilton; ben wallace; rasheed wallace; tayshaun prince; antonio mcdyess
+Pistons|2010s: andre drummond; blake griffin; reggie jackson; tobias harris; kentavious caldwell-pope; derrick rose
+Pistons|2020s: cade cunningham; jaden ivey; jalen duren; ausar thompson; bojan bogdanovic; isaiah stewart
+Raptors|2000s: chris bosh; vince carter; jose calderon; morris peterson; antonio davis; jalen rose
+Raptors|2010s: kawhi leonard; kyle lowry; demar derozan; pascal siakam; jonas valanciunas; fred vanvleet
+Raptors|2020s: scottie barnes; pascal siakam; fred vanvleet; og anunoby; jakob poeltl; gary trent jr.
+Rockets|1960s: elvin hayes; calvin murphy; rudy tomjanovich; pat riley
+Rockets|1970s: elvin hayes; calvin murphy; rudy tomjanovich; moses malone
+Rockets|1980s: hakeem olajuwon; ralph sampson; clyde drexler; otis thorpe; john lucas
+Rockets|1990s: hakeem olajuwon; clyde drexler; vernon maxwell; kenny smith; robert horry; mario elie
+Rockets|2000s: tracy mcgrady; yao ming; steve francis; cuttino mobley; shane battier; luis scola
+Rockets|2010s: james harden; chris paul; dwight howard; russell westbrook; eric gordon; clint capela
+Rockets|2020s: alperen sengun; kevin durant; fred vanvleet; jalen green; jabari smith jr.; dillon brooks
+Spurs|1960s: george gervin; james silas; swen nater; billy paultz; artis gilmore
+Spurs|1970s: george gervin; james silas; billy paultz; artis gilmore
+Spurs|1980s: george gervin; artis gilmore; mike mitchell; johnny moore; david robinson; avery johnson
+Spurs|1990s: david robinson; sean elliott; avery johnson; dennis rodman
+Spurs|2000s: tim duncan; tony parker; manu ginobili; david robinson
+Spurs|2010s: tim duncan; tony parker; kawhi leonard; lamarcus aldridge; patty mills
+Spurs|2020s: dejounte murray; keldon johnson; devin vassell; victor wembanyama
+Suns|1960s: dick van arsdale; connie hawkins; paul silas; gail goodrich
+Suns|1970s: paul westphal; walter davis; alvan adams; dennis johnson
+Suns|1980s: larry nance; walter davis; kevin johnson; tom chambers
+Suns|1990s: charles barkley; kevin johnson; dan majerle; tom chambers
+Suns|2000s: steve nash; amar'e stoudemire; shawn marion; joe johnson
+Suns|2010s: steve nash; amar'e stoudemire; devin booker; eric bledsoe; deandre ayton
+Suns|2020s: devin booker; kevin durant; chris paul; deandre ayton; bradley beal; jusuf nurkic
+Thunder|1960s: lenny wilkens; bob rule; fred brown; spencer haywood
+Thunder|1970s: spencer haywood; dennis johnson; gus williams; jack sikma
+Thunder|1980s: jack sikma; dale ellis; xavier mcdaniel; tom chambers
+Thunder|1990s: gary payton; shawn kemp; detlef schrempf; sam perkins
+Thunder|2000s: kevin durant; russell westbrook; james harden; serge ibaka
+Thunder|2010s: russell westbrook; kevin durant; james harden; paul george; steven adams
+Thunder|2020s: shai gilgeous-alexander; chet holmgren; jalen williams; lu dort
+Timberwolves|1990s: kevin garnett; tom gugliotta; terrell brandon; sam mitchell; anthony peeler; dean garrett
+Timberwolves|2000s: kevin garnett; wally szczerbiak; sam cassell; latrell sprewell; rasho nesterovic; troy hudson
+Timberwolves|2010s: karl-anthony towns; jimmy butler; andrew wiggins; ricky rubio; kevin love; jeff teague
+Timberwolves|2020s: anthony edwards; karl-anthony towns; rudy gobert; mike conley; jaden mcdaniels; naz reid
+Warriors|1960s: wilt chamberlain; rick barry; nate thurmond; al attles
+Warriors|1970s: rick barry; jamaal wilkes; phil smith; clifford ray
+Warriors|1980s: chris mullin; tim hardaway; mitch richmond; manute bol
+Warriors|1990s: chris mullin; tim hardaway; latrell sprewell; bimbo coles; chris webber
+Warriors|2000s: baron davis; jason richardson; stephen jackson; andris biedrins
+Warriors|2010s: stephen curry; klay thompson; kevin durant; draymond green
+Warriors|2020s: stephen curry; klay thompson; andrew wiggins; draymond green; jonathan kuminga
+Wizards|2000s: gilbert arenas; antawn jamison; caron butler; larry hughes; brendan haywood; antonio daniels
+Wizards|2010s: john wall; bradley beal; otto porter jr.; marcin gortat; nene; markieff morris
+Wizards|2020s: bradley beal; kyle kuzma; kristaps porzingis; jordan poole; deni avdija; daniel gafford
+stats|1980s: moses malone; julius erving; charles barkley; maurice cheeks; andrew toney; bobby jones
+stats|1990s: allen iverson; charles barkley; dikembe mutombo; jerry stackhouse; clarence weatherspoon; eric snow
+stats|2000s: allen iverson; dikembe mutombo; andre iguodala; kyle korver; samuel dalembert; lou williams
+stats|2010s: joel embiid; ben simmons; jimmy butler; jj redick; tobias harris; robert covington
+stats|2020s: joel embiid; tyrese maxey; paul george; kelly oubre jr.; andre drummond; kyle lowry

@@ -1,0 +1,26 @@
+---
+description: NBA mode must fully mirror 82-0.com mechanics, stats format, and player data
+alwaysApply: true
+---
+
+# 82-0.com parity (NBA / basketball)
+
+Reference: https://www.82-0.com/ (redirects to 82-0-challenge.com)
+
+## Non-negotiable for basketball
+
+- **Player stats UI**: Classic shows only real season averages **PPG · RPG · APG · SPG · BPG**. No OVR/rating badge on cards (HoopIQ hides all stats).
+- **Player database**: Stats must match **Basketball Reference** season averages for the franchise×decade pool — not invented or rounded guesses. Verify sample players when changing seeds.
+- **Simulation mechanics**: Mirror 82-0 public model — era-adjusted category totals, non-linear win curve, category gates, chemistry. Do not drift constants without audit note.
+- **Game loop**: 5 rounds, franchise+decade spin, position fit, **1 skip team + 1 skip era (separate counters, not shared)**, none in Daily, modes Classic / HoopIQ / Daily.
+- **Draft pool order**: Strongest first, descending — sort by era-adjusted total production (same weights as sim categories), not internal OVR/rating badge.
+
+## When changing basketball code or seeds
+
+1. Compare behavior to live 82-0 site or their how-to-play / calculation pages.
+2. Regenerate `data/basketball/nba.json` after seed edits; `assertNoDuplicates` must pass.
+3. Document any intentional deviation with `ponytail:` comment + upgrade path.
+
+## Out of scope for this rule
+
+Football/hockey follow 38-0 / NHL references — do not break them while chasing 82-0.

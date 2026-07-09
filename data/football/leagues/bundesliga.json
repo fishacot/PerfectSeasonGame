@@ -1,0 +1,613 @@
+{
+  "meta": {
+    "league": "bundesliga",
+    "name": "Bundesliga",
+    "seasonGames": 34,
+    "extendedEras": false,
+    "dataSource": "38-0.org",
+    "statsShape": "OVR + derived G/A/CS (area-stats); no league-specific chunk",
+    "clubsConfigured": 10,
+    "clubsWithData": 3,
+    "clubsMissing": [
+      "RB Leipzig",
+      "Wolfsburg",
+      "Freiburg",
+      "Borussia Monchengladbach",
+      "Stuttgart",
+      "Eintracht Frankfurt",
+      "Hoffenheim"
+    ],
+    "eras": [
+      "2000s",
+      "2010s",
+      "2020s"
+    ],
+    "players": 36,
+    "pools": 7,
+    "poolSizeMin": 3,
+    "poolSizeMax": 7,
+    "byClub": {
+      "Bayern Munich": 18,
+      "Borussia Dortmund": 12,
+      "Bayer Leverkusen": 6
+    },
+    "byEra": {
+      "2000s": 8,
+      "2010s": 13,
+      "2020s": 15
+    }
+  },
+  "players": [
+    {
+      "id": "bay-00-1",
+      "name": "Kahn",
+      "club": "Bayern Munich",
+      "era": "2000s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 86
+    },
+    {
+      "id": "bay-00-2",
+      "name": "Ballack",
+      "club": "Bayern Munich",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 87
+    },
+    {
+      "id": "bay-00-3",
+      "name": "Lahm",
+      "club": "Bayern Munich",
+      "era": "2000s",
+      "positions": [
+        "RB",
+        "LB",
+        "CM",
+        "DF",
+        "MF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 87
+    },
+    {
+      "id": "bay-00-4",
+      "name": "Schweinsteiger",
+      "club": "Bayern Munich",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 87
+    },
+    {
+      "id": "bay-10-1",
+      "name": "Robben",
+      "club": "Bayern Munich",
+      "era": "2010s",
+      "positions": [
+        "RW",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 89
+    },
+    {
+      "id": "bay-10-2",
+      "name": "Muller",
+      "club": "Bayern Munich",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "ST",
+        "RW",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 88
+    },
+    {
+      "id": "bay-10-3",
+      "name": "Neuer",
+      "club": "Bayern Munich",
+      "era": "2010s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 14
+      },
+      "rating": 90
+    },
+    {
+      "id": "bay-10-4",
+      "name": "Boateng",
+      "club": "Bayern Munich",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 87
+    },
+    {
+      "id": "bay-10-5",
+      "name": "Alaba",
+      "club": "Bayern Munich",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 5
+      },
+      "rating": 86
+    },
+    {
+      "id": "bay-20-1",
+      "name": "Lewandowski",
+      "club": "Bayern Munich",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 27,
+        "assists": 5
+      },
+      "rating": 90
+    },
+    {
+      "id": "bay-20-2",
+      "name": "Kimmich",
+      "club": "Bayern Munich",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "RB",
+        "DF",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 89
+    },
+    {
+      "id": "bay-20-3",
+      "name": "Musiala",
+      "club": "Bayern Munich",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "LW",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 88
+    },
+    {
+      "id": "bvb-00-1",
+      "name": "Rosicky",
+      "club": "Borussia Dortmund",
+      "era": "2000s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 87
+    },
+    {
+      "id": "bvb-00-2",
+      "name": "Weidenfeller",
+      "club": "Borussia Dortmund",
+      "era": "2000s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 80
+    },
+    {
+      "id": "bvb-10-1",
+      "name": "Lewandowski",
+      "club": "Borussia Dortmund",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 88
+    },
+    {
+      "id": "bvb-10-2",
+      "name": "Reus",
+      "club": "Borussia Dortmund",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "LW",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 11,
+        "assists": 13
+      },
+      "rating": 86
+    },
+    {
+      "id": "bvb-10-3",
+      "name": "Hummels",
+      "club": "Borussia Dortmund",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 86
+    },
+    {
+      "id": "bvb-10-4",
+      "name": "Aubameyang",
+      "club": "Borussia Dortmund",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86
+    },
+    {
+      "id": "bvb-10-5",
+      "name": "Schmelzer",
+      "club": "Borussia Dortmund",
+      "era": "2010s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 80
+    },
+    {
+      "id": "bvb-20-1",
+      "name": "Haaland",
+      "club": "Borussia Dortmund",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 87
+    },
+    {
+      "id": "bvb-20-2",
+      "name": "Bellingham",
+      "club": "Borussia Dortmund",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 85
+    },
+    {
+      "id": "bvb-20-3",
+      "name": "Kobel",
+      "club": "Borussia Dortmund",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 80
+    },
+    {
+      "id": "bay-00-5",
+      "name": "Ribery",
+      "club": "Bayern Munich",
+      "era": "2000s",
+      "positions": [
+        "LW",
+        "RW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 87
+    },
+    {
+      "id": "bay-10-6",
+      "name": "Ribery",
+      "club": "Bayern Munich",
+      "era": "2010s",
+      "positions": [
+        "LW",
+        "RW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 89
+    },
+    {
+      "id": "bvb-00-3",
+      "name": "Subotic",
+      "club": "Borussia Dortmund",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 81
+    },
+    {
+      "id": "bvb-10-6",
+      "name": "Gotze",
+      "club": "Borussia Dortmund",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 87
+    },
+    {
+      "id": "bay-20-4",
+      "name": "Harry Kane",
+      "club": "Bayern Munich",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 88
+    },
+    {
+      "id": "bay-10-7",
+      "name": "Thiago",
+      "club": "Bayern Munich",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 90
+    },
+    {
+      "id": "bay-20-5",
+      "name": "Davies",
+      "club": "Bayern Munich",
+      "era": "2020s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 88
+    },
+    {
+      "id": "bay-20-6",
+      "name": "Muller",
+      "club": "Bayern Munich",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "ST",
+        "RW",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 87
+    },
+    {
+      "id": "lev-20-1",
+      "name": "Wirtz",
+      "club": "Bayer Leverkusen",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "LW",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 11,
+        "assists": 14
+      },
+      "rating": 89
+    },
+    {
+      "id": "lev-20-2",
+      "name": "Xhaka",
+      "club": "Bayer Leverkusen",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 8,
+        "assists": 13
+      },
+      "rating": 85
+    },
+    {
+      "id": "lev-20-3",
+      "name": "Grimaldo",
+      "club": "Bayer Leverkusen",
+      "era": "2020s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 80
+    },
+    {
+      "id": "lev-20-4",
+      "name": "Frimpong",
+      "club": "Bayer Leverkusen",
+      "era": "2020s",
+      "positions": [
+        "RB",
+        "RW",
+        "FW",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 81
+    },
+    {
+      "id": "lev-20-5",
+      "name": "Tah",
+      "club": "Bayer Leverkusen",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 83
+    },
+    {
+      "id": "lev-20-6",
+      "name": "Boniface",
+      "club": "Bayer Leverkusen",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 24,
+        "assists": 5
+      },
+      "rating": 82
+    }
+  ]
+}

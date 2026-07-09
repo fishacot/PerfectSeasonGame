@@ -1,0 +1,362 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0a1220;
+  --surface: #0f1a2e;
+  --surface-hover: #152238;
+  --border: #1e2d45;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --chrome: rgba(255, 255, 255, 0.08);
+  --chrome-strong: rgba(255, 255, 255, 0.14);
+  
+  --sport-primary: #64748b;
+  --sport-secondary: #94a3b8;
+  --sport-glow: rgba(100, 116, 139, 0.25);
+  
+  --gold: #fbbf24;
+  --gold-glow: rgba(251, 191, 36, 0.3);
+  --gold-foil: linear-gradient(135deg, #fef3c7 0%, #fbbf24 50%, #d97706 100%);
+  --glass-glint: linear-gradient(
+    105deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.03) 35%,
+    rgba(255, 255, 255, 0.15) 45%,
+    rgba(255, 255, 255, 0.03) 55%,
+    transparent 70%
+  );
+  --panel-top: rgba(20, 24, 30, 0.95);
+  --panel-bottom: rgba(10, 12, 16, 0.98);
+  --panel-shadow: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #eef2f7;
+  --surface: #ffffff;
+  --surface-hover: #e8edf4;
+  --border: #cbd5e1;
+  --text: #0f172a;
+  --muted: #64748b;
+  --chrome: rgba(15, 23, 42, 0.06);
+  --chrome-strong: rgba(15, 23, 42, 0.12);
+  --sport-glow: color-mix(in srgb, var(--sport-primary) 22%, transparent);
+  --glass-glint: linear-gradient(
+    105deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.45) 35%,
+    rgba(255, 255, 255, 0.85) 45%,
+    rgba(255, 255, 255, 0.45) 55%,
+    transparent 70%
+  );
+  --panel-top: rgba(255, 255, 255, 0.94);
+  --panel-bottom: rgba(248, 250, 252, 0.98);
+  --panel-shadow: rgba(15, 23, 42, 0.08);
+}
+
+[data-sport="football"] {
+  --sport-primary: #00e676;
+  --sport-secondary: #ffea00;
+  --sport-glow: rgba(0, 230, 118, 0.4);
+  --sport-bg-image: url('/backgrounds/football-stadium.webp');
+}
+
+[data-sport="basketball"] {
+  --sport-primary: #ff6b00;
+  --sport-secondary: #651fff;
+  --sport-glow: rgba(255, 107, 0, 0.35);
+  --sport-bg-image: url('/backgrounds/basketball-arena.webp');
+}
+
+[data-sport="hockey"] {
+  --sport-primary: #00b0ff;
+  --sport-secondary: #f5f5f5;
+  --sport-glow: rgba(0, 176, 255, 0.4);
+  --sport-bg-image: url('/backgrounds/hockey-rink.webp');
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-sport: var(--sport-primary);
+  --color-gold: var(--gold);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-bebas);
+}
+
+/* Base Styles */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  background-image:
+    var(--sport-bg-image, none),
+    radial-gradient(circle at 50% -20%, var(--sport-glow), transparent 38%),
+    radial-gradient(circle at 0% 100%, color-mix(in srgb, var(--bg) 45%, transparent), transparent 28%);
+  background-size: cover, auto, auto;
+  background-position: center top;
+  background-attachment: scroll;
+  background-blend-mode: overlay, normal, normal;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+[data-theme="light"] body {
+  background-blend-mode: soft-light, normal, normal;
+}
+
+.font-display {
+  font-family: var(--font-bebas), system-ui, sans-serif;
+}
+
+/* Glass & Glow */
+.glass {
+  background: rgba(15, 18, 24, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+.glow-sport {
+  box-shadow: 0 0 30px var(--sport-glow);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px var(--gold-glow);
+  border-color: var(--gold);
+}
+
+/* Photoshop Effects */
+.noise-texture {
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 10;
+}
+
+@keyframes glint {
+  0% { transform: translateX(-150%) skewX(-15deg); }
+  100% { transform: translateX(150%) skewX(-15deg); }
+}
+
+.animate-glint {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-glint::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--glass-glint);
+  background-size: 200% 100%;
+  z-index: 20;
+  pointer-events: none;
+  animation: glint 4s infinite linear;
+}
+
+/* Portrait Styles */
+.portrait-plate {
+  position: relative;
+  background: linear-gradient(160deg, #1a202c 0%, #05070a 100%);
+  overflow: hidden;
+}
+
+.portrait-plate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 40%, transparent 20%, rgba(5, 7, 10, 0.8) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.portrait-cutout {
+  object-fit: cover;
+  object-position: top center;
+  filter: saturate(0.85);
+  mask-image: linear-gradient(to bottom, black 88%, transparent 100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
+
+.group:hover .portrait-cutout,
+.portrait-cutout.is-active {
+  filter: saturate(1) brightness(1.05);
+}
+
+/* Broadcast Elements */
+.broadcast-panel {
+  border: 1px solid var(--chrome);
+  background: linear-gradient(180deg, var(--panel-top) 0%, var(--panel-bottom) 100%);
+  box-shadow: inset 0 1px 0 var(--chrome), 0 10px 30px var(--panel-shadow);
+  backdrop-filter: blur(8px);
+}
+
+.lower-third {
+  border-left: 3px solid var(--sport-primary);
+  padding-left: 0.75rem;
+}
+
+.score-bug {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.micro-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+}
+
+/* Card Rarity */
+.gold-foil-border {
+  position: relative;
+  border: none !important;
+}
+
+.gold-foil-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: var(--gold-foil);
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0.8;
+  box-shadow: 0 0 15px var(--gold-glow);
+}
+
+.gold-foil-border:hover::after {
+  opacity: 1;
+  box-shadow: 0 0 25px var(--gold-glow);
+}
+
+/* Animations */
+@keyframes motion-blur-spin {
+  0% { filter: blur(0px); transform: translateY(0); }
+  50% { filter: blur(6px); }
+  100% { filter: blur(0px); }
+}
+
+.animate-motion-blur {
+  animation: motion-blur-spin 0.4s infinite linear;
+}
+
+@keyframes lower-third-slide {
+  from { transform: translateX(-20px); opacity: 0; filter: blur(10px); }
+  to { transform: translateX(0); opacity: 1; filter: blur(0); }
+}
+
+.lower-third-enter {
+  animation: lower-third-slide 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+/* Utilities */
+.text-gradient {
+  background: linear-gradient(to bottom right, var(--text), var(--muted));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sport-card-overlay {
+  background: linear-gradient(to top, var(--bg) 10%, transparent 90%);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--chrome);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--chrome-strong);
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--sport-primary);
+}
+
+/* Layout shells */
+.page-shell {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: max(1rem, env(safe-area-inset-left));
+  padding-inline-end: max(1rem, env(safe-area-inset-right));
+}
+
+@media (min-width: 640px) {
+  .page-shell {
+    padding-inline: 1.5rem;
+  }
+}
+
+.page-title {
+  font-family: var(--font-bebas), system-ui, sans-serif;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-size: clamp(2.25rem, 8vw, 6rem);
+}
+
+.page-subtitle {
+  font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+  letter-spacing: 0.2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 639px) {
+  body {
+    background-size: cover, auto, auto;
+    background-position: center top, center, center;
+  }
+
+  .font-display {
+    letter-spacing: 0.04em;
+  }
+
+  .broadcast-panel {
+    backdrop-filter: blur(4px);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-attachment: fixed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

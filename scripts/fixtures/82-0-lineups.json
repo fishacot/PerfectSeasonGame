@@ -1,0 +1,1635 @@
+[
+  {
+    "id": "all-time-starters",
+    "note": "GOAT lineup — cross-era legends",
+    "expectedWins": 81,
+    "lineup": [
+      {
+        "name": "Magic Johnson",
+        "era": "1980s",
+        "stats": {
+          "ppg": 23.9,
+          "rpg": 6.3,
+          "apg": 12.2,
+          "spg": 1.7,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "Michael Jordan",
+        "era": "1990s",
+        "stats": {
+          "ppg": 30.4,
+          "rpg": 6.4,
+          "apg": 4.3,
+          "spg": 2.2,
+          "bpg": 0.8
+        }
+      },
+      {
+        "name": "LeBron James",
+        "era": "2010s",
+        "stats": {
+          "ppg": 27.4,
+          "rpg": 8.5,
+          "apg": 8.3,
+          "spg": 1.3,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Tim Duncan",
+        "era": "2000s",
+        "stats": {
+          "ppg": 22,
+          "rpg": 12.2,
+          "apg": 3.3,
+          "spg": 0.8,
+          "bpg": 2.3
+        }
+      },
+      {
+        "name": "Hakeem Olajuwon",
+        "era": "1990s",
+        "stats": {
+          "ppg": 27.8,
+          "rpg": 11.1,
+          "apg": 3.5,
+          "spg": 1.6,
+          "bpg": 3.1
+        }
+      }
+    ],
+    "expectedGrade": "S+",
+    "expectedWeakest": "REB",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 99.6,
+      "AST": 100,
+      "STL": 100,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "zero-blocks-gate",
+    "note": "One-dimensional scorers — blocks gate",
+    "expectedWins": 49,
+    "lineup": [
+      {
+        "name": "Allen Iverson",
+        "era": "2000s",
+        "stats": {
+          "ppg": 31.4,
+          "rpg": 3.8,
+          "apg": 7.4,
+          "spg": 2.5,
+          "bpg": 0.1
+        }
+      },
+      {
+        "name": "Kobe Bryant",
+        "era": "2000s",
+        "stats": {
+          "ppg": 35.4,
+          "rpg": 5.3,
+          "apg": 4.5,
+          "spg": 1.8,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "Tracy McGrady",
+        "era": "2000s",
+        "stats": {
+          "ppg": 32.1,
+          "rpg": 6.5,
+          "apg": 5.5,
+          "spg": 1.6,
+          "bpg": 0.8
+        }
+      },
+      {
+        "name": "Vince Carter",
+        "era": "2000s",
+        "stats": {
+          "ppg": 27.6,
+          "rpg": 5.5,
+          "apg": 4.1,
+          "spg": 1.5,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Ray Allen",
+        "era": "2000s",
+        "stats": {
+          "ppg": 25.2,
+          "rpg": 4.5,
+          "apg": 3.9,
+          "spg": 1.2,
+          "bpg": 0.2
+        }
+      }
+    ],
+    "expectedGrade": "B",
+    "expectedWeakest": "BLK",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 58.2,
+      "AST": 94.1,
+      "STL": 100,
+      "BLK": 45.7
+    }
+  },
+  {
+    "id": "weak-stl-1960s",
+    "note": "1960s pace — steals ratio drag",
+    "expectedWins": 59,
+    "lineup": [
+      {
+        "name": "Wilt Chamberlain",
+        "era": "1960s",
+        "stats": {
+          "ppg": 50.4,
+          "rpg": 25.1,
+          "apg": 2.3,
+          "spg": 0.5,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Bill Russell",
+        "era": "1960s",
+        "stats": {
+          "ppg": 15.1,
+          "rpg": 22.5,
+          "apg": 4.3,
+          "spg": 1,
+          "bpg": 3.2
+        }
+      },
+      {
+        "name": "Jerry West",
+        "era": "1960s",
+        "stats": {
+          "ppg": 28.5,
+          "rpg": 5.8,
+          "apg": 6.5,
+          "spg": 1.6,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Elgin Baylor",
+        "era": "1960s",
+        "stats": {
+          "ppg": 28.7,
+          "rpg": 13,
+          "apg": 4.2,
+          "spg": 1.2,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "Bob Cousy",
+        "era": "1960s",
+        "stats": {
+          "ppg": 16.5,
+          "rpg": 4.5,
+          "apg": 7.8,
+          "spg": 1.4,
+          "bpg": 0.1
+        }
+      }
+    ],
+    "expectedGrade": "B",
+    "expectedWeakest": "STL",
+    "expectedCategories": {
+      "PTS": 91.3,
+      "REB": 99.9,
+      "AST": 79,
+      "STL": 71.3,
+      "BLK": 93.9
+    }
+  },
+  {
+    "id": "90s-defense",
+    "note": "1990s defensive anchors",
+    "expectedWins": 74,
+    "lineup": [
+      {
+        "name": "Michael Jordan",
+        "era": "1990s",
+        "stats": {
+          "ppg": 30.4,
+          "rpg": 6.4,
+          "apg": 4.3,
+          "spg": 2.2,
+          "bpg": 0.8
+        }
+      },
+      {
+        "name": "Scottie Pippen",
+        "era": "1990s",
+        "stats": {
+          "ppg": 21,
+          "rpg": 7.7,
+          "apg": 5,
+          "spg": 2.6,
+          "bpg": 1.1
+        }
+      },
+      {
+        "name": "Hakeem Olajuwon",
+        "era": "1990s",
+        "stats": {
+          "ppg": 27.8,
+          "rpg": 11.1,
+          "apg": 3.5,
+          "spg": 1.6,
+          "bpg": 3.1
+        }
+      },
+      {
+        "name": "David Robinson",
+        "era": "1990s",
+        "stats": {
+          "ppg": 25.5,
+          "rpg": 11,
+          "apg": 3,
+          "spg": 1.7,
+          "bpg": 3.2
+        }
+      },
+      {
+        "name": "Gary Payton",
+        "era": "1990s",
+        "stats": {
+          "ppg": 24.2,
+          "rpg": 4.6,
+          "apg": 8.1,
+          "spg": 2.9,
+          "bpg": 0.6
+        }
+      }
+    ],
+    "expectedGrade": "S",
+    "expectedWeakest": "AST",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 92.7,
+      "AST": 88.5,
+      "STL": 100,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "big-three-2010s",
+    "note": "2010s Heat/Bron era stars",
+    "expectedWins": 59,
+    "lineup": [
+      {
+        "name": "LeBron James",
+        "era": "2010s",
+        "stats": {
+          "ppg": 27.4,
+          "rpg": 8.5,
+          "apg": 8.3,
+          "spg": 1.3,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Kevin Durant",
+        "era": "2010s",
+        "stats": {
+          "ppg": 28.2,
+          "rpg": 7.1,
+          "apg": 4.4,
+          "spg": 1.1,
+          "bpg": 1.2
+        }
+      },
+      {
+        "name": "Stephen Curry",
+        "era": "2010s",
+        "stats": {
+          "ppg": 24.3,
+          "rpg": 4.4,
+          "apg": 6.9,
+          "spg": 1.7,
+          "bpg": 0.2
+        }
+      },
+      {
+        "name": "Kawhi Leonard",
+        "era": "2010s",
+        "stats": {
+          "ppg": 22,
+          "rpg": 6.4,
+          "apg": 3,
+          "spg": 1.8,
+          "bpg": 0.7
+        }
+      },
+      {
+        "name": "Chris Paul",
+        "era": "2010s",
+        "stats": {
+          "ppg": 18.9,
+          "rpg": 4.4,
+          "apg": 9.8,
+          "spg": 2.3,
+          "bpg": 0.1
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "BLK",
+    "expectedCategories": {
+      "PTS": 99,
+      "REB": 68.6,
+      "AST": 100,
+      "STL": 100,
+      "BLK": 63.9
+    }
+  },
+  {
+    "id": "2020s-current",
+    "note": "2020s superstars",
+    "expectedWins": 80,
+    "lineup": [
+      {
+        "name": "Nikola Jokic",
+        "era": "2020s",
+        "stats": {
+          "ppg": 26.4,
+          "rpg": 12.4,
+          "apg": 9,
+          "spg": 1.3,
+          "bpg": 0.9
+        }
+      },
+      {
+        "name": "Luka Doncic",
+        "era": "2020s",
+        "stats": {
+          "ppg": 28.4,
+          "rpg": 8.7,
+          "apg": 8.3,
+          "spg": 1.2,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "era": "2020s",
+        "stats": {
+          "ppg": 29.5,
+          "rpg": 11.6,
+          "apg": 5.8,
+          "spg": 1,
+          "bpg": 1.2
+        }
+      },
+      {
+        "name": "Joel Embiid",
+        "era": "2020s",
+        "stats": {
+          "ppg": 30,
+          "rpg": 11.5,
+          "apg": 4.2,
+          "spg": 1,
+          "bpg": 1.7
+        }
+      },
+      {
+        "name": "Shai Gilgeous-Alexander",
+        "era": "2020s",
+        "stats": {
+          "ppg": 30.1,
+          "rpg": 5.5,
+          "apg": 6.2,
+          "spg": 1.6,
+          "bpg": 1
+        }
+      }
+    ],
+    "expectedGrade": "S+",
+    "expectedWeakest": "STL",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 100,
+      "AST": 100,
+      "STL": 93.2,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "80s-showtime",
+    "note": "1980s Lakers/Celtics peak",
+    "expectedWins": 65,
+    "lineup": [
+      {
+        "name": "Magic Johnson",
+        "era": "1980s",
+        "stats": {
+          "ppg": 23.9,
+          "rpg": 6.3,
+          "apg": 12.2,
+          "spg": 1.7,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "Larry Bird",
+        "era": "1980s",
+        "stats": {
+          "ppg": 25.6,
+          "rpg": 10,
+          "apg": 6.8,
+          "spg": 1.5,
+          "bpg": 0.9
+        }
+      },
+      {
+        "name": "Isiah Thomas",
+        "era": "1980s",
+        "stats": {
+          "ppg": 21.2,
+          "rpg": 3.9,
+          "apg": 11,
+          "spg": 1.9,
+          "bpg": 0.3
+        }
+      },
+      {
+        "name": "Moses Malone",
+        "era": "1980s",
+        "stats": {
+          "ppg": 24.8,
+          "rpg": 13.8,
+          "apg": 1.8,
+          "spg": 0.9,
+          "bpg": 1.3
+        }
+      },
+      {
+        "name": "Alex English",
+        "era": "1980s",
+        "stats": {
+          "ppg": 27.4,
+          "rpg": 5.7,
+          "apg": 4.5,
+          "spg": 1.1,
+          "bpg": 0.7
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "BLK",
+    "expectedCategories": {
+      "PTS": 94.7,
+      "REB": 83,
+      "AST": 100,
+      "STL": 98.6,
+      "BLK": 78.3
+    }
+  },
+  {
+    "id": "70s-balanced",
+    "note": "1970s mixed stars",
+    "expectedWins": 65,
+    "lineup": [
+      {
+        "name": "Kareem Abdul-Jabbar",
+        "era": "1970s",
+        "stats": {
+          "ppg": 28,
+          "rpg": 14.5,
+          "apg": 4.8,
+          "spg": 1,
+          "bpg": 3.5
+        }
+      },
+      {
+        "name": "Julius Erving",
+        "era": "1970s",
+        "stats": {
+          "ppg": 27.4,
+          "rpg": 10.7,
+          "apg": 5.2,
+          "spg": 2.2,
+          "bpg": 2
+        }
+      },
+      {
+        "name": "George Gervin",
+        "era": "1970s",
+        "stats": {
+          "ppg": 27.1,
+          "rpg": 5.9,
+          "apg": 3.2,
+          "spg": 1.2,
+          "bpg": 1
+        }
+      },
+      {
+        "name": "Walt Frazier",
+        "era": "1970s",
+        "stats": {
+          "ppg": 20.9,
+          "rpg": 6.7,
+          "apg": 8.1,
+          "spg": 1.9,
+          "bpg": 0.2
+        }
+      },
+      {
+        "name": "Dave Cowens",
+        "era": "1970s",
+        "stats": {
+          "ppg": 18.5,
+          "rpg": 14.6,
+          "apg": 4,
+          "spg": 1.2,
+          "bpg": 1
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "AST",
+    "expectedCategories": {
+      "PTS": 87.9,
+      "REB": 92.9,
+      "AST": 84.3,
+      "STL": 99,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "2000s-kobe-shaq",
+    "note": "2000s Lakers dynasty pieces",
+    "expectedWins": 64,
+    "lineup": [
+      {
+        "name": "Shaquille O'Neal",
+        "era": "2000s",
+        "stats": {
+          "ppg": 27.2,
+          "rpg": 11.1,
+          "apg": 2.6,
+          "spg": 0.6,
+          "bpg": 2
+        }
+      },
+      {
+        "name": "Kobe Bryant",
+        "era": "2000s",
+        "stats": {
+          "ppg": 35.4,
+          "rpg": 5.3,
+          "apg": 4.5,
+          "spg": 1.8,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "Tim Duncan",
+        "era": "2000s",
+        "stats": {
+          "ppg": 22,
+          "rpg": 12.2,
+          "apg": 3.3,
+          "spg": 0.8,
+          "bpg": 2.3
+        }
+      },
+      {
+        "name": "Kevin Garnett",
+        "era": "2000s",
+        "stats": {
+          "ppg": 24.2,
+          "rpg": 13.9,
+          "apg": 5.1,
+          "spg": 1.5,
+          "bpg": 1.4
+        }
+      },
+      {
+        "name": "Dirk Nowitzki",
+        "era": "2000s",
+        "stats": {
+          "ppg": 26.6,
+          "rpg": 8.9,
+          "apg": 3,
+          "spg": 0.8,
+          "bpg": 0.8
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "AST",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 100,
+      "AST": 68.5,
+      "STL": 80.2,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "weak-rebounding",
+    "note": "Guards-heavy — rebounding gate",
+    "expectedWins": 49,
+    "lineup": [
+      {
+        "name": "Stephen Curry",
+        "era": "2010s",
+        "stats": {
+          "ppg": 24.3,
+          "rpg": 4.4,
+          "apg": 6.9,
+          "spg": 1.7,
+          "bpg": 0.2
+        }
+      },
+      {
+        "name": "Damian Lillard",
+        "era": "2010s",
+        "stats": {
+          "ppg": 25.1,
+          "rpg": 4.3,
+          "apg": 6.6,
+          "spg": 1.1,
+          "bpg": 0.3
+        }
+      },
+      {
+        "name": "Kyrie Irving",
+        "era": "2010s",
+        "stats": {
+          "ppg": 22.4,
+          "rpg": 3.8,
+          "apg": 5.8,
+          "spg": 1.3,
+          "bpg": 0.3
+        }
+      },
+      {
+        "name": "James Harden",
+        "era": "2010s",
+        "stats": {
+          "ppg": 29,
+          "rpg": 6.1,
+          "apg": 7.5,
+          "spg": 1.6,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Russell Westbrook",
+        "era": "2010s",
+        "stats": {
+          "ppg": 23.6,
+          "rpg": 7.4,
+          "apg": 8.8,
+          "spg": 1.6,
+          "bpg": 0.3
+        }
+      }
+    ],
+    "expectedGrade": "B",
+    "expectedWeakest": "BLK",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 57.9,
+      "AST": 100,
+      "STL": 100,
+      "BLK": 36.5
+    }
+  },
+  {
+    "id": "weak-playmaking",
+    "note": "Scorers without playmaking",
+    "expectedWins": 54,
+    "lineup": [
+      {
+        "name": "Shaquille O'Neal",
+        "era": "2000s",
+        "stats": {
+          "ppg": 27.2,
+          "rpg": 11.1,
+          "apg": 2.6,
+          "spg": 0.6,
+          "bpg": 2
+        }
+      },
+      {
+        "name": "Amar'e Stoudemire",
+        "era": "2000s",
+        "stats": {
+          "ppg": 26,
+          "rpg": 8.9,
+          "apg": 1.6,
+          "spg": 0.8,
+          "bpg": 1.2
+        }
+      },
+      {
+        "name": "Dwight Howard",
+        "era": "2000s",
+        "stats": {
+          "ppg": 20.6,
+          "rpg": 13.2,
+          "apg": 1.4,
+          "spg": 1,
+          "bpg": 2.7
+        }
+      },
+      {
+        "name": "Blake Griffin",
+        "era": "2010s",
+        "stats": {
+          "ppg": 22.5,
+          "rpg": 11.8,
+          "apg": 3.7,
+          "spg": 0.9,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "DeMarcus Cousins",
+        "era": "2010s",
+        "stats": {
+          "ppg": 27,
+          "rpg": 11.1,
+          "apg": 3.8,
+          "spg": 1.4,
+          "bpg": 1.2
+        }
+      }
+    ],
+    "expectedGrade": "B",
+    "expectedWeakest": "AST",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 100,
+      "AST": 48,
+      "STL": 68.5,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "borderline-65",
+    "note": "Average all-star level",
+    "expectedWins": 49,
+    "lineup": [
+      {
+        "name": "Paul Pierce",
+        "era": "2000s",
+        "stats": {
+          "ppg": 26.8,
+          "rpg": 6.9,
+          "apg": 4.6,
+          "spg": 1.4,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Joe Johnson",
+        "era": "2000s",
+        "stats": {
+          "ppg": 21.4,
+          "rpg": 4.9,
+          "apg": 4.9,
+          "spg": 1,
+          "bpg": 0.2
+        }
+      },
+      {
+        "name": "Chauncey Billups",
+        "era": "2000s",
+        "stats": {
+          "ppg": 19.5,
+          "rpg": 3.1,
+          "apg": 6.6,
+          "spg": 1,
+          "bpg": 0.2
+        }
+      },
+      {
+        "name": "Rasheed Wallace",
+        "era": "2000s",
+        "stats": {
+          "ppg": 16.7,
+          "rpg": 10.2,
+          "apg": 2.5,
+          "spg": 0.9,
+          "bpg": 1.6
+        }
+      },
+      {
+        "name": "Ben Wallace",
+        "era": "2000s",
+        "stats": {
+          "ppg": 5.7,
+          "rpg": 12.3,
+          "apg": 1.7,
+          "spg": 1.2,
+          "bpg": 2.2
+        }
+      }
+    ],
+    "expectedGrade": "B",
+    "expectedWeakest": "AST",
+    "expectedCategories": {
+      "PTS": 76.8,
+      "REB": 85,
+      "AST": 75.2,
+      "STL": 80.2,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "role-players",
+    "note": "Bench-level — low wins floor",
+    "expectedWins": 16,
+    "lineup": [
+      {
+        "name": "Bruce Bowen",
+        "era": "2000s",
+        "stats": {
+          "ppg": 7.4,
+          "rpg": 3,
+          "apg": 1.4,
+          "spg": 1.2,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Shane Battier",
+        "era": "2000s",
+        "stats": {
+          "ppg": 10.1,
+          "rpg": 4.7,
+          "apg": 2.1,
+          "spg": 0.9,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Tayshaun Prince",
+        "era": "2000s",
+        "stats": {
+          "ppg": 14.3,
+          "rpg": 4.9,
+          "apg": 2.8,
+          "spg": 1,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Kurt Thomas",
+        "era": "2000s",
+        "stats": {
+          "ppg": 8.9,
+          "rpg": 7.8,
+          "apg": 1.2,
+          "spg": 0.6,
+          "bpg": 0.8
+        }
+      },
+      {
+        "name": "Eric Snow",
+        "era": "2000s",
+        "stats": {
+          "ppg": 7.8,
+          "rpg": 3.3,
+          "apg": 6.4,
+          "spg": 1.4,
+          "bpg": 0.2
+        }
+      }
+    ],
+    "expectedGrade": "D",
+    "expectedWeakest": "PTS",
+    "expectedCategories": {
+      "PTS": 41.3,
+      "REB": 53.9,
+      "AST": 51.5,
+      "STL": 74.4,
+      "BLK": 56.5
+    }
+  },
+  {
+    "id": "mixed-eras-goat",
+    "note": "Spanning 60s–2020s",
+    "expectedWins": 66,
+    "lineup": [
+      {
+        "name": "Oscar Robertson",
+        "era": "1960s",
+        "stats": {
+          "ppg": 30.8,
+          "rpg": 12.5,
+          "apg": 11.4,
+          "spg": 0,
+          "bpg": 0
+        }
+      },
+      {
+        "name": "Larry Bird",
+        "era": "1980s",
+        "stats": {
+          "ppg": 25.6,
+          "rpg": 10,
+          "apg": 6.8,
+          "spg": 1.5,
+          "bpg": 0.9
+        }
+      },
+      {
+        "name": "Karl Malone",
+        "era": "1990s",
+        "stats": {
+          "ppg": 27,
+          "rpg": 10.6,
+          "apg": 3.5,
+          "spg": 1.4,
+          "bpg": 0.8
+        }
+      },
+      {
+        "name": "Dirk Nowitzki",
+        "era": "2000s",
+        "stats": {
+          "ppg": 26.6,
+          "rpg": 8.9,
+          "apg": 3,
+          "spg": 0.8,
+          "bpg": 0.8
+        }
+      },
+      {
+        "name": "Kevin Durant",
+        "era": "2010s",
+        "stats": {
+          "ppg": 28.2,
+          "rpg": 7.1,
+          "apg": 4.4,
+          "spg": 1.1,
+          "bpg": 1.2
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "STL",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 98.7,
+      "AST": 99.9,
+      "STL": 68,
+      "BLK": 81.7
+    }
+  },
+  {
+    "id": "celtics-bigs",
+    "note": "Historic Celtics frontcourt",
+    "expectedWins": 69,
+    "lineup": [
+      {
+        "name": "Bill Russell",
+        "era": "1960s",
+        "stats": {
+          "ppg": 15.1,
+          "rpg": 22.5,
+          "apg": 4.3,
+          "spg": 1,
+          "bpg": 3.2
+        }
+      },
+      {
+        "name": "John Havlicek",
+        "era": "1970s",
+        "stats": {
+          "ppg": 22.4,
+          "rpg": 7,
+          "apg": 6.2,
+          "spg": 1.4,
+          "bpg": 0.3
+        }
+      },
+      {
+        "name": "Larry Bird",
+        "era": "1980s",
+        "stats": {
+          "ppg": 25.6,
+          "rpg": 10,
+          "apg": 6.8,
+          "spg": 1.5,
+          "bpg": 0.9
+        }
+      },
+      {
+        "name": "Kevin Garnett",
+        "era": "2000s",
+        "stats": {
+          "ppg": 24.2,
+          "rpg": 13.9,
+          "apg": 5.1,
+          "spg": 1.5,
+          "bpg": 1.4
+        }
+      },
+      {
+        "name": "Jayson Tatum",
+        "era": "2020s",
+        "stats": {
+          "ppg": 28,
+          "rpg": 8.5,
+          "apg": 4.6,
+          "spg": 1,
+          "bpg": 0.6
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "PTS",
+    "expectedCategories": {
+      "PTS": 88,
+      "REB": 100,
+      "AST": 93.4,
+      "STL": 89,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "lakers-legends",
+    "note": "Lakers all-time",
+    "expectedWins": 68,
+    "lineup": [
+      {
+        "name": "Jerry West",
+        "era": "1960s",
+        "stats": {
+          "ppg": 28.5,
+          "rpg": 5.8,
+          "apg": 6.5,
+          "spg": 1.6,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Magic Johnson",
+        "era": "1980s",
+        "stats": {
+          "ppg": 23.9,
+          "rpg": 6.3,
+          "apg": 12.2,
+          "spg": 1.7,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "Kobe Bryant",
+        "era": "2000s",
+        "stats": {
+          "ppg": 35.4,
+          "rpg": 5.3,
+          "apg": 4.5,
+          "spg": 1.8,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "LeBron James",
+        "era": "2010s",
+        "stats": {
+          "ppg": 27.4,
+          "rpg": 8.5,
+          "apg": 8.3,
+          "spg": 1.3,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Shaquille O'Neal",
+        "era": "2000s",
+        "stats": {
+          "ppg": 27.2,
+          "rpg": 11.1,
+          "apg": 2.6,
+          "spg": 0.6,
+          "bpg": 2
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "REB",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 77.6,
+      "AST": 100,
+      "STL": 97.6,
+      "BLK": 86.3
+    }
+  },
+  {
+    "id": "spurs-dynasty",
+    "note": "Spurs core",
+    "expectedWins": 57,
+    "lineup": [
+      {
+        "name": "Tim Duncan",
+        "era": "2000s",
+        "stats": {
+          "ppg": 22,
+          "rpg": 12.2,
+          "apg": 3.3,
+          "spg": 0.8,
+          "bpg": 2.3
+        }
+      },
+      {
+        "name": "Tony Parker",
+        "era": "2000s",
+        "stats": {
+          "ppg": 18.3,
+          "rpg": 2.7,
+          "apg": 5.8,
+          "spg": 0.8,
+          "bpg": 0.1
+        }
+      },
+      {
+        "name": "Manu Ginobili",
+        "era": "2000s",
+        "stats": {
+          "ppg": 17.8,
+          "rpg": 4.2,
+          "apg": 4.5,
+          "spg": 1.5,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "David Robinson",
+        "era": "1990s",
+        "stats": {
+          "ppg": 25.5,
+          "rpg": 11,
+          "apg": 3,
+          "spg": 1.7,
+          "bpg": 3.2
+        }
+      },
+      {
+        "name": "Kawhi Leonard",
+        "era": "2010s",
+        "stats": {
+          "ppg": 22,
+          "rpg": 6.4,
+          "apg": 3,
+          "spg": 1.8,
+          "bpg": 0.7
+        }
+      }
+    ],
+    "expectedGrade": "B",
+    "expectedWeakest": "AST",
+    "expectedCategories": {
+      "PTS": 88.5,
+      "REB": 82.7,
+      "AST": 72.4,
+      "STL": 95.1,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "warriors-small-ball",
+    "note": "Warriors death lineup era",
+    "expectedWins": 47,
+    "lineup": [
+      {
+        "name": "Stephen Curry",
+        "era": "2010s",
+        "stats": {
+          "ppg": 24.3,
+          "rpg": 4.4,
+          "apg": 6.9,
+          "spg": 1.7,
+          "bpg": 0.2
+        }
+      },
+      {
+        "name": "Klay Thompson",
+        "era": "2010s",
+        "stats": {
+          "ppg": 22.3,
+          "rpg": 3.8,
+          "apg": 2.5,
+          "spg": 0.9,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Draymond Green",
+        "era": "2010s",
+        "stats": {
+          "ppg": 11,
+          "rpg": 7.9,
+          "apg": 7.4,
+          "spg": 1.4,
+          "bpg": 1.3
+        }
+      },
+      {
+        "name": "Kevin Durant",
+        "era": "2010s",
+        "stats": {
+          "ppg": 28.2,
+          "rpg": 7.1,
+          "apg": 4.4,
+          "spg": 1.1,
+          "bpg": 1.2
+        }
+      },
+      {
+        "name": "Andre Iguodala",
+        "era": "2010s",
+        "stats": {
+          "ppg": 9.4,
+          "rpg": 4.8,
+          "apg": 4,
+          "spg": 1.1,
+          "bpg": 0.6
+        }
+      }
+    ],
+    "expectedGrade": "B",
+    "expectedWeakest": "REB",
+    "expectedCategories": {
+      "PTS": 78,
+      "REB": 62.4,
+      "AST": 91.5,
+      "STL": 90.4,
+      "BLK": 86.7
+    }
+  },
+  {
+    "id": "bad-mixed",
+    "note": "Below-average mix",
+    "expectedWins": 9,
+    "lineup": [
+      {
+        "name": "J.R. Smith",
+        "era": "2010s",
+        "stats": {
+          "ppg": 12.3,
+          "rpg": 3.2,
+          "apg": 2.5,
+          "spg": 1.1,
+          "bpg": 0.3
+        }
+      },
+      {
+        "name": "Kyle Korver",
+        "era": "2010s",
+        "stats": {
+          "ppg": 12,
+          "rpg": 2.9,
+          "apg": 2.1,
+          "spg": 0.6,
+          "bpg": 0.2
+        }
+      },
+      {
+        "name": "Tristan Thompson",
+        "era": "2010s",
+        "stats": {
+          "ppg": 8.1,
+          "rpg": 8.9,
+          "apg": 0.9,
+          "spg": 0.5,
+          "bpg": 0.7
+        }
+      },
+      {
+        "name": "Matthew Dellavedova",
+        "era": "2010s",
+        "stats": {
+          "ppg": 7.5,
+          "rpg": 2.1,
+          "apg": 4.4,
+          "spg": 0.7,
+          "bpg": 0.1
+        }
+      },
+      {
+        "name": "Timofey Mozgov",
+        "era": "2010s",
+        "stats": {
+          "ppg": 7,
+          "rpg": 4.9,
+          "apg": 0.7,
+          "spg": 0.3,
+          "bpg": 0.8
+        }
+      }
+    ],
+    "expectedGrade": "D",
+    "expectedWeakest": "PTS",
+    "expectedCategories": {
+      "PTS": 38.4,
+      "REB": 49,
+      "AST": 38.5,
+      "STL": 46.7,
+      "BLK": 47.9
+    }
+  },
+  {
+    "id": "near-perfect-balance",
+    "note": "High combo balanced ratios",
+    "expectedWins": 78,
+    "lineup": [
+      {
+        "name": "Nikola Jokic",
+        "era": "2020s",
+        "stats": {
+          "ppg": 26.4,
+          "rpg": 12.4,
+          "apg": 9,
+          "spg": 1.3,
+          "bpg": 0.9
+        }
+      },
+      {
+        "name": "LeBron James",
+        "era": "2010s",
+        "stats": {
+          "ppg": 27.4,
+          "rpg": 8.5,
+          "apg": 8.3,
+          "spg": 1.3,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Luka Doncic",
+        "era": "2020s",
+        "stats": {
+          "ppg": 28.4,
+          "rpg": 8.7,
+          "apg": 8.3,
+          "spg": 1.2,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Giannis Antetokounmpo",
+        "era": "2020s",
+        "stats": {
+          "ppg": 29.5,
+          "rpg": 11.6,
+          "apg": 5.8,
+          "spg": 1,
+          "bpg": 1.2
+        }
+      },
+      {
+        "name": "Kevin Durant",
+        "era": "2010s",
+        "stats": {
+          "ppg": 28.2,
+          "rpg": 7.1,
+          "apg": 4.4,
+          "spg": 1.1,
+          "bpg": 1.2
+        }
+      }
+    ],
+    "expectedGrade": "S+",
+    "expectedWeakest": "STL",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 100,
+      "AST": 100,
+      "STL": 88.5,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "1990s-scorers-only",
+    "note": "Pure scorers 90s",
+    "expectedWins": 60,
+    "lineup": [
+      {
+        "name": "Michael Jordan",
+        "era": "1990s",
+        "stats": {
+          "ppg": 30.4,
+          "rpg": 6.4,
+          "apg": 4.3,
+          "spg": 2.2,
+          "bpg": 0.8
+        }
+      },
+      {
+        "name": "Shaquille O'Neal",
+        "era": "1990s",
+        "stats": {
+          "ppg": 29.3,
+          "rpg": 13.2,
+          "apg": 2.3,
+          "spg": 0.6,
+          "bpg": 2.9
+        }
+      },
+      {
+        "name": "Allen Iverson",
+        "era": "1990s",
+        "stats": {
+          "ppg": 26.5,
+          "rpg": 4.5,
+          "apg": 4.5,
+          "spg": 2.3,
+          "bpg": 0.2
+        }
+      },
+      {
+        "name": "Dominique Wilkins",
+        "era": "1990s",
+        "stats": {
+          "ppg": 24.8,
+          "rpg": 6.8,
+          "apg": 2.6,
+          "spg": 1,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Reggie Miller",
+        "era": "1990s",
+        "stats": {
+          "ppg": 18.9,
+          "rpg": 3.3,
+          "apg": 3.8,
+          "spg": 1.3,
+          "bpg": 0.2
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "AST",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 77.7,
+      "AST": 64.8,
+      "STL": 100,
+      "BLK": 100
+    }
+  },
+  {
+    "id": "1960s-only",
+    "note": "Single decade 1960s",
+    "expectedWins": 62,
+    "lineup": [
+      {
+        "name": "Wilt Chamberlain",
+        "era": "1960s",
+        "stats": {
+          "ppg": 50.4,
+          "rpg": 25.1,
+          "apg": 2.3,
+          "spg": 0.5,
+          "bpg": 0.5
+        }
+      },
+      {
+        "name": "Bill Russell",
+        "era": "1960s",
+        "stats": {
+          "ppg": 15.1,
+          "rpg": 22.5,
+          "apg": 4.3,
+          "spg": 1,
+          "bpg": 3.2
+        }
+      },
+      {
+        "name": "Jerry West",
+        "era": "1960s",
+        "stats": {
+          "ppg": 28.5,
+          "rpg": 5.8,
+          "apg": 6.5,
+          "spg": 1.6,
+          "bpg": 0.6
+        }
+      },
+      {
+        "name": "Oscar Robertson",
+        "era": "1960s",
+        "stats": {
+          "ppg": 30.8,
+          "rpg": 12.5,
+          "apg": 11.4,
+          "spg": 0,
+          "bpg": 0
+        }
+      },
+      {
+        "name": "Elgin Baylor",
+        "era": "1960s",
+        "stats": {
+          "ppg": 28.7,
+          "rpg": 13,
+          "apg": 4.2,
+          "spg": 1.2,
+          "bpg": 0.4
+        }
+      }
+    ],
+    "expectedGrade": "A",
+    "expectedWeakest": "STL",
+    "expectedCategories": {
+      "PTS": 100,
+      "REB": 100,
+      "AST": 90.4,
+      "STL": 53.8,
+      "BLK": 92
+    }
+  },
+  {
+    "id": "1980s-only",
+    "note": "Single decade 1980s",
+    "expectedWins": 75,
+    "lineup": [
+      {
+        "name": "Magic Johnson",
+        "era": "1980s",
+        "stats": {
+          "ppg": 23.9,
+          "rpg": 6.3,
+          "apg": 12.2,
+          "spg": 1.7,
+          "bpg": 0.4
+        }
+      },
+      {
+        "name": "Larry Bird",
+        "era": "1980s",
+        "stats": {
+          "ppg": 25.6,
+          "rpg": 10,
+          "apg": 6.8,
+          "spg": 1.5,
+          "bpg": 0.9
+        }
+      },
+      {
+        "name": "Isiah Thomas",
+        "era": "1980s",
+        "stats": {
+          "ppg": 21.2,
+          "rpg": 3.9,
+          "apg": 11,
+          "spg": 1.9,
+          "bpg": 0.3
+        }
+      },
+      {
+        "name": "Moses Malone",
+        "era": "1980s",
+        "stats": {
+          "ppg": 24.8,
+          "rpg": 13.8,
+          "apg": 1.8,
+          "spg": 0.9,
+          "bpg": 1.3
+        }
+      },
+      {
+        "name": "Hakeem Olajuwon",
+        "era": "1980s",
+        "stats": {
+          "ppg": 23.4,
+          "rpg": 11.5,
+          "apg": 2,
+          "spg": 1.6,
+          "bpg": 3.4
+        }
+      }
+    ],
+    "expectedGrade": "S",
+    "expectedWeakest": "PTS",
+    "expectedCategories": {
+      "PTS": 91.6,
+      "REB": 95.1,
+      "AST": 100,
+      "STL": 100,
+      "BLK": 100
+    }
+  }
+]

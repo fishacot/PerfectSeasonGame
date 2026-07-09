@@ -1,0 +1,103 @@
+{
+  "Canadiens": {
+    "1950s": [["Bernie Geoffrion", ["RW"], 89, 28, 26], ["Dickie Moore", ["LW"], 87, 26, 30]],
+    "1960s": [["Henri Richard", ["C"], 88, 20, 32], ["Jacques Lemaire", ["C"], 87, 20, 30]],
+    "1970s": [["Guy Lafleur", ["RW"], 95, 48, 52], ["Larry Robinson", ["D"], 90, 12, 48]],
+    "1980s": [["Patrick Roy", ["G"], 93, 0, 2, 0.91], ["Chris Nilan", ["D"], 80, 6, 12]],
+    "1990s": [["Vincent Damphousse", ["C"], 86, 26, 38], ["Kirk Muller", ["C"], 83, 20, 30]],
+    "2000s": [["Saku Koivu", ["C"], 86, 20, 36], ["Andrei Markov", ["D"], 87, 8, 40]],
+    "2010s": [["Max Pacioretty", ["LW"], 87, 28, 26], ["P.K. Subban", ["D"], 88, 12, 36]],
+    "2020s": [["Nick Suzuki", ["C"], 83, 22, 32], ["Cole Caufield", ["RW"], 82, 24, 20]]
+  },
+  "Oilers": {
+    "1970s": [["Paul Coffey", ["D"], 83, 8, 28], ["Glen Anderson", ["LW"], 79, 12, 16]],
+    "1980s": [["Jari Kurri", ["RW"], 90, 46, 56], ["Paul Coffey", ["D"], 92, 16, 56]],
+    "1990s": [["Doug Weight", ["C"], 83, 18, 48], ["Ryan Smyth", ["LW"], 83, 24, 26]],
+    "2000s": [["Shawn Horcoff", ["C"], 83, 20, 36], ["Ales Hemsky", ["RW"], 84, 18, 40]],
+    "2010s": [["Connor McDavid", ["C"], 96, 42, 72], ["Leon Draisaitl", ["C"], 92, 38, 52]],
+    "2020s": [["Evan Bouchard", ["D"], 85, 12, 40], ["Stuart Skinner", ["G"], 84, 0, 1, 0.908]]
+  },
+  "Bruins": {
+    "1950s": [["Milt Schmidt", ["C"], 89, 22, 36], ["Woody Dumart", ["LW"], 85, 20, 26]],
+    "1960s": [["Bobby Orr", ["D"], 97, 20, 58], ["Phil Esposito", ["C"], 93, 42, 50]],
+    "1970s": [["Bobby Orr", ["D"], 95, 16, 52], ["Terry O'Reilly", ["RW"], 84, 22, 28]],
+    "1980s": [["Ray Bourque", ["D"], 93, 18, 52], ["Cam Neely", ["RW"], 90, 36, 26]],
+    "1990s": [["Ray Bourque", ["D"], 92, 14, 46], ["Adam Oates", ["C"], 90, 16, 58]],
+    "2000s": [["Zdeno Chara", ["D"], 89, 10, 26], ["Marc Savard", ["C"], 86, 20, 46]],
+    "2010s": [["Patrice Bergeron", ["C"], 90, 22, 36], ["Brad Marchand", ["LW"], 88, 28, 30]],
+    "2020s": [["David Pastrnak", ["RW"], 90, 36, 40], ["Charlie McAvoy", ["D"], 87, 8, 36]]
+  },
+  "Blackhawks": {
+    "1960s": [["Bobby Hull", ["LW"], 93, 42, 26], ["Stan Mikita", ["C"], 92, 30, 46]],
+    "1970s": [["Tony Esposito", ["G"], 90, 0, 2, 0.908], ["Pit Martin", ["C"], 82, 18, 28]],
+    "1980s": [["Denis Savard", ["C"], 90, 30, 50], ["Chris Chelios", ["D"], 89, 10, 40]],
+    "1990s": [["Chris Chelios", ["D"], 90, 8, 38], ["Ed Belfour", ["G"], 91, 0, 2, 0.912]],
+    "2000s": [["Patrick Kane", ["RW"], 89, 26, 40], ["Duncan Keith", ["D"], 89, 8, 36]],
+    "2010s": [["Patrick Kane", ["RW"], 92, 30, 46], ["Jonathan Toews", ["C"], 89, 22, 30]],
+    "2020s": [["Connor Bedard", ["C"], 85, 22, 26], ["Seth Jones", ["D"], 84, 8, 30]]
+  },
+  "Red Wings": {
+    "1950s": [["Gordie Howe", ["RW"], 96, 36, 40], ["Ted Lindsay", ["LW"], 91, 30, 36]],
+    "1960s": [["Gordie Howe", ["RW"], 94, 28, 36], ["Norm Ullman", ["C"], 87, 24, 36]],
+    "1970s": [["Marcel Dionne", ["C"], 91, 34, 46], ["Reed Larson", ["D"], 83, 12, 30]],
+    "1980s": [["Steve Yzerman", ["C"], 91, 30, 46], ["Brad Park", ["D"], 87, 8, 36]],
+    "1990s": [["Steve Yzerman", ["C"], 92, 26, 40], ["Nicklas Lidstrom", ["D"], 94, 12, 46]],
+    "2000s": [["Pavel Datsyuk", ["C"], 91, 22, 40], ["Henrik Zetterberg", ["C"], 90, 24, 36]],
+    "2010s": [["Henrik Zetterberg", ["C"], 88, 20, 32], ["Dylan Larkin", ["C"], 85, 22, 30]],
+    "2020s": [["Dylan Larkin", ["C"], 86, 26, 34], ["Moritz Seider", ["D"], 85, 6, 28]]
+  },
+  "Penguins": {
+    "1960s": [["Andy Bathgate", ["RW"], 83, 18, 26], ["Ken Schinkel", ["RW"], 79, 14, 18]],
+    "1970s": [["Jean Pronovost", ["RW"], 83, 26, 26], ["Ron Stackhouse", ["D"], 80, 8, 26]],
+    "1980s": [["Mario Lemieux", ["C"], 97, 52, 76], ["Paul Coffey", ["D"], 92, 16, 56]],
+    "1990s": [["Jaromir Jagr", ["RW"], 95, 40, 56], ["Ron Francis", ["C"], 89, 20, 50]],
+    "2000s": [["Sidney Crosby", ["C"], 94, 30, 50], ["Evgeni Malkin", ["C"], 93, 32, 46]],
+    "2010s": [["Sidney Crosby", ["C"], 95, 28, 46], ["Kris Letang", ["D"], 88, 10, 36]],
+    "2020s": [["Sidney Crosby", ["C"], 90, 26, 40], ["Kris Letang", ["D"], 85, 8, 30]]
+  },
+  "Rangers": {
+    "1950s": [["Andy Bathgate", ["RW"], 90, 26, 36], ["Harry Howell", ["D"], 85, 6, 26]],
+    "1960s": [["Rod Gilbert", ["RW"], 89, 30, 36], ["Jean Ratelle", ["C"], 90, 28, 40]],
+    "1970s": [["Brad Park", ["D"], 90, 12, 46], ["Rod Gilbert", ["RW"], 87, 26, 30]],
+    "1980s": [["Mark Messier", ["C"], 91, 26, 40], ["Brian Leetch", ["D"], 91, 14, 50]],
+    "1990s": [["Mark Messier", ["C"], 92, 24, 38], ["Brian Leetch", ["D"], 90, 12, 46]],
+    "2000s": [["Jaromir Jagr", ["RW"], 92, 36, 50], ["Henrik Lundqvist", ["G"], 91, 0, 2, 0.918]],
+    "2010s": [["Henrik Lundqvist", ["G"], 90, 0, 2, 0.918], ["Artemi Panarin", ["LW"], 89, 26, 40]],
+    "2020s": [["Artemi Panarin", ["LW"], 88, 24, 38], ["Adam Fox", ["D"], 88, 8, 40]]
+  },
+  "Maple Leafs": {
+    "1950s": [["Ted Kennedy", ["C"], 88, 20, 30], ["Max Bentley", ["C"], 87, 22, 32]],
+    "1960s": [["Dave Keon", ["C"], 90, 22, 30], ["Frank Mahovlich", ["LW"], 91, 30, 36]],
+    "1970s": [["Darryl Sittler", ["C"], 90, 30, 46], ["Borje Salming", ["D"], 91, 10, 40]],
+    "1980s": [["Wendel Clark", ["LW"], 86, 26, 22], ["Borje Salming", ["D"], 89, 8, 38]],
+    "1990s": [["Doug Gilmour", ["C"], 90, 22, 50], ["Mats Sundin", ["C"], 91, 30, 36]],
+    "2000s": [["Mats Sundin", ["C"], 89, 26, 34], ["Tomas Kaberle", ["D"], 85, 6, 36]],
+    "2010s": [["Auston Matthews", ["C"], 91, 36, 26], ["Morgan Rielly", ["D"], 86, 8, 34]],
+    "2020s": [["Auston Matthews", ["C"], 93, 38, 28], ["William Nylander", ["RW"], 87, 28, 30]]
+  },
+  "Avalanche": {
+    "1980s": [["Peter Stastny", ["C"], 89, 30, 46], ["Michel Goulet", ["LW"], 88, 32, 30]],
+    "1990s": [["Joe Sakic", ["C"], 94, 34, 50], ["Peter Forsberg", ["C"], 95, 26, 46]],
+    "2000s": [["Joe Sakic", ["C"], 92, 28, 46], ["Milan Hejduk", ["RW"], 87, 26, 26]],
+    "2010s": [["Nathan MacKinnon", ["C"], 92, 30, 46], ["Gabriel Landeskog", ["LW"], 87, 22, 26]],
+    "2020s": [["Nathan MacKinnon", ["C"], 95, 36, 50], ["Cale Makar", ["D"], 92, 16, 50]]
+  },
+  "Lightning": {
+    "1990s": [["Roman Hamrlik", ["D"], 83, 8, 26], ["Brian Bradley", ["C"], 82, 20, 30]],
+    "2000s": [["Martin St. Louis", ["RW"], 89, 26, 40], ["Vincent Lecavalier", ["C"], 90, 30, 36]],
+    "2010s": [["Steven Stamkos", ["C"], 91, 34, 30], ["Nikita Kucherov", ["RW"], 93, 32, 46]],
+    "2020s": [["Nikita Kucherov", ["RW"], 94, 34, 50], ["Victor Hedman", ["D"], 89, 8, 38]]
+  },
+  "Capitals": {
+    "1970s": [["Mike Maruk", ["C"], 83, 26, 30], ["Rick Green", ["D"], 82, 8, 26]],
+    "1980s": [["Mike Gartner", ["RW"], 90, 34, 30], ["Scott Stevens", ["D"], 89, 8, 36]],
+    "1990s": [["Peter Bondra", ["RW"], 89, 32, 26], ["Adam Oates", ["C"], 89, 16, 56]],
+    "2000s": [["Alexander Ovechkin", ["LW"], 95, 44, 36], ["Nicklas Backstrom", ["C"], 89, 20, 50]],
+    "2010s": [["Alexander Ovechkin", ["LW"], 94, 42, 34], ["John Carlson", ["D"], 88, 10, 38]],
+    "2020s": [["Alexander Ovechkin", ["LW"], 89, 34, 26], ["John Carlson", ["D"], 86, 8, 36]]
+  },
+  "Golden Knights": {
+    "2010s": [["William Karlsson", ["C"], 85, 24, 26], ["Jonathan Marchessault", ["RW"], 84, 22, 26]],
+    "2020s": [["Jack Eichel", ["C"], 88, 26, 36], ["Mark Stone", ["RW"], 87, 22, 36]]
+  }
+}

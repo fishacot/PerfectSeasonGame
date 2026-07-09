@@ -1,0 +1,32 @@
+{
+  "id": "seriea",
+  "name": "Serie A",
+  "seasonGames": 38,
+  "clubs": [
+    "AC Milan",
+    "Inter Milan",
+    "Juventus",
+    "Napoli"
+  ],
+  "missingClubs": [],
+  "eras": [
+    "2000s",
+    "2010s",
+    "2020s"
+  ],
+  "players": 59,
+  "pools": 11,
+  "poolSizeMin": 2,
+  "poolSizeMax": 11,
+  "byClub": {
+    "AC Milan": 18,
+    "Inter Milan": 19,
+    "Juventus": 13,
+    "Napoli": 9
+  },
+  "byEra": {
+    "2000s": 22,
+    "2010s": 20,
+    "2020s": 17
+  }
+}

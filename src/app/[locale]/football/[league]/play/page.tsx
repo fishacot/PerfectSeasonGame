@@ -1,0 +1,46 @@
+import { notFound } from "next/navigation";
+import { GameClient } from "@/components/game/GameClient";
+import {
+  FOOTBALL_LEAGUES,
+  getFootballEras,
+} from "@/lib/config/leagues/football";
+import { parseChallengePayload } from "@/lib/game/challenge";
+import { loadFootballPlayers, getFootballClubs } from "@/lib/data/loaders";
+import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
+import type { FootballLeague } from "@/lib/types";
+
+export default async function FootballPlayPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: string; league: string }>;
+  searchParams: Promise<{ challenge?: string }>;
+}) {
+  const { locale, league: leagueId } = await params;
+  const { challenge } = await searchParams;
+  if (!isValidLocale(locale)) notFound();
+  if (!(leagueId in FOOTBALL_LEAGUES)) notFound();
+
+  const league = leagueId as FootballLeague;
+  const config = FOOTBALL_LEAGUES[league];
+  const dict = getDictionary(locale);
+
+  const parsed = challenge ? parseChallengePayload(challenge) : null;
+  if (parsed && parsed.sport !== "football") notFound();
+  if (parsed?.league && parsed.league !== league) notFound();
+
+  return (
+    <GameClient
+      sport="football"
+      locale={locale}
+      dict={dict}
+      players={loadFootballPlayers(league)}
+      clubs={getFootballClubs(league)}
+      eras={getFootballEras(league)}
+      league={league}
+      brand={config.brand}
+      challengeSpins={parsed?.spins}
+      challengeTargetWins={parsed?.wins}
+    />
+  );
+}

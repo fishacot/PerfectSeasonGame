@@ -1,0 +1,50 @@
+[
+  {
+    "id": "balanced-six",
+    "lineup": [
+      {
+        "name": "Gretzky",
+        "era": "1980s",
+        "positions": ["C"],
+        "stats": { "goals": 0.9, "assists": 1.5, "savePct": 0 },
+        "rating": 99
+      },
+      {
+        "name": "Lemieux",
+        "era": "1990s",
+        "positions": ["C"],
+        "stats": { "goals": 0.8, "assists": 1.2, "savePct": 0 },
+        "rating": 98
+      },
+      {
+        "name": "Orr",
+        "era": "1970s",
+        "positions": ["D"],
+        "stats": { "goals": 0.35, "assists": 0.9, "savePct": 0 },
+        "rating": 97
+      },
+      {
+        "name": "Brodeur",
+        "era": "2000s",
+        "positions": ["G"],
+        "stats": { "goals": 0, "assists": 0.02, "savePct": 0.912 },
+        "rating": 95
+      },
+      {
+        "name": "Crosby",
+        "era": "2010s",
+        "positions": ["C"],
+        "stats": { "goals": 0.45, "assists": 0.75, "savePct": 0 },
+        "rating": 96
+      },
+      {
+        "name": "McDavid",
+        "era": "2020s",
+        "positions": ["C"],
+        "stats": { "goals": 0.55, "assists": 0.95, "savePct": 0 },
+        "rating": 97
+      }
+    ],
+    "expectedWins": null
+  }
+]

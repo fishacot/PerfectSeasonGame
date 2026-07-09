@@ -1,0 +1,1118 @@
+{
+  "Lakers|1960s": [
+    "Elgin Baylor",
+    "Gail Goodrich",
+    "Happy Hairston",
+    "Jerry West",
+    "Rudy LaRusso",
+    "Wilt Chamberlain"
+  ],
+  "Lakers|1970s": [
+    "Jamaal Wilkes",
+    "Jerry West",
+    "Jim McMillian",
+    "Kareem Abdul-Jabbar",
+    "Michael Cooper",
+    "Norm Nixon"
+  ],
+  "Lakers|1980s": [
+    "A.C. Green",
+    "Bob McAdoo",
+    "Byron Scott",
+    "James Worthy",
+    "Kareem Abdul-Jabbar",
+    "Magic Johnson"
+  ],
+  "Lakers|1990s": [
+    "Eddie Jones",
+    "Kobe Bryant",
+    "Nick Van Exel",
+    "Robert Horry",
+    "Shaquille O'Neal",
+    "Vlade Divac"
+  ],
+  "Lakers|2000s": [
+    "Andrew Bynum",
+    "Derek Fisher",
+    "Kobe Bryant",
+    "Lamar Odom",
+    "Pau Gasol",
+    "Shaquille O'Neal"
+  ],
+  "Lakers|2010s": [
+    "Anthony Davis",
+    "Kobe Bryant",
+    "Kyle Kuzma",
+    "LeBron James",
+    "Lonzo Ball",
+    "Pau Gasol"
+  ],
+  "Lakers|2020s": [
+    "Anthony Davis",
+    "Austin Reaves",
+    "D'Angelo Russell",
+    "LeBron James",
+    "Rui Hachimura"
+  ],
+  "Bulls|1960s": [
+    "Bob Love",
+    "Chet Walker",
+    "Jerry Sloan",
+    "Norm Van Lier"
+  ],
+  "Bulls|1970s": [
+    "Artis Gilmore",
+    "Bob Love",
+    "Norm Van Lier",
+    "Reggie Theus"
+  ],
+  "Bulls|1980s": [
+    "Horace Grant",
+    "John Paxson",
+    "Michael Jordan",
+    "Orlando Woolridge",
+    "Quintin Dailey",
+    "Scottie Pippen"
+  ],
+  "Bulls|1990s": [
+    "Dennis Rodman",
+    "Horace Grant",
+    "John Paxson",
+    "Michael Jordan",
+    "Scottie Pippen",
+    "Toni Kukoc"
+  ],
+  "Bulls|2000s": [
+    "Ben Gordon",
+    "Derrick Rose",
+    "Joakim Noah",
+    "Kirk Hinrich",
+    "Luol Deng"
+  ],
+  "Bulls|2010s": [
+    "Derrick Rose",
+    "Jimmy Butler",
+    "Joakim Noah",
+    "Pau Gasol"
+  ],
+  "Bulls|2020s": [
+    "DeMar DeRozan",
+    "Lonzo Ball",
+    "Nikola Vucevic",
+    "Zach LaVine"
+  ],
+  "Celtics|1960s": [
+    "Bill Russell",
+    "Bob Cousy",
+    "John Havlicek",
+    "Sam Jones",
+    "Tom Heinsohn"
+  ],
+  "Celtics|1970s": [
+    "Dave Cowens",
+    "Jo Jo White",
+    "John Havlicek",
+    "Paul Silas"
+  ],
+  "Celtics|1980s": [
+    "Dennis Johnson",
+    "Kevin McHale",
+    "Larry Bird",
+    "Robert Parish"
+  ],
+  "Celtics|1990s": [
+    "Antoine Walker",
+    "Dee Brown",
+    "Paul Pierce",
+    "Reggie Lewis"
+  ],
+  "Celtics|2000s": [
+    "Kendrick Perkins",
+    "Kevin Garnett",
+    "Paul Pierce",
+    "Rajon Rondo",
+    "Ray Allen"
+  ],
+  "Celtics|2010s": [
+    "Al Horford",
+    "Isaiah Thomas",
+    "Jaylen Brown",
+    "Jayson Tatum",
+    "Kyrie Irving"
+  ],
+  "Celtics|2020s": [
+    "Derrick White",
+    "Jaylen Brown",
+    "Jayson Tatum",
+    "Jrue Holiday",
+    "Kristaps Porzingis"
+  ],
+  "Warriors|1960s": [
+    "Al Attles",
+    "Nate Thurmond",
+    "Rick Barry",
+    "Wilt Chamberlain"
+  ],
+  "Warriors|1970s": [
+    "Clifford Ray",
+    "Jamaal Wilkes",
+    "Phil Smith",
+    "Rick Barry"
+  ],
+  "Warriors|1980s": [
+    "Chris Mullin",
+    "Manute Bol",
+    "Mitch Richmond",
+    "Tim Hardaway"
+  ],
+  "Warriors|1990s": [
+    "Bimbo Coles",
+    "Chris Mullin",
+    "Chris Webber",
+    "Latrell Sprewell",
+    "Tim Hardaway"
+  ],
+  "Warriors|2000s": [
+    "Andris Biedrins",
+    "Baron Davis",
+    "Jason Richardson",
+    "Stephen Jackson"
+  ],
+  "Warriors|2010s": [
+    "Draymond Green",
+    "Kevin Durant",
+    "Klay Thompson",
+    "Stephen Curry"
+  ],
+  "Warriors|2020s": [
+    "Andrew Wiggins",
+    "Draymond Green",
+    "Jonathan Kuminga",
+    "Klay Thompson",
+    "Stephen Curry"
+  ],
+  "Heat|1990s": [
+    "Alonzo Mourning",
+    "Dan Majerle",
+    "Glen Rice",
+    "Tim Hardaway"
+  ],
+  "Heat|2000s": [
+    "Dwyane Wade",
+    "Eddie Jones",
+    "Gary Payton",
+    "Shaquille O'Neal",
+    "Udonis Haslem"
+  ],
+  "Heat|2010s": [
+    "Chris Bosh",
+    "Dwyane Wade",
+    "Goran Dragic",
+    "LeBron James"
+  ],
+  "Heat|2020s": [
+    "Bam Adebayo",
+    "Jimmy Butler",
+    "Kyle Lowry",
+    "Tyler Herro"
+  ],
+  "Heat|1980s": [
+    "Glen Rice",
+    "Grant Long",
+    "Kevin Edwards",
+    "Rony Seikaly"
+  ],
+  "Spurs|1960s": [
+    "Artis Gilmore",
+    "Billy Paultz",
+    "George Gervin",
+    "James Silas",
+    "Swen Nater"
+  ],
+  "Spurs|1970s": [
+    "Artis Gilmore",
+    "Billy Paultz",
+    "George Gervin",
+    "James Silas"
+  ],
+  "Spurs|1980s": [
+    "Artis Gilmore",
+    "Avery Johnson",
+    "David Robinson",
+    "George Gervin",
+    "Johnny Moore",
+    "Mike Mitchell"
+  ],
+  "Spurs|1990s": [
+    "Avery Johnson",
+    "David Robinson",
+    "Dennis Rodman",
+    "Sean Elliott"
+  ],
+  "Spurs|2000s": [
+    "David Robinson",
+    "Manu Ginobili",
+    "Tim Duncan",
+    "Tony Parker"
+  ],
+  "Spurs|2010s": [
+    "Kawhi Leonard",
+    "LaMarcus Aldridge",
+    "Patty Mills",
+    "Tim Duncan",
+    "Tony Parker"
+  ],
+  "Spurs|2020s": [
+    "Dejounte Murray",
+    "Devin Vassell",
+    "Keldon Johnson",
+    "Victor Wembanyama"
+  ],
+  "Nets|1970s": [
+    "Billy Paultz",
+    "Brian Taylor",
+    "John Williamson",
+    "Julius Erving"
+  ],
+  "Nets|1980s": [
+    "Albert King",
+    "Buck Williams",
+    "Drazen Petrovic",
+    "Mike Gminski",
+    "Otis Birdsong"
+  ],
+  "Nets|1990s": [
+    "Derrick Coleman",
+    "Drazen Petrovic",
+    "Jayson Williams",
+    "Kenny Anderson"
+  ],
+  "Nets|2000s": [
+    "Jason Kidd",
+    "Kenyon Martin",
+    "Richard Jefferson",
+    "Vince Carter"
+  ],
+  "Nets|2010s": [
+    "Brook Lopez",
+    "Deron Williams",
+    "Joe Johnson",
+    "Paul Pierce"
+  ],
+  "Nets|2020s": [
+    "Cam Thomas",
+    "James Harden",
+    "Kevin Durant",
+    "Kyrie Irving",
+    "Mikal Bridges"
+  ],
+  "Knicks|1960s": [
+    "Dave DeBusschere",
+    "Dick Barnett",
+    "Walt Frazier",
+    "Willis Reed"
+  ],
+  "Knicks|1970s": [
+    "Bill Bradley",
+    "Earl Monroe",
+    "Walt Frazier",
+    "Willis Reed"
+  ],
+  "Knicks|1980s": [
+    "Bernard King",
+    "Gerald Wilkins",
+    "Mark Jackson",
+    "Patrick Ewing"
+  ],
+  "Knicks|1990s": [
+    "Allan Houston",
+    "Charles Oakley",
+    "John Starks",
+    "Larry Johnson",
+    "Patrick Ewing"
+  ],
+  "Knicks|2000s": [
+    "Amar'e Stoudemire",
+    "Carmelo Anthony",
+    "Chauncey Billups",
+    "J.R. Smith",
+    "Tyson Chandler"
+  ],
+  "Knicks|2010s": [
+    "Carmelo Anthony",
+    "Jalen Brunson",
+    "Julius Randle",
+    "Kristaps Porzingis"
+  ],
+  "Knicks|2020s": [
+    "Jalen Brunson",
+    "Julius Randle",
+    "Mitchell Robinson",
+    "OG Anunoby",
+    "RJ Barrett"
+  ],
+  "Mavericks|1980s": [
+    "Derek Harper",
+    "Mark Aguirre",
+    "Rolando Blackman",
+    "Sam Perkins"
+  ],
+  "Mavericks|1990s": [
+    "Jamal Mashburn",
+    "Jason Kidd",
+    "Jim Jackson",
+    "Michael Finley"
+  ],
+  "Mavericks|2000s": [
+    "Dirk Nowitzki",
+    "Jason Terry",
+    "Josh Howard",
+    "Michael Finley",
+    "Steve Nash"
+  ],
+  "Mavericks|2010s": [
+    "Chandler Parsons",
+    "Dirk Nowitzki",
+    "Jalen Brunson",
+    "Jason Terry",
+    "Kristaps Porzingis",
+    "Luka Doncic"
+  ],
+  "Mavericks|2020s": [
+    "Daniel Gafford",
+    "Kristaps Porzingis",
+    "Kyrie Irving",
+    "Luka Doncic",
+    "Tim Hardaway Jr."
+  ],
+  "Suns|1960s": [
+    "Connie Hawkins",
+    "Dick Van Arsdale",
+    "Gail Goodrich",
+    "Paul Silas"
+  ],
+  "Suns|1970s": [
+    "Alvan Adams",
+    "Dennis Johnson",
+    "Paul Westphal",
+    "Walter Davis"
+  ],
+  "Suns|1980s": [
+    "Kevin Johnson",
+    "Larry Nance",
+    "Tom Chambers",
+    "Walter Davis"
+  ],
+  "Suns|1990s": [
+    "Charles Barkley",
+    "Dan Majerle",
+    "Kevin Johnson",
+    "Tom Chambers"
+  ],
+  "Suns|2000s": [
+    "Amar'e Stoudemire",
+    "Joe Johnson",
+    "Shawn Marion",
+    "Steve Nash"
+  ],
+  "Suns|2010s": [
+    "Amar'e Stoudemire",
+    "Deandre Ayton",
+    "Devin Booker",
+    "Eric Bledsoe",
+    "Steve Nash"
+  ],
+  "Suns|2020s": [
+    "Bradley Beal",
+    "Chris Paul",
+    "Deandre Ayton",
+    "Devin Booker",
+    "Jusuf Nurkic",
+    "Kevin Durant"
+  ],
+  "Bucks|1960s": [
+    "Bob Dandridge",
+    "Jon McGlocklin",
+    "Kareem Abdul-Jabbar",
+    "Oscar Robertson"
+  ],
+  "Bucks|1970s": [
+    "Bob Dandridge",
+    "Brian Winters",
+    "Kareem Abdul-Jabbar",
+    "Marques Johnson"
+  ],
+  "Bucks|1980s": [
+    "Marques Johnson",
+    "Ricky Pierce",
+    "Sidney Moncrief",
+    "Terry Cummings"
+  ],
+  "Bucks|1990s": [
+    "Glenn Robinson",
+    "Ray Allen",
+    "Sam Cassell",
+    "Vin Baker"
+  ],
+  "Bucks|2000s": [
+    "Andrew Bogut",
+    "Charlie Villanueva",
+    "Michael Redd",
+    "Mo Williams"
+  ],
+  "Bucks|2010s": [
+    "Brook Lopez",
+    "Eric Bledsoe",
+    "Giannis Antetokounmpo",
+    "Jrue Holiday",
+    "Khris Middleton"
+  ],
+  "Bucks|2020s": [
+    "Brook Lopez",
+    "Damian Lillard",
+    "Giannis Antetokounmpo",
+    "Khris Middleton"
+  ],
+  "Nuggets|1970s": [
+    "Bobby Jones",
+    "Dan Issel",
+    "David Thompson",
+    "Fat Lever"
+  ],
+  "Nuggets|1980s": [
+    "Alex English",
+    "Dan Issel",
+    "Fat Lever",
+    "Kiki Vandeweghe"
+  ],
+  "Nuggets|1990s": [
+    "Bryant Stith",
+    "Dikembe Mutombo",
+    "LaPhonso Ellis",
+    "Mahmoud Abdul-Rauf"
+  ],
+  "Nuggets|2000s": [
+    "Allen Iverson",
+    "Carmelo Anthony",
+    "J.R. Smith",
+    "Marcus Camby"
+  ],
+  "Nuggets|2010s": [
+    "Gary Harris",
+    "Jamal Murray",
+    "Nikola Jokic",
+    "Paul Millsap"
+  ],
+  "Nuggets|2020s": [
+    "Aaron Gordon",
+    "Jamal Murray",
+    "Michael Porter Jr.",
+    "Nikola Jokic"
+  ],
+  "Clippers|1970s": [
+    "Bill Walton",
+    "Bob McAdoo",
+    "Randy Smith",
+    "World B. Free"
+  ],
+  "Clippers|1980s": [
+    "Danny Manning",
+    "Marques Johnson",
+    "Michael Cage",
+    "Norm Nixon",
+    "Ron Harper",
+    "World B. Free"
+  ],
+  "Clippers|1990s": [
+    "Danny Manning",
+    "Elton Brand",
+    "Lamar Odom",
+    "Ron Harper"
+  ],
+  "Clippers|2000s": [
+    "Baron Davis",
+    "Chris Kaman",
+    "Corey Maggette",
+    "Cuttino Mobley",
+    "Elton Brand"
+  ],
+  "Clippers|2010s": [
+    "Blake Griffin",
+    "Chris Paul",
+    "DeAndre Jordan",
+    "Kawhi Leonard",
+    "Lou Williams",
+    "Montrezl Harrell"
+  ],
+  "Clippers|2020s": [
+    "Ivica Zubac",
+    "James Harden",
+    "Kawhi Leonard",
+    "Norman Powell",
+    "Paul George",
+    "Russell Westbrook"
+  ],
+  "Clippers|1960s": [
+    "Bob McAdoo",
+    "Dick Garrett",
+    "Garfield Heard",
+    "Randy Smith"
+  ],
+  "Rockets|1960s": [
+    "Calvin Murphy",
+    "Elvin Hayes",
+    "Pat Riley",
+    "Rudy Tomjanovich"
+  ],
+  "Rockets|1970s": [
+    "Calvin Murphy",
+    "Elvin Hayes",
+    "Moses Malone",
+    "Rudy Tomjanovich"
+  ],
+  "Rockets|1980s": [
+    "Clyde Drexler",
+    "Hakeem Olajuwon",
+    "John Lucas",
+    "Otis Thorpe",
+    "Ralph Sampson"
+  ],
+  "Rockets|1990s": [
+    "Clyde Drexler",
+    "Hakeem Olajuwon",
+    "Kenny Smith",
+    "Mario Elie",
+    "Robert Horry",
+    "Vernon Maxwell"
+  ],
+  "Rockets|2000s": [
+    "Cuttino Mobley",
+    "Luis Scola",
+    "Shane Battier",
+    "Steve Francis",
+    "Tracy McGrady",
+    "Yao Ming"
+  ],
+  "Rockets|2010s": [
+    "Chris Paul",
+    "Clint Capela",
+    "Dwight Howard",
+    "Eric Gordon",
+    "James Harden",
+    "Russell Westbrook"
+  ],
+  "Rockets|2020s": [
+    "Alperen Sengun",
+    "Dillon Brooks",
+    "Fred VanVleet",
+    "Jabari Smith Jr.",
+    "Jalen Green",
+    "Kevin Durant"
+  ],
+  "Thunder|1970s": [
+    "Dennis Johnson",
+    "Gus Williams",
+    "Jack Sikma",
+    "Spencer Haywood"
+  ],
+  "Thunder|1980s": [
+    "Dale Ellis",
+    "Jack Sikma",
+    "Tom Chambers",
+    "Xavier McDaniel"
+  ],
+  "Thunder|1990s": [
+    "Detlef Schrempf",
+    "Gary Payton",
+    "Sam Perkins",
+    "Shawn Kemp"
+  ],
+  "Thunder|2000s": [
+    "James Harden",
+    "Kevin Durant",
+    "Russell Westbrook",
+    "Serge Ibaka"
+  ],
+  "Thunder|2010s": [
+    "James Harden",
+    "Kevin Durant",
+    "Paul George",
+    "Russell Westbrook",
+    "Steven Adams"
+  ],
+  "Thunder|2020s": [
+    "Chet Holmgren",
+    "Jalen Williams",
+    "Lu Dort",
+    "Shai Gilgeous-Alexander"
+  ],
+  "Thunder|1960s": [
+    "Bob Rule",
+    "Fred Brown",
+    "Lenny Wilkens",
+    "Spencer Haywood"
+  ],
+  "76ers|1980s": [
+    "Andrew Toney",
+    "Bobby Jones",
+    "Charles Barkley",
+    "Julius Erving",
+    "Maurice Cheeks",
+    "Moses Malone"
+  ],
+  "76ers|1990s": [
+    "Allen Iverson",
+    "Charles Barkley",
+    "Clarence Weatherspoon",
+    "Dikembe Mutombo",
+    "Eric Snow",
+    "Jerry Stackhouse"
+  ],
+  "76ers|2000s": [
+    "Allen Iverson",
+    "Andre Iguodala",
+    "Dikembe Mutombo",
+    "Kyle Korver",
+    "Lou Williams",
+    "Samuel Dalembert"
+  ],
+  "76ers|2010s": [
+    "Ben Simmons",
+    "JJ Redick",
+    "Jimmy Butler",
+    "Joel Embiid",
+    "Robert Covington",
+    "Tobias Harris"
+  ],
+  "76ers|2020s": [
+    "Andre Drummond",
+    "Joel Embiid",
+    "Kelly Oubre Jr.",
+    "Kyle Lowry",
+    "Paul George",
+    "Tyrese Maxey"
+  ],
+  "Pistons|1980s": [
+    "Adrian Dantley",
+    "Bill Laimbeer",
+    "Dennis Rodman",
+    "Isiah Thomas",
+    "Joe Dumars",
+    "Vinnie Johnson"
+  ],
+  "Pistons|1990s": [
+    "Ben Wallace",
+    "Chauncey Billups",
+    "Grant Hill",
+    "Jerry Stackhouse",
+    "Joe Dumars",
+    "Rasheed Wallace"
+  ],
+  "Pistons|2000s": [
+    "Antonio McDyess",
+    "Ben Wallace",
+    "Chauncey Billups",
+    "Rasheed Wallace",
+    "Richard Hamilton",
+    "Tayshaun Prince"
+  ],
+  "Pistons|2010s": [
+    "Andre Drummond",
+    "Blake Griffin",
+    "Derrick Rose",
+    "Kentavious Caldwell-Pope",
+    "Reggie Jackson",
+    "Tobias Harris"
+  ],
+  "Pistons|2020s": [
+    "Ausar Thompson",
+    "Bojan Bogdanovic",
+    "Cade Cunningham",
+    "Isaiah Stewart",
+    "Jaden Ivey",
+    "Jalen Duren"
+  ],
+  "Hawks|1990s": [
+    "Alan Henderson",
+    "Christian Laettner",
+    "Dikembe Mutombo",
+    "Dominique Wilkins",
+    "Mookie Blaylock",
+    "Steve Smith"
+  ],
+  "Hawks|2000s": [
+    "Al Horford",
+    "Joe Johnson",
+    "Josh Smith",
+    "Marvin Williams",
+    "Mike Bibby",
+    "Zaza Pachulia"
+  ],
+  "Hawks|2010s": [
+    "Al Horford",
+    "Jeff Teague",
+    "John Collins",
+    "Kyle Korver",
+    "Paul Millsap",
+    "Trae Young"
+  ],
+  "Hawks|2020s": [
+    "Bogdan Bogdanovic",
+    "Clint Capela",
+    "De'Andre Hunter",
+    "Dejounte Murray",
+    "Onyeka Okongwu",
+    "Trae Young"
+  ],
+  "Cavaliers|1990s": [
+    "Brad Daugherty",
+    "Chris Mills",
+    "Larry Nance",
+    "Mark Price",
+    "Terrell Brandon",
+    "Zydrunas Ilgauskas"
+  ],
+  "Cavaliers|2000s": [
+    "Anderson Varejao",
+    "Antawn Jamison",
+    "Daniel Gibson",
+    "LeBron James",
+    "Mo Williams",
+    "Zydrunas Ilgauskas"
+  ],
+  "Cavaliers|2010s": [
+    "George Hill",
+    "JR Smith",
+    "Kevin Love",
+    "Kyrie Irving",
+    "LeBron James",
+    "Tristan Thompson"
+  ],
+  "Cavaliers|2020s": [
+    "Caris LeVert",
+    "Darius Garland",
+    "Donovan Mitchell",
+    "Evan Mobley",
+    "Jarrett Allen",
+    "Max Strus"
+  ],
+  "Magic|1990s": [
+    "Brian Shaw",
+    "Dennis Scott",
+    "Horace Grant",
+    "Nick Anderson",
+    "Penny Hardaway",
+    "Shaquille O'Neal"
+  ],
+  "Magic|2000s": [
+    "Dwight Howard",
+    "Grant Hill",
+    "Hedo Turkoglu",
+    "Jameer Nelson",
+    "Rashard Lewis",
+    "Tracy McGrady"
+  ],
+  "Magic|2010s": [
+    "Aaron Gordon",
+    "Dwight Howard",
+    "Evan Fournier",
+    "Nikola Vucevic",
+    "Tobias Harris",
+    "Victor Oladipo"
+  ],
+  "Magic|2020s": [
+    "Cole Anthony",
+    "Franz Wagner",
+    "Jalen Suggs",
+    "Markelle Fultz",
+    "Paolo Banchero",
+    "Wendell Carter Jr."
+  ],
+  "Pacers|1990s": [
+    "Antonio Davis",
+    "Dale Davis",
+    "Detlef Schrempf",
+    "Mark Jackson",
+    "Reggie Miller",
+    "Rik Smits"
+  ],
+  "Pacers|2000s": [
+    "Danny Granger",
+    "Jamaal Tinsley",
+    "Jermaine O'Neal",
+    "Reggie Miller",
+    "Ron Artest",
+    "Stephen Jackson"
+  ],
+  "Pacers|2010s": [
+    "George Hill",
+    "Lance Stephenson",
+    "Myles Turner",
+    "Paul George",
+    "Roy Hibbert",
+    "Victor Oladipo"
+  ],
+  "Pacers|2020s": [
+    "Aaron Nesmith",
+    "Bennedict Mathurin",
+    "Myles Turner",
+    "Obi Toppin",
+    "Pascal Siakam",
+    "Tyrese Haliburton"
+  ],
+  "Raptors|2000s": [
+    "Antonio Davis",
+    "Chris Bosh",
+    "Jalen Rose",
+    "Jose Calderon",
+    "Morris Peterson",
+    "Vince Carter"
+  ],
+  "Raptors|2010s": [
+    "DeMar DeRozan",
+    "Fred VanVleet",
+    "Jonas Valanciunas",
+    "Kawhi Leonard",
+    "Kyle Lowry",
+    "Pascal Siakam"
+  ],
+  "Raptors|2020s": [
+    "Fred VanVleet",
+    "Gary Trent Jr.",
+    "Jakob Poeltl",
+    "OG Anunoby",
+    "Pascal Siakam",
+    "Scottie Barnes"
+  ],
+  "Jazz|1990s": [
+    "Bryon Russell",
+    "Greg Ostertag",
+    "Jeff Hornacek",
+    "John Stockton",
+    "Karl Malone",
+    "Mark Eaton"
+  ],
+  "Jazz|2000s": [
+    "Andrei Kirilenko",
+    "Carlos Boozer",
+    "Deron Williams",
+    "Karl Malone",
+    "Mehmet Okur",
+    "Paul Millsap"
+  ],
+  "Jazz|2010s": [
+    "Derrick Favors",
+    "Donovan Mitchell",
+    "Gordon Hayward",
+    "Joe Ingles",
+    "Mike Conley",
+    "Rudy Gobert"
+  ],
+  "Jazz|2020s": [
+    "Collin Sexton",
+    "John Collins",
+    "Jordan Clarkson",
+    "Keyonte George",
+    "Lauri Markkanen",
+    "Walker Kessler"
+  ],
+  "Kings|1990s": [
+    "Bobby Hurley",
+    "Chris Webber",
+    "Jason Williams",
+    "Mitch Richmond",
+    "Peja Stojakovic",
+    "Vlade Divac"
+  ],
+  "Kings|2000s": [
+    "Brad Miller",
+    "Chris Webber",
+    "Kevin Martin",
+    "Mike Bibby",
+    "Peja Stojakovic",
+    "Ron Artest"
+  ],
+  "Kings|2010s": [
+    "Buddy Hield",
+    "De'Aaron Fox",
+    "DeMarcus Cousins",
+    "Rudy Gay",
+    "Tyreke Evans",
+    "Willie Cauley-Stein"
+  ],
+  "Kings|2020s": [
+    "De'Aaron Fox",
+    "Domantas Sabonis",
+    "Harrison Barnes",
+    "Keegan Murray",
+    "Kevin Huerter",
+    "Malik Monk"
+  ],
+  "Trail Blazers|1990s": [
+    "Arvydas Sabonis",
+    "Cliff Robinson",
+    "Clyde Drexler",
+    "Rasheed Wallace",
+    "Rod Strickland",
+    "Terry Porter"
+  ],
+  "Trail Blazers|2000s": [
+    "Andre Miller",
+    "Brandon Roy",
+    "Damian Lillard",
+    "Greg Oden",
+    "LaMarcus Aldridge",
+    "Nicolas Batum"
+  ],
+  "Trail Blazers|2010s": [
+    "CJ McCollum",
+    "Damian Lillard",
+    "Evan Turner",
+    "Jusuf Nurkic",
+    "LaMarcus Aldridge",
+    "Nicolas Batum"
+  ],
+  "Trail Blazers|2020s": [
+    "Anfernee Simons",
+    "Damian Lillard",
+    "Deandre Ayton",
+    "Jerami Grant",
+    "Scoot Henderson",
+    "Shaedon Sharpe"
+  ],
+  "Timberwolves|1990s": [
+    "Anthony Peeler",
+    "Dean Garrett",
+    "Kevin Garnett",
+    "Sam Mitchell",
+    "Terrell Brandon",
+    "Tom Gugliotta"
+  ],
+  "Timberwolves|2000s": [
+    "Kevin Garnett",
+    "Latrell Sprewell",
+    "Rasho Nesterovic",
+    "Sam Cassell",
+    "Troy Hudson",
+    "Wally Szczerbiak"
+  ],
+  "Timberwolves|2010s": [
+    "Andrew Wiggins",
+    "Jeff Teague",
+    "Jimmy Butler",
+    "Karl-Anthony Towns",
+    "Kevin Love",
+    "Ricky Rubio"
+  ],
+  "Timberwolves|2020s": [
+    "Anthony Edwards",
+    "Jaden McDaniels",
+    "Karl-Anthony Towns",
+    "Mike Conley",
+    "Naz Reid",
+    "Rudy Gobert"
+  ],
+  "Grizzlies|2000s": [
+    "Jason Williams",
+    "Lorenzen Wright",
+    "Mike Miller",
+    "Pau Gasol",
+    "Shane Battier",
+    "Stromile Swift"
+  ],
+  "Grizzlies|2010s": [
+    "Ja Morant",
+    "Marc Gasol",
+    "Mike Conley",
+    "Rudy Gay",
+    "Tony Allen",
+    "Zach Randolph"
+  ],
+  "Grizzlies|2020s": [
+    "Desmond Bane",
+    "Ja Morant",
+    "Jaren Jackson Jr.",
+    "Luke Kennard",
+    "Marcus Smart",
+    "Steven Adams"
+  ],
+  "Pelicans|2000s": [
+    "Baron Davis",
+    "Chris Paul",
+    "David West",
+    "Jamal Mashburn",
+    "Peja Stojakovic",
+    "Tyson Chandler"
+  ],
+  "Pelicans|2010s": [
+    "Anthony Davis",
+    "Brandon Ingram",
+    "Chris Paul",
+    "DeMarcus Cousins",
+    "Jrue Holiday"
+  ],
+  "Pelicans|2020s": [
+    "Brandon Ingram",
+    "CJ McCollum",
+    "Herbert Jones",
+    "Jonas Valanciunas",
+    "Trey Murphy III",
+    "Zion Williamson"
+  ],
+  "Hornets|1990s": [
+    "Alonzo Mourning",
+    "Eddie Jones",
+    "Glen Rice",
+    "Larry Johnson",
+    "Muggsy Bogues",
+    "Vlade Divac"
+  ],
+  "Hornets|2000s": [
+    "Baron Davis",
+    "Chris Paul",
+    "David West",
+    "Emeka Okafor",
+    "Gerald Wallace",
+    "Jason Richardson"
+  ],
+  "Hornets|2010s": [
+    "Al Jefferson",
+    "Gerald Henderson",
+    "Kemba Walker",
+    "LaMelo Ball",
+    "Nicolas Batum",
+    "Terry Rozier"
+  ],
+  "Hornets|2020s": [
+    "Brandon Miller",
+    "LaMelo Ball",
+    "Mark Williams",
+    "Miles Bridges",
+    "P.J. Washington",
+    "Terry Rozier"
+  ],
+  "Wizards|2000s": [
+    "Antawn Jamison",
+    "Antonio Daniels",
+    "Brendan Haywood",
+    "Caron Butler",
+    "Gilbert Arenas",
+    "Larry Hughes"
+  ],
+  "Wizards|2010s": [
+    "Bradley Beal",
+    "John Wall",
+    "Marcin Gortat",
+    "Markieff Morris",
+    "Nene",
+    "Otto Porter Jr."
+  ],
+  "Wizards|2020s": [
+    "Bradley Beal",
+    "Daniel Gafford",
+    "Deni Avdija",
+    "Jordan Poole",
+    "Kristaps Porzingis",
+    "Kyle Kuzma"
+  ]
+}

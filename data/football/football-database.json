@@ -1,0 +1,6227 @@
+{
+  "meta": {
+    "description": "Football player database from 38-0.org",
+    "model": "UCL club × decade (2000s–2020s)",
+    "stats": [
+      "goals",
+      "assists",
+      "cleanSheets"
+    ],
+    "sourceNote": "Players + OVR from 38-0.org module 80841; G/A/CS derived from area ratings (38-0.org has no season totals)",
+    "sourceUrl": "https://www.38-0.org/_next/static/chunks/03b78z-83yf1m.js",
+    "generatedAt": "2026-07-08T23:38:05.523Z",
+    "players": 223,
+    "rawExtracted": 338,
+    "skippedClubs": [
+      "Ajax",
+      "Bayer Leverkusen",
+      "Bayern Munich",
+      "Benfica",
+      "Borussia Dortmund",
+      "Monaco",
+      "PSG",
+      "Porto",
+      "Sporting"
+    ],
+    "pools": 38,
+    "clubs": 14,
+    "eras": [
+      "2000s",
+      "2010s",
+      "2020s"
+    ],
+    "byEra": {
+      "2000s": 65,
+      "2010s": 86,
+      "2020s": 72
+    },
+    "byClub": {
+      "Barcelona": 26,
+      "Real Madrid": 29,
+      "Manchester City": 18,
+      "Liverpool": 16,
+      "Chelsea": 16,
+      "Arsenal": 15,
+      "AC Milan": 18,
+      "Inter Milan": 19,
+      "Juventus": 13,
+      "Manchester United": 15,
+      "Atletico Madrid": 14,
+      "Tottenham": 9,
+      "Napoli": 9,
+      "Sevilla": 6
+    },
+    "poolSizeMin": 2,
+    "poolSizeMax": 14
+  },
+  "players": [
+    {
+      "id": "bar-00-1",
+      "name": "Ronaldinho",
+      "club": "Barcelona",
+      "era": "2000s",
+      "positions": [
+        "CAM",
+        "LW",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 11,
+        "assists": 14
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 90,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 78,
+        "technical": 96,
+        "uclImpact": 92,
+        "premFit": 78
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "bar-00-2",
+      "name": "Xavi",
+      "club": "Barcelona",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 15
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 97,
+        "defense": 64,
+        "goalkeeping": 10,
+        "physical": 68,
+        "technical": 98,
+        "uclImpact": 94,
+        "premFit": 88
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "bar-00-3",
+      "name": "Puyol",
+      "club": "Barcelona",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 58,
+        "defense": 93,
+        "goalkeeping": 12,
+        "physical": 90,
+        "technical": 72,
+        "uclImpact": 90,
+        "premFit": 82
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "bar-00-4",
+      "name": "Eto'o",
+      "club": "Barcelona",
+      "era": "2000s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 68,
+        "defense": 38,
+        "goalkeeping": 8,
+        "physical": 88,
+        "technical": 84,
+        "uclImpact": 88,
+        "premFit": 85
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "bar-00-5",
+      "name": "Deco",
+      "club": "Barcelona",
+      "era": "2000s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 90,
+        "defense": 52,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 92,
+        "uclImpact": 86,
+        "premFit": 80
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "bar-10-1",
+      "name": "Messi",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "RW",
+        "ST",
+        "CAM",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 28,
+        "assists": 7
+      },
+      "rating": 96,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 99,
+        "midfield": 94,
+        "defense": 40,
+        "goalkeeping": 8,
+        "physical": 75,
+        "technical": 97,
+        "uclImpact": 98,
+        "premFit": 90
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "bar-10-2",
+      "name": "Iniesta",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 15
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 98,
+        "defense": 56,
+        "goalkeeping": 10,
+        "physical": 62,
+        "technical": 99,
+        "uclImpact": 96,
+        "premFit": 88
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "bar-10-3",
+      "name": "Busquets",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 7,
+        "assists": 14
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 58,
+        "midfield": 94,
+        "defense": 88,
+        "goalkeeping": 10,
+        "physical": 78,
+        "technical": 92,
+        "uclImpact": 92,
+        "premFit": 86
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "bar-10-4",
+      "name": "Piqué",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 52,
+        "midfield": 72,
+        "defense": 91,
+        "goalkeeping": 14,
+        "physical": 86,
+        "technical": 78,
+        "uclImpact": 90,
+        "premFit": 84
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "bar-10-5",
+      "name": "Alba",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 82,
+        "defense": 80,
+        "goalkeeping": 10,
+        "physical": 78,
+        "technical": 86,
+        "uclImpact": 86,
+        "premFit": 86
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "bar-10-6",
+      "name": "Neymar",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "LW",
+        "CAM",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 6
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 93,
+        "midfield": 86,
+        "defense": 38,
+        "goalkeeping": 8,
+        "physical": 76,
+        "technical": 95,
+        "uclImpact": 88,
+        "premFit": 82
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "bar-20-1",
+      "name": "Ter Stegen",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 30,
+        "defense": 50,
+        "goalkeeping": 92,
+        "physical": 82,
+        "technical": 90,
+        "uclImpact": 84,
+        "premFit": 82
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "bar-20-2",
+      "name": "Pedri",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 96,
+        "defense": 64,
+        "goalkeeping": 10,
+        "physical": 70,
+        "technical": 97,
+        "uclImpact": 92,
+        "premFit": 88
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "bar-20-3",
+      "name": "Lewandowski",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 94,
+        "midfield": 72,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 88,
+        "technical": 90,
+        "uclImpact": 88,
+        "premFit": 92
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "bar-20-4",
+      "name": "Messi",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "RW",
+        "ST",
+        "CAM",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 27,
+        "assists": 6
+      },
+      "rating": 93,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 96,
+        "midfield": 92,
+        "defense": 40,
+        "goalkeeping": 8,
+        "physical": 72,
+        "technical": 96,
+        "uclImpact": 94,
+        "premFit": 88
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "rm-00-1",
+      "name": "Zidane",
+      "club": "Real Madrid",
+      "era": "2000s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 11,
+        "assists": 14
+      },
+      "rating": 94,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 96,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 97,
+        "uclImpact": 96,
+        "premFit": 86
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "rm-00-2",
+      "name": "Raul",
+      "club": "Real Madrid",
+      "era": "2000s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 78,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 80,
+        "technical": 88,
+        "uclImpact": 90,
+        "premFit": 88
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "rm-00-3",
+      "name": "Casillas",
+      "club": "Real Madrid",
+      "era": "2000s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 28,
+        "defense": 48,
+        "goalkeeping": 96,
+        "physical": 80,
+        "technical": 88,
+        "uclImpact": 94,
+        "premFit": 88
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "rm-00-4",
+      "name": "Ramos",
+      "club": "Real Madrid",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 4
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 68,
+        "defense": 92,
+        "goalkeeping": 14,
+        "physical": 88,
+        "technical": 78,
+        "uclImpact": 92,
+        "premFit": 88
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "rm-00-5",
+      "name": "Roberto Carlos",
+      "club": "Real Madrid",
+      "era": "2000s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 82,
+        "defense": 90,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 92,
+        "uclImpact": 94,
+        "premFit": 86
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "rm-10-1",
+      "name": "Ronaldo",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 27,
+        "assists": 5
+      },
+      "rating": 94,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 97,
+        "midfield": 78,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 92,
+        "technical": 94,
+        "uclImpact": 96,
+        "premFit": 94
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "rm-10-2",
+      "name": "Modric",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 96,
+        "defense": 62,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 97,
+        "uclImpact": 96,
+        "premFit": 90
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "rm-10-3",
+      "name": "Marcelo",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 84,
+        "defense": 78,
+        "goalkeeping": 10,
+        "physical": 80,
+        "technical": 90,
+        "uclImpact": 90,
+        "premFit": 84
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "rm-10-4",
+      "name": "Benzema",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 6
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 94,
+        "midfield": 86,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 92,
+        "uclImpact": 94,
+        "premFit": 90
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "rm-10-5",
+      "name": "Kroos",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 95,
+        "defense": 68,
+        "goalkeeping": 10,
+        "physical": 74,
+        "technical": 96,
+        "uclImpact": 94,
+        "premFit": 88
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "rm-20-1",
+      "name": "Vinicius Jr",
+      "club": "Real Madrid",
+      "era": "2020s",
+      "positions": [
+        "LW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 93,
+        "midfield": 78,
+        "defense": 38,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 92,
+        "uclImpact": 90,
+        "premFit": 88
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "rm-20-2",
+      "name": "Bellingham",
+      "club": "Real Madrid",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 11,
+        "assists": 14
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 92,
+        "defense": 62,
+        "goalkeeping": 10,
+        "physical": 84,
+        "technical": 90,
+        "uclImpact": 88,
+        "premFit": 92
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "rm-20-3",
+      "name": "Courtois",
+      "club": "Real Madrid",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 28,
+        "defense": 50,
+        "goalkeeping": 94,
+        "physical": 88,
+        "technical": 86,
+        "uclImpact": 90,
+        "premFit": 86
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "rm-10-6",
+      "name": "Carvajal",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 62,
+        "midfield": 74,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 80,
+        "uclImpact": 88,
+        "premFit": 84
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "mc-10-1",
+      "name": "Aguero",
+      "club": "Manchester City",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 93,
+        "midfield": 72,
+        "defense": 40,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 94
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mc-10-2",
+      "name": "Kompany",
+      "club": "Manchester City",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 52,
+        "midfield": 68,
+        "defense": 91,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 76,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mc-10-3",
+      "name": "Silva",
+      "club": "Manchester City",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 94,
+        "defense": 52,
+        "goalkeeping": 10,
+        "physical": 68,
+        "technical": 96,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "mc-10-4",
+      "name": "Walker",
+      "club": "Manchester City",
+      "era": "2010s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 62,
+        "midfield": 72,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 78,
+        "uclImpact": 82,
+        "premFit": 92
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "mc-10-5",
+      "name": "Fernandinho",
+      "club": "Manchester City",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 7,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 62,
+        "midfield": 90,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 86,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mc-20-1",
+      "name": "Haaland",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 27,
+        "assists": 5
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 96,
+        "midfield": 68,
+        "defense": 38,
+        "goalkeeping": 8,
+        "physical": 94,
+        "technical": 82,
+        "uclImpact": 88,
+        "premFit": 96
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mc-20-2",
+      "name": "De Bruyne",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 11,
+        "assists": 14
+      },
+      "rating": 94,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 96,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 78,
+        "technical": 95,
+        "uclImpact": 90,
+        "premFit": 96
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "mc-20-3",
+      "name": "Rodri",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 94,
+        "defense": 82,
+        "goalkeeping": 10,
+        "physical": 84,
+        "technical": 90,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mc-20-4",
+      "name": "Dias",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 72,
+        "defense": 92,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 78,
+        "uclImpact": 86,
+        "premFit": 92
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mc-20-5",
+      "name": "Ederson",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 14,
+        "midfield": 34,
+        "defense": 48,
+        "goalkeeping": 93,
+        "physical": 84,
+        "technical": 94,
+        "uclImpact": 86,
+        "premFit": 92
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "liv-00-1",
+      "name": "Gerrard",
+      "club": "Liverpool",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 96,
+        "defense": 72,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 90,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "liv-00-2",
+      "name": "Carragher",
+      "club": "Liverpool",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 72,
+        "uclImpact": 84,
+        "premFit": 90
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "liv-00-3",
+      "name": "Alonso",
+      "club": "Liverpool",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 92,
+        "defense": 74,
+        "goalkeeping": 10,
+        "physical": 78,
+        "technical": 92,
+        "uclImpact": 86,
+        "premFit": 90
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "liv-10-1",
+      "name": "Suarez",
+      "club": "Liverpool",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "RW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 94,
+        "midfield": 78,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 92,
+        "uclImpact": 86,
+        "premFit": 92
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "liv-10-2",
+      "name": "Van Dijk",
+      "club": "Liverpool",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 52,
+        "midfield": 72,
+        "defense": 94,
+        "goalkeeping": 12,
+        "physical": 92,
+        "technical": 80,
+        "uclImpact": 90,
+        "premFit": 94
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "liv-10-3",
+      "name": "Salah",
+      "club": "Liverpool",
+      "era": "2010s",
+      "positions": [
+        "RW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 93,
+        "midfield": 78,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 90,
+        "uclImpact": 88,
+        "premFit": 92
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "liv-10-4",
+      "name": "Firmino",
+      "club": "Liverpool",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 84,
+        "defense": 58,
+        "goalkeeping": 8,
+        "physical": 80,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 90
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "liv-20-1",
+      "name": "Alexander-Arnold",
+      "club": "Liverpool",
+      "era": "2020s",
+      "positions": [
+        "RB",
+        "CM",
+        "DF",
+        "MF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 88,
+        "defense": 78,
+        "goalkeeping": 10,
+        "physical": 76,
+        "technical": 92,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "liv-20-2",
+      "name": "Alisson",
+      "club": "Liverpool",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 28,
+        "defense": 48,
+        "goalkeeping": 94,
+        "physical": 86,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 92
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "liv-20-3",
+      "name": "Mac Allister",
+      "club": "Liverpool",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 13
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 88,
+        "defense": 68,
+        "goalkeeping": 10,
+        "physical": 74,
+        "technical": 90,
+        "uclImpact": 82,
+        "premFit": 90
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "liv-20-4",
+      "name": "Robertson",
+      "club": "Liverpool",
+      "era": "2020s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 78,
+        "defense": 82,
+        "goalkeeping": 10,
+        "physical": 80,
+        "technical": 82,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "che-00-1",
+      "name": "Lampard",
+      "club": "Chelsea",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 96,
+        "defense": 68,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 92,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "che-00-2",
+      "name": "Terry",
+      "club": "Chelsea",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 62,
+        "defense": 92,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 74,
+        "uclImpact": 86,
+        "premFit": 92
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "che-00-3",
+      "name": "Drogba",
+      "club": "Chelsea",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 72,
+        "defense": 58,
+        "goalkeeping": 8,
+        "physical": 94,
+        "technical": 84,
+        "uclImpact": 90,
+        "premFit": 94
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "che-00-4",
+      "name": "Cech",
+      "club": "Chelsea",
+      "era": "2000s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 46,
+        "goalkeeping": 95,
+        "physical": 86,
+        "technical": 84,
+        "uclImpact": 88,
+        "premFit": 92
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "che-00-5",
+      "name": "Ashley Cole",
+      "club": "Chelsea",
+      "era": "2000s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 62,
+        "midfield": 78,
+        "defense": 88,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 84,
+        "uclImpact": 86,
+        "premFit": 94
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "che-10-1",
+      "name": "Hazard",
+      "club": "Chelsea",
+      "era": "2010s",
+      "positions": [
+        "LW",
+        "CAM",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 6
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 93,
+        "midfield": 88,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 76,
+        "technical": 96,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "che-10-2",
+      "name": "Kante",
+      "club": "Chelsea",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 7,
+        "assists": 14
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 58,
+        "midfield": 92,
+        "defense": 88,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 84,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "che-10-3",
+      "name": "Courtois",
+      "club": "Chelsea",
+      "era": "2010s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 28,
+        "defense": 48,
+        "goalkeeping": 93,
+        "physical": 88,
+        "technical": 84,
+        "uclImpact": 84,
+        "premFit": 90
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "che-10-4",
+      "name": "Azpilicueta",
+      "club": "Chelsea",
+      "era": "2010s",
+      "positions": [
+        "RB",
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 58,
+        "midfield": 72,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 80,
+        "technical": 78,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "che-20-1",
+      "name": "Mount",
+      "club": "Chelsea",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 86,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 88,
+        "uclImpact": 80,
+        "premFit": 88
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "che-20-2",
+      "name": "James",
+      "club": "Chelsea",
+      "era": "2020s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 78,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 80,
+        "uclImpact": 78,
+        "premFit": 90
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "ars-00-1",
+      "name": "Henry",
+      "club": "Arsenal",
+      "era": "2000s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 27,
+        "assists": 6
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 95,
+        "midfield": 82,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 94,
+        "uclImpact": 90,
+        "premFit": 96
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "ars-00-2",
+      "name": "Vieira",
+      "club": "Arsenal",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 92,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 90,
+        "technical": 86,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "ars-00-3",
+      "name": "Campbell",
+      "club": "Arsenal",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 90,
+        "technical": 72,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "ars-00-4",
+      "name": "Ashley Cole",
+      "club": "Arsenal",
+      "era": "2000s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 58,
+        "midfield": 76,
+        "defense": 88,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 84,
+        "uclImpact": 84,
+        "premFit": 94
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "ars-00-5",
+      "name": "Fabregas",
+      "club": "Arsenal",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 80,
+        "midfield": 92,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 68,
+        "technical": 94,
+        "uclImpact": 84,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "ars-10-1",
+      "name": "Ozil",
+      "club": "Arsenal",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 92,
+        "defense": 42,
+        "goalkeeping": 10,
+        "physical": 62,
+        "technical": 96,
+        "uclImpact": 82,
+        "premFit": 90
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "ars-10-2",
+      "name": "Koscielny",
+      "club": "Arsenal",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 88,
+        "goalkeeping": 12,
+        "physical": 84,
+        "technical": 76,
+        "uclImpact": 80,
+        "premFit": 90
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "ars-10-3",
+      "name": "Sanchez",
+      "club": "Arsenal",
+      "era": "2010s",
+      "positions": [
+        "LW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 80,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 90,
+        "uclImpact": 82,
+        "premFit": 88
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "ars-20-1",
+      "name": "Saka",
+      "club": "Arsenal",
+      "era": "2020s",
+      "positions": [
+        "RW",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 82,
+        "defense": 50,
+        "goalkeeping": 8,
+        "physical": 78,
+        "technical": 88,
+        "uclImpact": 82,
+        "premFit": 94
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "ars-20-2",
+      "name": "Rice",
+      "club": "Arsenal",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 8,
+        "assists": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 70,
+        "midfield": 93,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 86,
+        "uclImpact": 84,
+        "premFit": 96
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "ars-20-3",
+      "name": "Raya",
+      "club": "Arsenal",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 14
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 32,
+        "defense": 50,
+        "goalkeeping": 98,
+        "physical": 82,
+        "technical": 92,
+        "uclImpact": 88,
+        "premFit": 96
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "ars-20-4",
+      "name": "Gabriel",
+      "club": "Arsenal",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 64,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 78,
+        "uclImpact": 84,
+        "premFit": 94
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "ars-20-5",
+      "name": "Saliba",
+      "club": "Arsenal",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 46,
+        "midfield": 66,
+        "defense": 92,
+        "goalkeeping": 12,
+        "physical": 89,
+        "technical": 84,
+        "uclImpact": 88,
+        "premFit": 96
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "ars-20-6",
+      "name": "Gyokeres",
+      "club": "Arsenal",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 24,
+        "assists": 5
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 70,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 80,
+        "uclImpact": 76,
+        "premFit": 90
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mil-00-1",
+      "name": "Maldini",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 58,
+        "midfield": 72,
+        "defense": 96,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 85,
+        "uclImpact": 96,
+        "premFit": 82
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mil-00-2",
+      "name": "Nesta",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 94,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 82,
+        "uclImpact": 92,
+        "premFit": 80
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mil-00-3",
+      "name": "Kaka",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "CAM",
+        "ST",
+        "AM"
+      ],
+      "stats": {
+        "goals": 11,
+        "assists": 14
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 90,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 94,
+        "uclImpact": 92,
+        "premFit": 80
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "mil-00-4",
+      "name": "Shevchenko",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 93,
+        "midfield": 72,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 88,
+        "uclImpact": 90,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mil-00-5",
+      "name": "Seedorf",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 90,
+        "defense": 68,
+        "goalkeeping": 10,
+        "physical": 84,
+        "technical": 90,
+        "uclImpact": 90,
+        "premFit": 82
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mil-00-6",
+      "name": "Pirlo",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 15
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 76,
+        "midfield": 99,
+        "defense": 60,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 99,
+        "uclImpact": 96,
+        "premFit": 90
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mil-00-7",
+      "name": "Thiago Silva",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 72,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 82,
+        "technical": 84,
+        "uclImpact": 84,
+        "premFit": 80
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mil-00-8",
+      "name": "Gattuso",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 7,
+        "assists": 13
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 58,
+        "midfield": 88,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 90,
+        "technical": 78,
+        "uclImpact": 88,
+        "premFit": 82
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mil-00-9",
+      "name": "Dida",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 44,
+        "goalkeeping": 92,
+        "physical": 82,
+        "technical": 84,
+        "uclImpact": 90,
+        "premFit": 80
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "mil-00-10",
+      "name": "Cafu",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 80,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 86,
+        "uclImpact": 90,
+        "premFit": 80
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "mil-10-1",
+      "name": "Ibrahimovic",
+      "club": "AC Milan",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 27,
+        "assists": 5
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 96,
+        "midfield": 78,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 95,
+        "technical": 93,
+        "uclImpact": 84,
+        "premFit": 86
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mil-10-2",
+      "name": "Bonucci",
+      "club": "AC Milan",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 68,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 84,
+        "technical": 76,
+        "uclImpact": 84,
+        "premFit": 80
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mil-20-1",
+      "name": "Leao",
+      "club": "AC Milan",
+      "era": "2020s",
+      "positions": [
+        "LW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 78,
+        "defense": 38,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 88,
+        "uclImpact": 82,
+        "premFit": 84
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "mil-20-2",
+      "name": "Theo Hernandez",
+      "club": "AC Milan",
+      "era": "2020s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 76,
+        "defense": 78,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 84,
+        "uclImpact": 80,
+        "premFit": 82
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "mil-20-3",
+      "name": "Donnarumma",
+      "club": "AC Milan",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 81,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 28,
+        "defense": 44,
+        "goalkeeping": 91,
+        "physical": 84,
+        "technical": 82,
+        "uclImpact": 80,
+        "premFit": 82
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "int-00-1",
+      "name": "Zanetti",
+      "club": "Inter Milan",
+      "era": "2000s",
+      "positions": [
+        "RB",
+        "LB",
+        "CM",
+        "DF",
+        "MF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 68,
+        "midfield": 82,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 82,
+        "uclImpact": 88,
+        "premFit": 82
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "int-00-2",
+      "name": "Adriano",
+      "club": "Inter Milan",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 72,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 92,
+        "technical": 84,
+        "uclImpact": 82,
+        "premFit": 78
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "int-00-3",
+      "name": "Cannavaro",
+      "club": "Inter Milan",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 38,
+        "midfield": 56,
+        "defense": 93,
+        "goalkeeping": 12,
+        "physical": 82,
+        "technical": 78,
+        "uclImpact": 90,
+        "premFit": 80
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "int-00-4",
+      "name": "Ibrahimovic",
+      "club": "Inter Milan",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 76,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 92,
+        "technical": 90,
+        "uclImpact": 84,
+        "premFit": 80
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "int-10-1",
+      "name": "Sneijder",
+      "club": "Inter Milan",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 92,
+        "defense": 52,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 94,
+        "uclImpact": 90,
+        "premFit": 82
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "int-10-2",
+      "name": "Maicon",
+      "club": "Inter Milan",
+      "era": "2010s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 78,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 82,
+        "uclImpact": 86,
+        "premFit": 80
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "int-10-3",
+      "name": "Milito",
+      "club": "Inter Milan",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 74,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 86,
+        "uclImpact": 88,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "int-10-4",
+      "name": "Samuel",
+      "club": "Inter Milan",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 38,
+        "midfield": 54,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 70,
+        "uclImpact": 86,
+        "premFit": 78
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "int-20-1",
+      "name": "Lautaro",
+      "club": "Inter Milan",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 74,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 86,
+        "uclImpact": 84,
+        "premFit": 86
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "int-20-2",
+      "name": "Bastoni",
+      "club": "Inter Milan",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 72,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 82,
+        "technical": 80,
+        "uclImpact": 84,
+        "premFit": 82
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "int-20-3",
+      "name": "Barella",
+      "club": "Inter Milan",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 90,
+        "defense": 68,
+        "goalkeeping": 10,
+        "physical": 80,
+        "technical": 90,
+        "uclImpact": 84,
+        "premFit": 84
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "int-20-4",
+      "name": "Lukaku",
+      "club": "Inter Milan",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 72,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 92,
+        "technical": 80,
+        "uclImpact": 84,
+        "premFit": 86
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "juv-00-1",
+      "name": "Buffon",
+      "club": "Juventus",
+      "era": "2000s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 52,
+        "goalkeeping": 99,
+        "physical": 84,
+        "technical": 92,
+        "uclImpact": 96,
+        "premFit": 94
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "juv-00-2",
+      "name": "Nedved",
+      "club": "Juventus",
+      "era": "2000s",
+      "positions": [
+        "CAM",
+        "LW",
+        "CM",
+        "AM",
+        "FW",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 90,
+        "defense": 62,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 90,
+        "uclImpact": 88,
+        "premFit": 82
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "juv-00-3",
+      "name": "Cannavaro",
+      "club": "Juventus",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 38,
+        "midfield": 56,
+        "defense": 94,
+        "goalkeeping": 12,
+        "physical": 82,
+        "technical": 78,
+        "uclImpact": 92,
+        "premFit": 82
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "juv-10-1",
+      "name": "Pirlo",
+      "club": "Juventus",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 15
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 76,
+        "midfield": 99,
+        "defense": 60,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 99,
+        "uclImpact": 96,
+        "premFit": 92
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "juv-10-2",
+      "name": "Chiellini",
+      "club": "Juventus",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 62,
+        "defense": 93,
+        "goalkeeping": 12,
+        "physical": 90,
+        "technical": 74,
+        "uclImpact": 88,
+        "premFit": 84
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "juv-10-3",
+      "name": "Vidal",
+      "club": "Juventus",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 90,
+        "defense": 80,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 86,
+        "uclImpact": 84,
+        "premFit": 84
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "juv-10-4",
+      "name": "Tevez",
+      "club": "Juventus",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 80,
+        "defense": 52,
+        "goalkeeping": 8,
+        "physical": 88,
+        "technical": 86,
+        "uclImpact": 84,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "juv-10-6",
+      "name": "Ronaldo",
+      "club": "Juventus",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 76,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 88,
+        "technical": 90,
+        "uclImpact": 88,
+        "premFit": 86
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "juv-20-1",
+      "name": "Vlahovic",
+      "club": "Juventus",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 89,
+        "midfield": 68,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 82,
+        "uclImpact": 78,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "juv-20-2",
+      "name": "Chiesa",
+      "club": "Juventus",
+      "era": "2020s",
+      "positions": [
+        "RW",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 24,
+        "assists": 5
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 76,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 80,
+        "technical": 88,
+        "uclImpact": 78,
+        "premFit": 82
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "juv-20-3",
+      "name": "Bremer",
+      "club": "Juventus",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 72,
+        "uclImpact": 78,
+        "premFit": 80
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "juv-20-4",
+      "name": "Ronaldo",
+      "club": "Juventus",
+      "era": "2020s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 74,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 84
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mu-00-1",
+      "name": "Ronaldo",
+      "club": "Manchester United",
+      "era": "2000s",
+      "positions": [
+        "RW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 5
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 94,
+        "midfield": 78,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 92,
+        "uclImpact": 90,
+        "premFit": 96
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "mu-00-2",
+      "name": "Scholes",
+      "club": "Manchester United",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 94,
+        "defense": 68,
+        "goalkeeping": 10,
+        "physical": 76,
+        "technical": 94,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mu-00-3",
+      "name": "Vidic",
+      "club": "Manchester United",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 92,
+        "goalkeeping": 12,
+        "physical": 90,
+        "technical": 72,
+        "uclImpact": 86,
+        "premFit": 92
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mu-00-4",
+      "name": "Ferdinand",
+      "club": "Manchester United",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 68,
+        "defense": 93,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 80,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mu-00-5",
+      "name": "Van der Sar",
+      "club": "Manchester United",
+      "era": "2000s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 30,
+        "defense": 48,
+        "goalkeeping": 94,
+        "physical": 82,
+        "technical": 88,
+        "uclImpact": 90,
+        "premFit": 92
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "mu-10-1",
+      "name": "Rooney",
+      "club": "Manchester United",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 84,
+        "defense": 58,
+        "goalkeeping": 8,
+        "physical": 88,
+        "technical": 86,
+        "uclImpact": 84,
+        "premFit": 94
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mu-10-2",
+      "name": "De Gea",
+      "club": "Manchester United",
+      "era": "2010s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 28,
+        "defense": 42,
+        "goalkeeping": 93,
+        "physical": 80,
+        "technical": 86,
+        "uclImpact": 80,
+        "premFit": 92
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "mu-10-3",
+      "name": "Evra",
+      "club": "Manchester United",
+      "era": "2010s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 68,
+        "midfield": 76,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 80,
+        "uclImpact": 82,
+        "premFit": 92
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "mu-20-1",
+      "name": "Bruno Fernandes",
+      "club": "Manchester United",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 11,
+        "assists": 14
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 92,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 92,
+        "uclImpact": 80,
+        "premFit": 92
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "mu-20-2",
+      "name": "Rashford",
+      "club": "Manchester United",
+      "era": "2020s",
+      "positions": [
+        "LW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 76,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 86,
+        "uclImpact": 78,
+        "premFit": 92
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "mu-20-3",
+      "name": "Casemiro",
+      "club": "Manchester United",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 7,
+        "assists": 14
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 62,
+        "midfield": 92,
+        "defense": 88,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 84,
+        "uclImpact": 90,
+        "premFit": 90
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mu-20-4",
+      "name": "Ronaldo",
+      "club": "Manchester United",
+      "era": "2020s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 76,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 90,
+        "uclImpact": 86,
+        "premFit": 92
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mu-10-4",
+      "name": "Ibrahimovic",
+      "club": "Manchester United",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 76,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 92,
+        "technical": 90,
+        "uclImpact": 82,
+        "premFit": 92
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "atm-00-1",
+      "name": "Torres",
+      "club": "Atletico Madrid",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 72,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 86,
+        "uclImpact": 84,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "atm-00-2",
+      "name": "Forlan",
+      "club": "Atletico Madrid",
+      "era": "2000s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 78,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 78,
+        "technical": 88,
+        "uclImpact": 84,
+        "premFit": 80
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "atm-10-1",
+      "name": "Godin",
+      "club": "Atletico Madrid",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 92,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 74,
+        "uclImpact": 88,
+        "premFit": 80
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "atm-10-2",
+      "name": "Griezmann",
+      "club": "Atletico Madrid",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 84,
+        "defense": 58,
+        "goalkeeping": 8,
+        "physical": 78,
+        "technical": 90,
+        "uclImpact": 86,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "atm-10-3",
+      "name": "Oblak",
+      "club": "Atletico Madrid",
+      "era": "2010s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 46,
+        "goalkeeping": 93,
+        "physical": 84,
+        "technical": 82,
+        "uclImpact": 86,
+        "premFit": 80
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "atm-10-4",
+      "name": "Koke",
+      "club": "Atletico Madrid",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 90,
+        "defense": 76,
+        "goalkeeping": 10,
+        "physical": 78,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 80
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "atm-10-5",
+      "name": "Gimenez",
+      "club": "Atletico Madrid",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 72,
+        "uclImpact": 84,
+        "premFit": 78
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "atm-20-1",
+      "name": "Felix",
+      "club": "Atletico Madrid",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "LW",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 84,
+        "defense": 48,
+        "goalkeeping": 10,
+        "physical": 74,
+        "technical": 92,
+        "uclImpact": 78,
+        "premFit": 78
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "atm-20-2",
+      "name": "Morata",
+      "club": "Atletico Madrid",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 24,
+        "assists": 5
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 87,
+        "midfield": 70,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 82,
+        "uclImpact": 78,
+        "premFit": 80
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "atm-20-3",
+      "name": "Llorente",
+      "club": "Atletico Madrid",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 13
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 86,
+        "defense": 72,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 84,
+        "uclImpact": 78,
+        "premFit": 78
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "bar-00-6",
+      "name": "Rivaldo",
+      "club": "Barcelona",
+      "era": "2000s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 6
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 93,
+        "midfield": 86,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 80,
+        "technical": 94,
+        "uclImpact": 90,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "bar-00-7",
+      "name": "Abidal",
+      "club": "Barcelona",
+      "era": "2000s",
+      "positions": [
+        "LB",
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 58,
+        "midfield": 72,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 78,
+        "uclImpact": 84,
+        "premFit": 82
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "bar-10-7",
+      "name": "Dani Alves",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 84,
+        "defense": 90,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 92,
+        "uclImpact": 94,
+        "premFit": 86
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "bar-10-8",
+      "name": "David Villa",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 78,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 78,
+        "technical": 90,
+        "uclImpact": 86,
+        "premFit": 84
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "bar-10-9",
+      "name": "Mascherano",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "CM",
+        "MF",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 5
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 80,
+        "defense": 88,
+        "goalkeeping": 10,
+        "physical": 84,
+        "technical": 78,
+        "uclImpact": 86,
+        "premFit": 84
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "rm-00-6",
+      "name": "Figo",
+      "club": "Real Madrid",
+      "era": "2000s",
+      "positions": [
+        "RW",
+        "CAM",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 88,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 76,
+        "technical": 94,
+        "uclImpact": 92,
+        "premFit": 86
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "rm-00-7",
+      "name": "Makelele",
+      "club": "Real Madrid",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 6,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 52,
+        "midfield": 90,
+        "defense": 90,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 84,
+        "uclImpact": 90,
+        "premFit": 84
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "rm-10-7",
+      "name": "Bale",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "RW",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 78,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 88,
+        "technical": 86,
+        "uclImpact": 90,
+        "premFit": 88
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "rm-10-8",
+      "name": "Di Maria",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "RW",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 89,
+        "midfield": 84,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 78,
+        "technical": 92,
+        "uclImpact": 88,
+        "premFit": 86
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "rm-10-9",
+      "name": "Varane",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 68,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 78,
+        "uclImpact": 90,
+        "premFit": 86
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "rm-10-10",
+      "name": "Keylor Navas",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 46,
+        "goalkeeping": 91,
+        "physical": 82,
+        "technical": 84,
+        "uclImpact": 88,
+        "premFit": 84
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "rm-10-11",
+      "name": "Casemiro",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 7,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 62,
+        "midfield": 90,
+        "defense": 90,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 82,
+        "uclImpact": 92,
+        "premFit": 88
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "rm-20-4",
+      "name": "Varane",
+      "club": "Real Madrid",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 68,
+        "defense": 89,
+        "goalkeeping": 12,
+        "physical": 84,
+        "technical": 76,
+        "uclImpact": 86,
+        "premFit": 84
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mc-10-6",
+      "name": "Yaya Toure",
+      "club": "Manchester City",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 92,
+        "defense": 76,
+        "goalkeeping": 10,
+        "physical": 90,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mc-10-7",
+      "name": "Bernardo Silva",
+      "club": "Manchester City",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "RW",
+        "AM",
+        "FW",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 91,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 92,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 94,
+        "uclImpact": 86,
+        "premFit": 94
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "mc-20-6",
+      "name": "Bernardo Silva",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "CM",
+        "RW",
+        "AM",
+        "FW",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 93,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 94,
+        "defense": 62,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 96,
+        "uclImpact": 88,
+        "premFit": 96
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "liv-10-5",
+      "name": "Mane",
+      "club": "Liverpool",
+      "era": "2010s",
+      "positions": [
+        "LW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 78,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 86,
+        "technical": 88,
+        "uclImpact": 88,
+        "premFit": 92
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "liv-20-5",
+      "name": "Mane",
+      "club": "Liverpool",
+      "era": "2020s",
+      "positions": [
+        "LW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 78,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 90
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "che-00-6",
+      "name": "Makelele",
+      "club": "Chelsea",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 6,
+        "assists": 14
+      },
+      "rating": 89,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 52,
+        "midfield": 90,
+        "defense": 90,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 84,
+        "uclImpact": 88,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "che-10-5",
+      "name": "Fabregas",
+      "club": "Chelsea",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 80,
+        "midfield": 92,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 68,
+        "technical": 94,
+        "uclImpact": 84,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "int-10-5",
+      "name": "Eto'o",
+      "club": "Inter Milan",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 72,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 86,
+        "uclImpact": 88,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "juv-10-5",
+      "name": "Buffon",
+      "club": "Juventus",
+      "era": "2010s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 50,
+        "goalkeeping": 96,
+        "physical": 82,
+        "technical": 90,
+        "uclImpact": 92,
+        "premFit": 90
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "atm-00-3",
+      "name": "Aguero",
+      "club": "Atletico Madrid",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 72,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 80,
+        "technical": 86,
+        "uclImpact": 82,
+        "premFit": 80
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "atm-10-6",
+      "name": "Torres",
+      "club": "Atletico Madrid",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 24,
+        "assists": 5
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 87,
+        "midfield": 72,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 80,
+        "technical": 84,
+        "uclImpact": 82,
+        "premFit": 80
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "mil-20-4",
+      "name": "Ibrahimovic",
+      "club": "AC Milan",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 89,
+        "midfield": 76,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 88,
+        "technical": 90,
+        "uclImpact": 80,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "bar-10-10",
+      "name": "Ibrahimovic",
+      "club": "Barcelona",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 76,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 90,
+        "technical": 90,
+        "uclImpact": 82,
+        "premFit": 82
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "rm-10-12",
+      "name": "Pepe",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 72,
+        "uclImpact": 88,
+        "premFit": 84
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "liv-00-4",
+      "name": "Torres",
+      "club": "Liverpool",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 74,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 86,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "che-00-7",
+      "name": "Ballack",
+      "club": "Chelsea",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 92,
+        "defense": 72,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "ars-10-4",
+      "name": "Fabregas",
+      "club": "Arsenal",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 80,
+        "midfield": 92,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 68,
+        "technical": 94,
+        "uclImpact": 82,
+        "premFit": 92
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mu-00-6",
+      "name": "Rooney",
+      "club": "Manchester United",
+      "era": "2000s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 84,
+        "defense": 58,
+        "goalkeeping": 8,
+        "physical": 88,
+        "technical": 86,
+        "uclImpact": 86,
+        "premFit": 96
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "atm-20-4",
+      "name": "Oblak",
+      "club": "Atletico Madrid",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 46,
+        "goalkeeping": 94,
+        "physical": 84,
+        "technical": 84,
+        "uclImpact": 86,
+        "premFit": 82
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "int-00-5",
+      "name": "Julio Cesar",
+      "club": "Inter Milan",
+      "era": "2000s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 81,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 44,
+        "goalkeeping": 90,
+        "physical": 80,
+        "technical": 82,
+        "uclImpact": 86,
+        "premFit": 78
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "int-10-6",
+      "name": "Julio Cesar",
+      "club": "Inter Milan",
+      "era": "2010s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 12
+      },
+      "rating": 79,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 10,
+        "midfield": 26,
+        "defense": 44,
+        "goalkeeping": 88,
+        "physical": 78,
+        "technical": 80,
+        "uclImpact": 84,
+        "premFit": 76
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "int-00-6",
+      "name": "Lucio",
+      "club": "Inter Milan",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 42,
+        "midfield": 58,
+        "defense": 91,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 74,
+        "uclImpact": 88,
+        "premFit": 78
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "int-10-7",
+      "name": "Lucio",
+      "club": "Inter Milan",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 40,
+        "midfield": 56,
+        "defense": 89,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 72,
+        "uclImpact": 86,
+        "premFit": 76
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "int-00-7",
+      "name": "Walter Samuel",
+      "club": "Inter Milan",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 38,
+        "midfield": 54,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 88,
+        "technical": 70,
+        "uclImpact": 86,
+        "premFit": 78
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "int-00-8",
+      "name": "Maicon",
+      "club": "Inter Milan",
+      "era": "2000s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 76,
+        "midfield": 76,
+        "defense": 82,
+        "goalkeeping": 10,
+        "physical": 84,
+        "technical": 80,
+        "uclImpact": 84,
+        "premFit": 78
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "mil-00-11",
+      "name": "Jaap Stam",
+      "club": "AC Milan",
+      "era": "2000s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 3
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 38,
+        "midfield": 56,
+        "defense": 92,
+        "goalkeeping": 12,
+        "physical": 90,
+        "technical": 72,
+        "uclImpact": 88,
+        "premFit": 80
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mil-20-5",
+      "name": "Maignan",
+      "club": "AC Milan",
+      "era": "2020s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 13
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 28,
+        "defense": 46,
+        "goalkeeping": 92,
+        "physical": 84,
+        "technical": 86,
+        "uclImpact": 82,
+        "premFit": 84
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "rm-10-13",
+      "name": "Ozil",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 94,
+        "defense": 42,
+        "goalkeeping": 10,
+        "physical": 64,
+        "technical": 96,
+        "uclImpact": 88,
+        "premFit": 86
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "rm-10-14",
+      "name": "Coentrao",
+      "club": "Real Madrid",
+      "era": "2010s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 4
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 68,
+        "midfield": 74,
+        "defense": 82,
+        "goalkeeping": 10,
+        "physical": 80,
+        "technical": 80,
+        "uclImpact": 84,
+        "premFit": 84
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "rm-20-5",
+      "name": "Mendy",
+      "club": "Real Madrid",
+      "era": "2020s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 4
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 68,
+        "midfield": 72,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 78,
+        "uclImpact": 84,
+        "premFit": 86
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "rm-20-6",
+      "name": "Valverde",
+      "club": "Real Madrid",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 90,
+        "defense": 72,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 88,
+        "uclImpact": 88,
+        "premFit": 88
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "rm-20-7",
+      "name": "Rodrygo",
+      "club": "Real Madrid",
+      "era": "2020s",
+      "positions": [
+        "RW",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 78,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 78,
+        "technical": 88,
+        "uclImpact": 86,
+        "premFit": 86
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "rm-20-8",
+      "name": "Alaba",
+      "club": "Real Madrid",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 5
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 58,
+        "midfield": 76,
+        "defense": 88,
+        "goalkeeping": 12,
+        "physical": 82,
+        "technical": 82,
+        "uclImpact": 86,
+        "premFit": 86
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mc-10-8",
+      "name": "Gundogan",
+      "club": "Manchester City",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 90,
+        "defense": 68,
+        "goalkeeping": 10,
+        "physical": 76,
+        "technical": 90,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "mc-20-7",
+      "name": "Walker",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 4
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 64,
+        "midfield": 74,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 78,
+        "uclImpact": 84,
+        "premFit": 94
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "mc-20-8",
+      "name": "Stones",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 52,
+        "midfield": 74,
+        "defense": 88,
+        "goalkeeping": 12,
+        "physical": 84,
+        "technical": 82,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "mc-20-9",
+      "name": "Cancelo",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "RB",
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 82,
+        "defense": 82,
+        "goalkeeping": 10,
+        "physical": 78,
+        "technical": 88,
+        "uclImpact": 84,
+        "premFit": 92
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "mc-20-10",
+      "name": "Gundogan",
+      "club": "Manchester City",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 82,
+        "midfield": 92,
+        "defense": 68,
+        "goalkeeping": 10,
+        "physical": 74,
+        "technical": 92,
+        "uclImpact": 86,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "liv-20-6",
+      "name": "Thiago",
+      "club": "Liverpool",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 76,
+        "midfield": 92,
+        "defense": 66,
+        "goalkeeping": 10,
+        "physical": 68,
+        "technical": 94,
+        "uclImpact": 84,
+        "premFit": 90
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "che-00-8",
+      "name": "Essien",
+      "club": "Chelsea",
+      "era": "2000s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 8,
+        "assists": 13
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 68,
+        "midfield": 88,
+        "defense": 86,
+        "goalkeeping": 10,
+        "physical": 88,
+        "technical": 82,
+        "uclImpact": 86,
+        "premFit": 94
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "bar-20-5",
+      "name": "de Jong",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 14
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 90,
+        "defense": 76,
+        "goalkeeping": 10,
+        "physical": 80,
+        "technical": 90,
+        "uclImpact": 84,
+        "premFit": 84
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "bar-20-6",
+      "name": "Araujo",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 66,
+        "defense": 86,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 74,
+        "uclImpact": 80,
+        "premFit": 82
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "bar-20-7",
+      "name": "Yamal",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "RW",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 27,
+        "assists": 6
+      },
+      "rating": 92,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 95,
+        "midfield": 82,
+        "defense": 38,
+        "goalkeeping": 8,
+        "physical": 78,
+        "technical": 96,
+        "uclImpact": 91,
+        "premFit": 88
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "bar-20-8",
+      "name": "Raphinha",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "RW",
+        "LW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 6
+      },
+      "rating": 90,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 82,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 80,
+        "technical": 93,
+        "uclImpact": 89,
+        "premFit": 88
+      },
+      "primaryPosition": "RW"
+    },
+    {
+      "id": "bar-20-9",
+      "name": "Kounde",
+      "club": "Barcelona",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 46,
+        "midfield": 66,
+        "defense": 91,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 82,
+        "uclImpact": 86,
+        "premFit": 82
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "atm-20-5",
+      "name": "Koke",
+      "club": "Atletico Madrid",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 8,
+        "assists": 13
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 68,
+        "midfield": 88,
+        "defense": 82,
+        "goalkeeping": 10,
+        "physical": 78,
+        "technical": 86,
+        "uclImpact": 82,
+        "premFit": 80
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "che-20-3",
+      "name": "Caicedo",
+      "club": "Chelsea",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 7,
+        "assists": 13
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 62,
+        "midfield": 86,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 86,
+        "technical": 80,
+        "uclImpact": 76,
+        "premFit": 88
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "liv-10-6",
+      "name": "Robertson",
+      "club": "Liverpool",
+      "era": "2010s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 72,
+        "midfield": 78,
+        "defense": 82,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 80,
+        "uclImpact": 86,
+        "premFit": 92
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "mu-20-5",
+      "name": "Martinez",
+      "club": "Manchester United",
+      "era": "2020s",
+      "positions": [
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 4
+      },
+      "rating": 81,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 68,
+        "midfield": 74,
+        "defense": 82,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 78,
+        "uclImpact": 78,
+        "premFit": 88
+      },
+      "primaryPosition": "LB"
+    },
+    {
+      "id": "tot-10-1",
+      "name": "Kane",
+      "club": "Tottenham",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 26,
+        "assists": 6
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 92,
+        "midfield": 80,
+        "defense": 48,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 86,
+        "uclImpact": 82,
+        "premFit": 96
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "tot-10-2",
+      "name": "Son",
+      "club": "Tottenham",
+      "era": "2010s",
+      "positions": [
+        "LW",
+        "ST",
+        "RW",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 89,
+        "midfield": 78,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 88,
+        "uclImpact": 82,
+        "premFit": 94
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "tot-10-3",
+      "name": "Eriksen",
+      "club": "Tottenham",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 88,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 90,
+        "defense": 52,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 90,
+        "uclImpact": 80,
+        "premFit": 92
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "tot-10-4",
+      "name": "Lloris",
+      "club": "Tottenham",
+      "era": "2010s",
+      "positions": [
+        "GK"
+      ],
+      "stats": {
+        "goals": 0,
+        "assists": 0,
+        "cleanSheets": 12
+      },
+      "rating": 81,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 12,
+        "midfield": 28,
+        "defense": 44,
+        "goalkeeping": 89,
+        "physical": 80,
+        "technical": 84,
+        "uclImpact": 80,
+        "premFit": 90
+      },
+      "primaryPosition": "GK"
+    },
+    {
+      "id": "tot-10-5",
+      "name": "Vertonghen",
+      "club": "Tottenham",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "LB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 64,
+        "defense": 87,
+        "goalkeeping": 12,
+        "physical": 82,
+        "technical": 78,
+        "uclImpact": 78,
+        "premFit": 90
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "tot-10-6",
+      "name": "Alli",
+      "club": "Tottenham",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 84,
+        "defense": 56,
+        "goalkeeping": 10,
+        "physical": 80,
+        "technical": 84,
+        "uclImpact": 78,
+        "premFit": 90
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "tot-20-1",
+      "name": "Son",
+      "club": "Tottenham",
+      "era": "2020s",
+      "positions": [
+        "LW",
+        "ST",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 78,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 88,
+        "uclImpact": 80,
+        "premFit": 94
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "tot-20-2",
+      "name": "Romero",
+      "club": "Tottenham",
+      "era": "2020s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 66,
+        "defense": 88,
+        "goalkeeping": 12,
+        "physical": 86,
+        "technical": 78,
+        "uclImpact": 78,
+        "premFit": 88
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "tot-20-3",
+      "name": "Maddison",
+      "club": "Tottenham",
+      "era": "2020s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 13
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 88,
+        "defense": 50,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 90,
+        "uclImpact": 74,
+        "premFit": 90
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "nap-10-1",
+      "name": "Higuain",
+      "club": "Napoli",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 91,
+        "midfield": 74,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 86,
+        "uclImpact": 80,
+        "premFit": 84
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "nap-10-2",
+      "name": "Hamsik",
+      "club": "Napoli",
+      "era": "2010s",
+      "positions": [
+        "CAM",
+        "CM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 84,
+        "midfield": 90,
+        "defense": 60,
+        "goalkeeping": 10,
+        "physical": 80,
+        "technical": 88,
+        "uclImpact": 80,
+        "premFit": 82
+      },
+      "primaryPosition": "CAM"
+    },
+    {
+      "id": "nap-10-3",
+      "name": "Koulibaly",
+      "club": "Napoli",
+      "era": "2010s",
+      "positions": [
+        "CB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 2,
+        "assists": 4
+      },
+      "rating": 87,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 48,
+        "midfield": 66,
+        "defense": 90,
+        "goalkeeping": 12,
+        "physical": 90,
+        "technical": 78,
+        "uclImpact": 82,
+        "premFit": 86
+      },
+      "primaryPosition": "CB"
+    },
+    {
+      "id": "nap-10-4",
+      "name": "Insigne",
+      "club": "Napoli",
+      "era": "2010s",
+      "positions": [
+        "LW",
+        "CAM",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 24,
+        "assists": 6
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 87,
+        "midfield": 82,
+        "defense": 46,
+        "goalkeeping": 8,
+        "physical": 70,
+        "technical": 90,
+        "uclImpact": 78,
+        "premFit": 80
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "nap-10-5",
+      "name": "Mertens",
+      "club": "Napoli",
+      "era": "2010s",
+      "positions": [
+        "ST",
+        "CAM",
+        "AM"
+      ],
+      "stats": {
+        "goals": 24,
+        "assists": 6
+      },
+      "rating": 84,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 87,
+        "midfield": 80,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 72,
+        "technical": 88,
+        "uclImpact": 78,
+        "premFit": 80
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "nap-20-1",
+      "name": "Osimhen",
+      "club": "Napoli",
+      "era": "2020s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 90,
+        "midfield": 70,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 90,
+        "technical": 82,
+        "uclImpact": 80,
+        "premFit": 86
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "nap-20-2",
+      "name": "Kvaratskhelia",
+      "club": "Napoli",
+      "era": "2020s",
+      "positions": [
+        "LW",
+        "CAM",
+        "AM",
+        "FW"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 6
+      },
+      "rating": 86,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 89,
+        "midfield": 80,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 80,
+        "technical": 92,
+        "uclImpact": 80,
+        "premFit": 84
+      },
+      "primaryPosition": "LW"
+    },
+    {
+      "id": "nap-20-3",
+      "name": "Di Lorenzo",
+      "club": "Napoli",
+      "era": "2020s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 4
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 64,
+        "midfield": 74,
+        "defense": 84,
+        "goalkeeping": 10,
+        "physical": 82,
+        "technical": 80,
+        "uclImpact": 76,
+        "premFit": 84
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "nap-20-4",
+      "name": "Lobotka",
+      "club": "Napoli",
+      "era": "2020s",
+      "positions": [
+        "CM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 8,
+        "assists": 13
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 64,
+        "midfield": 88,
+        "defense": 78,
+        "goalkeeping": 10,
+        "physical": 76,
+        "technical": 88,
+        "uclImpact": 76,
+        "premFit": 84
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "sev-00-1",
+      "name": "Dani Alves",
+      "club": "Sevilla",
+      "era": "2000s",
+      "positions": [
+        "RB",
+        "DF"
+      ],
+      "stats": {
+        "goals": 3,
+        "assists": 5
+      },
+      "rating": 81,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 70,
+        "midfield": 80,
+        "defense": 80,
+        "goalkeeping": 10,
+        "physical": 76,
+        "technical": 86,
+        "uclImpact": 80,
+        "premFit": 84
+      },
+      "primaryPosition": "RB"
+    },
+    {
+      "id": "sev-00-2",
+      "name": "Kanoute",
+      "club": "Sevilla",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 74,
+        "defense": 44,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 86,
+        "uclImpact": 80,
+        "premFit": 86
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "sev-00-3",
+      "name": "Luis Fabiano",
+      "club": "Sevilla",
+      "era": "2000s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 25,
+        "assists": 5
+      },
+      "rating": 83,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 88,
+        "midfield": 70,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 84,
+        "technical": 82,
+        "uclImpact": 78,
+        "premFit": 80
+      },
+      "primaryPosition": "ST"
+    },
+    {
+      "id": "sev-10-1",
+      "name": "Rakitic",
+      "club": "Sevilla",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 10,
+        "assists": 14
+      },
+      "rating": 85,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 80,
+        "midfield": 90,
+        "defense": 64,
+        "goalkeeping": 10,
+        "physical": 78,
+        "technical": 90,
+        "uclImpact": 80,
+        "premFit": 86
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "sev-10-2",
+      "name": "Banega",
+      "club": "Sevilla",
+      "era": "2010s",
+      "positions": [
+        "CM",
+        "CAM",
+        "AM",
+        "MF"
+      ],
+      "stats": {
+        "goals": 9,
+        "assists": 13
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 78,
+        "midfield": 88,
+        "defense": 58,
+        "goalkeeping": 10,
+        "physical": 72,
+        "technical": 90,
+        "uclImpact": 80,
+        "premFit": 80
+      },
+      "primaryPosition": "CM"
+    },
+    {
+      "id": "sev-10-3",
+      "name": "Bacca",
+      "club": "Sevilla",
+      "era": "2010s",
+      "positions": [
+        "ST"
+      ],
+      "stats": {
+        "goals": 24,
+        "assists": 5
+      },
+      "rating": 82,
+      "source": "38-0.org",
+      "areaStats": {
+        "attack": 86,
+        "midfield": 68,
+        "defense": 42,
+        "goalkeeping": 8,
+        "physical": 82,
+        "technical": 82,
+        "uclImpact": 78,
+        "premFit": 80
+      },
+      "primaryPosition": "ST"
+    }
+  ]
+}
