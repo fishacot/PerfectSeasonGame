@@ -28,7 +28,17 @@ import {
   type DailyAttempt,
 } from "@/lib/game/daily-attempt";
 import { getOpenSlotKeys, canPlaceAtPosition, filterPickablePlayers } from "@/lib/game/validation";
-import { SPIN_CLUB_MS, SPIN_ERA_MS, SPIN_GAP_MS } from "@/lib/game/spin-timing";
+import {
+  SPIN_CLUB_MS,
+  SPIN_ERA_MS,
+  SPIN_GAP_MS,
+  SPIN_HOLD_MS,
+} from "@/lib/game/spin-timing";
+import {
+  spinClubWithPool,
+  spinEraWithPool,
+  spinTeamEraWithPool,
+} from "@/lib/game/spin";
 import { SPORTS } from "@/lib/config/sports";
 import {
   FORMATION_IDS,
@@ -54,6 +64,8 @@ import { SportBackdrop } from "@/components/game/SportBackdrop";
 import { EdgeHeroes as BasketballEdgeHeroes } from "@/components/basketball/EdgeHeroes";
 import { EdgeHeroes as FootballEdgeHeroes } from "@/components/football/EdgeHeroes";
 import { ScoreBug } from "@/components/basketball/ScoreBug";
+import { SportMotifs } from "@/components/game/SportMotifs";
+import { PageFade } from "@/components/layout/PageFade";
 
 interface GameClientProps {
   sport: SportId;
@@ -88,7 +100,9 @@ export function GameClient({
   const [displayWins, setDisplayWins] = useState<number | null>(null);
   const shareRef = useRef<HTMLDivElement>(null);
   const [spinAnimating, setSpinAnimating] = useState(false);
-  const [spinStage, setSpinStage] = useState<"idle" | "club" | "era">("idle");
+  const [spinStage, setSpinStage] = useState<"idle" | "club" | "era" | "hold">("idle");
+  /** Precomputed outcome shown on drums during spin + hold before COMMIT. */
+  const [previewSpin, setPreviewSpin] = useState<SpinResult | null>(null);
   const [dailyAttempt, setDailyAttempt] = useState<DailyAttempt | null>(null);
   const [copyDone, setCopyDone] = useState(false);
   const [simError, setSimError] = useState<string | null>(null);
@@ -248,7 +262,13 @@ export function GameClient({
 
   useEffect(() => {
     if (sport !== "basketball" || state.phase !== "picking") return;
-    poolAnchorRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (typeof window !== "undefined" && window.matchMedia("(min-width: 1024px)").matches) {
+      return;
+    }
+    const t = window.setTimeout(() => {
+      poolAnchorRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 120);
+    return () => window.clearTimeout(t);
   }, [sport, state.phase, state.round]);
 
   useEffect(() => {
@@ -307,35 +327,85 @@ export function GameClient({
 
   const runSpin = useCallback(
     (openLabels: string[]) => {
+      const picked = new Set(state.picks.map((p) => p.player.id));
+      const spin = spinTeamEraWithPool(
+        sport,
+        clubs,
+        eras,
+        state.usedEras,
+        players,
+        picked,
+        openLabels,
+      );
+      setPreviewSpin(spin);
       setSpinAnimating(true);
       setSpinStage("club");
       window.setTimeout(() => {
         setSpinStage("era");
         window.setTimeout(() => {
-          dispatch({ type: "SPIN", openSlotLabels: openLabels });
-          setSpinAnimating(false);
-          setSpinStage("idle");
+          setSpinStage("hold");
+          window.setTimeout(() => {
+            dispatch({ type: "COMMIT_SPIN", spin, openSlotLabels: openLabels });
+            setSpinAnimating(false);
+            setSpinStage("idle");
+            setPreviewSpin(null);
+          }, SPIN_HOLD_MS);
         }, SPIN_ERA_MS);
       }, SPIN_CLUB_MS + SPIN_GAP_MS);
     },
-    [],
+    [state.picks, state.usedEras, sport, clubs, eras, players],
   );
 
   const runSkip = useCallback(
     (target: "team" | "era", openLabels: string[]) => {
+      if (!state.currentSpin) return;
+      const picked = new Set(state.picks.map((p) => p.player.id));
+      const spin: SpinResult =
+        target === "team"
+          ? {
+              ...state.currentSpin,
+              club: spinClubWithPool(
+                sport,
+                clubs,
+                state.currentSpin.era,
+                state.usedEras,
+                players,
+                picked,
+                openLabels,
+              ),
+            }
+          : {
+              ...state.currentSpin,
+              era: spinEraWithPool(
+                sport,
+                state.currentSpin.club,
+                eras,
+                state.usedEras,
+                players,
+                picked,
+                openLabels,
+              ),
+            };
+      setPreviewSpin(spin);
       setSpinAnimating(true);
       setSpinStage(target === "team" ? "club" : "era");
       const duration = target === "team" ? SPIN_CLUB_MS : SPIN_ERA_MS;
       window.setTimeout(() => {
-        dispatch({
-          type: target === "team" ? "SKIP_TEAM" : "SKIP_ERA",
-          openSlotLabels: openLabels,
-        });
-        setSpinAnimating(false);
-        setSpinStage("idle");
+        setSpinStage("hold");
+        window.setTimeout(() => {
+          dispatch({
+            type: "COMMIT_SKIP",
+            target,
+            spin,
+            openSlotLabels: openLabels,
+          });
+          setSpinAnimating(false);
+          setSpinStage("idle");
+          setPreviewSpin(null);
+        }, SPIN_HOLD_MS);
       }, duration);
     },
-    [],
+    [state.currentSpin, state.picks, state.usedEras, sport, clubs, eras, players],
   );
 
   if (state.phase === "mode-select") {
@@ -507,18 +577,20 @@ export function GameClient({
 
     return (
       <SportThemeProvider sport={sport}>
-        {sport === "basketball" || sport === "football" ? (
-          <>
-            {sport === "basketball" ? (
-              <BasketballEdgeHeroes phase="mode-select" />
-            ) : (
-              <FootballEdgeHeroes phase="mode-select" />
-            )}
-            <SportBackdrop sport={sport} className="min-h-screen">{modeContent}</SportBackdrop>
-          </>
-        ) : (
-          modeContent
-        )}
+        <PageFade>
+          {sport === "basketball" || sport === "football" ? (
+            <>
+              {sport === "basketball" ? (
+                <BasketballEdgeHeroes phase="mode-select" />
+              ) : (
+                <FootballEdgeHeroes phase="mode-select" />
+              )}
+              <SportBackdrop sport={sport} className="min-h-screen">{modeContent}</SportBackdrop>
+            </>
+          ) : (
+            modeContent
+          )}
+        </PageFade>
       </SportThemeProvider>
     );
   }
@@ -671,13 +743,33 @@ export function GameClient({
     isBroadcastSport && (state.phase === "picking" || state.phase === "placing");
   const showSlotMachine =
     !isVersusDaily &&
-    (state.phase === "spinning" || (spinAnimating && state.phase !== "picking"));
+    (state.phase === "spinning" || spinAnimating);
   const clubSpinning = spinAnimating && spinStage === "club";
   const eraSpinning = spinAnimating && spinStage === "era";
+  /** Club known for land; era only once era drum (or hold) starts. */
+  const slotClub = previewSpin?.club ?? state.currentSpin?.club ?? null;
+  const slotEra =
+    previewSpin && (spinStage === "era" || spinStage === "hold")
+      ? previewSpin.era
+      : previewSpin
+        ? (state.currentSpin?.era ?? null)
+        : (state.currentSpin?.era ?? null);
+  const bugClub = previewSpin?.club ?? state.currentSpin?.club;
+  const bugEra =
+    previewSpin && spinStage === "club" && !state.currentSpin
+      ? null
+      : (previewSpin?.era ?? state.currentSpin?.era);
 
   const botThinking = state.phase === "opponent-draft";
 
-  const isSpinningPhase = state.phase === "spinning" || (spinAnimating && state.phase !== "picking");
+  /** Full spin phase (center stage) — not skip-while-picking. */
+  const isSpinningPhase =
+    state.phase === "spinning" ||
+    (spinAnimating && state.phase !== "picking" && state.phase !== "placing");
+  /** Skip reroll drums while still on picking panel. */
+  const isSkipAnimating = spinAnimating && state.phase === "picking";
+  const showSidebarColumn =
+    isVersusDaily || !(isBroadcastSport && isSpinningPhase);
 
   const sidebar = isVersusDaily ? (
     <div className="lg:sticky lg:top-24">
@@ -727,11 +819,11 @@ export function GameClient({
       )}
       {showSlotMachine && !isBroadcastSport && (
         <SlotMachine
-          club={state.currentSpin?.club ?? null}
-          era={state.currentSpin?.era ?? null}
+          club={slotClub}
+          era={slotEra}
           clubs={clubs}
           eras={eras}
-          isSpinning={spinAnimating && state.phase === "spinning"}
+          isSpinning={spinAnimating}
           spinningClub={clubSpinning}
           spinningEra={eraSpinning}
           onSpin={() => {
@@ -740,6 +832,7 @@ export function GameClient({
           }}
           spinLabel={dict.spin}
           disabled={state.phase !== "spinning" || spinAnimating}
+          hideButton={isSkipAnimating}
         />
       )}
       {state.mode !== "daily" && !state.dailySpins && (state.phase === "picking" || state.phase === "placing") && !isBroadcastSport && (
@@ -766,7 +859,7 @@ export function GameClient({
   );
 
   const playerPanel = (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="sync">
       {state.phase === "opponent-draft" && isVersusDaily && (
         <PhasePanel
           key="opponent-draft"
@@ -788,11 +881,11 @@ export function GameClient({
           className="mx-auto flex w-full max-w-md flex-col gap-6"
         >
           <SlotMachine
-            club={state.currentSpin?.club ?? null}
-            era={state.currentSpin?.era ?? null}
+            club={slotClub}
+            era={slotEra}
             clubs={clubs}
             eras={eras}
-            isSpinning={spinAnimating && state.phase === "spinning"}
+            isSpinning={spinAnimating}
             spinningClub={clubSpinning}
             spinningEra={eraSpinning}
             onSpin={() => {
@@ -801,6 +894,7 @@ export function GameClient({
             }}
             spinLabel={dict.spin}
             disabled={state.phase !== "spinning" || spinAnimating}
+            hideButtonBelowLg
           />
           <LineupBoard
             variant={sport}
@@ -818,6 +912,23 @@ export function GameClient({
       {state.phase === "picking" && (
         <PhasePanel key="picking" className="flex flex-col gap-4">
           <div ref={poolAnchorRef} className="contents">
+          {isBroadcastSport && isSkipAnimating && (
+            <div className="mx-auto w-full max-w-md">
+              <SlotMachine
+                club={slotClub}
+                era={slotEra}
+                clubs={clubs}
+                eras={eras}
+                isSpinning={spinAnimating}
+                spinningClub={clubSpinning}
+                spinningEra={eraSpinning}
+                onSpin={() => {}}
+                spinLabel={dict.spin}
+                disabled
+                hideButton
+              />
+            </div>
+          )}
           {isBroadcastSport && (
             <div className="flex flex-col items-center gap-5 lg:flex-row lg:items-start lg:justify-center lg:gap-8">
               <LineupBoard
@@ -831,6 +942,28 @@ export function GameClient({
               <div className="w-full max-w-md lg:w-auto lg:min-w-[260px] lg:max-w-xs lg:pt-1">
                 <EraTracker sport={sport} eras={eras} usedEras={state.usedEras} />
               </div>
+            </div>
+          )}
+          {isVersusDaily && isBroadcastSport && (
+            <div className="w-full">
+              <VersusPanel
+                sport={sport}
+                dict={dict}
+                userLineup={state.lineup}
+                opponentLineup={state.opponentLineup}
+                currentSpin={state.currentSpin}
+                clubs={clubs}
+                eras={eras}
+                round={state.round}
+                rosterSize={config.rosterSize}
+                cpuSpinning={cpuSpinning}
+                botReveal={state.botReveal}
+                botThinking={botThinking}
+                positions={sport === "football" ? slotPositions : undefined}
+                formationLabel={
+                  sport === "football" ? getFormationLabel(formationId) : undefined
+                }
+              />
             </div>
           )}
           {isBroadcastSport &&
@@ -889,12 +1022,12 @@ export function GameClient({
           ) : (
             <>
               {state.currentSpin && (
-                <div className="flex items-center justify-center gap-2 rounded-xl border border-sport/10 bg-sport/5 py-2">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-muted">
+                <div className="lower-third-enter sticky top-[var(--header-offset,3.75rem)] z-20 flex flex-wrap items-center justify-center gap-2 rounded-xl border border-sport/25 bg-sport/15 px-3 py-2.5 backdrop-blur-md">
+                  <span className="truncate text-center font-display text-sm tracking-wide text-text">
                     {state.currentSpin.club} · {state.currentSpin.era}
                   </span>
                   <span className="h-1 w-1 rounded-full bg-sport/40" />
-                  <span className="text-[10px] font-black uppercase tracking-widest text-sport">
+                  <span className="text-[11px] font-black uppercase tracking-widest text-sport">
                     {pickablePlayers.length} {dict.available}
                   </span>
                 </div>
@@ -1012,6 +1145,8 @@ export function GameClient({
           isBroadcastSport ? "max-w-7xl" : "max-w-2xl"
         }`}
       >
+        {(isSpinningPhase || broadcastPicking) && <SportMotifs sport={sport} />}
+
         {(state.mode === "daily" || state.dailySpins) && (
           <div className="rounded-xl border border-sport/30 bg-sport/10 px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-sport">
             {state.mode === "daily"
@@ -1028,8 +1163,8 @@ export function GameClient({
             round={state.round}
             rosterSize={config.rosterSize}
             mode={state.mode}
-            club={state.currentSpin?.club}
-            era={state.currentSpin?.era}
+            club={bugClub}
+            era={bugEra}
             maxWins={isFootball ? 38 : 82}
             labelRound={dict.round}
             labelMode={dict.activeMode}
@@ -1073,7 +1208,8 @@ export function GameClient({
           {isBroadcastSport ? (
             <>
               <div className="flex min-w-0 flex-col gap-8">{playerPanel}</div>
-              {!broadcastPicking && <div>{sidebar}</div>}
+              {/* Skip empty sidebar during spin; versus stays in picking panel when drafting */}
+              {!broadcastPicking && showSidebarColumn && <div>{sidebar}</div>}
             </>
           ) : (
             <>
@@ -1099,18 +1235,20 @@ export function GameClient({
 
   return (
     <SportThemeProvider sport={sport}>
-      {isBroadcastSport ? (
-        <>
-          {isBasketball ? (
-            <BasketballEdgeHeroes phase="draft" />
-          ) : (
-            <FootballEdgeHeroes phase="draft" />
-          )}
-          <SportBackdrop sport={sport} className="min-h-screen">{draftContent}</SportBackdrop>
-        </>
-      ) : (
-        draftContent
-      )}
+      <PageFade>
+        {isBroadcastSport ? (
+          <>
+            {isBasketball ? (
+              <BasketballEdgeHeroes phase="draft" />
+            ) : (
+              <FootballEdgeHeroes phase="draft" />
+            )}
+            <SportBackdrop sport={sport} className="min-h-screen">{draftContent}</SportBackdrop>
+          </>
+        ) : (
+          draftContent
+        )}
+      </PageFade>
     </SportThemeProvider>
   );
 }

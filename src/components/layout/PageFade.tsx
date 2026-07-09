@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 import { EASE_SMOOTH } from "@/lib/game/spin-timing";
 
-export function PhasePanel({
+/** Soft enter fade for hub / sport shells — respects reduced-motion via CSS. */
+export function PageFade({
   children,
   className = "",
 }: {
@@ -14,10 +15,9 @@ export function PhasePanel({
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 8 }}
+      initial={{ opacity: 0, y: 6 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 0 }}
-      transition={{ duration: 0.4, ease: EASE_SMOOTH }}
+      transition={{ duration: 0.35, ease: EASE_SMOOTH }}
     >
       {children}
     </motion.div>

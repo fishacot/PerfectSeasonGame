@@ -10,6 +10,7 @@ const checks = [
   ["engine", "src/lib/simulation/basketball/engine.ts"],
   ["grade", "src/lib/simulation/grade.ts"],
   ["bot-draft", "src/lib/game/bot-draft.ts"],
+  ["spin-timing", "src/lib/game/spin-timing.ts"],
 ];
 
 for (const [name, file] of checks) {

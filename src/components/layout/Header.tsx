@@ -24,7 +24,7 @@ export function Header({ locale }: HeaderProps) {
   const dict = getDictionary(locale);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/50 bg-bg/85 backdrop-blur-2xl">
+    <header className="sticky top-0 z-50 border-b border-border/50 bg-bg/85 pt-[env(safe-area-inset-top)] backdrop-blur-2xl">
       <div className="page-shell flex items-center justify-between gap-3 py-3 sm:gap-4 sm:py-4">
         <Link href={`/${locale}`} className="group flex min-w-0 items-center gap-2.5 sm:gap-4">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-border bg-surface transition-all duration-300 group-hover:scale-105 sm:h-12 sm:w-12 sm:rounded-2xl">

@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
 import { ChevronLeft } from "lucide-react";
+import { SportMotifs } from "@/components/game/SportMotifs";
+import { PageFade } from "@/components/layout/PageFade";
 
 export default async function HockeyPage({
   params,
@@ -13,16 +15,17 @@ export default async function HockeyPage({
   const dict = getDictionary(locale);
 
   return (
-    <div className="page-shell py-8 sm:py-16" data-sport="hockey">
+    <PageFade className="page-shell relative py-8 sm:py-16" data-sport="hockey">
+      <SportMotifs sport="hockey" />
       <Link
         href={`/${locale}`}
-        className="group micro-label flex items-center gap-2 text-muted transition-all hover:text-sport"
+        className="group relative z-10 micro-label flex items-center gap-2 text-muted transition-all hover:text-sport"
       >
         <ChevronLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
         {locale === "ru" ? "НАЗАД В ХАБ" : "BACK TO HUB"}
       </Link>
 
-      <div className="mx-auto mt-10 max-w-xl text-center sm:mt-16">
+      <div className="relative z-10 mx-auto mt-10 max-w-xl text-center sm:mt-16">
         <p className="mb-4 inline-block rounded-lg border border-amber-400/40 bg-amber-400/15 px-4 py-2 text-xs font-black uppercase tracking-[0.25em] text-amber-200">
           {dict.hockey.comingSoon}
         </p>
@@ -46,6 +49,6 @@ export default async function HockeyPage({
           </Link>
         </div>
       </div>
-    </div>
+    </PageFade>
   );
 }

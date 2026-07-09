@@ -4,6 +4,7 @@ import { SPORTS } from "@/lib/config/sports";
 import type { Locale, SportId } from "@/lib/types";
 import { ChevronRight } from "lucide-react";
 import { getPlayerPhotoUrl } from "@/lib/assets/player-photos";
+import { SportMotifIcon } from "@/components/game/SportMotifs";
 
 interface SportCardProps {
   sport: SportId;
@@ -63,11 +64,20 @@ export function SportCard({
   const frame = HERO_FRAME[sport];
 
   const mobile = (
-    <div className="flex items-center gap-4 p-4 sm:hidden">
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sport/15 text-2xl ring-1 ring-sport/25">
-        <span aria-hidden>{config.emoji}</span>
+    <div className="relative flex items-center gap-4 overflow-hidden p-4 sm:hidden">
+      <div
+        className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-25"
+        style={{ backgroundImage: `url(${ARENA_BG[sport]})` }}
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-surface/70"
+        aria-hidden
+      />
+      <div className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sport/20 ring-1 ring-sport/30">
+        <SportMotifIcon sport={sport} className="h-7 w-7" />
       </div>
-      <div className="min-w-0 flex-1">
+      <div className="relative z-10 min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2">
           <h2 className="font-display text-xl tracking-wide text-text">
             {config.name[locale].toUpperCase()}
@@ -86,7 +96,7 @@ export function SportCard({
         </span>
       </div>
       {!comingSoon && (
-        <ChevronRight className="h-5 w-5 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-sport" />
+        <ChevronRight className="relative z-10 h-5 w-5 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-sport" />
       )}
     </div>
   );

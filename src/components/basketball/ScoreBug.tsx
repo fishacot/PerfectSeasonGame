@@ -38,14 +38,14 @@ export function ScoreBug({
         </div>
 
         {(club || era) && (
-          <div className="flex min-w-0 flex-1 flex-col justify-center border-l border-white/10 px-3 py-2 sm:px-4">
+          <div className="lower-third-enter flex min-w-0 flex-1 flex-col justify-center border-l border-white/10 bg-sport/10 px-3 py-2.5 sm:px-4">
             {club && (
-              <span className="truncate font-display text-xs tracking-widest text-text sm:text-sm">
+              <span className="line-clamp-2 font-display text-base leading-tight tracking-wide text-text sm:truncate sm:text-sm sm:tracking-widest">
                 {club.toUpperCase()}
               </span>
             )}
             {era && (
-              <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-sport sm:text-[10px]">
+              <span className="mt-0.5 text-xs font-bold uppercase tracking-[0.18em] text-sport sm:text-[10px] sm:tracking-[0.2em]">
                 {era}
               </span>
             )}
@@ -68,7 +68,7 @@ export function ScoreBug({
             </span>
             <span className="font-display text-xl leading-none text-sport sm:text-2xl">
               {wins}
-              <span className="text-muted">-{maxWins - wins}</span>
+              <span className="text-sm text-muted">-{maxWins - wins}</span>
             </span>
           </div>
         )}

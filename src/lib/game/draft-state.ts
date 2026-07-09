@@ -56,8 +56,16 @@ export type DraftAction =
   | { type: "SET_DIFFICULTY"; difficulty: FootballDifficulty }
   | { type: "START"; dailySpins?: SpinResult[] }
   | { type: "SPIN"; openSlotLabels: string[] }
+  /** Commit a precomputed spin after slot land+hold (UI preview path). */
+  | { type: "COMMIT_SPIN"; spin: SpinResult; openSlotLabels: string[] }
   | { type: "SKIP_TEAM"; openSlotLabels: string[] }
   | { type: "SKIP_ERA"; openSlotLabels: string[] }
+  | {
+      type: "COMMIT_SKIP";
+      target: "team" | "era";
+      spin: SpinResult;
+      openSlotLabels: string[];
+    }
   | { type: "PICK"; player: PlayerSeason }
   | { type: "PLACE"; slot: string }
   | { type: "BOT_PICK"; positions: string[] }
@@ -111,6 +119,40 @@ export function createInitialState(
     opponentUsedEras: [],
     botReveal: null,
     difficulty: "normal",
+  };
+}
+
+function commitSpin(
+  state: DraftState,
+  spin: SpinResult,
+  picked: Set<string>,
+): DraftState {
+  const players = getPlayersForSpin(state.sport, state.allPlayers, spin, picked);
+  return {
+    ...state,
+    phase: "picking",
+    round: state.round + 1,
+    currentSpin: spin,
+    availablePlayers: players,
+    spins: [...state.spins, spin],
+  };
+}
+
+function commitSkip(
+  state: DraftState,
+  spin: SpinResult,
+  target: "team" | "era",
+  picked: Set<string>,
+): DraftState {
+  const players = getPlayersForSpin(state.sport, state.allPlayers, spin, picked);
+  return {
+    ...state,
+    currentSpin: spin,
+    availablePlayers: players,
+    skipsUsed: {
+      ...state.skipsUsed,
+      ...(target === "team" ? { team: true } : { era: true }),
+    },
   };
 }
 
@@ -175,15 +217,11 @@ export function draftReducer(
         picked,
         action.openSlotLabels,
       );
-      const players = getPlayersForSpin(state.sport, state.allPlayers, spin, picked);
-      return {
-        ...state,
-        phase: "picking",
-        round: state.round + 1,
-        currentSpin: spin,
-        availablePlayers: players,
-        spins: [...state.spins, spin],
-      };
+      return commitSpin(state, spin, picked);
+    }
+    case "COMMIT_SPIN": {
+      const picked = pickedIds(state.picks);
+      return commitSpin(state, action.spin, picked);
     }
     case "SKIP_TEAM": {
       if (!state.currentSpin) return state;
@@ -202,13 +240,7 @@ export function draftReducer(
           action.openSlotLabels,
         ),
       };
-      const players = getPlayersForSpin(state.sport, state.allPlayers, spin, picked);
-      return {
-        ...state,
-        currentSpin: spin,
-        availablePlayers: players,
-        skipsUsed: { ...state.skipsUsed, team: true },
-      };
+      return commitSkip(state, spin, "team", picked);
     }
     case "SKIP_ERA": {
       if (!state.currentSpin) return state;
@@ -225,13 +257,15 @@ export function draftReducer(
         action.openSlotLabels,
       );
       const spin = { ...state.currentSpin, era: newEra };
-      const players = getPlayersForSpin(state.sport, state.allPlayers, spin, picked);
-      return {
-        ...state,
-        currentSpin: spin,
-        availablePlayers: players,
-        skipsUsed: { ...state.skipsUsed, era: true },
-      };
+      return commitSkip(state, spin, "era", picked);
+    }
+    case "COMMIT_SKIP": {
+      if (!state.currentSpin) return state;
+      if (action.target === "team" && state.skipsUsed.team) return state;
+      if (action.target === "era" && state.skipsUsed.era) return state;
+      if (state.dailySpins) return state;
+      const picked = pickedIds(state.picks);
+      return commitSkip(state, action.spin, action.target, picked);
     }
     case "PICK": {
       if (!canPickPlayer(state.sport, action.player.era, state.usedEras)) {

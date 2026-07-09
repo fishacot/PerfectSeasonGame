@@ -30,6 +30,8 @@
   --panel-top: rgba(20, 24, 30, 0.95);
   --panel-bottom: rgba(10, 12, 16, 0.98);
   --panel-shadow: rgba(0, 0, 0, 0.5);
+  /* Sticky pool banner offset under sticky header (+ safe-area). */
+  --header-offset: calc(3.75rem + env(safe-area-inset-top, 0px));
 }
 
 [data-theme="light"] {

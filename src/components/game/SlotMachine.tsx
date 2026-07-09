@@ -26,6 +26,8 @@ interface SlotMachineProps {
   spinLabel: string;
   disabled?: boolean;
   hideButton?: boolean;
+  /** Hide inline SPIN below lg (fixed bottom bar owns the CTA). */
+  hideButtonBelowLg?: boolean;
 }
 
 function SlotDrum({
@@ -121,7 +123,7 @@ function SlotDrum({
           {reel.map((item, i) => (
             <span
               key={`${item}-${i}`}
-              className={`flex h-[80px] w-full items-center justify-center truncate px-3 font-display text-xl tracking-[0.2em] ${
+              className={`flex h-[80px] w-full items-center justify-center truncate px-2 text-center font-display text-lg leading-tight tracking-wide sm:px-3 sm:text-xl sm:tracking-[0.15em] ${
                 spinning ? "text-muted/25" : "text-muted/20"
               }`}
             >
@@ -133,13 +135,18 @@ function SlotDrum({
         <motion.div
           key={display}
           initial={{ y: 18, opacity: 0, scale: 0.96, filter: "blur(8px)" }}
-          animate={{ y: 0, opacity: 1, scale: 1, filter: "blur(0px)" }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            scale: landed ? [1, 1.04, 1] : 1,
+            filter: "blur(0px)",
+          }}
           transition={{ duration: 0.45, ease: EASE_SMOOTH }}
-          className="relative z-30 flex h-full w-full items-center justify-center px-4 text-center"
+          className="relative z-30 flex h-full w-full items-center justify-center px-2 text-center sm:px-4"
         >
           <span
-            className={`truncate font-display text-3xl tracking-[0.25em] drop-shadow-[0_0_15px_var(--sport-glow)] ${
-              landed ? "text-sport" : "text-sport/90"
+            className={`line-clamp-2 max-w-full font-display text-xl leading-tight tracking-wide drop-shadow-[0_0_18px_var(--sport-glow)] sm:truncate sm:text-3xl sm:tracking-[0.15em] ${
+              landed ? "animate-pulse-soft text-sport" : "text-sport/90"
             }`}
           >
             {display.toUpperCase()}
@@ -162,6 +169,7 @@ export function SlotMachine({
   spinLabel,
   disabled = false,
   hideButton = false,
+  hideButtonBelowLg = false,
 }: SlotMachineProps) {
   const clubSpinning = spinningClub ?? isSpinning;
   const eraSpinning = spinningEra ?? isSpinning;
@@ -173,16 +181,16 @@ export function SlotMachine({
   return (
     <motion.div
       layout
-      className="relative flex flex-col gap-8 overflow-hidden rounded-3xl border border-white/10 bg-surface/30 p-8 shadow-2xl backdrop-blur-2xl"
+      className="relative flex flex-col gap-4 overflow-hidden rounded-3xl border border-white/10 bg-surface/30 p-4 shadow-2xl backdrop-blur-2xl sm:gap-8 sm:p-8"
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: EASE_SMOOTH }}
     >
       <div className="pointer-events-none absolute -inset-24 bg-sport/10 opacity-40 blur-[100px]" />
 
-      <div className="relative z-10 grid gap-6">
+      <div className="relative z-10 grid gap-4 sm:gap-6">
         <motion.div
-          className="flex flex-col gap-3"
+          className="flex flex-col gap-2 sm:gap-3"
           animate={clubSpinning ? { scale: 1.01 } : { scale: 1 }}
           transition={{ duration: 0.3, ease: EASE_SMOOTH }}
         >
@@ -195,7 +203,7 @@ export function SlotMachine({
           />
         </motion.div>
         <motion.div
-          className="flex flex-col gap-3"
+          className="flex flex-col gap-2 sm:gap-3"
           animate={eraSpinning ? { scale: 1.01 } : { scale: 1 }}
           transition={{ duration: 0.3, ease: EASE_SMOOTH }}
         >
@@ -211,7 +219,9 @@ export function SlotMachine({
           disabled={disabled || anySpinning}
           whileHover={disabled || anySpinning ? undefined : { scale: 1.02 }}
           whileTap={disabled || anySpinning ? undefined : { scale: 0.98 }}
-          className="relative z-10 flex items-center justify-center gap-4 overflow-hidden rounded-2xl bg-sport py-6 font-display text-3xl tracking-[0.2em] text-bg shadow-[0_15px_40px_var(--sport-glow)] transition-[box-shadow,opacity] duration-300 hover:glow-sport disabled:cursor-not-allowed disabled:opacity-20 disabled:shadow-none"
+          className={`relative z-10 items-center justify-center gap-3 overflow-hidden rounded-2xl bg-sport py-4 font-display text-2xl tracking-[0.15em] text-bg shadow-[0_15px_40px_var(--sport-glow)] transition-[box-shadow,opacity] duration-300 hover:glow-sport disabled:cursor-not-allowed disabled:opacity-20 disabled:shadow-none sm:gap-4 sm:py-6 sm:text-3xl sm:tracking-[0.2em] ${
+            hideButtonBelowLg ? "hidden lg:flex" : "flex"
+          }`}
         >
           {anySpinning ? (
             <div className="flex items-center gap-3">
@@ -220,7 +230,7 @@ export function SlotMachine({
             </div>
           ) : (
             <>
-              <Sparkles className="h-7 w-7" />
+              <Sparkles className="h-6 w-6 sm:h-7 sm:w-7" />
               <span>{spinLabel.toUpperCase()}</span>
             </>
           )}

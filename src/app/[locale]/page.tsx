@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DailyLeaderboardStub } from "@/components/game/DailyLeaderboardStub";
 import { SportCard } from "@/components/game/SportCard";
+import { SportMotifs } from "@/components/game/SportMotifs";
+import { PageFade } from "@/components/layout/PageFade";
 import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
 import type { Locale, SportId } from "@/lib/types";
 
@@ -17,12 +19,13 @@ export default async function HubPage({
   const dict = getDictionary(locale);
 
   return (
-    <div className="page-shell relative py-8 sm:py-16 lg:py-24">
+    <PageFade className="page-shell relative py-8 sm:py-16 lg:py-24">
       <div
         className="pointer-events-none fixed inset-0 z-0 bg-cover bg-center opacity-[0.12]"
         style={{ backgroundImage: "url(/backgrounds/hub-arena-mosaic.webp)" }}
         aria-hidden
       />
+      <SportMotifs />
 
       <div className="relative z-10 mb-6 rounded-xl border border-sport/20 bg-sport/5 px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-sport">
         {dict.dailyBanner}
@@ -78,6 +81,6 @@ export default async function HubPage({
         <div className="absolute -left-1/4 top-1/4 h-64 w-64 rounded-full bg-white/5 blur-[100px] sm:h-96 sm:w-96 sm:blur-[120px]" />
         <div className="absolute -right-1/4 bottom-1/4 h-64 w-64 rounded-full bg-white/10 blur-[100px] sm:h-96 sm:w-96 sm:blur-[120px]" />
       </div>
-    </div>
+    </PageFade>
   );
 }

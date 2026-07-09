@@ -124,12 +124,12 @@ export function PlayerPoolList({
       />
 
       {(club || era) && (
-        <div className="flex items-center gap-2 rounded-xl border border-sport/10 bg-sport/5 px-3 py-2">
-          <span className="text-[10px] font-bold uppercase tracking-widest text-muted">
-            {club} · {era}
+        <div className="sticky top-[var(--header-offset,3.75rem)] z-30 lower-third-enter flex flex-wrap items-center gap-2 rounded-xl border border-sport/25 bg-sport/15 px-3 py-2.5 backdrop-blur-md sm:static sm:z-auto">
+          <span className="min-w-0 flex-1 truncate font-display text-sm leading-snug tracking-wide text-text sm:text-base">
+            {[club, era].filter(Boolean).join(" · ").toUpperCase()}
           </span>
-          <span className="h-1 w-1 rounded-full bg-sport/40" />
-          <span className="text-[10px] font-black uppercase tracking-widest text-sport">
+          <span className="h-1 w-1 shrink-0 rounded-full bg-sport/40" />
+          <span className="shrink-0 text-[11px] font-black uppercase tracking-widest text-sport">
             {pickableCount} {dict.pickable}
           </span>
         </div>

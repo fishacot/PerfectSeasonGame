@@ -4,6 +4,8 @@ import { FOOTBALL_LEAGUES } from "@/lib/config/leagues/football";
 import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
 import type { FootballLeague } from "@/lib/types";
 import { SportBackdrop } from "@/components/game/SportBackdrop";
+import { SportMotifs } from "@/components/game/SportMotifs";
+import { PageFade } from "@/components/layout/PageFade";
 import { ChevronLeft } from "lucide-react";
 
 export default async function FootballHubPage({
@@ -18,7 +20,8 @@ export default async function FootballHubPage({
 
   return (
     <SportBackdrop sport="football" className="min-h-screen">
-      <div className="page-shell relative py-8 sm:py-16" data-sport="football">
+      <PageFade className="page-shell relative py-8 sm:py-16" data-sport="football">
+        <SportMotifs sport="football" />
         <div className="relative z-10 mb-10 sm:mb-14">
           <Link
             href={`/${locale}`}
@@ -70,7 +73,7 @@ export default async function FootballHubPage({
             );
           })}
         </div>
-      </div>
+      </PageFade>
     </SportBackdrop>
   );
 }
