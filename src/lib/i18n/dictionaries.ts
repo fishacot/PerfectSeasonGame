@@ -1,5 +1,7 @@
 import type { Locale } from "@/lib/types";
 
+export { locales, isValidLocale } from "@/lib/i18n/locales";
+
 const dictionaries = {
     en: {
     siteName: "Perfect Season Hub",
@@ -423,10 +425,4 @@ export type Dictionary = (typeof dictionaries)[Locale];
 
 export function getDictionary(locale: Locale): Dictionary {
   return dictionaries[locale];
-}
-
-export const locales: Locale[] = ["en", "ru"];
-
-export function isValidLocale(value: string): value is Locale {
-  return locales.includes(value as Locale);
 }

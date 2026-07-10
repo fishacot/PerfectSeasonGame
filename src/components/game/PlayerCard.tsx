@@ -5,11 +5,9 @@ import { motion } from "framer-motion";
 import { ERA_COLORS } from "@/lib/config/eras";
 import { EASE_SMOOTH } from "@/lib/game/spin-timing";
 import { getPlayerPhotoUrl, getSportFallbackPhoto } from "@/lib/assets/player-photos";
-import type { PlayerSeason, SportId, Locale } from "@/lib/types";
+import type { PlayerSeason, SportId } from "@/lib/types";
 import type { PlayerSlotStatus } from "@/lib/game/validation";
 import { useSportTheme } from "@/components/SportThemeProvider";
-import { useParams } from "next/navigation";
-import { getDictionary } from "@/lib/i18n/dictionaries";
 
 const STAT_LABELS: Record<SportId, Record<string, string>> = {
   football: { goals: "G", assists: "A", cleanSheets: "CS" },
@@ -64,6 +62,7 @@ interface PlayerCardProps {
   disabled?: boolean;
   slotStatus?: PlayerSlotStatus;
   slotStatusLabel?: string;
+  statsHidden: string;
   onSelect?: () => void;
 }
 
@@ -74,11 +73,9 @@ export function PlayerCard({
   selected = false,
   disabled = false,
   slotStatusLabel,
+  statsHidden,
   onSelect,
 }: PlayerCardProps) {
-  const params = useParams();
-  const locale = (params.locale as string) || "en";
-  const dict = getDictionary(locale as Locale);
   const sport = useSportTheme();
   const eraColor = ERA_COLORS[player.era] ?? "#64748b";
   const showOvr = sport !== "basketball";
@@ -152,7 +149,7 @@ export function PlayerCard({
 
     const statsMobile = blind ? (
       <span className="text-[9px] font-black uppercase tracking-widest text-sport/50 italic">
-        {dict.statsHidden}
+        {statsHidden}
       </span>
     ) : (
       <div className={`grid gap-1 ${isFootball ? "grid-cols-4" : "grid-cols-5"}`}>
@@ -186,7 +183,7 @@ export function PlayerCard({
       <span
         className={`${isFootball ? "col-span-4" : "col-span-5"} text-[9px] font-black uppercase tracking-widest text-sport/50 italic`}
       >
-        {dict.statsHidden}
+        {statsHidden}
       </span>
     ) : (
       <>
@@ -366,7 +363,7 @@ export function PlayerCard({
           </div>
         ) : (
           <p className="mt-2 text-[11px] font-black uppercase tracking-[0.3em] text-sport/60 italic">
-            {dict.statsHidden}
+            {statsHidden}
           </p>
         )}
       </div>

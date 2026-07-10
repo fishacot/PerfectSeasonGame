@@ -87,6 +87,9 @@ export function VersusPanel({
           />
           <div className="scale-90 origin-top">
             <SlotMachine
+              selectFranchise={dict.selectFranchise}
+              selectEra={dict.selectEra}
+              analyzing={dict.analyzing}
               club={currentSpin?.club ?? null}
               era={currentSpin?.era ?? null}
               clubs={clubs}

@@ -1,12 +1,9 @@
 import { notFound } from "next/navigation";
-import { GameClient } from "@/components/game/GameClient";
+import { SportPlay } from "@/components/game/SportPlay";
 import { SPORTS } from "@/lib/config/sports";
+import { NBA_CLUBS } from "@/lib/config/leagues/basketball";
 import { getErasForSport } from "@/lib/config/eras";
 import { parseChallengePayload } from "@/lib/game/challenge";
-import {
-  loadBasketballPlayers,
-  getNbaClubs,
-} from "@/lib/data/loaders";
 import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
 
 export default async function BasketballPlayPage({
@@ -25,14 +22,15 @@ export default async function BasketballPlayPage({
   if (parsed && parsed.sport !== "basketball") notFound();
 
   return (
-    <GameClient
+    <SportPlay
       sport="basketball"
       locale={locale}
       dict={dict}
-      players={loadBasketballPlayers()}
-      clubs={getNbaClubs()}
+      players={[]}
+      clubs={[...NBA_CLUBS]}
       eras={getErasForSport("basketball")}
       brand={SPORTS.basketball.brand}
+      deferPlayerLoad
       challengeSpins={parsed?.spins}
       challengeTargetWins={parsed?.wins}
     />

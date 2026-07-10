@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
-import { GameClient } from "@/components/game/GameClient";
+import { SportPlay } from "@/components/game/SportPlay";
 import {
   FOOTBALL_LEAGUES,
   getFootballEras,
 } from "@/lib/config/leagues/football";
 import { parseChallengePayload } from "@/lib/game/challenge";
-import { loadFootballPlayers, getFootballClubs } from "@/lib/data/loaders";
+import { getFootballClubs } from "@/lib/data/loaders";
 import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
 import type { FootballLeague } from "@/lib/types";
 
@@ -30,15 +30,16 @@ export default async function FootballPlayPage({
   if (parsed?.league && parsed.league !== league) notFound();
 
   return (
-    <GameClient
+    <SportPlay
       sport="football"
       locale={locale}
       dict={dict}
-      players={loadFootballPlayers(league)}
+      players={[]}
       clubs={getFootballClubs(league)}
       eras={getFootballEras(league)}
       league={league}
       brand={config.brand}
+      deferPlayerLoad
       challengeSpins={parsed?.spins}
       challengeTargetWins={parsed?.wins}
     />

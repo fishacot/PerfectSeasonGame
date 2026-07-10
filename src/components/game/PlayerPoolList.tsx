@@ -177,6 +177,7 @@ export function PlayerPoolList({
                   player={p}
                   blind={mode === "blind"}
                   disabled={!pickable}
+                  statsHidden={dict.statsHidden}
                   slotStatus={status}
                   slotStatusLabel={
                     status === "no_slot"

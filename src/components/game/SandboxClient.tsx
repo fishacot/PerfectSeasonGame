@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useCallback, useMemo, useReducer } from "react";
+import { useCallback, useEffect, useMemo, useReducer, useState } from "react";
 import { PlayerCard } from "@/components/game/PlayerCard";
 import { ResultBreakdown } from "@/components/game/ResultBreakdown";
 import {
@@ -28,6 +28,7 @@ import {
 } from "@/lib/game/sandbox-state";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale, PlayerSeason, SportId } from "@/lib/types";
+import { prefetchPlayers } from "@/lib/data/player-fetch";
 
 interface SandboxClientProps {
   sport: "basketball" | "football";
@@ -35,6 +36,8 @@ interface SandboxClientProps {
   dict: Dictionary;
   players: PlayerSeason[];
   playHref: string;
+  deferPlayerLoad?: boolean;
+  allPlayers?: boolean;
 }
 
 function SlotCard({
@@ -185,10 +188,36 @@ export function SandboxClient({
   sport,
   locale,
   dict,
-  players,
+  players: initialPlayers,
   playHref,
+  deferPlayerLoad = false,
+  allPlayers = false,
 }: SandboxClientProps) {
   const sb = dict.sandbox;
+  const [players, setPlayers] = useState(
+    deferPlayerLoad ? [] : initialPlayers,
+  );
+  const [playersReady, setPlayersReady] = useState(
+    !deferPlayerLoad && initialPlayers.length > 0,
+  );
+
+  useEffect(() => {
+    if (!deferPlayerLoad) return;
+    let cancelled = false;
+    void prefetchPlayers(sport, undefined, allPlayers)
+      .then((data) => {
+        if (cancelled) return;
+        setPlayers(data.players);
+        setPlayersReady(true);
+      })
+      .catch(() => {
+        if (!cancelled) setPlayersReady(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [deferPlayerLoad, allPlayers, sport]);
+
   const [state, dispatch] = useReducer(
     sandboxReducer,
     undefined,
@@ -333,6 +362,12 @@ export function SandboxClient({
             </div>
           )}
 
+          {state.submode && state.phase !== "submode" && !playersReady && (
+            <p className="text-center text-xs font-bold uppercase tracking-widest text-muted">
+              {locale === "ru" ? "Загрузка игроков…" : "Loading players…"}
+            </p>
+          )}
+
           {state.submode && state.phase !== "submode" && (
             <ScoreBug
               round={filledCount}
@@ -389,7 +424,7 @@ export function SandboxClient({
             </div>
           )}
 
-          {state.submode && state.phase !== "result" && (
+          {state.submode && state.phase !== "result" && playersReady && (
             <>
               <input
                 type="search"
@@ -412,6 +447,7 @@ export function SandboxClient({
                       key={p.id}
                       player={p}
                       variant="row"
+                      statsHidden={dict.statsHidden}
                       onSelect={() => dispatch({ type: "ADD_PLAYER", player: p })}
                     />
                   ))}

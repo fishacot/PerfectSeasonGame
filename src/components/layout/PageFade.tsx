@@ -8,10 +8,17 @@ import { EASE_SMOOTH } from "@/lib/game/spin-timing";
 export function PageFade({
   children,
   className = "",
+  instant = false,
 }: {
   children: ReactNode;
   className?: string;
+  /** Skip enter animation — mode-select and loading shells feel snappier. */
+  instant?: boolean;
 }) {
+  if (instant) {
+    return <div className={className}>{children}</div>;
+  }
+
   return (
     <motion.div
       className={className}

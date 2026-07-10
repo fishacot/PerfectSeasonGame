@@ -34,11 +34,19 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!isValidLocale(locale)) notFound();
+  const dict = getDictionary(locale);
 
   return (
     <>
       <HtmlLang locale={locale as Locale} />
-      <Header locale={locale as Locale} />
+      <Header
+        locale={locale as Locale}
+        labels={{
+          taglineHero: dict.taglineHero,
+          privacy: dict.privacy,
+          howToPlay: dict.howToPlay,
+        }}
+      />
       <main className="flex-1">{children}</main>
       <Footer locale={locale as Locale} />
     </>

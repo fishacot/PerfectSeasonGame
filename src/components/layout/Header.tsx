@@ -3,11 +3,18 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
-import { getDictionary, locales } from "@/lib/i18n/dictionaries";
+import { locales } from "@/lib/i18n/locales";
 import type { Locale } from "@/lib/types";
+
+export interface HeaderLabels {
+  taglineHero: string;
+  privacy: string;
+  howToPlay: string;
+}
 
 interface HeaderProps {
   locale: Locale;
+  labels: HeaderLabels;
 }
 
 function swapLocalePath(pathname: string, target: Locale): string {
@@ -19,9 +26,8 @@ function swapLocalePath(pathname: string, target: Locale): string {
   return `/${target}${pathname === "/" ? "" : pathname}`;
 }
 
-export function Header({ locale }: HeaderProps) {
+export function Header({ locale, labels }: HeaderProps) {
   const pathname = usePathname();
-  const dict = getDictionary(locale);
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/50 bg-bg/85 pt-[env(safe-area-inset-top)] backdrop-blur-2xl">
@@ -35,7 +41,7 @@ export function Header({ locale }: HeaderProps) {
               PERFECT<span className="ml-[0.12em] opacity-60">SEASON</span>
             </span>
             <span className="mt-0.5 hidden text-[10px] font-black uppercase tracking-[0.25em] text-muted md:block">
-              {dict.taglineHero}
+              {labels.taglineHero}
             </span>
           </div>
         </Link>
@@ -45,13 +51,13 @@ export function Header({ locale }: HeaderProps) {
             href={`/${locale}/privacy`}
             className="hidden rounded-lg px-3 py-1.5 text-[10px] font-black uppercase tracking-widest text-muted transition-all hover:bg-surface-hover hover:text-text md:block lg:px-4 lg:py-2"
           >
-            {dict.privacy}
+            {labels.privacy}
           </Link>
           <Link
             href={`/${locale}/how-to-play`}
             className="hidden rounded-lg px-3 py-1.5 text-[10px] font-black uppercase tracking-widest text-muted transition-all hover:bg-surface-hover hover:text-text md:block lg:px-4 lg:py-2"
           >
-            {dict.howToPlay}
+            {labels.howToPlay}
           </Link>
           <div className="mx-0.5 hidden h-4 w-px bg-border md:block" />
           <ThemeToggle />

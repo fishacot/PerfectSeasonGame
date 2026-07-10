@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Era } from "@/lib/types";
 import { Sparkles } from "lucide-react";
-import { useParams } from "next/navigation";
-import { getDictionary } from "@/lib/i18n/dictionaries";
 import {
   DRUM_HEIGHT,
   EASE_SMOOTH,
@@ -24,6 +22,9 @@ interface SlotMachineProps {
   spinningEra?: boolean;
   onSpin: () => void;
   spinLabel: string;
+  selectFranchise: string;
+  selectEra: string;
+  analyzing: string;
   disabled?: boolean;
   hideButton?: boolean;
   /** Hide inline SPIN below lg (fixed bottom bar owns the CTA). */
@@ -167,15 +168,15 @@ export function SlotMachine({
   spinningEra,
   onSpin,
   spinLabel,
+  selectFranchise,
+  selectEra,
+  analyzing,
   disabled = false,
   hideButton = false,
   hideButtonBelowLg = false,
 }: SlotMachineProps) {
   const clubSpinning = spinningClub ?? isSpinning;
   const eraSpinning = spinningEra ?? isSpinning;
-  const params = useParams();
-  const locale = (params.locale as string) || "en";
-  const dict = getDictionary(locale as "en" | "ru");
   const anySpinning = clubSpinning || eraSpinning;
 
   return (
@@ -194,7 +195,7 @@ export function SlotMachine({
           animate={clubSpinning ? { scale: 1.01 } : { scale: 1 }}
           transition={{ duration: 0.3, ease: EASE_SMOOTH }}
         >
-          <span className="micro-label text-muted">{dict.selectFranchise}</span>
+          <span className="micro-label text-muted">{selectFranchise}</span>
           <SlotDrum
             items={clubs}
             value={club}
@@ -207,7 +208,7 @@ export function SlotMachine({
           animate={eraSpinning ? { scale: 1.01 } : { scale: 1 }}
           transition={{ duration: 0.3, ease: EASE_SMOOTH }}
         >
-          <span className="micro-label text-muted">{dict.selectEra}</span>
+          <span className="micro-label text-muted">{selectEra}</span>
           <SlotDrum items={eras} value={era} spinning={eraSpinning} spinDurationMs={SPIN_ERA_MS} />
         </motion.div>
       </div>
@@ -226,7 +227,7 @@ export function SlotMachine({
           {anySpinning ? (
             <div className="flex items-center gap-3">
               <div className="h-4 w-4 animate-spin rounded-full border-2 border-bg border-t-transparent" />
-              <span>{dict.analyzing}</span>
+              <span>{analyzing}</span>
             </div>
           ) : (
             <>

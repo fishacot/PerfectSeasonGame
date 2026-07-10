@@ -19,7 +19,7 @@ export default async function HubPage({
   const dict = getDictionary(locale);
 
   return (
-    <PageFade className="page-shell relative py-8 sm:py-16 lg:py-24">
+    <PageFade instant className="page-shell relative py-8 sm:py-16 lg:py-24">
       <div
         className="pointer-events-none fixed inset-0 z-0 bg-cover bg-center opacity-[0.12]"
         style={{ backgroundImage: "url(/backgrounds/hub-arena-mosaic.webp)" }}
@@ -61,7 +61,7 @@ export default async function HubPage({
               sport === "football"
                 ? `/${locale}/football`
                 : sport === "basketball"
-                  ? `/${locale}/basketball`
+                  ? `/${locale}/basketball/play`
                   : `/${locale}/hockey`
             }
           />

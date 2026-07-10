@@ -92,6 +92,7 @@ export function FinalRoster({
             <PlayerCard
               variant={sport === "basketball" || sport === "football" ? "row" : "card"}
               player={player}
+              statsHidden={dict.statsHidden}
             />
           </motion.div>
         ))}

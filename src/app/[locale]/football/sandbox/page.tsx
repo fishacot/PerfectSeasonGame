@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
-import { SandboxClient } from "@/components/game/SandboxClient";
-import { loadAllFootballPlayers } from "@/lib/data/loaders";
+import { SportSandbox } from "@/components/game/SportSandbox";
 import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
 
 export default async function FootballSandboxPage({
@@ -12,12 +11,14 @@ export default async function FootballSandboxPage({
   if (!isValidLocale(locale)) notFound();
 
   return (
-    <SandboxClient
+    <SportSandbox
       sport="football"
       locale={locale}
       dict={getDictionary(locale)}
-      players={loadAllFootballPlayers()}
+      players={[]}
       playHref={`/${locale}/football`}
+      deferPlayerLoad
+      allPlayers
     />
   );
 }

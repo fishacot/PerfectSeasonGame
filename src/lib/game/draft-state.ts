@@ -71,6 +71,7 @@ export type DraftAction =
   | { type: "BOT_PICK"; positions: string[] }
   | { type: "SET_RESULT"; result: SimulationResult }
   | { type: "SET_VERSUS_RESULTS"; user: SimulationResult; bot: SimulationResult }
+  | { type: "SET_PLAYERS"; players: PlayerSeason[]; clubs?: string[] }
   | { type: "RESET" };
 
 function allPickedIds(userPicks: DraftPick[], opponentPicks: DraftPick[]): Set<string> {
@@ -415,6 +416,12 @@ export function draftReducer(
         phase: "result",
         result: action.user,
         botResult: action.bot,
+      };
+    case "SET_PLAYERS":
+      return {
+        ...state,
+        allPlayers: action.players,
+        clubs: action.clubs ?? state.clubs,
       };
     case "RESET":
       return createInitialState(

@@ -1,0 +1,32 @@
+---
+description: Как выбирать модели 9router в Perfect Season — дёшево vs мощно
+alwaysApply: false
+---
+
+# 9router model routing (Perfect Season)
+
+Cursor подключён к локальному 9router: `http://127.0.0.1:20128/v1`
+
+## Матрица задач → модель
+
+| Задача | Модель | Почему |
+|--------|--------|--------|
+| lint, typos, rename, мелкий UI | `kr/claude-haiku-4.5` | **$0** через Kiro |
+| новый компонент, refactor 1–2 файла | `cu/claude-4.5-haiku` | дешёвая Anthropic из Cursor Pro |
+| симуляция / draft logic / parity 82-0 | `cu/claude-4.5-sonnet-thinking` | сложная логика, thinking |
+| архитектура multi-sport, CI, data pipeline | `cu/claude-4.5-sonnet` | баланс цена/качество |
+| «сделай всё сам» agent mode | `cu/default` | Cursor сам роутит внутри квоты |
+
+## Примеры промптов для этого репо
+
+**Дёшево (Haiku):** «Добавь JSDoc к `spin-timing.ts`, не меняй константы»
+
+**Средне:** «Проверь EraTracker в football — min 1 игрок на эру, max 4»
+
+**Дорого (Sonnet thinking):** «Сравни basketball sim с 82-0.com parity rule и предложи fix constants»
+
+## Не смешивать
+
+- `cu/*` = квота **Cursor Pro Plus**
+- `kr/*` = **Kiro free** (береги для бота, но локально тоже можно)
+- Bot Telegram на VPS — отдельная цепочка, не трогать

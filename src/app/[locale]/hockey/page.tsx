@@ -36,7 +36,7 @@ export default async function HockeyPage({
         <p className="mt-6 text-xs text-muted/70 sm:text-sm">{dict.hockey.desc}</p>
         <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
           <Link
-            href={`/${locale}/basketball`}
+            href={`/${locale}/basketball/play`}
             className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-6 py-3.5 text-sm font-semibold text-text transition-all hover:border-sport/40 hover:bg-sport/10"
           >
             Basketball

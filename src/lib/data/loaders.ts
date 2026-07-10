@@ -1,6 +1,7 @@
 import { readFileSync } from "fs";
 import { join } from "path";
 import type { FootballLeague, PlayerSeason } from "@/lib/types";
+import { NBA_CLUBS } from "@/lib/config/leagues/basketball";
 import { FOOTBALL_LEAGUES } from "@/lib/config/leagues/football";
 import { getFootballEras } from "@/lib/config/leagues/football";
 
@@ -55,8 +56,7 @@ export function getFootballClubs(league: FootballLeague): string[] {
 }
 
 export function getNbaClubs(): string[] {
-  const players = loadBasketballPlayers();
-  return [...new Set(players.map((p) => p.club))];
+  return [...NBA_CLUBS];
 }
 
 export function getNhlClubs(): string[] {
