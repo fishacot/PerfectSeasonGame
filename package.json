@@ -34,6 +34,8 @@
     "android:keystore": "node scripts/android-keystore.mjs",
     "android:sdk": "node scripts/setup-android-sdk.mjs",
     "android:build": "node scripts/build-android.mjs",
+    "play:preflight": "node scripts/play-store-preflight.mjs",
+    "play:deploy": "node scripts/play-store-deploy.mjs",
     "test:smoke": "node scripts/smoke-check.mjs",
     "check:sandbox-match": "tsx scripts/check-sandbox-match.mjs",
     "check:football-sim": "tsx scripts/check-football-sim.mjs",
