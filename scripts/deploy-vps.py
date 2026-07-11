@@ -1,16 +1,13 @@
-"""Deploy Perfect Season Hub to VPS. Password via env VPS_PASS only (never commit)."""
+"""Deploy Perfect Season Hub to VPS via git pull (fast). Password: env VPS_PASS or ~/.perfect-season-vps."""
 from __future__ import annotations
 
 import os
 import sys
-import tarfile
-import tempfile
 import time
 from pathlib import Path
 
 import paramiko
 
-ROOT = Path(__file__).resolve().parents[1]
 HOST = os.environ.get("VPS_HOST", "83.147.235.105")
 USER = os.environ.get("VPS_USER", "root")
 _PASS_FILE = Path.home() / ".perfect-season-vps"
@@ -18,23 +15,13 @@ PASS = os.environ.get("VPS_PASS") or (
     _PASS_FILE.read_text(encoding="utf-8").strip() if _PASS_FILE.is_file() else None
 )
 REMOTE = "/var/www/perfect-season"
+REPO = os.environ.get("VPS_REPO", "https://github.com/fishacot/PerfectSeasonGame.git")
+BRANCH = os.environ.get("VPS_BRANCH", "main")
 APP_PORT = "3010"
-
-EXCLUDE = {
-    "node_modules",
-    ".next",
-    "out",
-    "android",
-    "www",
-    ".git",
-    "test-results",
-    ".runtime",
-    "data/raw",
-}
 
 
 def run(client: paramiko.SSHClient, cmd: str, timeout: int = 600) -> tuple[int, str, str]:
-    print(f"$ {cmd}")
+    print(f"$ {cmd}", flush=True)
     _, stdout, stderr = client.exec_command(cmd, timeout=timeout)
     out = stdout.read().decode("utf-8", "replace")
     err = stderr.read().decode("utf-8", "replace")
@@ -44,11 +31,36 @@ def run(client: paramiko.SSHClient, cmd: str, timeout: int = 600) -> tuple[int, 
         return s.encode("ascii", "replace").decode("ascii")
 
     if out.strip():
-        print(safe(out[-3000:]))
+        print(safe(out[-4000:]))
     if err.strip():
-        print("[stderr]", safe(err[-1500:]))
-    print(f"[exit {code}]")
+        print("[stderr]", safe(err[-2000:]))
+    print(f"[exit {code}]", flush=True)
     return code, out, err
+
+
+def connect() -> paramiko.SSHClient:
+    client = paramiko.SSHClient()
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    last: Exception | None = None
+    for attempt in range(1, 4):
+        try:
+            print(f"ssh connect attempt {attempt}", flush=True)
+            client.connect(
+                HOST,
+                username=USER,
+                password=PASS,
+                timeout=60,
+                banner_timeout=60,
+                auth_timeout=60,
+                allow_agent=False,
+                look_for_keys=False,
+            )
+            return client
+        except Exception as e:  # noqa: BLE001
+            last = e
+            print(f"connect failed: {e}", flush=True)
+            time.sleep(8)
+    raise RuntimeError(f"SSH failed: {last}")
 
 
 def main() -> int:
@@ -56,76 +68,42 @@ def main() -> int:
         print("Set VPS_PASS env var or create ~/.perfect-season-vps", file=sys.stderr)
         return 2
 
-    with tempfile.TemporaryDirectory() as tmp:
-        archive = Path(tmp) / "app.tar.gz"
-        print("packing archive…", flush=True)
-        n = 0
-        with tarfile.open(archive, "w:gz") as tar:
-            # Skip excluded trees early — android/ can be multi-GB and hang rglob.
-            stack = [ROOT]
-            while stack:
-                d = stack.pop()
-                try:
-                    entries = list(d.iterdir())
-                except OSError:
-                    continue
-                for path in entries:
-                    if path.name in EXCLUDE:
-                        continue
-                    if path.is_dir():
-                        stack.append(path)
-                        continue
-                    if not path.is_file():
-                        continue
-                    rel = path.relative_to(ROOT).as_posix()
-                    if rel.endswith((".apk", ".aab", ".keystore", ".pem")):
-                        continue
-                    tar.add(path, arcname=rel)
-                    n += 1
-                    if n % 500 == 0:
-                        print(f"  packed {n} files…", flush=True)
-        print(f"archive {archive.stat().st_size} bytes ({n} files)", flush=True)
+    client = connect()
+    run(client, "mkdir -p /var/lib/perfect-season")
 
-        client = paramiko.SSHClient()
-        client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        last: Exception | None = None
-        for attempt in range(1, 4):
-            try:
-                print(f"ssh connect attempt {attempt}")
-                client.connect(
-                    HOST,
-                    username=USER,
-                    password=PASS,
-                    timeout=60,
-                    banner_timeout=60,
-                    auth_timeout=60,
-                    allow_agent=False,
-                    look_for_keys=False,
-                )
-                break
-            except Exception as e:  # noqa: BLE001
-                last = e
-                print(f"connect failed: {e}")
-                time.sleep(8)
-        else:
-            raise RuntimeError(f"SSH failed: {last}")
-
-        sftp = client.open_sftp()
-        run(client, "mkdir -p /tmp/psh-upload /var/www/perfect-season /var/lib/perfect-season")
-        sftp.put(str(archive), "/tmp/psh-upload/app.tar.gz")
-        sftp.close()
-
-        run(client, f"tar -xzf /tmp/psh-upload/app.tar.gz -C {REMOTE}")
+    _, out, _ = run(client, f"test -d {REMOTE}/.git && echo yes || echo no")
+    if "yes" not in out:
+        print("first deploy: git clone (one-time)", flush=True)
+        run(client, f"rm -rf {REMOTE}.bak {REMOTE}.old 2>/dev/null; mv {REMOTE} {REMOTE}.bak 2>/dev/null || true")
         code, _, _ = run(
             client,
-            f"cd {REMOTE} && npm ci --omit=dev && node scripts/sync-public-data.mjs && npm run build",
-            timeout=1200,
+            f"git clone --depth 1 -b {BRANCH} {REPO} {REMOTE}",
+            timeout=600,
+        )
+        if code != 0:
+            client.close()
+            return code
+    else:
+        print("fast deploy: git pull", flush=True)
+        code, _, _ = run(
+            client,
+            f"cd {REMOTE} && git fetch origin {BRANCH} && git reset --hard origin/{BRANCH}",
+            timeout=120,
         )
         if code != 0:
             client.close()
             return code
 
-        unit = f"""[Unit]
+    code, _, _ = run(
+        client,
+        f"cd {REMOTE} && npm ci && node scripts/sync-public-data.mjs && npm run build",
+        timeout=1200,
+    )
+    if code != 0:
+        client.close()
+        return code
+
+    unit = f"""[Unit]
 Description=Perfect Season Hub
 After=network.target
 
@@ -135,7 +113,7 @@ WorkingDirectory={REMOTE}
 Environment=NODE_ENV=production
 Environment=PORT={APP_PORT}
 Environment=PERFECT_SEASON_DB=/var/lib/perfect-season/perfect-season.sqlite.json
-Environment=NEXT_PUBLIC_SITE_URL=http://{HOST}:8088
+Environment=NEXT_PUBLIC_SITE_URL=https://perfectseason.duckdns.org
 ExecStart=/usr/bin/npm run start
 Restart=always
 RestartSec=3
@@ -143,15 +121,21 @@ RestartSec=3
 [Install]
 WantedBy=multi-user.target
 """
-        run(
-            client,
-            f"cat > /etc/systemd/system/perfect-season.service <<'EOF'\n{unit}EOF\n"
-            "systemctl daemon-reload && systemctl enable perfect-season && systemctl restart perfect-season",
-        )
-        run(client, "systemctl is-active perfect-season; curl -sI http://127.0.0.1:3010/en | head -5")
-        client.close()
-        print("deploy OK")
-        return 0
+    run(
+        client,
+        f"cat > /etc/systemd/system/perfect-season.service <<'EOF'\n{unit}EOF\n"
+        "systemctl daemon-reload && systemctl enable perfect-season && systemctl restart perfect-season",
+    )
+    run(
+        client,
+        "systemctl is-active perfect-season; "
+        "CSS=$(ls /var/www/perfect-season/.next/static/css 2>/dev/null | head -1); "
+        "curl -sI http://127.0.0.1:3010/_next/static/css/$CSS | head -5; "
+        "curl -sI http://127.0.0.1:3010/ru | head -5",
+    )
+    client.close()
+    print("deploy OK", flush=True)
+    return 0
 
 
 if __name__ == "__main__":
