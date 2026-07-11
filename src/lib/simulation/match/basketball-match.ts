@@ -406,7 +406,7 @@ export function simulateBasketballMatch(
     const otHome = Math.round(8 + rng() * 8);
     const otAway = Math.round(8 + rng() * 8);
     let h = otHome;
-    let a = otAway;
+    const a = otAway;
     if (h === a) h += 1;
     quarters.push({ home: h, away: a });
     homeBox[0]!.pts += h;

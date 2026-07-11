@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
+import { AuthNav } from "@/components/layout/AuthNav";
 import { locales } from "@/lib/i18n/locales";
 import type { Locale } from "@/lib/types";
 
@@ -10,6 +11,9 @@ export interface HeaderLabels {
   taglineHero: string;
   privacy: string;
   howToPlay: string;
+  friends: string;
+  signIn: string;
+  signOut: string;
 }
 
 interface HeaderProps {
@@ -59,6 +63,14 @@ export function Header({ locale, labels }: HeaderProps) {
           >
             {labels.howToPlay}
           </Link>
+          <AuthNav
+            locale={locale}
+            labels={{
+              friends: labels.friends,
+              signIn: labels.signIn,
+              signOut: labels.signOut,
+            }}
+          />
           <div className="mx-0.5 hidden h-4 w-px bg-border md:block" />
           <ThemeToggle />
           <div className="mx-0.5 hidden h-4 w-px bg-border sm:block" />

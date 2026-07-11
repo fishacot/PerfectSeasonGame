@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
+import { CapacitorNativeShell } from "@/components/pwa/CapacitorNativeShell";
+import { ServiceWorkerRegister } from "@/components/pwa/ServiceWorkerRegister";
 import "./globals.css";
 
 const bebas = Bebas_Neue({
@@ -44,6 +46,8 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col overflow-x-hidden bg-bg text-text antialiased">
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <CapacitorNativeShell />
+        <ServiceWorkerRegister />
         {children}
       </body>
     </html>

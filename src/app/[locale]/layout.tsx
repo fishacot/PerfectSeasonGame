@@ -3,8 +3,12 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HtmlLang } from "@/components/layout/HtmlLang";
-import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
+import { getDictionary, isValidLocale, locales } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/types";
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({
   params,
@@ -45,6 +49,9 @@ export default async function LocaleLayout({
           taglineHero: dict.taglineHero,
           privacy: dict.privacy,
           howToPlay: dict.howToPlay,
+          friends: dict.friends,
+          signIn: dict.signIn,
+          signOut: dict.signOut,
         }}
       />
       <main className="flex-1">{children}</main>

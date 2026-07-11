@@ -13,6 +13,7 @@ import {
   type PositionFilter,
 } from "@/lib/game/validation";
 import { PlayerCard } from "@/components/game/PlayerCard";
+import { ClubEraBadge } from "@/components/game/ClubEraBadge";
 
 const STAT_HEADER: Partial<Record<SportId, string[]>> = {
   basketball: ["PPG", "RPG", "APG", "SPG", "BPG"],
@@ -124,10 +125,8 @@ export function PlayerPoolList({
       />
 
       {(club || era) && (
-        <div className="sticky top-[var(--header-offset,3.75rem)] z-30 lower-third-enter flex flex-wrap items-center gap-2 rounded-xl border border-sport/25 bg-sport/15 px-3 py-2.5 backdrop-blur-md sm:static sm:z-auto">
-          <span className="min-w-0 flex-1 truncate font-display text-sm leading-snug tracking-wide text-text sm:text-base">
-            {[club, era].filter(Boolean).join(" · ").toUpperCase()}
-          </span>
+        <div className="sticky top-[var(--header-offset,3.75rem)] z-30 lower-third-enter flex flex-wrap items-center gap-3 rounded-xl border border-sport/25 bg-sport/15 px-3 py-2.5 backdrop-blur-md sm:static sm:z-auto">
+          <ClubEraBadge club={club} era={era} />
           <span className="h-1 w-1 shrink-0 rounded-full bg-sport/40" />
           <span className="shrink-0 text-[11px] font-black uppercase tracking-widest text-sport">
             {pickableCount} {dict.pickable}
@@ -158,7 +157,7 @@ export function PlayerPoolList({
         {visible.length === 0 ? (
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center">
             <p className="text-sm font-bold uppercase tracking-widest text-muted">
-              {dict.noSearchResults}
+              {players.length === 0 ? dict.noPlayersFit : dict.noSearchResults}
             </p>
           </div>
         ) : (

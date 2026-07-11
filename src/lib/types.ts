@@ -2,7 +2,9 @@ export type Locale = "en" | "ru";
 
 export type SportId = "football" | "basketball" | "hockey";
 
-export type GameMode = "classic" | "blind" | "daily";
+export type GameMode = "classic" | "blind" | "cpu";
+
+export type CpuDifficulty = "easy" | "normal" | "hard" | "insane";
 
 export type BasketballPlaystyle =
   | "balanced"

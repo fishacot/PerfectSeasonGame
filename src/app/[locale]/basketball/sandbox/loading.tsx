@@ -1,21 +1,15 @@
 import { SandboxShell } from "@/components/game/SandboxShell";
-import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
+import { getDictionary } from "@/lib/i18n/dictionaries";
 
-export default async function BasketballSandboxLoading({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  if (!isValidLocale(locale)) return null;
-  const dict = getDictionary(locale);
-
+/** Nested loading has no parent params — keep shell locale-agnostic. */
+export default function BasketballSandboxLoading() {
+  const dict = getDictionary("en");
   return (
     <SandboxShell
       sport="basketball"
-      locale={locale}
+      locale="en"
       dict={dict}
-      playHref={`/${locale}/basketball/play`}
+      playHref="/en/basketball/play"
     />
   );
 }

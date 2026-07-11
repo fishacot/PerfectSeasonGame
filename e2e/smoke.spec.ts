@@ -8,5 +8,5 @@ test("hub loads and links to basketball", async ({ page }) => {
 
 test("basketball play mode select", async ({ page }) => {
   await page.goto("/en/basketball/play");
-  await expect(page.getByText(/classic|hoopiq|daily/i).first()).toBeVisible();
+  await expect(page.getByText(/classic|hoopiq|vs cpu|cpu/i).first()).toBeVisible();
 });

@@ -11,6 +11,8 @@ const checks = [
   ["grade", "src/lib/simulation/grade.ts"],
   ["bot-draft", "src/lib/game/bot-draft.ts"],
   ["spin-timing", "src/lib/game/spin-timing.ts"],
+  ["sandbox-state", "src/lib/game/sandbox-state.ts"],
+  ["name-transliterate", "src/lib/data/name-transliterate.ts"],
 ];
 
 for (const [name, file] of checks) {

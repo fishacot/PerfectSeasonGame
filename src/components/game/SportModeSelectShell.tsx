@@ -22,11 +22,19 @@ export function SportModeSelectShell({
   dict,
   brand,
 }: SportModeSelectShellProps) {
-  const placeholders = [
-    dict.classic.toUpperCase(),
-    dict.blind.toUpperCase(),
-    dict.daily.toUpperCase(),
-  ];
+  const placeholders =
+    sport === "basketball"
+      ? [
+          dict.classic.toUpperCase(),
+          dict.blind.toUpperCase(),
+          dict.cpuMode.toUpperCase(),
+          dict.vsFriend.toUpperCase(),
+        ]
+      : [
+          dict.classic.toUpperCase(),
+          dict.blind.toUpperCase(),
+          dict.cpuMode.toUpperCase(),
+        ];
 
   const content = (
     <div className="page-shell mx-auto flex max-w-lg flex-col gap-5 py-6 sm:gap-8 sm:py-10 lg:max-w-xl">

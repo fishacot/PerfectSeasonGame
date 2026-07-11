@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { DailyLeaderboardStub } from "@/components/game/DailyLeaderboardStub";
 import { SportCard } from "@/components/game/SportCard";
 import { SportMotifs } from "@/components/game/SportMotifs";
 import { PageFade } from "@/components/layout/PageFade";
@@ -28,13 +27,7 @@ export default async function HubPage({
       <SportMotifs />
 
       <div className="relative z-10 mb-6 rounded-xl border border-sport/20 bg-sport/5 px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-sport">
-        {dict.dailyBanner}
-      </div>
-
-      <div className="relative z-10 mb-4 flex flex-wrap justify-center gap-4">
-        {SPORT_IDS.filter((s) => s !== "hockey").map((sport) => (
-          <DailyLeaderboardStub key={sport} sport={sport} />
-        ))}
+        {dict.cpuBanner}
       </div>
 
       <div className="relative z-10 mb-8 text-center sm:mb-14">

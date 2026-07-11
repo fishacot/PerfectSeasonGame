@@ -1,7 +1,15 @@
-import type { PlayerSeason, SimulationResult, SportId } from "@/lib/types";
+import type { Era, PlayerSeason, SimulationResult, SportId } from "@/lib/types";
 import type { BasketballMatchResult } from "@/lib/simulation/match/basketball-match";
 import type { FootballMatchResult } from "@/lib/simulation/match/football-match";
 import { SPORTS } from "@/lib/config/sports";
+import { PLAYER_NAME_ALIASES_RU } from "@/lib/data/player-name-aliases.ru";
+import {
+  hasCyrillic,
+  latinToCyrillic,
+  matchesTransliteratedName,
+} from "@/lib/data/name-transliterate";
+import { basketballPoolSortScore, basketballProductionScore } from "@/lib/simulation/basketball/engine";
+import { sortPoolPlayers } from "@/lib/game/validation";
 
 export type SandboxSubmode = "lineup" | "match";
 export type SandboxPhase = "submode" | "building" | "simulating" | "result";
@@ -161,7 +169,60 @@ export function sandboxReducer(state: SandboxState, action: SandboxAction): Sand
   }
 }
 
+const ERA_RANK: Record<Era, number> = {
+  "1950s": 0,
+  "1960s": 1,
+  "1970s": 2,
+  "1980s": 3,
+  "1990s": 4,
+  "2000s": 5,
+  "2010s": 6,
+  "2020s": 7,
+};
+
+/** Strip diacritics for search / peak grouping (Dragic ↔ Dragić). */
+export function normalizeSandboxName(name: string): string {
+  return name
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function peakBetter(a: PlayerSeason, b: PlayerSeason): boolean {
+  const sa = basketballProductionScore(a);
+  const sb = basketballProductionScore(b);
+  if (sa !== sb) return sa > sb;
+  if (a.rating !== b.rating) return a.rating > b.rating;
+  return ERA_RANK[a.era] > ERA_RANK[b.era];
+}
+
+/** One franchise×era row per person — max era-adjusted production (draft order). */
+export function peakSandboxPlayers(players: PlayerSeason[]): PlayerSeason[] {
+  const best = new Map<string, PlayerSeason>();
+  for (const p of players) {
+    const key = normalizeSandboxName(p.name);
+    const cur = best.get(key);
+    if (!cur || peakBetter(p, cur)) best.set(key, p);
+  }
+  return [...best.values()];
+}
+
+export function matchesSandboxQuery(player: PlayerSeason, query: string): boolean {
+  const q = query.trim().toLowerCase();
+  if (q.length < 2) return false;
+  const name = normalizeSandboxName(player.name);
+  const club = normalizeSandboxName(player.club);
+  if (name.includes(q) || club.includes(q) || player.era.includes(q)) return true;
+  if (matchesTransliteratedName(player.name, q)) return true;
+  if (hasCyrillic(q) && matchesTransliteratedName(player.club, q)) return true;
+  const aliases = PLAYER_NAME_ALIASES_RU[name];
+  if (aliases?.some((a) => a.includes(q))) return true;
+  return false;
+}
+
 export function filterSandboxPlayers(
+  sport: SportId,
   players: PlayerSeason[],
   query: string,
   used: Set<string>,
@@ -169,19 +230,10 @@ export function filterSandboxPlayers(
 ): PlayerSeason[] {
   const q = query.trim().toLowerCase();
   if (q.length < 2) return [];
-  const out: PlayerSeason[] = [];
-  for (const p of players) {
-    if (used.has(p.id)) continue;
-    if (
-      p.name.toLowerCase().includes(q) ||
-      p.club.toLowerCase().includes(q) ||
-      p.era.includes(q)
-    ) {
-      out.push(p);
-      if (out.length >= limit) break;
-    }
-  }
-  return out;
+  const matched = players.filter(
+    (p) => !used.has(p.id) && matchesSandboxQuery(p, q),
+  );
+  return sortPoolPlayers(sport, matched).slice(0, limit);
 }
 
 export function sandboxLineup(slots: (PlayerSeason | null)[]): PlayerSeason[] {
@@ -194,4 +246,129 @@ export function sandboxReady(slots: (PlayerSeason | null)[]): boolean {
 
 export function matchReady(state: SandboxState): boolean {
   return sandboxReady(state.homeSlots) && sandboxReady(state.awaySlots);
+}
+
+/** ponytail: assert self-check — run via `npx tsx src/lib/game/sandbox-state.ts` */
+export function runSandboxSelfCheck(): void {
+  const wiltLow: PlayerSeason = {
+    id: "wilt-low",
+    name: "Wilt Chamberlain",
+    club: "Lakers",
+    era: "1970s",
+    positions: ["C"],
+    stats: { ppg: 20, rpg: 18, apg: 4, spg: 0, bpg: 0 },
+    rating: 90,
+  };
+  const wiltPeak: PlayerSeason = {
+    id: "wilt-peak",
+    name: "Wilt Chamberlain",
+    club: "Warriors",
+    era: "1960s",
+    positions: ["C"],
+    stats: { ppg: 37, rpg: 27, apg: 2, spg: 0, bpg: 0 },
+    rating: 99,
+  };
+  const lebronA: PlayerSeason = {
+    id: "lbj-a",
+    name: "LeBron James",
+    club: "Cavaliers",
+    era: "2000s",
+    positions: ["SF"],
+    stats: { ppg: 27, rpg: 7, apg: 7, spg: 1.7, bpg: 0.8 },
+    rating: 96,
+  };
+  const lebronB: PlayerSeason = {
+    id: "lbj-b",
+    name: "LeBron James",
+    club: "Lakers",
+    era: "2020s",
+    positions: ["SF"],
+    stats: { ppg: 25, rpg: 7, apg: 8, spg: 1.1, bpg: 0.5 },
+    rating: 94,
+  };
+  const ant: PlayerSeason = {
+    id: "ant",
+    name: "Anthony Edwards",
+    club: "Timberwolves",
+    era: "2020s",
+    positions: ["SG"],
+    stats: { ppg: 26, rpg: 5, apg: 5, spg: 1.3, bpg: 0.5 },
+    rating: 92,
+  };
+  const doncic: PlayerSeason = {
+    id: "luka",
+    name: "Luka Dončić",
+    club: "Mavericks",
+    era: "2020s",
+    positions: ["PG"],
+    stats: { ppg: 33, rpg: 9, apg: 9, spg: 1.4, bpg: 0.5 },
+    rating: 96,
+  };
+  const weak: PlayerSeason = {
+    id: "weak",
+    name: "Bench Guy",
+    club: "Lakers",
+    era: "2020s",
+    positions: ["SG"],
+    stats: { ppg: 4, rpg: 1, apg: 1, spg: 0.2, bpg: 0 },
+    rating: 60,
+  };
+
+  const peaked = peakSandboxPlayers([wiltLow, wiltPeak, lebronA, lebronB, ant, doncic, weak]);
+  console.assert(peaked.length === 5, "peak collapses same-name seasons");
+  console.assert(
+    peaked.filter((p) => p.name === "Wilt Chamberlain").length === 1 &&
+      peaked.some((p) => p.id === "wilt-peak"),
+    "Wilt keeps peak season",
+  );
+  console.assert(
+    peaked.filter((p) => p.name === "LeBron James").length === 1,
+    "LeBron one peak",
+  );
+
+  console.assert(normalizeSandboxName("Luka Dončić") === "luka doncic", "diacritic strip");
+  console.assert(matchesSandboxQuery(ant, "энтони эдвардс"), "ru full name");
+  console.assert(matchesSandboxQuery(ant, "эдвардс"), "ru surname");
+  console.assert(matchesSandboxQuery(doncic, "doncic"), "diacritic query");
+  // Auto-translit for players with no manual alias entry
+  console.assert(matchesSandboxQuery(weak, "бенч"), "auto translit any player");
+  console.assert(
+    matchesSandboxQuery(
+      {
+        id: "x",
+        name: "Paolo Banchero",
+        club: "Magic",
+        era: "2020s",
+        positions: ["PF"],
+        stats: { ppg: 20, rpg: 7, apg: 4, spg: 1, bpg: 1 },
+        rating: 85,
+      },
+      "паоло",
+    ),
+    "auto translit without alias map",
+  );
+  console.assert(latinToCyrillic("Anthony Edwards").length > 0, "translit non-empty");
+
+  const ranked = filterSandboxPlayers(
+    "basketball",
+    [weak, ant, doncic],
+    "20",
+    new Set(),
+  );
+  console.assert(
+    ranked.length === 3 &&
+      basketballPoolSortScore(ranked[0]!) >= basketballPoolSortScore(ranked[1]!) &&
+      basketballPoolSortScore(ranked[1]!) >= basketballPoolSortScore(ranked[2]!),
+    "results sorted by PPG desc",
+  );
+  const antHits = filterSandboxPlayers("basketball", peaked, "эдвардс", new Set());
+  console.assert(
+    antHits.some((p) => p.name === "Anthony Edwards"),
+    "ru search finds Anthony Edwards",
+  );
+}
+
+if (typeof require !== "undefined" && require.main === module) {
+  runSandboxSelfCheck();
+  console.log("sandbox-state self-check ok");
 }

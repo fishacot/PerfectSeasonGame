@@ -211,6 +211,11 @@ export function basketballProductionScore(p: PlayerSeason): number {
   );
 }
 
+/** Draft pool UI order — era-adjusted PPG desc (matches Classic PPG column within one spin). */
+export function basketballPoolSortScore(p: PlayerSeason): number {
+  return adjustedPlayerStats(p.era, p.stats).pts;
+}
+
 export type Simulate820Options = {
   /** ponytail: live 82-0 adds randomInt(-2,2); parity fixtures use 0 */
   jitter?: number;
@@ -276,6 +281,28 @@ export function runBasketballEngineSelfCheck(): void {
     rating: 99,
   };
   console.assert(basketballProductionScore(wilt) > basketballProductionScore(bron), "Wilt > LeBron production");
+  const highPpg: PlayerSeason = {
+    id: "sort-h",
+    name: "Scorer",
+    club: "Suns",
+    era: "1970s",
+    positions: ["SG"],
+    stats: { ppg: 24.2, rpg: 2, apg: 2, spg: 1, bpg: 0 },
+    rating: 80,
+  };
+  const lowPpg: PlayerSeason = {
+    id: "sort-l",
+    name: "Role",
+    club: "Suns",
+    era: "1970s",
+    positions: ["C"],
+    stats: { ppg: 13.4, rpg: 10, apg: 5, spg: 2, bpg: 2 },
+    rating: 99,
+  };
+  console.assert(
+    basketballPoolSortScore(highPpg) > basketballPoolSortScore(lowPpg),
+    "pool sort follows era-adjusted PPG not full production",
+  );
   const r = simulate820Core([wilt, wilt, wilt, wilt, wilt]);
   console.assert(r.wins >= MIN_WINS && r.wins <= MAX_WINS_BEFORE_LUCK, "wins in range");
   const gated = simulate820Core([

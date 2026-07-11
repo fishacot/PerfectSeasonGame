@@ -12,7 +12,22 @@ const dictionaries = {
     play: "Play",
     classic: "Classic",
     blind: "HoopIQ",
-    daily: "Daily Challenge",
+    cpuMode: "vs CPU",
+    cpuSubtitle: "Unlimited 1v1 vs computer",
+    cpuBanner: "vs CPU — random spins, shared pool, unlimited runs",
+    cpuDifficulty: "CPU difficulty",
+    cpuDifficulties: {
+      easy: "Easy",
+      normal: "Normal",
+      hard: "Hard",
+      insane: "Insane",
+    },
+    vsFriend: "vs Friend",
+    vsFriendDesc: "Sign in, pick a friend, and send a live game invite.",
+    friends: "Friends",
+    signIn: "Sign in",
+    signOut: "Sign out",
+    profile: "Profile",
     spin: "SPIN",
     skipTeam: "Skip Team",
     skipEra: "Skip Era",
@@ -67,10 +82,6 @@ const dictionaries = {
     activeMode: "Active mode",
     classicSubtitle: "Standard draft experience",
     blindSubtitle: "Pick by name only (HoopIQ)",
-    dailySubtitle: "Today's global challenge",
-    dailyBanner: "Daily 1v1 vs CPU — same spins, shared pool",
-    dailyCompleted: "Already played today",
-    dailyYourScore: "Your score",
     beatChallenge: "Beat {wins} wins",
     challengeLoaded: "Challenge loaded — same spins as shared",
     invalidLineup: "Roster fails era rules — cannot simulate",
@@ -138,7 +149,7 @@ const dictionaries = {
       intro:
         "Spin for a club and era, draft one player per round, place them on the field, then simulate a full season.",
       steps: [
-        { title: "Choose mode", body: "Classic shows stats. HoopIQ hides them. Daily uses one global spin path per day." },
+        { title: "Choose mode", body: "Classic shows stats. HoopIQ hides them. vs CPU is unlimited with random spins and difficulty." },
         { title: "Spin", body: "Each round reveals a random club + era. Pick from real players in that pool." },
         { title: "Draft & place", body: "Select one player, then assign them to an open position they actually played." },
         { title: "Simulate", body: "Era-adjusted stats feed a non-linear win curve with category gates. NBA has no chemistry penalties (82-0 parity)." },
@@ -161,8 +172,6 @@ const dictionaries = {
         "Full stats visible (G, A, CS) plus OVR. Browse the whole roster each spin.",
       hoopiqDesc:
         "Stats hidden. Draft from names and positions only — harder Blind mode.",
-      dailyDesc:
-        "Today's global challenge: same spins for everyone. Chase 38-0.",
     },
     sandbox: {
       title: "Sandbox",
@@ -201,8 +210,8 @@ const dictionaries = {
         "Full stats visible (PPG, RPG, APG, SPG, BPG). Browse the whole roster each spin.",
       hoopiqDesc:
         "Stats hidden. Draft from names and positions only — harder, like 82-0 HoopIQ.",
-      dailyDesc:
-        "1v1 vs CPU: same spins each round, shared pool. Beat the bot’s season record.",
+      cpuDesc:
+        "Unlimited 1v1 vs CPU. New random spins every run, shared pool, difficulty control.",
     },
     hockey: {
       title: "82-0 Hockey",
@@ -221,7 +230,22 @@ const dictionaries = {
     play: "Играть",
     classic: "Классика",
     blind: "HoopIQ",
-    daily: "Ежедневный челлендж",
+    cpuMode: "Против CPU",
+    cpuSubtitle: "Безлимитный 1 на 1 против компьютера",
+    cpuBanner: "1 на 1 vs CPU — случайные спины, общий пул, без лимита",
+    cpuDifficulty: "Сложность CPU",
+    cpuDifficulties: {
+      easy: "Лёгкая",
+      normal: "Норма",
+      hard: "Сложная",
+      insane: "Безумная",
+    },
+    vsFriend: "С другом",
+    vsFriendDesc: "Войди в аккаунт, выбери друга и отправь приглашение в live-матч.",
+    friends: "Друзья",
+    signIn: "Войти",
+    signOut: "Выйти",
+    profile: "Профиль",
     spin: "КРУТИТЬ",
     skipTeam: "Сменить клуб",
     skipEra: "Сменить эру",
@@ -276,10 +300,6 @@ const dictionaries = {
     activeMode: "Режим",
     classicSubtitle: "Классический драфт",
     blindSubtitle: "Только по имени (HoopIQ)",
-    dailySubtitle: "Глобальный челлендж дня",
-    dailyBanner: "Ежедневный 1v1 vs CPU — одни спины, общий пул",
-    dailyCompleted: "Сегодня уже сыграли",
-    dailyYourScore: "Ваш результат",
     beatChallenge: "Обойти {wins} побед",
     challengeLoaded: "Челлендж загружен — те же спины",
     invalidLineup: "Состав не проходит правила эр",
@@ -347,7 +367,7 @@ const dictionaries = {
       intro:
         "Крути клуб и эру, выбирай одного игрока за раунд, расставляй по позициям и симулируй сезон.",
       steps: [
-        { title: "Выбери режим", body: "Классика показывает статы. HoopIQ скрывает. Daily — один путь спинов для всех." },
+        { title: "Выбери режим", body: "Классика показывает статы. HoopIQ скрывает. vs CPU — безлимит с разными спинами и сложностью." },
         { title: "Спин", body: "Каждый раунд — случайный клуб + эра. Пул только реальных игроков этой пары." },
         { title: "Драфт и расстановка", body: "Выбери игрока и поставь на позицию, которую он реально играл." },
         { title: "Симуляция", body: "Статы с поправкой на эру и нелинейная кривая побед. В NBA нет штрафов химии (как на 82-0)." },
@@ -368,8 +388,6 @@ const dictionaries = {
         "Видны статы G · A · CS и OVR. Полный список игроков на каждый спин.",
       hoopiqDesc:
         "Без статистики — только имя и позиция. Сложнее Blind-режим.",
-      dailyDesc:
-        "Глобальный челлендж дня: одинаковые спины для всех. Охота за 38-0.",
     },
     sandbox: {
       title: "Песочница",
@@ -408,8 +426,8 @@ const dictionaries = {
         "Видны все статы: очки, подборы, передачи, перехваты, блоки. Полный список игроков на каждый спин.",
       hoopiqDesc:
         "Без статистики — выбираешь только по имени и позиции. Сложнее, как HoopIQ на 82-0.",
-      dailyDesc:
-        "1 на 1 с CPU: одинаковые спины, общий пул. Обойди рекорд бота в сезоне.",
+      cpuDesc:
+        "Безлимитный матч против CPU. Каждый запуск — новые спины, общий пул и выбор сложности.",
     },
     hockey: {
       title: "82-0 Хоккей",

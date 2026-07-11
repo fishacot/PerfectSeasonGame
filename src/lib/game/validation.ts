@@ -1,6 +1,6 @@
 import type { Era, PlayerSeason, SportId } from "@/lib/types";
 import { ERA_RULES } from "@/lib/config/eras";
-import { basketballProductionScore } from "@/lib/simulation/basketball/engine";
+import { basketballPoolSortScore } from "@/lib/simulation/basketball/engine";
 
 export function countByEra(eras: Era[]): Map<Era, number> {
   const map = new Map<Era, number>();
@@ -130,9 +130,12 @@ export function poolPositionFilters(sport: SportId): PositionFilter[] {
 
 export function sortPoolPlayers(sport: SportId, players: PlayerSeason[]): PlayerSeason[] {
   if (sport === "basketball") {
-    return [...players].sort(
-      (a, b) => basketballProductionScore(b) - basketballProductionScore(a),
-    );
+    return [...players].sort((a, b) => {
+      const sb = basketballPoolSortScore(b);
+      const sa = basketballPoolSortScore(a);
+      if (sb !== sa) return sb - sa;
+      return a.name.localeCompare(b.name);
+    });
   }
   return [...players].sort((a, b) => {
     if (b.rating !== a.rating) return b.rating - a.rating;

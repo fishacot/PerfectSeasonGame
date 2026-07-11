@@ -11,6 +11,7 @@ import {
   SPIN_ERA_MS,
   easeOutCubic,
 } from "@/lib/game/spin-timing";
+import { getClubCrest, getClubLogoCdnSrc, getClubLogoSrc } from "@/lib/assets/club-crests";
 
 interface SlotMachineProps {
   club: string | null;
@@ -31,20 +32,82 @@ interface SlotMachineProps {
   hideButtonBelowLg?: boolean;
 }
 
+function ClubCrestBadge({
+  club,
+  size = "md",
+  dimmed = false,
+}: {
+  club: string;
+  size?: "sm" | "md" | "lg";
+  dimmed?: boolean;
+}) {
+  const crest = getClubCrest(club);
+  const localSrc = getClubLogoSrc(club);
+  const cdnSrc = getClubLogoCdnSrc(club);
+  const [src, setSrc] = useState<string | null>(localSrc);
+  const [failed, setFailed] = useState(false);
+  const dim =
+    size === "sm" ? "h-9 w-9" : size === "lg" ? "h-14 w-14" : "h-11 w-11";
+
+  useEffect(() => {
+    setSrc(localSrc);
+    setFailed(false);
+  }, [localSrc, club]);
+
+  if (!failed && src) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element -- many reel frames; plain img is lighter than next/image
+      <img
+        src={src}
+        alt=""
+        aria-hidden
+        draggable={false}
+        className={`shrink-0 object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)] ${dim} ${
+          dimmed ? "opacity-45" : "opacity-100"
+        }`}
+        onError={() => {
+          if (cdnSrc && src !== cdnSrc) {
+            setSrc(cdnSrc);
+            return;
+          }
+          setFailed(true);
+        }}
+      />
+    );
+  }
+
+  return (
+    <span
+      aria-hidden
+      className={`relative inline-flex shrink-0 items-center justify-center rounded-full font-black tracking-wider text-white shadow-[0_0_12px_rgba(0,0,0,0.45)] ring-2 ${dim} text-[9px] ${
+        dimmed ? "opacity-40" : "opacity-100"
+      }`}
+      style={{
+        background: `linear-gradient(145deg, ${crest.primary} 0%, ${crest.secondary} 100%)`,
+        borderColor: crest.secondary,
+      }}
+    >
+      {crest.abbr}
+    </span>
+  );
+}
+
 function SlotDrum({
   items,
   value,
   spinning,
   spinDurationMs,
+  withCrests = false,
 }: {
   items: readonly string[];
   value: string | null;
   spinning: boolean;
   spinDurationMs: number;
+  withCrests?: boolean;
 }) {
   const reel = useMemo(() => {
     if (items.length === 0) return ["—"];
-    return [...items, ...items, ...items, ...items, ...items];
+    return [...items, ...items, ...items];
   }, [items]);
 
   const itemHeight = DRUM_HEIGHT;
@@ -57,7 +120,7 @@ function SlotDrum({
     if (!value || items.length === 0) return 0;
     const idx = items.indexOf(value);
     if (idx < 0) return 0;
-    return idx * itemHeight + cycleHeight * 2;
+    return idx * itemHeight + cycleHeight;
   }, [value, items, itemHeight, cycleHeight]);
 
   useEffect(() => {
@@ -112,7 +175,7 @@ function SlotDrum({
           style={{ transform: `translateY(${-offset}px)` }}
           animate={
             spinning
-              ? { filter: ["blur(0px)", "blur(1.5px)", "blur(0px)"] }
+              ? { filter: ["blur(0px)", "blur(1.2px)", "blur(0px)"] }
               : { filter: "blur(0px)" }
           }
           transition={
@@ -124,11 +187,14 @@ function SlotDrum({
           {reel.map((item, i) => (
             <span
               key={`${item}-${i}`}
-              className={`flex h-[80px] w-full items-center justify-center truncate px-2 text-center font-display text-lg leading-tight tracking-wide sm:px-3 sm:text-xl sm:tracking-[0.15em] ${
-                spinning ? "text-muted/25" : "text-muted/20"
+              className={`flex h-[80px] w-full items-center justify-center gap-2.5 truncate px-2 text-center font-display text-lg leading-tight tracking-wide sm:gap-3 sm:px-3 sm:text-xl sm:tracking-[0.12em] ${
+                spinning ? "text-muted/35" : "text-muted/20"
               }`}
             >
-              {item.toUpperCase()}
+              {withCrests && item !== "—" && (
+                <ClubCrestBadge club={item} size="sm" dimmed={spinning} />
+              )}
+              <span className="min-w-0 truncate">{item.toUpperCase()}</span>
             </span>
           ))}
         </motion.div>
@@ -143,10 +209,19 @@ function SlotDrum({
             filter: "blur(0px)",
           }}
           transition={{ duration: 0.45, ease: EASE_SMOOTH }}
-          className="relative z-30 flex h-full w-full items-center justify-center px-2 text-center sm:px-4"
+          className="relative z-30 flex h-full w-full items-center justify-center gap-3 px-2 text-center sm:gap-4 sm:px-4"
         >
+          {withCrests && (
+            <motion.div
+              initial={{ scale: 0.6, rotate: -12, opacity: 0 }}
+              animate={{ scale: 1, rotate: 0, opacity: 1 }}
+              transition={{ duration: 0.4, ease: EASE_SMOOTH }}
+            >
+              <ClubCrestBadge club={display} size="lg" />
+            </motion.div>
+          )}
           <span
-            className={`line-clamp-2 max-w-full font-display text-xl leading-tight tracking-wide drop-shadow-[0_0_18px_var(--sport-glow)] sm:truncate sm:text-3xl sm:tracking-[0.15em] ${
+            className={`line-clamp-2 min-w-0 max-w-full font-display text-xl leading-tight tracking-wide drop-shadow-[0_0_18px_var(--sport-glow)] sm:truncate sm:text-3xl sm:tracking-[0.12em] ${
               landed ? "animate-pulse-soft text-sport" : "text-sport/90"
             }`}
           >
@@ -201,6 +276,7 @@ export function SlotMachine({
             value={club}
             spinning={clubSpinning}
             spinDurationMs={SPIN_CLUB_MS}
+            withCrests
           />
         </motion.div>
         <motion.div

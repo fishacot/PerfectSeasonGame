@@ -1,5 +1,5 @@
 import type { Era, PlayerSeason, SpinResult, SportId } from "@/lib/types";
-import { basketballProductionScore } from "@/lib/simulation/basketball/engine";
+import { basketballPoolSortScore } from "@/lib/simulation/basketball/engine";
 import { ERA_RULES } from "@/lib/config/eras";
 import { filterPickablePlayers } from "@/lib/game/validation";
 import {
@@ -45,10 +45,10 @@ export function getPlayersForSpin(
     )
     .sort((a, b) => {
       if (sport === "basketball") {
-        const sa = basketballProductionScore(a);
-        const sb = basketballProductionScore(b);
+        const sb = basketballPoolSortScore(b);
+        const sa = basketballPoolSortScore(a);
         if (sb !== sa) return sb - sa;
-        return b.rating - a.rating;
+        return a.name.localeCompare(b.name);
       }
       // football / hockey: raw OVR desc (38-0 parity)
       if (b.rating !== a.rating) return b.rating - a.rating;
@@ -125,18 +125,28 @@ export function spinTeamEraWithPool(
       return spin;
     }
   }
-  return (
-    findAnyValidSpin(
-      sport,
-      clubs,
-      eras,
-      usedEras,
-      players,
-      pickedIds,
-      openSlotLabels,
-      rng,
-    ) ?? spinTeamEra(sport, clubs, eras, usedEras, rng)
+  // Never blind-fallback to an empty franchise×era (e.g. Magic×1970s).
+  const found = findAnyValidSpin(
+    sport,
+    clubs,
+    eras,
+    usedEras,
+    players,
+    pickedIds,
+    openSlotLabels,
+    rng,
   );
+  if (found) return found;
+  const shuffledClubs = [...clubs].sort(() => rng() - 0.5);
+  const shuffledEras = [...eras].sort(() => rng() - 0.5);
+  for (const club of shuffledClubs) {
+    for (const era of shuffledEras) {
+      if (getPlayersForSpin(sport, players, { club, era }, pickedIds).length > 0) {
+        return { club, era };
+      }
+    }
+  }
+  return spinTeamEra(sport, clubs, eras, usedEras, rng);
 }
 
 export function spinClubWithPool(
@@ -176,6 +186,12 @@ export function spinClubWithPool(
         openSlotLabels,
       )
     ) {
+      return club;
+    }
+  }
+  // Prefer any non-empty franchise×era over a blind pick (Magic×1970s = 0).
+  for (const club of shuffled) {
+    if (getPlayersForSpin(sport, players, { club, era }, pickedIds).length > 0) {
       return club;
     }
   }
@@ -230,20 +246,24 @@ export function spinEraWithPool(
       return era;
     }
   }
+  for (const era of shuffled) {
+    if (getPlayersForSpin(sport, players, { club, era }, pickedIds).length > 0) {
+      return era;
+    }
+  }
   return pickRandom(eraPool, rng);
 }
 
-export function getDailySpins(
+export function getMatchSpins(
   sport: SportId,
-  league: string,
+  seedSource: string,
   rosterSize: number,
   clubs: string[],
   eras: readonly Era[],
   allPlayers: PlayerSeason[],
   openPositions: string[],
-  date = new Date().toISOString().slice(0, 10),
 ): SpinResult[] {
-  const seed = `${date}:${sport}:${league}`
+  const seed = `${seedSource}:${sport}`
     .split("")
     .reduce((a, c) => a + c.charCodeAt(0), 0);
   const rng = createRng(seed);
@@ -265,9 +285,7 @@ export function getDailySpins(
     spins.push(spin);
     usedEras.push(spin.era);
     const pool = getPlayersForSpin(sport, allPlayers, spin, picked);
-    if (pool.length > 0) {
-      picked.add(pool[0].id);
-    }
+    if (pool.length > 0) picked.add(pool[0].id);
   }
   return spins;
 }

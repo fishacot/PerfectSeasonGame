@@ -10,6 +10,10 @@ import { SportBackdrop } from "@/components/game/SportBackdrop";
 import { EdgeHeroes } from "@/components/football/EdgeHeroes";
 import { Trophy, Info } from "lucide-react";
 
+export function generateStaticParams() {
+  return Object.keys(FOOTBALL_LEAGUES).map((league) => ({ league }));
+}
+
 export default async function FootballLeaguePage({
   params,
 }: {

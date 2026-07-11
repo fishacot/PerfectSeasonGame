@@ -16,8 +16,8 @@ export default async function PrivacyPage({
       <p className="mt-4 text-muted">{dict.disclaimer}</p>
       <p className="mt-4 text-sm text-muted">
         {locale === "ru"
-          ? "Мы используем localStorage для истории результатов. Аналитика — опционально."
-          : "We use localStorage for result history. Analytics optional."}
+          ? "Мы используем localStorage для истории результатов и cookie сессии для входа/друзей. Аналитика — опционально."
+          : "We use localStorage for result history and a session cookie for sign-in/friends. Analytics optional."}
       </p>
     </div>
   );

@@ -1,5 +1,6 @@
 import type {
   DraftPick,
+  CpuDifficulty,
   Era,
   FootballDifficulty,
   FootballLeague,
@@ -49,11 +50,13 @@ export interface DraftState {
   opponentUsedEras: Era[];
   botReveal: { player: PlayerSeason; slotKey: string } | null;
   difficulty: FootballDifficulty;
+  cpuDifficulty: CpuDifficulty;
 }
 
 export type DraftAction =
   | { type: "SET_MODE"; mode: GameMode }
   | { type: "SET_DIFFICULTY"; difficulty: FootballDifficulty }
+  | { type: "SET_CPU_DIFFICULTY"; difficulty: CpuDifficulty }
   | { type: "START"; dailySpins?: SpinResult[] }
   | { type: "SPIN"; openSlotLabels: string[] }
   /** Commit a precomputed spin after slot land+hold (UI preview path). */
@@ -120,6 +123,7 @@ export function createInitialState(
     opponentUsedEras: [],
     botReveal: null,
     difficulty: "normal",
+    cpuDifficulty: "normal",
   };
 }
 
@@ -173,6 +177,8 @@ export function draftReducer(
         rerollsRemaining: 0,
       };
     }
+    case "SET_CPU_DIFFICULTY":
+      return { ...state, cpuDifficulty: action.difficulty };
     case "START": {
       const daily = action.dailySpins ?? null;
       if (daily && daily.length > 0) {
@@ -227,7 +233,7 @@ export function draftReducer(
     case "SKIP_TEAM": {
       if (!state.currentSpin) return state;
       if (state.skipsUsed.team) return state;
-      if (state.dailySpins) return state;
+      if (state.dailySpins && state.mode !== "cpu") return state;
       const picked = pickedIds(state.picks);
       const spin = {
         ...state.currentSpin,
@@ -246,7 +252,7 @@ export function draftReducer(
     case "SKIP_ERA": {
       if (!state.currentSpin) return state;
       if (state.skipsUsed.era) return state;
-      if (state.dailySpins) return state;
+      if (state.dailySpins && state.mode !== "cpu") return state;
       const picked = pickedIds(state.picks);
       const newEra = spinEraWithPool(
         state.sport,
@@ -264,7 +270,7 @@ export function draftReducer(
       if (!state.currentSpin) return state;
       if (action.target === "team" && state.skipsUsed.team) return state;
       if (action.target === "era" && state.skipsUsed.era) return state;
-      if (state.dailySpins) return state;
+      if (state.dailySpins && state.mode !== "cpu") return state;
       const picked = pickedIds(state.picks);
       return commitSkip(state, action.spin, action.target, picked);
     }
@@ -290,7 +296,7 @@ export function draftReducer(
       const newPicks = [...state.picks, pick];
       const newUsedEras = [...state.usedEras, state.pendingPlayer.era];
 
-      if (state.mode === "daily" && state.dailySpins) {
+      if (state.mode === "cpu" && state.dailySpins) {
         return {
           ...state,
           picks: newPicks,
@@ -350,7 +356,7 @@ export function draftReducer(
       };
     }
     case "BOT_PICK": {
-      if (state.mode !== "daily" || !state.currentSpin || state.phase !== "opponent-draft") {
+      if (state.mode !== "cpu" || !state.currentSpin || state.phase !== "opponent-draft") {
         return state;
       }
       const bot = computeBotPick(
@@ -362,6 +368,7 @@ export function draftReducer(
         state.opponentUsedEras,
         state.opponentLineup,
         action.positions,
+        state.cpuDifficulty,
       );
       if (!bot) {
         return { ...state, phase: "simulating", botReveal: null };

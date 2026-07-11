@@ -21,6 +21,7 @@ import {
   createSandboxState,
   filterSandboxPlayers,
   matchReady,
+  peakSandboxPlayers,
   sandboxLineup,
   sandboxReady,
   sandboxReducer,
@@ -29,6 +30,9 @@ import {
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type { Locale, PlayerSeason, SportId } from "@/lib/types";
 import { prefetchPlayers } from "@/lib/data/player-fetch";
+import { runSimulation } from "@/lib/simulation/run";
+import { simulateBasketballMatch } from "@/lib/simulation/match/basketball-match";
+import { simulateFootballMatch } from "@/lib/simulation/match/football-match";
 
 interface SandboxClientProps {
   sport: "basketball" | "football";
@@ -241,9 +245,14 @@ export function SandboxClient({
     return ids;
   }, [homeLineup, awayLineup, state.submode]);
 
+  const searchPool = useMemo(
+    () => (sport === "basketball" ? peakSandboxPlayers(players) : players),
+    [players, sport],
+  );
+
   const matches = useMemo(
-    () => filterSandboxPlayers(players, state.search, used),
-    [players, state.search, used],
+    () => filterSandboxPlayers(sport, searchPool, state.search, used),
+    [sport, searchPool, state.search, used],
   );
 
   const lineupOk = sandboxReady(state.homeSlots);
@@ -256,36 +265,32 @@ export function SandboxClient({
     dispatch({ type: "SIMULATE_START" });
     try {
       if (state.submode === "lineup") {
-        const res = await fetch("/api/simulate", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            sport,
-            lineup: homeLineup,
-            sandbox: true,
-            slotLabels: positions,
-          }),
-        });
-        if (!res.ok) throw new Error(await res.text());
-        dispatch({ type: "SIMULATE_SEASON_SUCCESS", result: await res.json() });
+        const result = runSimulation(
+          sport,
+          homeLineup,
+          undefined,
+          undefined,
+          positions,
+        );
+        dispatch({ type: "SIMULATE_SEASON_SUCCESS", result });
         return;
       }
 
-      const res = await fetch("/api/simulate-match", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          sport,
-          home: homeLineup,
-          away: awayLineup,
-          homeSlots: positions,
-          awaySlots: positions,
-          homeLabel: state.homeLabel,
-          awayLabel: state.awayLabel,
-        }),
-      });
-      if (!res.ok) throw new Error(await res.text());
-      dispatch({ type: "SIMULATE_MATCH_SUCCESS", result: await res.json() });
+      const result =
+        sport === "basketball"
+          ? simulateBasketballMatch(homeLineup, awayLineup, {
+              homeSlots: positions,
+              awaySlots: positions,
+              homeLabel: state.homeLabel,
+              awayLabel: state.awayLabel,
+            })
+          : simulateFootballMatch(homeLineup, awayLineup, {
+              homeSlots: positions,
+              awaySlots: positions,
+              homeLabel: state.homeLabel,
+              awayLabel: state.awayLabel,
+            });
+      dispatch({ type: "SIMULATE_MATCH_SUCCESS", result });
     } catch (e) {
       dispatch({
         type: "SIMULATE_ERROR",

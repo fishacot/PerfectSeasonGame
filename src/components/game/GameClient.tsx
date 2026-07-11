@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useReducer, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { EraTracker } from "@/components/game/EraTracker";
 import { PlayerCard } from "@/components/game/PlayerCard";
 import { PlayerPoolList } from "@/components/game/PlayerPoolList";
@@ -11,21 +11,16 @@ import { LineupBoard } from "@/components/game/LineupBoard";
 import { SkipChips } from "@/components/game/SkipChips";
 import { ResultBreakdown } from "@/components/game/ResultBreakdown";
 import { FinalRoster } from "@/components/game/FinalRoster";
-import { recordDailyBest } from "@/components/game/DailyLeaderboardStub";
 import { VersusPanel } from "@/components/game/VersusPanel";
 import { VersusResult } from "@/components/game/VersusResult";
 import { ShareCard } from "@/components/game/ShareCard";
 import { SlotMachine } from "@/components/game/SlotMachine";
+import { ClubEraBadge } from "@/components/game/ClubEraBadge";
 import { PhasePanel } from "@/components/game/PhasePanel";
 import { SportThemeProvider } from "@/components/SportThemeProvider";
 import { createInitialState, draftReducer } from "@/lib/game/draft-state";
 import { makeChallengeUrl } from "@/lib/game/challenge";
-import {
-  getDailyAttempt,
-  saveDailyAttempt,
-  type DailyAttempt,
-} from "@/lib/game/daily-attempt";
-import { getOpenSlotKeys, canPlaceAtPosition, filterPickablePlayers } from "@/lib/game/validation";
+import { getOpenSlotKeys, canPlaceAtPosition, filterPickablePlayers, isRosterEraValid } from "@/lib/game/validation";
 import {
   SPIN_CLUB_MS,
   SPIN_ERA_MS,
@@ -33,10 +28,12 @@ import {
   fullSpinStageDelays,
 } from "@/lib/game/spin-timing";
 import {
+  getMatchSpins,
   spinClubWithPool,
   spinEraWithPool,
   spinTeamEraWithPool,
 } from "@/lib/game/spin";
+import { runSimulation } from "@/lib/simulation/run";
 import { SPORTS } from "@/lib/config/sports";
 import {
   FORMATION_IDS,
@@ -47,6 +44,7 @@ import {
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import type {
   Era,
+  CpuDifficulty,
   FootballDifficulty,
   FootballLeague,
   GameMode,
@@ -108,10 +106,10 @@ export function GameClient({
   const [spinStage, setSpinStage] = useState<"idle" | "club" | "era" | "hold">("idle");
   /** Precomputed outcome shown on drums during spin + hold before COMMIT. */
   const [previewSpin, setPreviewSpin] = useState<SpinResult | null>(null);
-  const [dailyAttempt, setDailyAttempt] = useState<DailyAttempt | null>(null);
   const [copyDone, setCopyDone] = useState(false);
   const [simError, setSimError] = useState<string | null>(null);
   const [formationId, setFormationId] = useState<FormationId>("433");
+  const [cpuDifficulty, setCpuDifficulty] = useState<CpuDifficulty>("normal");
   const [cpuSpinning, setCpuSpinning] = useState(false);
   const poolAnchorRef = useRef<HTMLDivElement>(null);
   const config = SPORTS[sport];
@@ -131,11 +129,17 @@ export function GameClient({
   );
 
   useEffect(() => {
-    setDailyAttempt(getDailyAttempt(sport, league));
-  }, [sport, league]);
+    if (players.length === 0) return;
+    dispatch({
+      type: "SET_PLAYERS",
+      players,
+      clubs,
+    });
+    setPlayersReady(true);
+  }, [players, clubs]);
 
   useEffect(() => {
-    if (!deferPlayerLoad) return;
+    if (!deferPlayerLoad || players.length > 0) return;
     let cancelled = false;
     void prefetchPlayers(sport, league)
       .then((data) => {
@@ -153,7 +157,7 @@ export function GameClient({
     return () => {
       cancelled = true;
     };
-  }, [deferPlayerLoad, sport, league]);
+  }, [deferPlayerLoad, sport, league, players.length]);
 
   useEffect(() => {
     if (!playersReady && deferPlayerLoad) return;
@@ -162,47 +166,41 @@ export function GameClient({
       dispatch({ type: "START", dailySpins: challengeSpins });
       return;
     }
-    if (initialMode === "daily" && dailySpins) {
-      dispatch({ type: "SET_MODE", mode: "daily" });
-      dispatch({ type: "START", dailySpins });
-    } else if (initialMode === "blind") {
+    if (initialMode === "blind") {
       dispatch({ type: "SET_MODE", mode: "blind" });
     } else if (initialMode === "classic") {
       dispatch({ type: "SET_MODE", mode: "classic" });
     }
   }, [initialMode, dailySpins, challengeSpins, playersReady, deferPlayerLoad]);
 
-  const isVersusDaily = state.mode === "daily" && !challengeSpins?.length;
+  const isVersusCpu = state.mode === "cpu" && !challengeSpins?.length;
 
   const simulate = useCallback(async () => {
     const lineup = Array.from(state.lineup.values());
     setSimError(null);
 
-    const runSim = async (
+    const runSim = (
       players: PlayerSeason[],
       lineupMap?: Map<string, PlayerSeason>,
     ) => {
       const map = lineupMap ?? state.lineup;
+      const eras = Array.from(map.values()).map((p) => p.era);
+      if (!isRosterEraValid(sport, eras, state.eras)) return null;
       const entries = Array.from(map.entries());
       const slotLabels =
         sport === "football" && entries.length === players.length
           ? entries.map(([k]) => k.split(":")[0] ?? k)
           : undefined;
-      const res = await fetch("/api/simulate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          sport,
-          league,
-          lineup: players,
-          slotLabels,
-        }),
-      });
-      if (!res.ok) return null;
-      return res.json();
+      return runSimulation(
+        sport,
+        players,
+        league,
+        undefined,
+        slotLabels,
+      );
     };
 
-    if (isVersusDaily) {
+    if (isVersusCpu) {
       const botLineup = Array.from(state.opponentLineup.values());
       const [userResult, botResult] = await Promise.all([
         runSim(lineup, state.lineup),
@@ -225,17 +223,6 @@ export function GameClient({
         });
       }
 
-      const attempt: DailyAttempt = {
-        wins: userResult.wins,
-        losses: userResult.losses,
-        maxWins: userResult.maxWins,
-        botWins: botResult.wins,
-        userWon,
-        at: Date.now(),
-      };
-      saveDailyAttempt(sport, league, attempt);
-      recordDailyBest(sport, userResult.wins);
-      setDailyAttempt(attempt);
       return;
     }
 
@@ -261,28 +248,18 @@ export function GameClient({
     history.unshift({ wins: result.wins, max: result.maxWins, at: Date.now() });
     localStorage.setItem(key, JSON.stringify(history.slice(0, 10)));
 
-    if (state.mode === "daily") {
-      const attempt: DailyAttempt = {
-        wins: result.wins,
-        losses: result.losses,
-        maxWins: result.maxWins,
-        at: Date.now(),
-      };
-      saveDailyAttempt(sport, league, attempt);
-      setDailyAttempt(attempt);
-    }
   }, [
     state.lineup,
     state.opponentLineup,
     state.mode,
-    isVersusDaily,
+    isVersusCpu,
     sport,
     league,
     dict.invalidLineup,
   ]);
 
   useEffect(() => {
-    if (state.mode !== "daily" || state.phase !== "opponent-draft") return;
+    if (state.mode !== "cpu" || state.phase !== "opponent-draft") return;
     setCpuSpinning(true);
     const spinEnd = window.setTimeout(() => setCpuSpinning(false), 1000);
     const pickTimer = window.setTimeout(() => {
@@ -318,6 +295,56 @@ export function GameClient({
       void simulate();
     }
   }, [state.phase, simulate]);
+
+  const ensurePlayers = useCallback(async (): Promise<boolean> => {
+    if (playersReady && state.allPlayers.length > 0) return true;
+    try {
+      const data = await prefetchPlayers(sport, league);
+      dispatch({
+        type: "SET_PLAYERS",
+        players: data.players,
+        clubs: data.clubs,
+      });
+      setPlayersReady(true);
+      return true;
+    } catch {
+      return false;
+    }
+  }, [playersReady, state.allPlayers.length, sport, league]);
+
+  const startCpuGame = async () => {
+    if (sport !== "basketball") return;
+    let players = state.allPlayers;
+    let clubs = state.clubs;
+    if (!playersReady || players.length === 0) {
+      try {
+        const data = await prefetchPlayers(sport, league);
+        players = data.players;
+        clubs = data.clubs;
+        dispatch({
+          type: "SET_PLAYERS",
+          players: data.players,
+          clubs: data.clubs,
+        });
+        setPlayersReady(true);
+      } catch {
+        return;
+      }
+    }
+    const seed = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    const spins = getMatchSpins(
+      "basketball",
+      seed,
+      SPORTS.basketball.rosterSize,
+      clubs,
+      state.eras,
+      players,
+      SPORTS.basketball.positions,
+    );
+    dispatch({ type: "SET_MODE", mode: "cpu" });
+    dispatch({ type: "SET_CPU_DIFFICULTY", difficulty: cpuDifficulty });
+    dispatch({ type: "START", dailySpins: spins });
+  };
 
   const handleShare = async () => {
     if (!shareRef.current || !state.result) return;
@@ -362,13 +389,15 @@ export function GameClient({
 
   const runSpin = useCallback(
     (openLabels: string[]) => {
+      // Must use state.allPlayers — props.players stays [] when deferPlayerLoad.
+      if (state.allPlayers.length === 0) return;
       const picked = new Set(state.picks.map((p) => p.player.id));
       const spin = spinTeamEraWithPool(
         sport,
-        clubs,
+        state.clubs,
         eras,
         state.usedEras,
-        players,
+        state.allPlayers,
         picked,
         openLabels,
       );
@@ -389,12 +418,12 @@ export function GameClient({
         }, holdAt);
       }, eraAt);
     },
-    [state.picks, state.usedEras, sport, clubs, eras, players],
+    [state.picks, state.usedEras, state.allPlayers, state.clubs, sport, eras],
   );
 
   const runSkip = useCallback(
     (target: "team" | "era", openLabels: string[]) => {
-      if (!state.currentSpin) return;
+      if (!state.currentSpin || state.allPlayers.length === 0) return;
       const picked = new Set(state.picks.map((p) => p.player.id));
       const spin: SpinResult =
         target === "team"
@@ -402,10 +431,10 @@ export function GameClient({
               ...state.currentSpin,
               club: spinClubWithPool(
                 sport,
-                clubs,
+                state.clubs,
                 state.currentSpin.era,
                 state.usedEras,
-                players,
+                state.allPlayers,
                 picked,
                 openLabels,
               ),
@@ -417,7 +446,7 @@ export function GameClient({
                 state.currentSpin.club,
                 eras,
                 state.usedEras,
-                players,
+                state.allPlayers,
                 picked,
                 openLabels,
               ),
@@ -441,22 +470,32 @@ export function GameClient({
         }, SPIN_HOLD_MS);
       }, duration);
     },
-    [state.currentSpin, state.picks, state.usedEras, sport, clubs, eras, players],
+    [
+      state.currentSpin,
+      state.picks,
+      state.usedEras,
+      state.allPlayers,
+      state.clubs,
+      sport,
+      eras,
+    ],
   );
 
+  useEffect(() => {
+    if (!spinAnimating) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [spinAnimating]);
+
   if (state.phase === "mode-select") {
-    const modeBusy = deferPlayerLoad && !playersReady;
-    const dailyDesc = dailyAttempt
-      ? dailyAttempt.botWins != null
-        ? `${dict.dailyCompleted} · ${dict.versusScoreLine
-            .replace("{you}", String(dailyAttempt.wins))
-            .replace("{cpu}", String(dailyAttempt.botWins))}`
-        : `${dict.dailyCompleted} · ${dict.dailyYourScore}: ${dailyAttempt.wins}-${dailyAttempt.maxWins - dailyAttempt.wins}`
-      : sport === "basketball"
-        ? dict.basketball.dailyDesc
-        : sport === "football"
-          ? dict.football.dailyDesc
-          : dict.dailySubtitle;
+    const poolLoading = deferPlayerLoad && !playersReady;
+    const cpuDesc =
+      sport === "basketball"
+        ? dict.basketball.cpuDesc
+        : dict.cpuSubtitle;
 
     const modeContent = (
       <div className="page-shell mx-auto flex max-w-lg flex-col gap-5 py-6 sm:gap-8 sm:py-10 lg:max-w-xl">
@@ -529,6 +568,12 @@ export function GameClient({
               </p>
             )}
 
+            {poolLoading && (
+              <p className="text-center text-[10px] font-black uppercase tracking-[0.2em] text-sport/80">
+                {dict.analyzing}
+              </p>
+            )}
+
             <ModeSelectOption
               variant="primary"
               title={dict.classic.toUpperCase()}
@@ -539,11 +584,12 @@ export function GameClient({
                     ? dict.football.classicDesc
                     : dict.classicSubtitle
               }
-              disabled={modeBusy}
               onClick={() => {
-                if (modeBusy) return;
-                dispatch({ type: "SET_MODE", mode: "classic" });
-                dispatch({ type: "START" });
+                void (async () => {
+                  if (!(await ensurePlayers())) return;
+                  dispatch({ type: "SET_MODE", mode: "classic" });
+                  dispatch({ type: "START" });
+                })();
               }}
             />
 
@@ -557,32 +603,58 @@ export function GameClient({
                     ? dict.football.hoopiqDesc
                     : dict.blindSubtitle
               }
-              disabled={modeBusy}
               onClick={() => {
-                if (modeBusy) return;
-                dispatch({ type: "SET_MODE", mode: "blind" });
-                dispatch({ type: "START" });
+                void (async () => {
+                  if (!(await ensurePlayers())) return;
+                  dispatch({ type: "SET_MODE", mode: "blind" });
+                  dispatch({ type: "START" });
+                })();
               }}
             />
 
-            <ModeSelectOption
-              variant="daily"
-              title={dict.daily.toUpperCase()}
-              description={dailyDesc}
-              disabled={modeBusy || !!dailyAttempt}
-              onClick={async () => {
-                if (modeBusy || dailyAttempt) return;
-                const q = league ? `&league=${league}` : "";
-                const fq =
-                  sport === "football" ? `&formation=${formationId}` : "";
-                const res = await fetch(
-                  `/api/daily?sport=${sport}${q}${fq}`,
-                );
-                const data = await res.json();
-                dispatch({ type: "SET_MODE", mode: "daily" });
-                dispatch({ type: "START", dailySpins: data.spins });
-              }}
-            />
+            {sport === "basketball" && (
+              <div className="overflow-hidden rounded-lg border border-white/15 bg-[#160b05]/90 p-4 shadow-[0_8px_32px_rgba(0,0,0,0.5)] backdrop-blur-md">
+                <p className="mb-1 text-center text-[10px] font-black uppercase tracking-[0.2em] text-muted">
+                  {dict.cpuDifficulty}
+                </p>
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  {(["easy", "normal", "hard", "insane"] as CpuDifficulty[]).map((d) => (
+                    <button
+                      key={d}
+                      type="button"
+                      className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-widest transition-all ${
+                        cpuDifficulty === d
+                          ? "bg-sport text-bg glow-sport"
+                          : "border border-white/10 text-muted hover:border-sport/40 hover:text-text"
+                      }`}
+                      onClick={() => setCpuDifficulty(d)}
+                    >
+                      {dict.cpuDifficulties[d]}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {sport === "basketball" && (
+              <ModeSelectOption
+                variant="daily"
+                title={dict.cpuMode.toUpperCase()}
+                description={cpuDesc}
+                onClick={() => void startCpuGame()}
+              />
+            )}
+
+            {sport === "basketball" && (
+              <ModeSelectOption
+                variant="secondary"
+                title={dict.vsFriend.toUpperCase()}
+                description={dict.vsFriendDesc}
+                onClick={() => {
+                  router.push(`/${locale}/friends`);
+                }}
+              />
+            )}
 
             {(sport === "basketball" || sport === "football") && (
               <ModeSelectOption
@@ -603,7 +675,7 @@ export function GameClient({
           <div className="mt-4 flex flex-col items-center gap-3 sm:mt-6 sm:gap-4">
             <div className="w-full rounded-2xl border border-white/5 bg-white/5 p-4 text-center backdrop-blur-sm sm:p-6">
               <p className="text-xs leading-relaxed text-muted italic">
-                "{dict.hubQuote}"
+                &ldquo;{dict.hubQuote}&rdquo;
               </p>
             </div>
             <Link
@@ -638,7 +710,7 @@ export function GameClient({
 
   if (state.phase === "result" && state.result) {
     const lineupPlayers = Array.from(state.lineup.values());
-    const versus = isVersusDaily && state.botResult != null;
+    const versus = isVersusCpu && state.botResult != null;
     const botResult = state.botResult;
     const resultContent = (
         <div
@@ -783,7 +855,7 @@ export function GameClient({
   const broadcastPicking =
     isBroadcastSport && (state.phase === "picking" || state.phase === "placing");
   const showSlotMachine =
-    !isVersusDaily &&
+    !isVersusCpu &&
     (state.phase === "spinning" || spinAnimating);
   const clubSpinning = spinAnimating && spinStage === "club";
   const eraSpinning = spinAnimating && spinStage === "era";
@@ -810,9 +882,9 @@ export function GameClient({
   /** Skip reroll drums while still on picking panel. */
   const isSkipAnimating = spinAnimating && state.phase === "picking";
   const showSidebarColumn =
-    isVersusDaily || !(isBroadcastSport && isSpinningPhase);
+    isVersusCpu || !(isBroadcastSport && isSpinningPhase);
 
-  const sidebar = isVersusDaily ? (
+  const sidebar = isVersusCpu ? (
     <div className="lg:sticky lg:top-24">
       <VersusPanel
         sport={sport}
@@ -820,7 +892,7 @@ export function GameClient({
         userLineup={state.lineup}
         opponentLineup={state.opponentLineup}
         currentSpin={state.currentSpin}
-        clubs={clubs}
+        clubs={state.clubs}
         eras={eras}
         round={state.round}
         rosterSize={config.rosterSize}
@@ -863,26 +935,25 @@ export function GameClient({
           eraDistribution={dict.eraDistribution}
         />
       )}
-      {showSlotMachine && !isBroadcastSport && (
+      {showSlotMachine && !isBroadcastSport && !spinAnimating && (
         <SlotMachine
           {...slotLabels}
           club={slotClub}
           era={slotEra}
-          clubs={clubs}
+          clubs={state.clubs}
           eras={eras}
-          isSpinning={spinAnimating}
-          spinningClub={clubSpinning}
-          spinningEra={eraSpinning}
+          isSpinning={false}
+          spinningClub={false}
+          spinningEra={false}
           onSpin={() => {
             if (state.phase !== "spinning" || spinAnimating) return;
             runSpin(openLabels);
           }}
           spinLabel={dict.spin}
           disabled={state.phase !== "spinning" || spinAnimating}
-          hideButton={isSkipAnimating}
         />
       )}
-      {state.mode !== "daily" && !state.dailySpins && (state.phase === "picking" || state.phase === "placing") && !isBroadcastSport && (
+      {(state.mode === "cpu" || !state.dailySpins) && (state.phase === "picking" || state.phase === "placing") && !isBroadcastSport && (
         <div className="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur-md">
           <SkipChips
             sport={sport}
@@ -907,7 +978,7 @@ export function GameClient({
 
   const playerPanel = (
     <AnimatePresence mode="sync">
-      {state.phase === "opponent-draft" && isVersusDaily && (
+      {state.phase === "opponent-draft" && isVersusCpu && (
         <PhasePanel
           key="opponent-draft"
           className="flex flex-col items-center justify-center gap-6 rounded-3xl border border-red-400/20 bg-red-500/5 py-16"
@@ -922,7 +993,8 @@ export function GameClient({
         </PhasePanel>
       )}
 
-      {isBroadcastSport && isSpinningPhase && (
+      {/* Idle spin stage: slot only. Active rotation uses fullscreen SpinFocus overlay. */}
+      {isBroadcastSport && isSpinningPhase && !spinAnimating && (
         <PhasePanel
           key="spin"
           className="mx-auto flex w-full max-w-md flex-col gap-6"
@@ -931,11 +1003,11 @@ export function GameClient({
             {...slotLabels}
             club={slotClub}
             era={slotEra}
-            clubs={clubs}
+            clubs={state.clubs}
             eras={eras}
-            isSpinning={spinAnimating}
-            spinningClub={clubSpinning}
-            spinningEra={eraSpinning}
+            isSpinning={false}
+            spinningClub={false}
+            spinningEra={false}
             onSpin={() => {
               if (state.phase !== "spinning" || spinAnimating) return;
               runSpin(openLabels);
@@ -944,45 +1016,12 @@ export function GameClient({
             disabled={state.phase !== "spinning" || spinAnimating}
             hideButtonBelowLg
           />
-          <LineupBoard
-            variant={sport}
-            lineup={state.lineup}
-            positions={isFootball ? slotPositions : undefined}
-            formationLabel={
-              isFootball ? getFormationLabel(formationId) : undefined
-            }
-            compact
-          />
-          <EraTracker
-          sport={sport}
-          eras={eras}
-          usedEras={state.usedEras}
-          eraDistribution={dict.eraDistribution}
-        />
         </PhasePanel>
       )}
 
       {state.phase === "picking" && (
         <PhasePanel key="picking" className="flex flex-col gap-4">
           <div ref={poolAnchorRef} className="contents">
-          {isBroadcastSport && isSkipAnimating && (
-            <div className="mx-auto w-full max-w-md">
-              <SlotMachine
-                {...slotLabels}
-                club={slotClub}
-                era={slotEra}
-                clubs={clubs}
-                eras={eras}
-                isSpinning={spinAnimating}
-                spinningClub={clubSpinning}
-                spinningEra={eraSpinning}
-                onSpin={() => {}}
-                spinLabel={dict.spin}
-                disabled
-                hideButton
-              />
-            </div>
-          )}
           {isBroadcastSport && (
             <div className="flex flex-col items-center gap-5 lg:flex-row lg:items-start lg:justify-center lg:gap-8">
               <LineupBoard
@@ -1003,7 +1042,7 @@ export function GameClient({
               </div>
             </div>
           )}
-          {isVersusDaily && isBroadcastSport && (
+          {isVersusCpu && isBroadcastSport && (
             <div className="w-full">
               <VersusPanel
                 sport={sport}
@@ -1011,7 +1050,7 @@ export function GameClient({
                 userLineup={state.lineup}
                 opponentLineup={state.opponentLineup}
                 currentSpin={state.currentSpin}
-                clubs={clubs}
+                clubs={state.clubs}
                 eras={eras}
                 round={state.round}
                 rosterSize={config.rosterSize}
@@ -1026,8 +1065,7 @@ export function GameClient({
             </div>
           )}
           {isBroadcastSport &&
-            state.mode !== "daily" &&
-            !state.dailySpins && (
+            (state.mode === "cpu" || !state.dailySpins) && (
               <div className="rounded-3xl border border-white/5 bg-white/5 p-4 backdrop-blur-md">
                 <SkipChips
                   sport={sport}
@@ -1081,10 +1119,11 @@ export function GameClient({
           ) : (
             <>
               {state.currentSpin && (
-                <div className="lower-third-enter sticky top-[var(--header-offset,3.75rem)] z-20 flex flex-wrap items-center justify-center gap-2 rounded-xl border border-sport/25 bg-sport/15 px-3 py-2.5 backdrop-blur-md">
-                  <span className="truncate text-center font-display text-sm tracking-wide text-text">
-                    {state.currentSpin.club} · {state.currentSpin.era}
-                  </span>
+                <div className="lower-third-enter sticky top-[var(--header-offset,3.75rem)] z-20 flex flex-wrap items-center justify-center gap-3 rounded-xl border border-sport/25 bg-sport/15 px-3 py-2.5 backdrop-blur-md">
+                  <ClubEraBadge
+                    club={state.currentSpin.club}
+                    era={state.currentSpin.era}
+                  />
                   <span className="h-1 w-1 rounded-full bg-sport/40" />
                   <span className="text-[11px] font-black uppercase tracking-widest text-sport">
                     {pickablePlayers.length} {dict.available}
@@ -1112,7 +1151,7 @@ export function GameClient({
               </div>
             </>
           )}
-          {isVersusDaily && !isBroadcastSport && (
+          {isVersusCpu && !isBroadcastSport && (
             <EraTracker
           sport={sport}
           eras={eras}
@@ -1212,10 +1251,10 @@ export function GameClient({
       >
         {(isSpinningPhase || broadcastPicking) && <SportMotifs sport={sport} />}
 
-        {(state.mode === "daily" || state.dailySpins) && (
+        {(state.mode === "cpu" || state.dailySpins) && (
           <div className="rounded-xl border border-sport/30 bg-sport/10 px-4 py-3 text-center text-xs font-bold uppercase tracking-widest text-sport">
-            {state.mode === "daily"
-              ? dict.dailyBanner
+            {state.mode === "cpu"
+              ? dict.cpuBanner
               : challengeTargetWins != null
                 ? dict.beatChallenge.replace("{wins}", String(challengeTargetWins))
                 : dict.challengeLoaded}
@@ -1227,7 +1266,13 @@ export function GameClient({
           <ScoreBug
             round={state.round}
             rosterSize={config.rosterSize}
-            mode={state.mode}
+            mode={
+              state.mode === "cpu"
+                ? dict.cpuMode
+                : state.mode === "blind"
+                  ? dict.blind
+                  : dict.classic
+            }
             club={bugClub}
             era={bugEra}
             maxWins={isFootball ? 38 : 82}
@@ -1295,6 +1340,46 @@ export function GameClient({
             </button>
           </div>
         )}
+
+        {/* 82-0-style: during club/era rotation, only the slot window */}
+        <AnimatePresence>
+          {spinAnimating && (
+            <motion.div
+              key="spin-focus"
+              role="dialog"
+              aria-modal="true"
+              aria-label={dict.analyzing}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 z-[60] flex items-center justify-center bg-bg/92 p-4 backdrop-blur-md"
+            >
+              <motion.div
+                initial={{ opacity: 0, y: 16, scale: 0.97 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 8, scale: 0.98 }}
+                transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+                className="w-full max-w-md"
+              >
+                <SlotMachine
+                  {...slotLabels}
+                  club={slotClub}
+                  era={slotEra}
+                  clubs={state.clubs}
+                  eras={eras}
+                  isSpinning={spinAnimating}
+                  spinningClub={clubSpinning}
+                  spinningEra={eraSpinning}
+                  onSpin={() => {}}
+                  spinLabel={dict.spin}
+                  disabled
+                  hideButton
+                />
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
   );
 

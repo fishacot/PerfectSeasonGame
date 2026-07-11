@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import type { ComponentProps } from "react";
 import { SportModeSelectShell } from "@/components/game/SportModeSelectShell";
 import { prefetchPlayers } from "@/lib/data/player-fetch";
+import type { PlayerSeason } from "@/lib/types";
 
 type GameClientProps = ComponentProps<
   typeof import("@/components/game/GameClient").GameClient
@@ -18,15 +19,28 @@ export function SportPlay({ deferPlayerLoad, ...props }: SportPlayProps) {
   const [GameClient, setGameClient] = useState<
     typeof import("@/components/game/GameClient").GameClient | null
   >(null);
+  const [poolPlayers, setPoolPlayers] = useState<PlayerSeason[]>(
+    deferPlayerLoad ? [] : props.players,
+  );
+  const [poolClubs, setPoolClubs] = useState<string[]>(props.clubs);
 
   useEffect(() => {
-    if (deferPlayerLoad) {
-      void prefetchPlayers(props.sport, props.league);
-    }
+    if (!deferPlayerLoad) return;
+    void prefetchPlayers(props.sport, props.league).then((data) => {
+      setPoolPlayers(data.players);
+      setPoolClubs(data.clubs);
+    });
     void import("@/components/game/GameClient").then((mod) => {
       setGameClient(() => mod.GameClient);
     });
   }, [deferPlayerLoad, props.sport, props.league]);
+
+  useEffect(() => {
+    if (deferPlayerLoad) return;
+    void import("@/components/game/GameClient").then((mod) => {
+      setGameClient(() => mod.GameClient);
+    });
+  }, [deferPlayerLoad]);
 
   if (!GameClient) {
     return (
@@ -39,7 +53,14 @@ export function SportPlay({ deferPlayerLoad, ...props }: SportPlayProps) {
     );
   }
 
+  const playersLoaded = poolPlayers.length > 0;
+
   return (
-    <GameClient {...props} deferPlayerLoad={deferPlayerLoad} players={props.players ?? []} />
+    <GameClient
+      {...props}
+      clubs={poolClubs}
+      players={poolPlayers}
+      deferPlayerLoad={deferPlayerLoad && !playersLoaded}
+    />
   );
 }
