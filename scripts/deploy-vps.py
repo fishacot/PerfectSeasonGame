@@ -13,7 +13,10 @@ import paramiko
 ROOT = Path(__file__).resolve().parents[1]
 HOST = os.environ.get("VPS_HOST", "83.147.235.105")
 USER = os.environ.get("VPS_USER", "root")
-PASS = os.environ.get("VPS_PASS")
+_PASS_FILE = Path.home() / ".perfect-season-vps"
+PASS = os.environ.get("VPS_PASS") or (
+    _PASS_FILE.read_text(encoding="utf-8").strip() if _PASS_FILE.is_file() else None
+)
 REMOTE = "/var/www/perfect-season"
 APP_PORT = "3010"
 
@@ -50,22 +53,38 @@ def run(client: paramiko.SSHClient, cmd: str, timeout: int = 600) -> tuple[int, 
 
 def main() -> int:
     if not PASS:
-        print("Set VPS_PASS env var", file=sys.stderr)
+        print("Set VPS_PASS env var or create ~/.perfect-season-vps", file=sys.stderr)
         return 2
 
     with tempfile.TemporaryDirectory() as tmp:
         archive = Path(tmp) / "app.tar.gz"
+        print("packing archive…", flush=True)
+        n = 0
         with tarfile.open(archive, "w:gz") as tar:
-            for path in ROOT.rglob("*"):
-                if not path.is_file():
+            # Skip excluded trees early — android/ can be multi-GB and hang rglob.
+            stack = [ROOT]
+            while stack:
+                d = stack.pop()
+                try:
+                    entries = list(d.iterdir())
+                except OSError:
                     continue
-                rel = path.relative_to(ROOT).as_posix()
-                if any(part in EXCLUDE for part in Path(rel).parts):
-                    continue
-                if rel.endswith((".apk", ".aab", ".keystore", ".pem")):
-                    continue
-                tar.add(path, arcname=rel)
-        print(f"archive {archive.stat().st_size} bytes")
+                for path in entries:
+                    if path.name in EXCLUDE:
+                        continue
+                    if path.is_dir():
+                        stack.append(path)
+                        continue
+                    if not path.is_file():
+                        continue
+                    rel = path.relative_to(ROOT).as_posix()
+                    if rel.endswith((".apk", ".aab", ".keystore", ".pem")):
+                        continue
+                    tar.add(path, arcname=rel)
+                    n += 1
+                    if n % 500 == 0:
+                        print(f"  packed {n} files…", flush=True)
+        print(f"archive {archive.stat().st_size} bytes ({n} files)", flush=True)
 
         client = paramiko.SSHClient()
         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
