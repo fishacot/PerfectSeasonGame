@@ -28,6 +28,9 @@ export function Footer({ locale }: FooterProps) {
           <Link href={`/${locale}/privacy`} className="hover:text-sport">
             {dict.privacy}
           </Link>
+          <Link href={`/${locale}/download`} className="hover:text-sport">
+            {locale === "ru" ? "Android" : "Android app"}
+          </Link>
           {locale === "en" || locale === "ru" ? (
             <>
               <Link href={`/${locale}/basketball/sandbox`} className="hover:text-sport">
