@@ -5,7 +5,7 @@
  * Usage: node scripts/build-android.mjs
  */
 import { execSync } from "node:child_process";
-import { existsSync, writeFileSync } from "node:fs";
+import { existsSync, writeFileSync, copyFileSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -96,3 +96,13 @@ console.log("\nBuild outputs:");
 console.log("  AAB:", existsSync(aab) ? aab : "(missing)");
 console.log("  APK:", existsSync(apk) ? apk : "(missing)");
 if (!existsSync(aab) && !existsSync(apk)) process.exit(1);
+
+// ponytail: copy for easy sharing; friend should verify exact byte size if install hangs.
+if (existsSync(apk)) {
+  const desktop = join(process.env.USERPROFILE ?? "", "Desktop", "PerfectSeason-app-release.apk");
+  copyFileSync(apk, desktop);
+  const bytes = statSync(apk).size;
+  console.log(`\nCopied APK → ${desktop}`);
+  console.log(`Exact size: ${bytes} bytes (${(bytes / 1024 / 1024).toFixed(2)} MB)`);
+  console.log("If install hangs: friend must have EXACT same byte size after download.");
+}

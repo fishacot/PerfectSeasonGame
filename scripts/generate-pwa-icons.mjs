@@ -1,41 +1,82 @@
 /**
- * Generates Play/PWA PNG icons (192 + 512, any + maskable).
+ * Generates PWA + Android launcher PNGs from docs/store-assets/icon_master.png.
  * Run: node scripts/generate-pwa-icons.mjs
  */
-import { mkdirSync } from "node:fs";
+import { existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const master = join(root, "docs", "store-assets", "icon_master.png");
 const outDir = join(root, "public", "icons");
-mkdirSync(outDir, { recursive: true });
-
+const androidRes = join(root, "android", "app", "src", "main", "res");
 const BG = "#0B0F14";
-const ACCENT = "#00C853";
 
-function svg(size, { maskable }) {
-  const pad = maskable ? size * 0.18 : size * 0.12;
-  const inner = size - pad * 2;
-  const r = inner * 0.18;
-  const cx = size / 2;
-  const cy = size / 2;
-  const font = Math.round(inner * 0.28);
-  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-  <rect width="${size}" height="${size}" fill="${BG}"/>
-  <rect x="${pad}" y="${pad}" width="${inner}" height="${inner}" rx="${r}" fill="${ACCENT}"/>
-  <text x="${cx}" y="${cy + font * 0.35}" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="${font}" font-weight="700" fill="${BG}">PS</text>
-</svg>`);
+if (!existsSync(master)) {
+  console.error("Missing master icon:", master);
+  process.exit(1);
 }
 
-async function write(name, size, maskable) {
+mkdirSync(outDir, { recursive: true });
+
+async function writePwa(name, size, maskable) {
   const path = join(outDir, name);
-  await sharp(svg(size, { maskable })).png().toFile(path);
+  let pipeline = sharp(master).resize(size, size);
+  if (maskable) {
+    const pad = Math.round(size * 0.18);
+    pipeline = sharp(master)
+      .resize(size - pad * 2, size - pad * 2)
+      .extend({ top: pad, bottom: pad, left: pad, right: pad, background: BG })
+      .resize(size, size);
+  }
+  await pipeline.png().toFile(path);
   console.log("wrote", path);
 }
 
-await write("icon-192.png", 192, false);
-await write("icon-512.png", 512, false);
-await write("icon-maskable-192.png", 192, true);
-await write("icon-maskable-512.png", 512, true);
-console.log("PWA icons OK");
+async function writeAndroidMipmaps() {
+  const mipmaps = [
+    { name: "mdpi", size: 48, adaptive: 108 },
+    { name: "hdpi", size: 72, adaptive: 162 },
+    { name: "xhdpi", size: 96, adaptive: 216 },
+    { name: "xxhdpi", size: 144, adaptive: 324 },
+    { name: "xxxhdpi", size: 192, adaptive: 432 },
+  ];
+
+  for (const mm of mipmaps) {
+    const dir = join(androidRes, `mipmap-${mm.name}`);
+    mkdirSync(dir, { recursive: true });
+
+    await sharp(master).resize(mm.size, mm.size).png().toFile(join(dir, "ic_launcher.png"));
+
+    const radius = mm.size / 2;
+    const circleSvg = `<svg><circle cx="${radius}" cy="${radius}" r="${radius}" /></svg>`;
+    await sharp(master)
+      .resize(mm.size, mm.size)
+      .composite([{ input: Buffer.from(circleSvg), blend: "dest-in" }])
+      .png()
+      .toFile(join(dir, "ic_launcher_round.png"));
+
+    const contentSize = Math.round(mm.adaptive * 0.66);
+    const pad = Math.floor((mm.adaptive - contentSize) / 2);
+    await sharp(master)
+      .resize(contentSize, contentSize)
+      .extend({
+        top: pad,
+        bottom: mm.adaptive - contentSize - pad,
+        left: pad,
+        right: mm.adaptive - contentSize - pad,
+        background: { r: 0, g: 0, b: 0, alpha: 0 },
+      })
+      .png()
+      .toFile(join(dir, "ic_launcher_foreground.png"));
+  }
+  console.log("wrote Android mipmap icons");
+}
+
+await writePwa("icon-192.png", 192, false);
+await writePwa("icon-512.png", 512, false);
+await writePwa("icon-maskable-192.png", 192, true);
+await writePwa("icon-maskable-512.png", 512, true);
+await writeAndroidMipmaps();
+console.log("Icons OK");

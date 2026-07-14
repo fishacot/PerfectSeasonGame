@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, isValidLocale } from "@/lib/i18n/dictionaries";
 
 const APK_URL = "/download/perfect-season.apk";
-const APK_BYTES = 9_985_275;
+const APK_BYTES = 10_232_924;
 // ponytail: replace with Play Store URL after first release
 const PLAY_STORE_URL: string | null = null;
 
