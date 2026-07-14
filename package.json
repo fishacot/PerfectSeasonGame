@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node scripts/sync-public-data.mjs && next dev --webpack",
-    "build": "node scripts/sync-public-data.mjs && next build --webpack",
+    "build": "node scripts/sync-public-data.mjs && next build",
     "start": "next start",
     "start:ws": "node scripts/ws-server.mjs",
     "lint": "eslint",
