@@ -1,0 +1,14 @@
+node_modules
+.git
+data
+.next
+android
+www
+docs
+*.apk
+*.aab
+*.tsbuildinfo
+test-results
+perfect-season-hub
+.cursor
+.tmp-*
